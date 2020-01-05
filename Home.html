@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> nolawyer.org.uk </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords">
+
+     <link href="images/onboarding_icon2_u12.png" rel="icon">
+
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://js.stripe.com/v3"></script>
+    <script>
+        function loadVid() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "video.html", true);
+            xhttp.send();
+        }
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo-vid").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "pdf-png.html", true);
+            xhttp.send();
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div  style="position: relative;">
+
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="#"> <span class="left_circle" > <\> </span>
+                    <h1> cvlink</h1>
+                </a>
+
+            </div>
+
+            <button class=" right_button btn">Send CVLink</button>
+
+        </div>
+    </header>
+
+    <div class="angle">
+
+
+
+        <div id="about">
+            <div >
+                <div class="row">
+                    <div  class="col-xl-6" style="padding-right: 40px">
+                        <div class="square_book">
+                            <h1 class="user-name" >James Orior</h1>
+                            <span  class="blue_span">http://www.cvlink.co/jamesorior</span>
+                            <button class="delete_video" >
+                                Delete Video
+                            </button>
+                        </div>
+
+                        <div id="demo" class="square_video_box">
+                            <div class="square_video">
+                                <img src="images/video.png">
+                                <p>No video pitch found</p>
+                                <button class="upload-video" onclick="loadVid()">Upload video</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="demo-vid" class="col-xl-6" style="padding-left: 40px;">
+                        <div class="square_book">
+                            <h1 class="user-name" > My Document Repository</h1>
+                        </div>
+
+                        <div class="square_video_box">
+                            <div class="square_video">
+                                <img src="images/w_open.png">
+                                <p>No document found</p>
+
+                                <button  class="upload-video" onclick="loadDoc()">Upload documents</button></a>
+                            </div>
+                        </div>
+
+                     </div>
+                 </div>
+             </div>
+
+
+
+         </div>
+
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
+
+
+
+
+
+</body>
+</html>
