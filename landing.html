@@ -22,17 +22,90 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://js.stripe.com/v3"></script>
-
+    <script>
+        function insign() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("insign").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "sign-in.html", true);
+            xhttp.send();
+        }
+        </script>
 
 </head>
 
 <body>
 
     <header id="header">
+        <div  style="position: relative;">
 
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="#"> <span class="left_circle" > <\> </span>
+                    <h1> cvlink</h1>
+                </a>
+            </div>
+
+
+        </div>
     </header>
 
+    <div class="angle">
+        <div id="about">
+            <div >
+                <div class="row">
+                    <div class="col-xl-6" style="padding-right: 40px">
+                        <div class="square-landing-book">
+                        </div>
 
+                        <div class="square-landing-video-box">
+                                <video class="square-landing-video"  controls >
+                                    <source src="mov_bbb.mp4" type="video/mp4">
+                                    <source src="mov_bbb.ogg" type="video/ogg">
+                                </video>
+                        </div>
+                        <a href="Home.html"><p class="make-first"> Make your first impression</p></a>
+                    </div>
+
+                    <div id="insign" class="col-xl-6" style="padding-left: 40px;">
+                        <div class="square-landing-book">
+                           <h1 class="sign-name" > Sign up</h1>
+                            <span  class="account">Already have account?</span>
+                            <button class="login-button"  onclick="insign()">
+                                Login
+                            </button>
+                        </div>
+
+                        <div class="square-sign-login-box">
+                            <div class="square-sign-box">
+                                <input  id="first_name" type="text" name="first_name" value="" placeholder="First name" class="register-input">
+                                <input  id="last_name" type="text" name="last_name" value="" placeholder="Last name"  class="register-input">
+                                <input id="email"  type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                <input id="password"  type="password" name="password" value="" placeholder="Password"  class="register-input">
+                                <input id="repeat-password"  type="password" name="repeat-password" value="" placeholder="Repeat Password"  class="register-input">
+                                <div class="landing-bottom">
+                                    <div class="example">
+                                        <label class="checkbox-button">
+                                            <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                            <span class="checkbox-button__control"></span>
+                                            <span class="checkbox-button__label" style="color:  #131031;">I agree to  <span class="terms"> mycvlink terms</span></span>
+                                        </label>
+                                    </div>
+
+                                    <a href="Home.html"><button class="your-cvlink">Sign up & Get your cvlink</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="lib/jquery/jquery.min.js"></script>
 <!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
