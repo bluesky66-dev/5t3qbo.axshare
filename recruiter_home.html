@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="keywords">
 
-     <link href="images/onboarding_icon2_u12.png" rel="icon">
-
 <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
 <!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,156 +18,190 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="https://js.stripe.com/v3"></script>
-
 </head>
 
 <body>
+    <div id="aboutScreen">
+        <header id="header">
+            <div  style="position: relative;">
 
-    <header id="header">
-        <div  style="position: relative;">
+                <div class="logo float-left">
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <a href="#"> <span class="left_circle" > <\> </span>
+                        <h1> cvlink</h1>
+                    </a>
 
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="#"> <span class="left_circle" > <\> </span>
-                    <h1> cvlink</h1>
-                </a>
+                </div>
+
+
+
+                <button class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
+
+                <button class=" right_button2 btn">Reject CV</button>
 
             </div>
+        </header>
 
+        <div  class="angle">
+            <div id="about">
+                <div >
+                    <div class="row">
+                        <div class="col-xl-6" style="padding-right: 40px">
+                            <div class="square_book">
+                                <h1 class="user-name" >James Orior</h1>
+                                <button class="delete_video" >
+                                    video pitch
+                                </button>
+                            </div>
 
-            <button class=" right_button btn">Invite for interview</button>
-            <button class=" right_button2 btn">Reject CV</button>
-
-        </div>
-    </header>
-
-    <div class="angle">
-
-
-
-        <div id="about">
-            <div >
-                <div class="row">
-                    <div class="col-xl-6" style="padding-right: 40px">
-                        <div class="square_book">
-                            <h1 class="user-name" >James Orior</h1>
-                            <button class="delete_video" >
-                                video pitch
-                            </button>
+                            <div class="square-rec-video-box">
+                                <div class="square-rec-video embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ohf_1212tqM? frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=yes" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                                </div>
+                             </div>
                         </div>
 
-                        <div class="square-rec-video-box">
+                        <div class="col-xl-6" style="padding-left: 40px;">
+                                <div class="square_book">
+                                    <h1 class="user-name" > My Document Repository</h1>
+                                </div>
+                            <div class="square-col-video-box">
+                                    <div class="square-col-video">
+                                        <div class="row">
+                                            <div class="col-xl-3">
+                                                <img src="images/document.png">
+                                                <p class="bold-p">Document.doc</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/document.png">
+                                                <p class="bold-p">Document.doc</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/pdf.png">
+                                                <p class="bold-p">Document.pdf</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/pdf.png">
+                                                <p class="bold-p">Document.pdf</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/jpeg.png">
+                                                <p class="bold-p">Document.jpeg</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/png.png">
+                                                <p class="bold-p">Document.png</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/jpeg.png">
+                                                <p class="bold-p">Document.jpeg</p>
+                                                <p class="solid-p">date updated</p>
 
-                                <video class="square-rec-video"  controls >
-                                    <source src="mov_bbb.mp4" type="video/mp4">
-                                    <source src="mov_bbb.ogg" type="video/ogg">
-                                </video>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                <p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/xlsx.png">
+                                                <p class="bold-p">Document.xlsx</p>
+                                                <p class="solid-p">date updated</p>
+                                            </div>
+                                            <div class="col-xl-3">
+                                                <img src="images/ppt.png">
+                                                \<p class="bold-p">Document.ppt</p>
+                                                <p class="solid-p">date updated</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-6" style="padding-left: 40px;">
-                        <div class="square_book">
-                            <h1 class="user-name" > My Document Repository</h1>
-                        </div>
-
-                        <div class="square-col-video-box">
-                            <div class="square-col-video">
-                                <div class="row">
-                                    <div class="col-xl-3">
-                                        <img src="images/document.png">
-                                        <p class="bold-p">Document.doc</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/document.png">
-                                        <p class="bold-p">Document.doc</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/pdf.png">
-                                        <p class="bold-p">Document.pdf</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/pdf.png">
-                                        <p class="bold-p">Document.pdf</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/xlsx.png">
-                                        <p class="bold-p">Document.xlsx</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/ppt.png">
-                                        <p class="bold-p">Document.ppt</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/xlsx.png">
-                                        <p class="bold-p">Document.xlsx</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/ppt.png">
-                                        <p class="bold-p">Document.ppt</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/ppt.png">
-                                        <p class="bold-p">Document.ppt</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/jpeg.png">
-                                        <p class="bold-p">Document.jpeg</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/png.png">
-                                        <p class="bold-p">Document.png</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/jpeg.png">
-                                        <p class="bold-p">Document.jpeg</p>
-                                        <p class="solid-p">date updated</p>
-
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/xlsx.png">
-                                        <p class="bold-p">Document.xlsx</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/ppt.png">
-                                        <p class="bold-p">Document.ppt</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/xlsx.png">
-                                        <p class="bold-p">Document.xlsx</p>
-                                        <p class="solid-p">date updated</p>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <img src="images/ppt.png">
-                                        \<p class="bold-p">Document.ppt</p>
-                                        <p class="solid-p">date updated</p>
-                                </div>
-                            </div>
-                        </div>
-
-                     </div>
-         </div>
+                </div>
+            </div>
         </div>
-
-
-
     </div>
+    <div class="overlay" style="display: none">
+        <div class="overlay-bg"></div>
+        <div class="white-background">
+            <header id="cv-header">
+                <a href="javascript: void (0);" onclick="hide_overlay()"><img  src="images/red%20triangle.png"></a>
+                <h1>Send rejection & feedback</h1>
+            </header>
 
+            <div class="content">
+                <div class="content-space"></div>
+                <span>From:</span>
+                <input id="sender-name" type="text" placeholder="Sender name" class="from-input">
+                <hr>
+                <input id="sender-emailadress" type="text" placeholder="Sender email address" class="from-input">
+                <hr>
+                <span>To:</span>
+                <input id="James-Orior" type="text" placeholder="James Orior" class="from-input">
+                <hr style="margin: 30px 60px 0px 180px;">
+                <p class="select"> Select why you're rejecting James Orior Application</p>
+                <div class="square_reject-div">
+                    <div class="square-reject-ajax">
+                        <span onclick="square1()">Interview Invitation Template 1</span>
+                    </div>
+                    <div class="square-reject-ajax">
+                        <span onclick="square2()">Interview Invitation Template 2</span>
+                    </div>
+                    <div class="square-reject-ajax">
+                        <span onclick="square3()">Interview Invitation Template 3</span>
+                    </div>
+                </div>
+                <div class="square_reject-div">
+                    <div class="square-reject2-ajax">
+                        <span onclick="square1()">Interview Invitation Template 1</span>
+                    </div>
+                    <div class="square-reject-ajax">
+                        <span onclick="square2()">Interview Invitation Template 2</span>
+                    </div>
+                </div>
+                <textarea  id="text-area" placeholder="hdddddddddddddddddddddddddddddddddddd"></textarea>
 
+            </div>
+        </div>
+    </div>
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
 <!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->

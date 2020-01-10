@@ -30,38 +30,78 @@
     <div class="white-background">
         <header id="cv-header">
             <a href="recruiter_home.html"><img  src="images/red%20triangle.png"></a>
-            <h1>Send interview invite</h1>
+            <h1>Send rejection & feedback</h1>
         </header>
 
         <div class="content">
             <div class="content-space">
             </div>
-            <span>From:</span>
-            <input id="sender-name" type="text" placeholder="Sender name" class="from-input">
-            <hr>
-            <input id="sender-emailadress" type="text" placeholder="Sender email address" class="from-input">
-            <hr>
-            <span>To:</span>
-            <input id="James-Orior" type="text" placeholder="James Orior" class="from-input">
-            <hr style="margin: 30px 60px 0px 180px;">
-            <div class="square_div">
-            <div class="square-reject-ajax">
-                <button><span onclick="square1()">Interview Invitation Template 1</span></button>
-            </div>
-            <div class="square-reject-ajax">
-                <button><span onclick="square2()">Interview Invitation Template 2</span></button>
-            </div>
-            <div class="square-reject-ajax">
-                <button><span onclick="square3()">Interview Invitation Template 3</span></button>
-            </div>
-            </div>
-            <div  id="text-area">
-<!--                <textarea id="text-area" placeholder="Invite sample letter contents goes here">-->
+            <div class="reject-full">
+                <div class="from-span">
+                     <span>From:</span>
+                </div>
 
-<!--                </textarea>-->
+                <div class="input-text">
+                    <input  type="text" placeholder="Sender name" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
 
 
+            <div class="reject-full">
+                <div class="from-span">
+                        <span></span>
+                    </div>
+                    <div class="input-text">
+                        <input  type="text" placeholder="Sender email address" class="from-reject-input">
+                        <hr>
+                    </div>
             </div>
+
+            <div class="reject-full">
+                <div class="from-span">
+                    <span>To:</span>
+                </div>
+                <div  class="input-text">
+                    <input id="to-james" type="text" placeholder="James Orior" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
+
+
+            <p class="select"> Select why you're rejecting James Orior Application</p>
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div class="square_reject-div">
+                        <div class="square-reject-ajax">
+                            <span onclick="square1()">Interview Invitation Template 1</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span onclick="square2()">Interview Invitation Template 2</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span onclick="square3()">Interview Invitation Template 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div  id="text-area">
+                        <textarea  placeholder="Invite sample letter contents goes here">
+
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>

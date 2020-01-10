@@ -67,11 +67,12 @@ body {
     font-family: Poppins;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     border: 0;
     color: white;
 }
+
 .img {
     align-items: center;
     justify-content: center;
@@ -186,9 +187,11 @@ a:hover{
     color: #ffffff;
 
 }
+
 #header .right_button:hover {
-     background-color: rgba(19, 16, 49, 1);
+    background-color: rgba(19, 16, 49, 1);
 }
+
 #header .right_button2 {
     position: absolute;
     right: 20px;
@@ -207,16 +210,18 @@ a:hover{
     color: #077CFF;
 
 }
+
 #header .right_button2:hover {
     background-color: rgba(234, 91, 80, 1);
     border-color: rgba(234, 91, 80, 1);
     color: #ffffff;
 
 }
+
 .angle {
     margin-top: 300px;
     margin-right: 120px;
-    margin-left:120px;
+    margin-left: 120px;
     -webkit-background-size: contain;
     height: 100%;
 
@@ -324,7 +329,7 @@ a:hover{
     margin-left: -35px;
 }
 
- .square_book {
+.square_book {
     position: relative;
     display: flex;
     border-radius: 20px;
@@ -336,7 +341,7 @@ a:hover{
     align-items: center;
 }
 
- .square_book .user-name {
+.square_book .user-name {
     font-weight: 900;
     font-size: 18px;
     color: #131031;
@@ -344,7 +349,7 @@ a:hover{
     padding-left: 37px;
 }
 
- .blue_span {
+.blue_span {
     margin-left: 30px;
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
@@ -363,7 +368,7 @@ a:hover{
     padding: 12px 38px 12px 38px;
 }
 
- .delete_video {
+.delete_video {
     position: absolute;
     right: 0;
     height: 86px;
@@ -380,7 +385,7 @@ a:hover{
     padding-right: 27px;
 }
 
- .delete_video span {
+.delete_video span {
     padding-top: 20px;
     line-height: 84px;
 }
@@ -413,14 +418,16 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-#about .square_video_box p{
+
+#about .square_video_box p {
     font-weight: 700;
     font-size: 20px;
     color: #666666;
     text-align: center;
     margin: 50px 0px;
 }
-.square_video .upload-video{
+
+.square_video .upload-video {
     width: 187px;
     height: 72px;
     background: inherit;
@@ -435,7 +442,7 @@ a:hover{
 
 /*recruiter_home*/
 
-.square-rec-video-box{
+.square-rec-video-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -445,6 +452,7 @@ a:hover{
     border-radius: 10px;
     padding: 12px;
 }
+
 .square-rec-video-box .square-rec-video {
     display: block;
     text-align: center;
@@ -459,7 +467,7 @@ a:hover{
 }
 
 
-.square-col-video-box{
+.square-col-video-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,26 +476,29 @@ a:hover{
     height: 100%;
     border-radius: 10px;
 }
-.square-col-video-box .square-col-video{
+
+.square-col-video-box .square-col-video {
     display: block;
     text-align: center;
     width: 100%;
 
     font-size: 12px;
     color: #131031;
-   }
-.bold-p{
+}
+
+.bold-p {
     font-weight: 600;
     margin: 0px;
 
 }
-.solid-p{
+
+.solid-p {
     font-weight: 400;
 }
 
 
 /*landing*/
-.square-landing-book{
+.square-landing-book {
     position: relative;
     display: flex;
     height: 86px;
@@ -496,31 +507,36 @@ a:hover{
     text-align: left;
     align-items: center;
 }
-.square-landing-video{
+
+.square-landing-video {
     width: 100%;
 }
-.square-landing-video-box{
+
+.square-landing-video-box {
 
     box-shadow: 0px 0px 20px rgba(20, 68, 153, 0.4);
     margin-top: 30px;
     border-radius: 10px;
     padding: 12px;
 }
-.make-first{
+
+.make-first {
     font-weight: 700;
     font-size: 30px;
     color: #077CFF;
     text-align: center;
     margin: 20px;
 }
- .sign-name {
+
+.sign-name {
     font-weight: 700;
     font-size: 30px;
     color: #131031;
     margin: 0;
     padding-left: 37px;
 }
-.login-button{
+
+.login-button {
     position: absolute;
     right: 40px;
     font-weight: 700;
@@ -530,11 +546,13 @@ a:hover{
     background: #ffffff;
     border: 0;
 }
-.account{
+
+.account {
     position: absolute;
     right: 136px;
 }
-.register-input{
+
+.register-input {
     width: 100%;
     height: 73px;
     font-size: 18px;
@@ -545,47 +563,54 @@ a:hover{
     margin: 15px 25px;
     /*border-color: transparent;*/
 }
-.square-sign-box{
+
+.square-sign-box {
     margin-top: 30px;
     height: 100%;
     border-radius: 10px;
     display: block;
     text-align: center;
 }
-.square-sign-login-box{
+
+.square-sign-login-box {
     width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.terms{
-     font-weight: 700;
-     color: #077CFF;
- }
-.example{
+
+.terms {
+    font-weight: 700;
+    color: #077CFF;
+}
+
+.example {
     position: absolute;
     left: 0;
 }
- .your-cvlink{
 
-     position: absolute;
+.your-cvlink {
+
+    position: absolute;
     right: -50px;
-     top: 0px;
-     width: 251px;
-     height: 60px;
-     background: inherit;
-     background-color: rgba(7, 124, 255, 1);
-     border: none;
-     border-radius: 10px;
-     font-family: 'Poppins Medium', 'Poppins';
-     font-weight: 500;
-     font-size: 16px;
-     color: #ffffff;
- }
- .landing-bottom{
-     position: relative;
-     margin:30px  25px 15px 25px;
- }
+    top: 0px;
+    width: 251px;
+    height: 60px;
+    background: inherit;
+    background-color: rgba(7, 124, 255, 1);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins Medium', 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.landing-bottom {
+    position: relative;
+    margin: 30px 25px 15px 25px;
+}
+
 /*@media (max-width: 2500px) {*/
 /*    #header{*/
 /*        width: 2560px;*/
@@ -598,7 +623,7 @@ a:hover{
 /*    */
 /*}*/
 /*video*/
-.square-video-video-box{
+.square-video-video-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -608,6 +633,7 @@ a:hover{
     padding: 12px;
     width: 95%;
 }
+
 .square-video-video-box .square-video-video {
     display: block;
     text-align: center;
@@ -616,6 +642,7 @@ a:hover{
     margin-top: -100px;
 
 }
+
 /*pdf-png*/
 
 .square-pdf-book {
@@ -638,7 +665,8 @@ a:hover{
     margin: 0;
     padding-left: 37px;
 }
-.square-col-pdf-box{
+
+.square-col-pdf-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -647,7 +675,8 @@ a:hover{
     height: 100%;
     border-radius: 10px;
 }
-.square-col-pdf-box .square-col-pdf{
+
+.square-col-pdf-box .square-col-pdf {
     display: block;
     text-align: center;
     width: 100%;
@@ -655,10 +684,12 @@ a:hover{
     font-size: 12px;
     color: #131031;
 }
-.full{
+
+.full {
     height: 100%;
 }
-.upload-document{
+
+.upload-document {
     position: absolute;
     right: 20px;
     width: 195px;
@@ -671,10 +702,11 @@ a:hover{
     color: #FFFFFF;
     text-align: center;
     border: 0;
- }
+}
+
 /*sign-in*/
 
-.forgot{
+.forgot {
     position: absolute;
     font-family: 'Poppins';
     font-weight: 400;
@@ -684,8 +716,9 @@ a:hover{
     margin-top: 70px;
     margin-left: 35px;
 }
+
 /*forgot*/
-.never{
+.never {
 
     font-family: 'Poppins';
     font-weight: 400;
@@ -695,10 +728,12 @@ a:hover{
     margin-left: 80px;
     margin-top: 70px;
 }
-.landing-recover-bottom{
+
+.landing-recover-bottom {
     position: relative;
 }
-.recover{
+
+.recover {
     position: absolute;
     left: 26px;
     top: 0px;
@@ -714,18 +749,7 @@ a:hover{
     font-size: 16px;
     color: #ffffff;
 }
-/*cvlink*/
-#cv-header{
-    background-color: #dae2ef;
-    height: 100px;
-    transition: all .5s;
-    z-index: 997;
-    transition: all .5s;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-}
+
 /*I agree checkbox*/
 html {
     font-family: Arial;
@@ -744,7 +768,7 @@ input {
     font-size: 1rem;
     line-height: 1.5;
     padding: 11px 23px;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 0;
     outline: 0;
     background-color: transparent;
@@ -763,12 +787,12 @@ input {
     margin-right: 12px;
     vertical-align: middle;
     background-color: inherit;
-    color:#131031;
+    color: #131031;
     border: 1px solid #797979;
     border-radius: 5px;
 }
 
-.checkbox-button__input:checked+.checkbox-button__control:after {
+.checkbox-button__input:checked + .checkbox-button__control:after {
     content: "";
     display: block;
     position: absolute;
@@ -776,14 +800,227 @@ input {
     left: 5px;
     width: 34px;
     height: 34px;
-    background-color:#131031;
+    background-color: #131031;
     border-radius: 5px;
 }
 
-.checkbox-button__input:checked+.checkbox-button__control {
+.checkbox-button__input:checked + .checkbox-button__control {
     border-color: #131031;
 }
 
 .checkbox-button__control {
     transform: scale(0.75);
+}
+
+/*cvlink*/
+.overlay {
+    position: fixed;
+    z-index: 1000;
+}
+.overlay-bg{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.898039;
+    background-color: #252838;
+}
+.white-background {
+    background-color: white;
+    width: 47vw;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transtition: left .3s ease-in-out, right .3s ease-in-out;
+    transition: left .3s ease-in-out, right .3s ease-in-out;
+}
+
+#cv-header {
+    background-color: #dae2ef;
+    height: 100px;
+    z-index: 997;
+    width: 47vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#cv-header img {
+    position: absolute;
+    left: 38px;
+    top: 25px;
+}
+
+#cv-header h1 {
+    margin-top: 38px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    color: #131031;
+    text-align: center;
+
+}
+
+.content-space {
+    height: 160px;
+}
+
+/*.content span {*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    color: #131031;*/
+/*    margin-left: 75px;*/
+/*}*/
+
+#sender-name .from-input {
+    position: relative;
+}
+
+.from-input {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    margin-left: 64px;
+    border: 0;
+}
+
+
+
+
+#sender-emailadress {
+    margin-left: 163px;
+}
+
+#James-Orior {
+    position: absolute;
+    margin-left: 84px;
+    background-color: #ebebe4;
+    padding: 18px 510px 18px 0px;
+}
+
+.square_div {
+    display: flex;
+    margin-left: 180px;
+}
+
+.square-ajax {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.square-ajax span {
+    width: 7vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+.square-ajax button {
+    padding: 0px;
+    border: 0;
+    color: #ffffff;
+
+}
+
+
+.select {
+    color: #131031;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+
+/*reset*/
+.reject-full{
+    margin: 0px 60px;
+    display: flex;
+}
+.from-span{
+    width: 5vw;
+    align-items: center;
+}
+.input-text{
+    width: 100%;
+
+}
+.from-reject-input{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    border: 0;
+}
+#to-james{
+    background: #ebebe4;
+    width: 100%;
+}
+.select {
+    color: #131031;
+    font-size: 18px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.square_reject-div {
+    display: flex;
+
+}
+
+.square-reject-ajax {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.square-reject-ajax span {
+
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    margin-left: 0px;
+    box-shadow: 0px 0px 7px #cad5e8;
+    height: 60px;
+    width: 11vw;
+}
+
+.square-reject2-ajax {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.square-reject2-ajax span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    margin-left: 0px;
+    box-shadow: 0px 0px 7px #cad5e8;
+    height: 40px;
+    width: 22.5vw;
+}
+#text-area textarea {
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
 }
