@@ -219,7 +219,7 @@ a:hover {
 }
 
 .angle {
-    margin-top: 300px;
+    margin-top: 268px;
     margin-right: 120px;
     margin-left: 120px;
     -webkit-background-size: contain;
@@ -767,7 +767,6 @@ input[type=checkbox] {
 input {
     font-size: 1rem;
     line-height: 1.5;
-    padding: 11px 23px;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 0;
     outline: 0;
@@ -796,8 +795,8 @@ input {
     content: "";
     display: block;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
     width: 34px;
     height: 34px;
     background-color: #131031;
@@ -817,14 +816,27 @@ input {
     position: fixed;
     z-index: 1000;
 }
+.overlay-reject {
+    position: fixed;
+    z-index: 1000;
+}
 .overlay-bg{
     position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
-    opacity: 0.898039;
+    opacity: 0.96;
     background-color: #252838;
 }
+.overlay-home-bg{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.92;
+    background-color: rgb(123, 179, 179);
+}
+
 .white-background {
     background-color: white;
     width: 47vw;
@@ -835,8 +847,17 @@ input {
     -webkit-transtition: left .3s ease-in-out, right .3s ease-in-out;
     transition: left .3s ease-in-out, right .3s ease-in-out;
 }
+.background {
+    background-color: transparent;
+    width: 53vw;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
 
-#cv-header {
+}
+
+.cv-header {
     background-color: #dae2ef;
     height: 100px;
     z-index: 997;
@@ -846,13 +867,13 @@ input {
     right: 0;
 }
 
-#cv-header img {
+.cv-header img {
     position: absolute;
     left: 38px;
     top: 25px;
 }
 
-#cv-header h1 {
+.cv-header h1 {
     margin-top: 38px;
     font-weight: 600;
     font-style: normal;
@@ -933,13 +954,6 @@ input {
 }
 
 
-.select {
-    color: #131031;
-    font-size: 18px;
-    margin-left: 200px;
-    margin-top: 30px;
-}
-
 
 /*reset*/
 .reject-full{
@@ -947,6 +961,7 @@ input {
     display: flex;
 }
 .from-span{
+    font-size: 18px;
     width: 5vw;
     align-items: center;
 }
@@ -955,6 +970,7 @@ input {
 
 }
 .from-reject-input{
+    padding-left: 0px;
     font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
@@ -964,12 +980,12 @@ input {
 #to-james{
     background: #ebebe4;
     width: 100%;
+    padding: 12px 0px;
 }
-.select {
-    color: #131031;
-    font-size: 18px;
-    margin-left: 120px;
-    margin-top: 30px;
+#to-james-reject{
+    background: #ebebe4;
+    width: 100%;
+    padding: 12px 0px;
 }
 .square_reject-div {
     display: flex;
@@ -977,7 +993,15 @@ input {
 }
 
 .square-reject-ajax {
-    width: 100%;
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.square-reject-ajax1 {
+    width: 66.6666%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -985,18 +1009,36 @@ input {
 
 }
 
-.square-reject-ajax span {
-
+.square-reject-ajax1 span {
     border: 1px solid #dce3f0;
     border-radius: 10px;
     font-size: 13px;
     color: #333333;
     text-align: center;
-    margin-left: 0px;
     box-shadow: 0px 0px 7px #cad5e8;
-    height: 60px;
-    width: 11vw;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px 20px 20px 0px;
 }
+.square-reject-ajax span {
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    box-shadow: 0px 0px 7px #cad5e8;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px 20px 20px 0px;
+}
+.select {
+    color: #131031;
+    font-size: 18px;
+    margin-left: 155px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
 
 .square-reject2-ajax {
     margin-top: 30px;
@@ -1017,10 +1059,50 @@ input {
     height: 40px;
     width: 22.5vw;
 }
-#text-area textarea {
+#text-area  {
     border: 1px solid #dce3f0;
     border-radius: 10px;
     width: 100%;
     height: 100vh;
     margin-top: 30px;
+}
+textarea{
+    width: 100%;
+    height: 100vh;
+}
+.square-reject-ajax :hover{
+    background-color: black;
+    color: white;
+}
+.square-reject-ajax1 :hover{
+    background-color: black;
+    color: white;
+}
+.square_invite-div {
+    display: flex;
+
+}
+
+.square-invite-ajax {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.square-invite-ajax button{
+    border: 5px solid #dce3f0;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 7px #cad5e8;
+    width: 100%;
+    margin: 0px 20px 20px 0px;
+    height: 20vh;
+    background-color: #077cff;
 }

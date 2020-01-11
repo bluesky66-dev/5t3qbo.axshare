@@ -28,7 +28,7 @@
 <body>
 <div class="background">
     <div class="white-background">
-        <header id="cv-header">
+        <header class="cv-header">
             <a href="recruiter_home.html"><img  src="images/red%20triangle.png"></a>
             <h1>Send rejection & feedback</h1>
         </header>
@@ -59,12 +59,12 @@
             </div>
 
             <div class="reject-full">
-                <div class="from-span">
-                    <span>To:</span>
+                <div class="from-span" style="margin-top: 12px;" >
+                    <span> To:</span>
                 </div>
                 <div  class="input-text">
-                    <input id="to-james" type="text" placeholder="James Orior" class="from-reject-input">
-                    <hr>
+                    <input id="to-james-reject" type="text" placeholder="James Orior" class="from-reject-input">
+                    <hr style="margin-top: 3px">
                 </div>
             </div>
 
@@ -77,13 +77,81 @@
                 <div  class="input-text">
                     <div class="square_reject-div">
                         <div class="square-reject-ajax">
-                            <span onclick="square1()">Interview Invitation Template 1</span>
+                            <span>Little years of experience</span>
                         </div>
                         <div class="square-reject-ajax">
-                            <span onclick="square2()">Interview Invitation Template 2</span>
+                            <span >No relevant experience</span>
                         </div>
                         <div class="square-reject-ajax">
-                            <span onclick="square3()">Interview Invitation Template 3</span>
+                            <span >Not a Good Fit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div class="square_reject-div">
+                        <div class="square-reject-ajax1">
+                            <span>Did not meet the full list of essential criteria</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >No desired experience</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div class="square_reject-div">
+                        <div class="square-reject-ajax1">
+                            <span>Not enough evidence of experience / portfolio</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >Other candidates were better</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div class="square_reject-div">
+                        <div class="square-reject-ajax">
+                            <span>Do some work experience</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >Improve on CV contents</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >Do a Certification Course</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div  class="input-text">
+                    <div class="square_reject-div">
+                        <div class="square-reject-ajax">
+                            <span>Improve on portfolio contents</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >Apply for Entry / Junior Roles</span>
+                        </div>
+                        <div class="square-reject-ajax">
+                            <span >Do a Certification Course</span>
                         </div>
                     </div>
                 </div>
@@ -94,11 +162,9 @@
                 <div class="from-span">
                 </div>
                 <div  class="input-text">
-                    <div  id="text-area">
-                        <textarea  placeholder="Invite sample letter contents goes here">
 
-                        </textarea>
-                    </div>
+                    <textarea id="reject-textarea"  placeholder="Enter details for your selections"></textarea>
+
                 </div>
             </div>
 

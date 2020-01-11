@@ -59,12 +59,55 @@ function square3() {
     });
 }
 
+function square1_cover() {
+    $.ajax({
+        method: "GET",
+        url: "square1-cover.html",
+    }).done(function( responseText ) {
+        $('#text-area').text(responseText);
+    });
+}
+function square2_cover() {
+
+    $.ajax({
+        method: "GET",
+        url: "square2-cover.html",
+    }).done(function( responseText ) {
+        $('#text-area').text(responseText);
+    });
+}
+function square3_cover() {
+
+    $.ajax({
+        method: "GET",
+        url: "square3-cover.html",
+    }).done(function( responseText ) {
+        $('#text-area').text(responseText);
+    });
+}
+
 function view_overlay() {
     $('.overlay').css('display', 'block');
 }
 
 function hide_overlay() {
     $('.overlay').css('display', 'none');
+}
+
+function view_overlay_reject() {
+    $('.overlay-reject').css('display', 'block');
+}
+
+function hide_overlay_reject() {
+    $('.overlay-reject').css('display', 'none');
+}
+
+function view_overlay_home() {
+    $('.overlay-home').css('display', 'block');
+}
+
+function hide_overlay_home() {
+    $('.overlay-home').css('display', 'none');
 }
 validateEmail('newtheme@outlook.com');
 function validateEmail(email) {
@@ -93,6 +136,9 @@ function read(show) {
     }  else {
         $("#about_result").css('display', 'none');
     }
+
+
+
 
 }
 
@@ -243,8 +289,23 @@ $(document).ready(function () {
     //         console.log("You are " + years + " years old!");
     //     });
     // }
+    $("#text-area").click(function () {
+        square1_cover(true);
+    });
+    $("#text-area").click(function () {
+        square2_cover(true);
+    });
+    $("#text-area").click(function () {
+        square3_cover(true);
+    });
+    $("#home").click(function () {
+        view_overlay_home(true);
+    });
     $("#aboutScreen").click(function () {
         view_overlay(true);
+    });
+    $("#aboutScreen").click(function () {
+        view_overlay_reject(true);
     });
     $("#text-area").click(function () {
         square1(true);

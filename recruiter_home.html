@@ -33,11 +33,9 @@
 
                 </div>
 
-
-
                 <button class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
 
-                <button class=" right_button2 btn">Reject CV</button>
+                <button class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
 
             </div>
         </header>
@@ -146,7 +144,7 @@
                                             </div>
                                             <div class="col-xl-3">
                                                 <img src="images/ppt.png">
-                                                \<p class="bold-p">Document.ppt</p>
+                                                <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>
                                         </div>
                                     </div>
@@ -159,46 +157,235 @@
             </div>
         </div>
     </div>
+
     <div class="overlay" style="display: none">
-        <div class="overlay-bg"></div>
-        <div class="white-background">
-            <header id="cv-header">
-                <a href="javascript: void (0);" onclick="hide_overlay()"><img  src="images/red%20triangle.png"></a>
-                <h1>Send rejection & feedback</h1>
-            </header>
+        <div class="overlay-bg">
+            <div class="background" onclick="hide_overlay()"></div>
+            <div class="white-background">
+                <header class="cv-header">
+                    <a href="javascript: void (0);"  onclick="hide_overlay()" ><img  src="images/red%20triangle.png"></a>
+                    <h1>Send interview invite</h1>
+                </header>
 
-            <div class="content">
-                <div class="content-space"></div>
-                <span>From:</span>
-                <input id="sender-name" type="text" placeholder="Sender name" class="from-input">
-                <hr>
-                <input id="sender-emailadress" type="text" placeholder="Sender email address" class="from-input">
-                <hr>
-                <span>To:</span>
-                <input id="James-Orior" type="text" placeholder="James Orior" class="from-input">
-                <hr style="margin: 30px 60px 0px 180px;">
-                <p class="select"> Select why you're rejecting James Orior Application</p>
-                <div class="square_reject-div">
-                    <div class="square-reject-ajax">
-                        <span onclick="square1()">Interview Invitation Template 1</span>
+                <div class="content">
+                    <div class="content-space">
                     </div>
-                    <div class="square-reject-ajax">
-                        <span onclick="square2()">Interview Invitation Template 2</span>
-                    </div>
-                    <div class="square-reject-ajax">
-                        <span onclick="square3()">Interview Invitation Template 3</span>
-                    </div>
-                </div>
-                <div class="square_reject-div">
-                    <div class="square-reject2-ajax">
-                        <span onclick="square1()">Interview Invitation Template 1</span>
-                    </div>
-                    <div class="square-reject-ajax">
-                        <span onclick="square2()">Interview Invitation Template 2</span>
-                    </div>
-                </div>
-                <textarea  id="text-area" placeholder="hdddddddddddddddddddddddddddddddddddd"></textarea>
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span>From:</span>
+                        </div>
 
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender name" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span></span>
+                        </div>
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender email address" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span" style="margin-top: 12px;" >
+                            <span> To:</span>
+                        </div>
+                        <div  class="input-text">
+                            <input id="to-james" type="text" placeholder="James Orior" class="from-reject-input">
+                            <hr style="margin-top: 3px">
+                        </div>
+                    </div>
+
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_invite-div">
+                                <div class="square-invite-ajax">
+                                    <button onclick="square1()"> <span>Interview Invitation Template 1</span> </button>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <button onclick="square2()"> <span >Interview Invitation Template 2</span> </button>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <button onclick="square3()"> <span >Interview Invitation Template 3</span> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+
+                            <textarea id="text-area"  placeholder="Enter details for your selections"></textarea>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-reject" style="display: none">
+        <div class="overlay-bg">
+            <div class="background" onclick="hide_overlay_reject()"> </div>
+            <div class="white-background">
+                <header class="cv-header">
+                    <a href="javascript: void (0);"  onclick="hide_overlay_reject()"> <img  src="images/red%20triangle.png"></a>
+                    <h1>Send rejection & feedback</h1>
+                </header>
+
+                <div class="content">
+                    <div class="content-space">
+                    </div>
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span>From:</span>
+                        </div>
+
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender name" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                            <span></span>
+                        </div>
+                        <div class="input-text">
+                            <input  type="text" placeholder="Sender email address" class="from-reject-input">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span" style="margin-top: 12px;" >
+                            <span> To:</span>
+                        </div>
+                        <div  class="input-text">
+                            <input id="to-james-reject" type="text" placeholder="James Orior" class="from-reject-input">
+                            <hr style="margin-top: 3px">
+                        </div>
+                    </div>
+
+
+                    <p class="select"> Select why you're rejecting James Orior Application</p>
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_reject-div">
+                                <div class="square-reject-ajax">
+                                    <span>Little years of experience</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >No relevant experience</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Not a Good Fit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_reject-div">
+                                <div class="square-reject-ajax1">
+                                    <span>Did not meet the full list of essential criteria</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >No desired experience</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_reject-div">
+                                <div class="square-reject-ajax1">
+                                    <span>Not enough evidence of experience / portfolio</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Other candidates were better</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_reject-div">
+                                <div class="square-reject-ajax">
+                                    <span>Do some work experience</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Improve on CV contents</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Do a Certification Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+                            <div class="square_reject-div">
+                                <div class="square-reject-ajax">
+                                    <span>Improve on portfolio contents</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Apply for Entry / Junior Roles</span>
+                                </div>
+                                <div class="square-reject-ajax">
+                                    <span >Do a Certification Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="reject-full">
+                        <div class="from-span">
+                        </div>
+                        <div  class="input-text">
+
+                            <textarea id="reject-textarea"  placeholder="Enter details for your selections"></textarea>
+
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
