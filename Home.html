@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="keywords">
 
-     <link href="images/onboarding_icon2_u12.png" rel="icon">
+    <link href="images/onboarding_icon2_u12.png" rel="icon">
 
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
 
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
@@ -24,7 +23,7 @@
     <script>
         function loadVid() {
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
+            xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("demo").innerHTML =
                         this.responseText;
@@ -33,9 +32,10 @@
             xhttp.open("GET", "video.html", true);
             xhttp.send();
         }
+
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
+            xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("demo-vid").innerHTML =
                         this.responseText;
@@ -46,41 +46,41 @@
         }
 
 
-
-
     </script>
 </head>
 
 <body>
+<header id="header">
+
+
+    <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#"> <span class="left_circle"> <\> </span>
+            <h1> cvlink</h1>
+        </a>
+
+    </div>
+
+    <a>
+        <button class=" right_button btn" onclick="view_overlay_home()" style="right: 30px">Send CVLink</button>
+    </a>
+
+
+</header>
 <div id="home">
-    <header id="header">
-        <div  style="position: relative;">
 
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="#"> <span class="left_circle" > <\> </span>
-                    <h1> cvlink</h1>
-                </a>
-
-            </div>
-
-            <a ><button class=" right_button btn" onclick="view_overlay_home"  style="right: 30px">Send CVLink</button></a>
-
-        </div>
-    </header>
 
     <div class="angle">
 
 
-
         <div id="about">
-            <div >
+            <div>
                 <div class="row">
-                    <div  class="col-xl-6" style="padding-right: 40px">
+                    <div class="col-xl-6" style="padding-right: 40px">
                         <div class="square_book">
-                            <h1 class="user-name" >James Orior</h1>
-                            <span  class="blue_span">http://www.cvlink.co/jamesorior</span>
-                            <button class="delete_video" >
+                            <h1 class="user-name">James Orior</h1>
+                            <span class="blue_span">http://www.cvlink.co/jamesorior</span>
+                            <button class="delete_video">
                                 Delete Video
                             </button>
                         </div>
@@ -96,7 +96,7 @@
 
                     <div id="demo-vid" class="col-xl-6" style="padding-left: 40px;">
                         <div class="square_book">
-                            <h1 class="user-name" > My Document Repository</h1>
+                            <h1 class="user-name"> My Document Repository</h1>
                         </div>
 
                         <div class="square_video_box">
@@ -104,118 +104,112 @@
                                 <img src="images/w_open.png">
                                 <p>No document found</p>
 
-                                <button  class="upload-video" onclick="loadDoc()">Upload documents</button></a>
+                                <button class="upload-video" onclick="loadDoc()">Upload documents</button>
+                                </a>
                             </div>
                         </div>
 
-                     </div>
-                 </div>
-             </div>
+                    </div>
+                </div>
+
+            </div>
 
 
-
-         </div>
+        </div>
 
     </div>
 </div>
-    <div class="overlay-home" style="display: none">
+ <div class="overlay-home" style="display: none">
 
-        <div class="overlay-home-bg" onclick="hide_overlay_home()">
-            <div class="background"></div>
-            <div class="white-background">
-                <header class="cv-header">
-                    <a href="javascript: void (0);"  onclick="hide_overlay_home()"><img  src="images/red%20triangle.png"></a>
-                    <h1>Send interview invite</h1>
-                </header>
+    <div class="overlay-home-bg" onclick="hide_overlay_home()">
+    </div>
+    <div class="white-background">
+        <header class="cv-header">
+            <a href="javascript: void (0);" onclick="hide_overlay_home()"><img src="images/red%20triangle.png"></a>
+            <h1>Send interview invite</h1>
+        </header>
 
-                <div class="content">
-                    <div class="content-space">
-                    </div>
-                    <div class="reject-full">
-                        <div class="from-span">
-                            <span>To:</span>
+        <div class="content">
+            <div class="content-space">
+            </div>
+            <div class="reject-full">
+                <div class="from-span">
+                    <span>To:</span>
+                </div>
+
+                <div class="input-text">
+                    <input type="text" placeholder="Sender name" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                    <span></span>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder="Sender email address" class="from-reject-input">
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div class="input-text">
+                    <div class="square_invite-div">
+                        <div class="square-invite-ajax">
+                            <button onclick="square1_cover()"><span>Cover Letter Template 1</span></button>
                         </div>
-
-                        <div class="input-text">
-                            <input  type="text" placeholder="Sender name" class="from-reject-input">
-                            <hr>
+                        <div class="square-invite-ajax">
+                            <button onclick="square2_cover()"><span>Cover Letter Template 2</span></button>
                         </div>
-                    </div>
-
-
-                    <div class="reject-full">
-                        <div class="from-span">
-                            <span></span>
-                        </div>
-                        <div class="input-text">
-                            <input  type="text" placeholder="Sender email address" class="from-reject-input">
-                            <hr>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="reject-full">
-                        <div class="from-span">
-                        </div>
-                        <div  class="input-text">
-                            <div class="square_invite-div">
-                                <div class="square-invite-ajax">
-                                    <button onclick="square1_cover()"> <span>Cover Letter Template 1</span> </button>
-                                </div>
-                                <div class="square-invite-ajax">
-                                    <button onclick="square2_cover()"> <span >Cover Letter Template 2</span> </button>
-                                </div>
-                                <div class="square-invite-ajax">
-                                    <button onclick="square3_cover()"> <span >Cover Letter Template 3</span> </button>
-                                </div>
-                            </div>
+                        <div class="square-invite-ajax">
+                            <button onclick="square3_cover()"><span>Cover Letter Template 3</span></button>
                         </div>
                     </div>
+                </div>
+            </div>
 
 
+            <div class="reject-full">
+                <div class="from-span">
+                </div>
+                <div class="input-text">
 
-                    <div class="reject-full">
-                        <div class="from-span">
-                        </div>
-                        <div  class="input-text">
-
-                            <textarea id="text-area"  placeholder="Enter details for your selections"></textarea>
-
-                        </div>
-                    </div>
-
+                    <textarea id="text-area" placeholder="Enter details for your selections"></textarea>
 
                 </div>
             </div>
+
+
         </div>
     </div>
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
+</div>
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
 <!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/mobile-nav/mobile-nav.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/additional-methods.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-    <script src="js/book.js"></script>
-
-
-
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="js/book.js"></script>
 
 
 </body>

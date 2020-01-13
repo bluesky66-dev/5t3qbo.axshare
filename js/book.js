@@ -86,20 +86,22 @@ function square3_cover() {
     });
 }
 
-function view_overlay() {
-    $('.overlay').css('display', 'block');
-}
+    function view_overlay() {
+        $('.overlay').css('display', 'block') ;
 
+    }
+    function view_overlay_reject() {
+        $('.overlay-reject').css('display', 'block');
+
+    }
 function hide_overlay() {
     $('.overlay').css('display', 'none');
-}
-
-function view_overlay_reject() {
-    $('.overlay-reject').css('display', 'block');
+    $('.overlay-reject').css('display', 'none');
 }
 
 function hide_overlay_reject() {
     $('.overlay-reject').css('display', 'none');
+    $('.overlay').css('display', 'none');
 }
 
 function view_overlay_home() {
