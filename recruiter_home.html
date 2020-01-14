@@ -21,32 +21,34 @@
 </head>
 
 <body>
+<header id="header">
+    <div  style="">
+
+        <div class="logo float-left">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="#"> <span class="left_circle" > <\> </span>
+                <h1> cvlink</h1>
+            </a>
+
+        </div>
+
+        <button class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
+
+        <button class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
+
+    </div>
+</header>
     <div id="aboutScreen">
-        <header id="header">
-            <div  style="position: relative;">
 
-                <div class="logo float-left">
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <a href="#"> <span class="left_circle" > <\> </span>
-                        <h1> cvlink</h1>
-                    </a>
 
-                </div>
-
-                <button class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
-
-                <button class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
-
-            </div>
-        </header>
-
-        <div  class="angle">
+        <div  class="angle-recruiter">
             <div id="about">
                 <div >
                     <div class="row">
                         <div class="col-xl-6" style="padding-right: 40px">
                             <div class="square_book">
-                                <h1 class="user-name" >James Orior</h1>
+                                <h1 class="user-name" >James Orior : </h1>
+                                <span>Hardworking, Trustworthy, Dynamic, and Determined Individual</span>
                                 <button class="delete_video" >
                                     video pitch
                                 </button>
@@ -157,10 +159,83 @@
             </div>
         </div>
     </div>
+    <hr style="background: #077cff">
+    <div class="footer">
+        <div class="row footer-first" >
+            <div class="col-xl-5 footer-circle">
+                <div class="circle-sa51 ">
+                    <div class="sa51">
+                        <img src="images/sa51.png">
+                    </div>
+                    <div class="sa-span">
+                        <span>CVLink</span>
+                    </div>
+
+                </div>
+                <div class="circle-sa51 send">
+                    <span>Don't just send your CV into a black hole, rather pitch employers with CVLink and make that first and lasing impression count.</span>
+
+                </div>
+            </div>
+
+            <div class="col-xl-2 space">
+            </div>
+
+            <div class="col-xl-2">
+                <div class="our-company">
+                    <p>Our Company</p>
+                    <a href="#"><span>How it works</span></a>
+                </div>
+            </div>
+            <div class="col-xl-3" style="margin: 0px;">
+                <div class="our-company">
+                    <p>Our Social Media Presence</p>
+                    <div class="footer-right" >
+                        <div>
+                            <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right" >
+                        <div>
+                            <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-second " >
+            <div class="col-xl-5 footer-circle">
+                <div class="footer-2019">
+                    <p>© 2019 CVLink</p>
+                </div>
+            </div>
+            <div class="col-xl-4 space"></div>
+
+            <div class="col-xl-3">
+                <div class="footer-bottom">
+                    <div >
+                        <a href="#"><span>Privacy Policy</span></a>
+                    </div>
+                    <div class="footer-term">
+                        <a href="#">
+                            <span>Terms & Conditions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="overlay" style="display: none">
-        <div class="overlay-bg">
-            <div class="background" onclick="hide_overlay()"></div>
+        <div class="overlay-bg" onclick="hide_overlay()"></div>
+            <div class="background" ></div>
             <div class="white-background">
                 <header class="cv-header">
                     <a href="javascript: void (0);"  onclick="hide_overlay()" ><img  src="images/red%20triangle.png"></a>
@@ -237,7 +312,7 @@
 
                 </div>
             </div>
-        </div>
+
     </div>
 
     <div class="overlay-reject" style="display: none">

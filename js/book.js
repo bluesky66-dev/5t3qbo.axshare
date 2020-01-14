@@ -291,16 +291,16 @@ $(document).ready(function () {
     //         console.log("You are " + years + " years old!");
     //     });
     // }
-    $("#text-area").click(function () {
+    $("#square1_cover").click(function () {
         square1_cover(true);
     });
-    $("#text-area").click(function () {
+    $("#square2_cover").click(function () {
         square2_cover(true);
     });
-    $("#text-area").click(function () {
+    $("#square3_cover").click(function () {
         square3_cover(true);
     });
-    $("#home").click(function () {
+    $("#home-link").click(function () {
         view_overlay_home(true);
     });
     $("#aboutScreen").click(function () {
@@ -309,13 +309,13 @@ $(document).ready(function () {
     $("#aboutScreen").click(function () {
         view_overlay_reject(true);
     });
-    $("#text-area").click(function () {
+    $("#square1").click(function () {
         square1(true);
     });
-    $("#text-area").click(function () {
+    $("#square2").click(function () {
         square2(true);
     });
-    $("#text-area").click(function () {
+    $("#square3").click(function () {
         square3(true);
     });
 
