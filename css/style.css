@@ -1445,6 +1445,16 @@ textarea {
     text-align: left;
 
 }
+#insign{
+    padding-left: 40px;
+}
+.angle-landing{
+    margin: 160px 120px 0px 120px;
+}
+.your-first{
+    padding-right: 40px;
+}
+
 
 
 @media (max-width: 1024px){
@@ -1464,6 +1474,16 @@ textarea {
     }
     .our-company{
         margin-top: 30px;
+    }
+    #insign{
+        padding: 0;
+        margin-top: 70px;
+    }
+    .account_people{
+        margin: 70px 0px;
+    }
+    .cv-get{
+        margin: 90px 0px;
     }
 }
 
@@ -1538,5 +1558,56 @@ textarea {
     }
     .footer-right{
         justify-content: center;
+    }
+    .angle-landing{
+        margin: 160px 15px 0px 15px;
+    }
+    .your-first{
+        padding: 0;
+    }
+    .landing-row{
+        margin: 0;
+    }
+    .first p{
+        font-size:40px;
+    }
+    #newset{
+        display: flex;
+        position: relative;
+        height: 100%;
+    }
+    #landing-img{
+        margin-left: 20px!important;
+    }
+    #under{
+        padding-top: 50px;
+    }
+    .account{
+        position: unset;
+        padding: 20px 0px;
+        margin-left: 30px;
+
+    }
+    .square-landing-book{
+        display: unset;
+
+    }
+    .login-button{
+        position: unset;
+    }
+    .cv-get button{
+        padding: 18px 36px;
+    }
+    .your-cvlink{
+        position: unset;
+        margin-top: 70px;
+
+    }
+
+}
+
+@media (max-width:  414px){
+    .header-button button{
+        padding: 13px 20px;
     }
 }
