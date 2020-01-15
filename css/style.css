@@ -1438,6 +1438,15 @@ textarea {
 .our-company{
     margin: 0;
 }
+.square_book span{
+    font-style: normal;
+    font-size: 18px;
+    color: #131031;
+    text-align: left;
+
+}
+
+
 @media (max-width: 1024px){
     .angle-home{
         margin: 150px 20px 0px 20px;
@@ -1458,9 +1467,26 @@ textarea {
     }
 }
 
-@media (max-width: 375px){
+@media (max-width:  414px){
+    .angle-home{
+        margin: 170px 15px 0px 15px;
+    }
+    #header {
+        height: 120px ;
+        display: unset;
+    }
+
+    #header.header-scrolled, #header.header-pages {
+        position: fixed;
+        top: 0;
+        padding: 0px;
+        background-color: #ffffff;
+        box-shadow: 0 0 30px rgba(127, 137, 161, .3);
+        height: 120px ;
+    }
     #header .logo{
-        margin-left: 5px;
+        margin-top: 10px;
+
     }
     .header-relative{
         position: unset;
@@ -1468,13 +1494,49 @@ textarea {
 
     }
     .header-home{
-        left: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
+
     .blue_span{
         padding: 5px 5px;
     }
     .home-button button{
         padding: 1px 5px;
 
+    }
+    .square_book{
+        position: unset;
+        display: block;
+    }
+    .delete_video_home{
+        position: unset;
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 23px 80px;
+
+
+    }
+    #demo{
+        margin-top: 100px;
+    }
+    .repost{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 50px;
+    }
+    .footer-circle{
+        margin: 0;
+    }
+    .send{
+        padding-right: 0px;
+    }
+    .our-company{
+        text-align: center;
+    }
+    .footer-right{
+        justify-content: center;
     }
 }
