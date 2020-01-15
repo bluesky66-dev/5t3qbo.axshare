@@ -101,7 +101,7 @@ function hide_overlay() {
 
 function hide_overlay_reject() {
     $('.overlay-reject').css('display', 'none');
-    $('.overlay').css('display', 'none');
+
 }
 
 function view_overlay_home() {
@@ -303,10 +303,10 @@ $(document).ready(function () {
     $("#home-link").click(function () {
         view_overlay_home(true);
     });
-    $("#aboutScreen").click(function () {
+    $("#interview").click(function () {
         view_overlay(true);
     });
-    $("#aboutScreen").click(function () {
+    $("#reject").click(function () {
         view_overlay_reject(true);
     });
     $("#square1").click(function () {

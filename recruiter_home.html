@@ -22,20 +22,21 @@
 
 <body>
 <header id="header">
-    <div  style="">
-
-        <div class="logo float-left">
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="#"> <span class="left_circle" > <\> </span>
-                <h1> cvlink</h1>
-            </a>
+    <div  class="recruiter">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="images/tag.png">
+            </div>
+            <div class="logo-span">
+                <span>CVLink</span>
+            </div>
 
         </div>
+        <div class="logo-button">
+        <button id="interview" class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
 
-        <button class=" right_button btn" onclick="view_overlay()">Invite for interview</button>
-
-        <button class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
-
+        <button id="reject" class=" right_button2 btn" onclick="view_overlay_reject()">Reject CV</button>
+        </div>
     </div>
 </header>
     <div id="aboutScreen">
@@ -277,7 +278,22 @@
                         </div>
                     </div>
 
-
+                    <div class="reject-full">
+                        <div class="from-span" style="margin-top: 12px;" >
+                            <span></span>
+                        </div>
+                        <div  class="input-text">
+                            <div class="subject">
+                                <div class="your-subject">
+                                    <span>Your subject line</span>
+                                </div>
+                                <div class="subject-e-g">
+                                    <input  type="text" placeholder="Subject e.g.Congratulations you're invited to attend interview" class="from-reject-input">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="reject-full">
                         <div class="from-span">
@@ -316,8 +332,8 @@
     </div>
 
     <div class="overlay-reject" style="display: none">
-        <div class="overlay-bg">
-            <div class="background" onclick="hide_overlay_reject()"> </div>
+        <div class="overlay-bg" onclick="hide_overlay_reject()">
+            <div class="background" > </div>
             <div class="white-background">
                 <header class="cv-header">
                     <a href="javascript: void (0);"  onclick="hide_overlay_reject()"> <img  src="images/red%20triangle.png"></a>
