@@ -923,7 +923,7 @@ input {
 
 .white-background {
     background-color: white;
-    width: 47vw;
+    width: 900px;
     height: 100vh;
     right: 0;
     position: fixed;
@@ -938,7 +938,7 @@ input {
     background-color: #dae2ef;
     height: 100px;
     z-index: 997;
-    width: 47vw;
+    width: 900px;
     position: fixed;
     top: 0;
     right: 0;
