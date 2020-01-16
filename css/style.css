@@ -1498,6 +1498,12 @@ textarea {
     }
 }
 
+@media (max-width:  768px){
+    .square_book span{
+        font-size: 14px;
+    }
+}
+
 @media (max-width:  414px){
     .angle-home{
         margin: 170px 15px 0px 15px;
