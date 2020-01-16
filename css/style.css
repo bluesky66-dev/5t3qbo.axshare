@@ -1681,4 +1681,10 @@ textarea {
     .header-button button{
         padding: 13px 20px;
     }
+    .blue_span {
+        padding: 5px 5px;
+    }
+    .home-button button {
+        padding: 1px 5px;
+    }
 }
