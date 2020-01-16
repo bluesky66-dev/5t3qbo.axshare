@@ -207,8 +207,6 @@ a {
     position: absolute;
     right: 180px;
     top: 25px;
-    width: 196px;
-    height: 50px;
     background: inherit;
     background-color: rgba(7, 124, 255, 1);
     border: none;
@@ -221,6 +219,7 @@ a {
     font-style: normal;
     font-size: 16px;
     color: #ffffff;
+    padding: 13px 36px;
 
 }
 .header-home{
@@ -237,9 +236,6 @@ a {
     position: absolute;
     right: 20px;
     top: 25px;
-    width: 141px;
-    height: 50px;
-
     box-sizing: border-box;
     border-width: 2px;
     border-style: solid;
@@ -249,6 +245,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     color: #077CFF;
+    padding: 11px 35px;
 
 }
 
@@ -1454,8 +1451,15 @@ textarea {
 .your-first{
     padding-right: 40px;
 }
-
-
+.rec-left{
+    padding-right: 40px
+}
+.rec-right{
+    padding-left: 40px;
+}
+.rec-row{
+    margin: 0;
+}
 
 @media (max-width: 1024px){
     .angle-home{
@@ -1484,6 +1488,13 @@ textarea {
     }
     .cv-get{
         margin: 90px 0px;
+    }
+    .rec-left{
+        padding: 0;
+        margin-bottom:170px;
+    }
+    .rec-right{
+        padding: 0;
     }
 }
 
@@ -1529,6 +1540,7 @@ textarea {
     .square_book{
         position: unset;
         display: block;
+        text-align: center;
     }
     .delete_video_home{
         position: unset;
@@ -1603,10 +1615,63 @@ textarea {
         margin-top: 70px;
 
     }
+    .angle-recruiter{
+        margin: 150px 15px 0px 15px;
+    }
+    #header .right_button{
+        position: unset;
+    }
+    #header .right_button2{
+        position: unset;
+        margin-left: 20px;
+
+    }
+    .logo-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .delete_video {
+        position: unset;
+        border-left-width: 5px;
+        border-radius: 20px;
+        padding: 23px 80px;
+        margin-top: 10px;
+    }
+    .square-rec-video-box{
+        margin-top: 100px;
+    }
+    .rec-right{
+        margin-top: 70px;
+        margin-bottom: 170px;
+    }
+    #rec-doc{
+        display: flex;
+        align-items: center;
+    }
+    .footer-circle{
+        text-align: center;
+    }
+    .space{
+        display: none;
+    }
+    .white-background{
+        width: 100vw;
+    }
+    .cv-header{
+        width: 100vw;
+    }
+    .reject-full{
+        margin: 0px 15px;
+    }
+    .from-span{
+        width: 15vw;
+    }
+
 
 }
 
-@media (max-width:  414px){
+@media (max-width:  320px){
     .header-button button{
         padding: 13px 20px;
     }
