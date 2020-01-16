@@ -1673,6 +1673,10 @@ textarea {
     .from-span{
         width: 15vw;
     }
+    .footer-bottom{
+        justify-content: center;
+        margin-left: 0;
+    }
 
 
 }
