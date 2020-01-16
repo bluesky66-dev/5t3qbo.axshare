@@ -223,7 +223,7 @@ a {
 
 }
 .header-home{
-    position: unset;
+    position: absolute;
     right: 30px;
     display: flex;
     align-items: center;
@@ -492,14 +492,16 @@ a {
 
 }
 
-#about .square_video_box p {
+#about .square_video_box span {
     font-weight: 700;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 14px;
     color: #666666;
     text-align: center;
-    margin: 0px 20px;
 }
-
+#about .square_video_box p{
+    line-height: 14px;
+}
 .square_video .upload-video {
     width: 187px;
     height: 72px;
@@ -511,7 +513,7 @@ a {
     font-size: 16px;
     border: 0;
     color: #ffffff;
-    margin-top:40px;
+    margin-top:25px;
 }
 
 /*recruiter_home*/
@@ -1346,7 +1348,7 @@ textarea {
 
 }
 
-.sa-span a{
+.sa-span span{
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 0px;
@@ -1357,13 +1359,13 @@ textarea {
     margin-left: 30px;
 }
 
-.send {
+.send  {
     background-color: rgba(255, 255, 255, 0);
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
     color: #131031;
-    padding-right: 89px;
+
     padding-top: 30px;
 }
 
@@ -1534,6 +1536,7 @@ textarea {
         display: flex;
         justify-content: center;
         margin-top: 10px;
+        position: unset;
     }
 
     .blue_span{
@@ -1550,7 +1553,7 @@ textarea {
     }
     .delete_video_home{
         position: unset;
-        margin-top: 10px;
+        margin-top: 40px;
         border-radius: 20px;
         padding: 23px 80px;
 
@@ -1680,7 +1683,11 @@ textarea {
 
 
 }
-
+@media (max-width:  375px){
+    .delete_video_home{
+        margin-top: 18px;
+    }
+}
 @media (max-width:  320px){
     .header-button button{
         padding: 13px 20px;
@@ -1689,6 +1696,16 @@ textarea {
         padding: 5px 5px;
     }
     .home-button button {
-        padding: 1px 5px;
+        padding: 2px 0px;
+        font-size:15px;
+    }
+    .sa-span span{
+        font-size: 50px;
+    }
+    .header-home{
+        position: unset;
+    }
+    .delete_video_home{
+        margin-top: 17px;
     }
 }
