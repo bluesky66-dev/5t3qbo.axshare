@@ -270,7 +270,7 @@ a {
 }
 .angle-home{
     height: 100%;
-    margin: 300px 120px 112px 120px;
+    margin: 300px 00px 112px 0px;
 }
 
 .mobile-nav {
@@ -1464,6 +1464,9 @@ textarea {
 }
 
 @media (max-width: 1024px){
+    .container{
+        padding: 0;
+    }
     .angle-home{
         margin: 150px 20px 0px 20px;
     }
@@ -1504,9 +1507,15 @@ textarea {
     .square_book span{
         font-size: 14px;
     }
+    .container{
+        padding: 0;
+    }
 }
 
 @media (max-width:  414px){
+    .container{
+        padding: 0;
+    }
     .angle-home{
         margin: 170px 15px 0px 15px;
     }
@@ -1689,6 +1698,9 @@ textarea {
     }
 }
 @media (max-width:  320px){
+    .container{
+        padding: 0;
+    }
     .header-button button{
         padding: 13px 20px;
     }
