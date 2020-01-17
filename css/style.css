@@ -202,6 +202,9 @@ a {
     padding: 13px 35px;
     color: white;
 }
+.container{
+    max-width: 1700px;
+}
 
 #header .right_button {
     position: absolute;
@@ -392,7 +395,7 @@ a {
     font-size: 18px;
     color: #131031;
     margin: 0;
-    padding-left: 37px;
+    padding-left: 10px;
 }
 
 .blue_span {
@@ -583,10 +586,13 @@ a {
     text-align: left;
     align-items: center;
 }
-
+square-landing-book span{
+    font-weight: 400;
+}
 .square-landing-video {
     width: 100%;
 }
+
 
 .square-landing-video-box {
 
@@ -923,7 +929,7 @@ input {
 
 .white-background {
     background-color: white;
-    width: 900px;
+    width: 800px;
     height: 100vh;
     right: 0;
     position: fixed;
@@ -931,6 +937,7 @@ input {
     -webkit-transtition: left .3s ease-in-out, right .3s ease-in-out;
     transition: left .3s ease-in-out, right .3s ease-in-out;
     z-index: 1000;
+    overflow: scroll;
 
 }
 
@@ -938,7 +945,7 @@ input {
     background-color: #dae2ef;
     height: 100px;
     z-index: 997;
-    width: 900px;
+    width: 800px;
     position: fixed;
     top: 0;
     right: 0;
@@ -1053,6 +1060,7 @@ input {
     font-weight: 400;
     color: rgb(153, 153, 153);
     border: 0;
+    width: 100%;
 }
 
 #to-james {
@@ -1510,6 +1518,9 @@ textarea {
     .container{
         padding: 0;
     }
+    .from-span{
+        width: 9vw;
+    }
 }
 
 @media (max-width:  414px){
@@ -1689,12 +1700,39 @@ textarea {
         justify-content: center;
         margin-left: 0;
     }
+    .select{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .square_reject-div{
+        display: unset;
+    }
+    .square-reject-ajax{
+        width: 100%;
+    }
+    .square-reject-ajax1{
+        width: 100%;
+    }
+    .your-subject{
+        font-size: 14px;
+        text-align: center;
+    }
 
 
 }
 @media (max-width:  375px){
     .delete_video_home{
         margin-top: 18px;
+    }
+    .delete_video{
+        margin-top: 17px;
+    }
+    .cv-header img{
+        left: 10px;
+    }
+    .square-invite-ajax{
+        width: 30%;
     }
 }
 @media (max-width:  320px){
@@ -1720,4 +1758,21 @@ textarea {
     .delete_video_home{
         margin-top: 17px;
     }
+    .delete_video{
+        margin-top: 17px;
+    }
+    .cv-header img{
+        left: 5px;
+    }
+    #header .right_button{
+        padding: 5px;
+    }
+    .your-subject{
+        text-align: center;
+        font-size: 14px;
+    }
+    .square-invite-ajax{
+        width: 30%;
+    }
+
 }
