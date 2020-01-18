@@ -68,7 +68,7 @@ html {
 body {
     background: #fff;
     color: #444;
-    font-family: Poppins;
+    font-family: 'Poppins Black', 'Poppins Regular', 'Poppins';
 }
 
 a:hover {
@@ -196,6 +196,7 @@ a {
     border: none;
     border-radius: 5px;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -274,7 +275,7 @@ a {
 }
 .angle-home{
     height: 100%;
-    margin: 300px 00px 112px 0px;
+    margin: 300px 120px 112px 120px;
 }
 
 .mobile-nav {
@@ -396,7 +397,7 @@ a {
     font-size: 18px;
     color: #131031;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .blue_span {
@@ -428,6 +429,7 @@ a {
     font-size: 16px;
     padding: 8px 47px;
     color: white;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
 }
 .home-button button:hover{
     background-color: black;
@@ -502,9 +504,10 @@ a {
     font-size: 14px;
     color: #666666;
     text-align: center;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 #about .square_video_box p{
-    line-height: 14px;
+    line-height: 19px;
 }
 .square_video .upload-video {
     width: 187px;
@@ -569,11 +572,13 @@ a {
 .bold-p {
     font-weight: 600;
     margin: 0px;
+    font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins';
 
 }
 
 .solid-p {
     font-weight: 400;
+    font-family: 'Poppins';
 }
 
 
@@ -601,6 +606,7 @@ square-landing-book span{
     margin-top: 30px;
     border-radius: 10px;
     padding: 12px;
+    max-width: 600px;
 }
 
 .make-first {
@@ -1366,15 +1372,17 @@ textarea {
     font-size: 60px;
     color: #077CFF;
     margin-left: 30px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 
 .send  {
+    font-family: 'Poppins';
     background-color: rgba(255, 255, 255, 0);
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
     color: #131031;
-
+    max-width: 764px;
     padding-top: 30px;
 }
 
@@ -1390,6 +1398,7 @@ textarea {
     font-style: normal;
     font-size: 18px;
     color: #333333;
+    font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins';
 }
 
 .space {
@@ -1418,7 +1427,7 @@ textarea {
 }
 
 .footer-2019 {
-
+    font-family: 'Poppins';
     color: white;
 }
 
@@ -1427,6 +1436,7 @@ textarea {
     align-items: center;
     margin-left: 40px;
     color: white;
+    font-family: 'Poppins';
 }
 
 .footer-term {
@@ -1446,11 +1456,14 @@ textarea {
 .our-company{
     margin: 0;
 }
-.square_book span{
+.square_book_span{
     font-style: normal;
     font-size: 18px;
     color: #131031;
     text-align: left;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+    font-weight: 500;
+    padding-right: 180px;
 
 }
 #insign{
@@ -1471,6 +1484,12 @@ textarea {
 .rec-row{
     margin: 0;
 }
+.first-span{
+    max-width: 585px;
+    font-size: 16px;
+    color: #131031;
+}
+
 
 @media (max-width: 1024px){
     .container{

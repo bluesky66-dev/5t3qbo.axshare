@@ -31,7 +31,7 @@ class CVUser {
 		global $db;
 		$sql    = "SELECT  us.f_name AS first_name,
 						us.l_name AS last_name,						
-						us.l_name AS email
+						us.email AS usEmail
 						FROM tbl_user us";
 		$result = $db->queryArray( $sql );
 		if ( ! $result ) {
