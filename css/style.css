@@ -971,6 +971,7 @@ input {
     font-size: 20px;
     color: #131031;
     text-align: center;
+    font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins';
 
 }
 
@@ -1053,6 +1054,11 @@ input {
     font-size: 18px;
     width: 5vw;
     align-items: center;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    color: #131031;
+    text-align: center;
 }
 
 .input-text {
@@ -1115,6 +1121,8 @@ input {
     width: 100%;
     padding: 10px 20px;
     margin: 0px 20px 20px 0px;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 .square-reject-ajax span {
@@ -1127,6 +1135,8 @@ input {
     width: 100%;
     padding: 10px 20px;
     margin: 0px 20px 20px 0px;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 .select {
@@ -1135,6 +1145,8 @@ input {
     margin-left: 155px;
     margin-top: 20px;
     margin-bottom: 23px;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+    font-weight: 500;
 }
 
 
@@ -1164,6 +1176,8 @@ input {
     width: 100%;
     height: 100vh;
     margin-top: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 textarea {
@@ -1179,6 +1193,8 @@ textarea {
 .square-reject-ajax1 :hover {
     background-color: black;
     color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 .square_invite-div {
@@ -1208,6 +1224,7 @@ textarea {
     margin: 0px 20px 20px 0px;
     height: 20vh;
     background-color: #077cff;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
 }
 
 .first p {
@@ -1283,6 +1300,8 @@ textarea {
     font-size: 18px;
     text-align: left;
     width: 30%;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
+
 }
 .subject-e-g{
     width: 70%;
@@ -1488,6 +1507,10 @@ textarea {
     max-width: 585px;
     font-size: 16px;
     color: #131031;
+}
+#reject-textarea{
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 
@@ -1724,6 +1747,8 @@ textarea {
         margin-left: 10px;
         margin-right: 10px;
         text-align: center;
+        font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+        font-weight: 500;
     }
     .square_reject-div{
         display: unset;
