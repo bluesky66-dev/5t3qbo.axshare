@@ -623,6 +623,7 @@ square-landing-book span{
     color: #131031;
     margin: 0;
     padding-left: 37px;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 
 .login-button {
@@ -634,11 +635,18 @@ square-landing-book span{
     color: #077CFF;
     background: #ffffff;
     border: 0;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 
 .account {
     position: absolute;
     right: 136px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #131031;
+
 }
 
 .register-input {
@@ -650,6 +658,7 @@ square-landing-book span{
     border: solid 1px #d0daeb;
     padding-left: 20px;
     margin: 15px 25px;
+    font-family: 'Poppins';
     /*border-color: transparent;*/
 }
 
@@ -850,6 +859,10 @@ html {
 
 .checkbox-button {
     cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 input[type=checkbox] {
@@ -1287,6 +1300,14 @@ textarea {
     text-align: center;
     margin-top: 20px;
 
+}
+.account-span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 98px;
 }
 .subject{
     margin: 30px 0px 0px 0px;
