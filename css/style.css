@@ -949,7 +949,7 @@ input {
 
 .white-background {
     background-color: white;
-    width: 800px;
+    width:400px;
     height: 100vh;
     right: 0;
     position: fixed;
@@ -965,7 +965,7 @@ input {
     background-color: #dae2ef;
     height: 100px;
     z-index: 997;
-    width: 800px;
+    width: 400px;
     position: fixed;
     top: 0;
     right: 0;
@@ -1059,7 +1059,7 @@ input {
 
 /*reset*/
 .reject-full {
-    margin: 0px 60px;
+    margin: 0px 15px;
     display: flex;
 }
 
@@ -1227,7 +1227,7 @@ textarea {
 .square-invite-ajax button {
     border: 5px solid #dce3f0;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 8px;
     color: white;
     align-items: center;
     justify-content: center;
