@@ -1551,6 +1551,41 @@ textarea {
     font-family: 'Poppins';
     font-weight: 400;
 }
+.word{
+    width: 160px;
+    height: 80px;
+}
+.word-select{
+    background-color:#dce3f0;
+    height: 40px;
+}
+.word-select span{
+    font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+}
+.download span{
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+}
+#word-see{
+    position: relative;
+}
+.word{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+
+
+
 
 @media (max-width: 1700px){
     .square_book_span{

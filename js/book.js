@@ -86,19 +86,19 @@ function square3_cover() {
     });
 }
 
-    function view_overlay() {
-        $('.overlay').css('display', 'block') ;
+function view_overlay() {
+    $('.overlay').css('display', 'block') ;
 
-    }
-    function view_overlay_reject() {
-        $('.overlay-reject').css('display', 'block');
+}
+function view_overlay_reject() {
+    $('.overlay-reject').css('display', 'block');
 
-    }
+}
+
 function hide_overlay() {
     $('.overlay').css('display', 'none');
     $('.overlay-reject').css('display', 'none');
 }
-
 function hide_overlay_reject() {
     $('.overlay-reject').css('display', 'none');
 
@@ -107,9 +107,15 @@ function hide_overlay_reject() {
 function view_overlay_home() {
     $('.overlay-home').css('display', 'block');
 }
-
 function hide_overlay_home() {
     $('.overlay-home').css('display', 'none');
+}
+
+function word(){
+    $('.word').css('display','block');
+    $('.word').css('position','absolute');
+    $('.word').css('top','30px');
+
 }
 validateEmail('newtheme@outlook.com');
 function validateEmail(email) {
@@ -318,6 +324,11 @@ $(document).ready(function () {
     $("#square3").click(function () {
         square3(true);
     });
+
+    $("#word-see").click(function () {
+        word(true);
+    })
+
 
 
 
