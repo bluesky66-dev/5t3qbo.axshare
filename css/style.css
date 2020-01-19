@@ -178,6 +178,22 @@ a {
     color: #077CFF;
     margin-left: 10px;
 }
+#header .rec-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+.rec-logo-img img {
+    box-sizing: border-box;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(7, 124, 255, 1);
+    border-radius: 50%;
+    font-weight: 600;
+    padding: 9px;
+}
 
 .header-h1 {
     font-weight: 900;
@@ -442,13 +458,14 @@ a {
     font-family: 'Poppins Medium', 'Poppins';
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     color: #131031;;
     text-align: center;
     border-radius: 0px 20px 20px 0px;
     border: 5px solid #becbe3;
     border-left-width: 0;
     padding: 23px 27px;
+
 }
 .delete_video_home{
     position: absolute;
@@ -482,7 +499,7 @@ a {
 
 .square_video_box .square_video {
     display: block;
-
+    padding: 0 20px;
     text-align: center;
 
 }
@@ -973,7 +990,7 @@ input {
 
 .cv-header img {
     position: absolute;
-    left: 38px;
+    left: 18px;
     top: 25px;
 }
 
@@ -1064,7 +1081,7 @@ input {
 }
 
 .from-span {
-    font-size: 18px;
+    font-size: 14px;
     width: 5vw;
     align-items: center;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
@@ -1127,7 +1144,7 @@ input {
 .square-reject-ajax1 span {
     border: 1px solid #dce3f0;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 10px;
     color: #333333;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
@@ -1141,7 +1158,7 @@ input {
 .square-reject-ajax span {
     border: 1px solid #dce3f0;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 10px;
     color: #333333;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
@@ -1154,8 +1171,8 @@ input {
 
 .select {
     color: #131031;
-    font-size: 18px;
-    margin-left: 155px;
+    font-size: 14px;
+
     margin-top: 20px;
     margin-bottom: 23px;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
@@ -1191,6 +1208,7 @@ input {
     margin-top: 30px;
     font-family: 'Poppins';
     font-weight: 400;
+    font-size: 13px;
 }
 
 textarea {
@@ -1216,7 +1234,7 @@ textarea {
 }
 
 .square-invite-ajax {
-    width: 20%;
+    width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1235,7 +1253,7 @@ textarea {
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
     margin: 0px 20px 20px 0px;
-    height: 20vh;
+    height: 9vh;
     background-color: #077cff;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
 }
@@ -1318,7 +1336,7 @@ textarea {
     font-weight: 700;
     font-style: normal;
     color: #131031;
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     width: 30%;
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
@@ -1541,6 +1559,9 @@ textarea {
     .delete_video_home{
         font-size: 17px;
     }
+    .first p{
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 1600px){
@@ -1552,6 +1573,17 @@ textarea {
         font-size: 15px;
         padding: 23px 17px;
     }
+    .your-cvlink {
+        position: unset;
+        margin-top: 70px;
+    }
+
+}
+@media (max-width: 1500px){
+    .first p{
+        font-size: 40px;
+    }
+
 
 }
 @media (max-width: 1400px){
@@ -1577,7 +1609,25 @@ textarea {
     .user-name{
         font-size: 15px;
     }
+    .square-landing-book {
+        display: unset;
+    }
+    .account {
+        position: unset;
+        padding: 20px 0px;
+        margin-left: 30px;
+    }
+    .login-button {
+        position: unset;
+    }
 
+
+
+}
+@media (max-width:1250px){
+    .first p{
+        font-size: 35px;
+    }
 }
 @media (max-width: 1200px){
     .square_book_span{
@@ -1587,6 +1637,10 @@ textarea {
     .delete_video_home{
         font-size: 13px;
         padding: 23px 3px;
+    }
+    #insign {
+        padding: 0;
+        margin-top: 70px;
     }
 
 }
@@ -1630,49 +1684,104 @@ textarea {
     .rec-right{
         padding: 0;
     }
+    #newset {
+        display: flex;
+        position: relative;
+        height: 100%;
+
+    }
+
 }
 
-@media (max-width:  768px){
-    .square_book span{
+@media (max-width:  768px) {
+    .square_book span {
         font-size: 14px;
     }
-    .container{
+
+    .container {
         padding: 0;
     }
-    .from-span{
+
+    .from-span {
         width: 9vw;
     }
+
     #header {
         height: 120px;
         display: unset;
     }
-    .header-relative {
-        position: unset;
-        display: unset;
+
+    #header .header-scrolled {
+        position: fixed;
+        top: 0;
+        padding: 0px;
+        background-color: #ffffff;
+        box-shadow: 0 0 30px rgba(127, 137, 161, .3);
+        height: 120px;
     }
+
+    #newset {
+        display: flex;
+        position: relative;
+        height: 100%;
+    }
+
     #header .logo {
         margin-top: 10px;
-        margin-left:0;
+        margin-left: 70px;
         display: flex;
         justify-content: center;
     }
+    #header .rec-logo {
+        position: absolute;
+        top: 25px;
+    }
+
     .header-home {
         display: flex;
         justify-content: center;
         margin-top: 10px;
         position: unset;
     }
+
     .blue_span {
         padding: 5px 5px;
     }
+
     .home-button button {
         padding: 1px 5px;
     }
-    .square_book_span{
+
+    .square_book_span {
 
         text-align: center;
     }
+
+    .let_your {
+        font-size: 25px;
+    }
+
+    .cv-get button {
+        font-size: 20px;
+    }
+
+    /*.logo-button {*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    margin-top: 5px;*/
+    /*}*/
+    /*#header .right_button {*/
+    /*    position: unset;*/
+    /*}*/
+    /*#header .right_button2 {*/
+    /*    position: unset;*/
+    /*    margin-left: 20px;*/
+    /*}*/
 }
+
+
+
+
 
 @media (max-width:  414px){
     .container{
@@ -1695,6 +1804,10 @@ textarea {
         height: 120px ;
     }
     #header .logo{
+        margin-top: 10px;
+
+    }
+    #header .rec-logo{
         margin-top: 10px;
 
     }
@@ -1817,7 +1930,7 @@ textarea {
         margin-top: 40px;
     }
     .square-rec-video-box{
-        margin-top: 100px;
+        margin-top: 130px;
     }
     .rec-right{
         margin-top: 70px;
@@ -1873,6 +1986,26 @@ textarea {
         text-align: center;
         padding: 0;
     }
+    .first p{
+        font-size: 32px;
+    }
+    #header .rec-logo{
+        position: absolute;
+        top: 2px;
+    }
+    .logo-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    #header .right_button{
+        paddiing:11px 8px!important;
+        font-size: 12px;
+    }
+    #header .right_button2{
+        font-size: 11px;
+        padding: 10px 22px;
+    }
 
 
 }
@@ -1881,7 +2014,7 @@ textarea {
         margin-top: 36px;
     }
     .delete_video{
-        margin-top: 17px;
+        margin-top:  37px;
     }
     .cv-header img{
         left: 10px;
@@ -1910,55 +2043,117 @@ textarea {
         align-self: center;
         margin-top: 70px;
     }
+    .first p{
+        font-size: 30px;
+    }
+    #header .rec-logo{
+        position: absolute;
+        top: 2px;
+    }
+    .logo-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    #header .right_button{
+        paddiing:11px 8px!important;
+        font-size: 12px;
+    }
+    #header .right_button2{
+        font-size: 11px;
+        padding: 10px 22px;
+    }
+    .square-rec-video-box {
+        margin-top: 120px;
+    }
+
+
 }
-@media (max-width:  320px){
-    .container{
+@media (max-width:  320px) {
+    .container {
         padding: 0;
     }
-    .header-button button{
+
+    .header-button button {
         padding: 13px 20px;
     }
+
     .home-button button {
         padding: 3px 5px 4px 5px;
         font-size: 13px;
     }
+
     .blue_span {
         padding: 5px 5px;
         font-size: 10px;
     }
-    .sa-span span{
+
+    .sa-span span {
         font-size: 50px;
     }
-    .header-home{
+
+    .header-home {
         position: unset;
     }
-    .delete_video_home{
+
+    .delete_video_home {
         margin-top: 36px;
     }
-    .delete_video{
-        margin-top: 17px;
+
+    .delete_video {
+        margin-top: 39px;
     }
-    .cv-header img{
+
+    .cv-header img
+
+    {
         left: 5px;
     }
-    #header .right_button{
+
+    #header .right_button {
         padding: 5px;
     }
-    .your-subject{
+
+    .your-subject {
         text-align: center;
         font-size: 14px;
     }
-    .square-invite-ajax{
+
+    .square-invite-ajax {
         width: 30%;
     }
-    .delete_video_home{
+
+    .delete_video_home {
         font-size: 15px;
     }
-    .footer-bottom{
+
+    .footer-bottom {
         font-size: 14px;
     }
-    .footer-2019 p{
+
+    .footer-2019 p {
         margin: 0;
+    }
+
+    .first p {
+        font-size: 24px;
+    }
+
+    .your-cvlink {
+        font-size: 10px;
+        margin-top: 80px;
+    }
+
+    .cv-get button {
+        font-size: 15px;
+    }
+
+    .let_your {
+        font-size: 30px;
+    }
+
+    .see {
+        font-size: 10px;
     }
 
 }
