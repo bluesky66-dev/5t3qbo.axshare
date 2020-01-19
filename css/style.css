@@ -394,10 +394,10 @@ a {
 
 .square_book .user-name {
     font-weight: 900;
-    font-size: 18px;
+    font-size: 15px;
     color: #131031;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .blue_span {
@@ -458,7 +458,7 @@ a {
     font-family: 'Poppins Medium', 'Poppins';
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
     color: #131031;
     text-align: center;
     border-radius: 0px 20px 20px 0px;
@@ -1498,12 +1498,12 @@ textarea {
 }
 .square_book_span{
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     color: #131031;
     text-align: left;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
     font-weight: 500;
-    padding-right: 180px;
+    padding-right: 142px;
 
 }
 #insign{
@@ -1532,6 +1532,63 @@ textarea {
 #reject-textarea{
     font-family: 'Poppins';
     font-weight: 400;
+}
+
+@media (max-width: 1700px){
+    .square_book_span{
+        font-size: 17px;
+    }
+    .delete_video_home{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1600px){
+    .square_book_span{
+        font-size: 15px;
+        padding-right: 140px;
+    }
+    .delete_video_home{
+        font-size: 15px;
+        padding: 23px 17px;
+    }
+
+}
+@media (max-width: 1400px){
+    .square_book_span{
+        font-size: 13px;
+        padding-right: 130px;
+    }
+    .delete_video_home{
+        font-size: 13px;
+        padding: 23px 7px;
+    }
+
+}
+@media (max-width: 1300px){
+    .square_book_span{
+        font-size: 13px;
+        padding-right: 90px;
+    }
+    .delete_video_home{
+        font-size: 13px;
+        padding: 23px 3px;
+    }
+    .user-name{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 1200px){
+    .square_book_span{
+        font-size: 13px;
+        padding-right: 70px;
+    }
+    .delete_video_home{
+        font-size: 13px;
+        padding: 23px 3px;
+    }
+
 }
 
 
@@ -1585,6 +1642,36 @@ textarea {
     .from-span{
         width: 9vw;
     }
+    #header {
+        height: 120px;
+        display: unset;
+    }
+    .header-relative {
+        position: unset;
+        display: unset;
+    }
+    #header .logo {
+        margin-top: 10px;
+        margin-left:0;
+        display: flex;
+        justify-content: center;
+    }
+    .header-home {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: unset;
+    }
+    .blue_span {
+        padding: 5px 5px;
+    }
+    .home-button button {
+        padding: 1px 5px;
+    }
+    .square_book_span{
+
+        text-align: center;
+    }
 }
 
 @media (max-width:  414px){
@@ -1637,20 +1724,18 @@ textarea {
     }
     .delete_video_home{
         position: unset;
-        margin-top: 40px;
+        margin-top: 36px;
         border-radius: 20px;
         padding: 23px 80px;
-
-
     }
     #demo{
-        margin-top: 100px;
+        margin-top: 120px;
     }
     .repost{
         display: flex;
         justify-content: center;
         align-self: center;
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .footer-circle{
         margin: 0;
@@ -1784,12 +1869,16 @@ textarea {
         font-size: 14px;
         text-align: center;
     }
+    .square_book_span {
+        text-align: center;
+        padding: 0;
+    }
 
 
 }
 @media (max-width:  375px){
     .delete_video_home{
-        margin-top: 18px;
+        margin-top: 36px;
     }
     .delete_video{
         margin-top: 17px;
@@ -1800,6 +1889,27 @@ textarea {
     .square-invite-ajax{
         width: 30%;
     }
+    .home-button button {
+        padding: 3px 5px 4px 5px;
+        font-size: 13px;
+    }
+    .blue_span {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .square_book_span{
+        padding: 0;
+        text-align: center;
+    }
+    #demo {
+        margin-top: 120px;
+    }
+    .repost {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 70px;
+    }
 }
 @media (max-width:  320px){
     .container{
@@ -1808,12 +1918,13 @@ textarea {
     .header-button button{
         padding: 13px 20px;
     }
+    .home-button button {
+        padding: 3px 5px 4px 5px;
+        font-size: 13px;
+    }
     .blue_span {
         padding: 5px 5px;
-    }
-    .home-button button {
-        padding: 2px 0px;
-        font-size:15px;
+        font-size: 10px;
     }
     .sa-span span{
         font-size: 50px;
@@ -1822,7 +1933,7 @@ textarea {
         position: unset;
     }
     .delete_video_home{
-        margin-top: 17px;
+        margin-top: 36px;
     }
     .delete_video{
         margin-top: 17px;
@@ -1839,6 +1950,15 @@ textarea {
     }
     .square-invite-ajax{
         width: 30%;
+    }
+    .delete_video_home{
+        font-size: 15px;
+    }
+    .footer-bottom{
+        font-size: 14px;
+    }
+    .footer-2019 p{
+        margin: 0;
     }
 
 }
