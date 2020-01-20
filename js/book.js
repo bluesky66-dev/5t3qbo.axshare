@@ -7,7 +7,7 @@ function upsign() {
                 this.responseText;
         }
     };
-    xhttp.open("GET", "signup.html", true);
+    xhttp.open("GET", "signup.php", true);
     xhttp.send();
 }
 function forgotpass() {
@@ -29,7 +29,7 @@ function never() {
                 this.responseText;
         }
     };
-    xhttp.open("GET", "sign-in.html", true);
+    xhttp.open("GET", "sign-in.php", true);
     xhttp.send();
 }
 function square1() {

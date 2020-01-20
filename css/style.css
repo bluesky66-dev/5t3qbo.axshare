@@ -1506,10 +1506,10 @@ textarea {
 }
 
 .home-left{
-    padding-right: 40px;
+    padding-right: 20px;
 }
 .home-right{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .our-company{
     margin: 0;
@@ -1588,22 +1588,15 @@ textarea {
 
 
 @media (max-width: 1700px){
-    .square_book_span{
-        font-size: 17px;
-    }
-    .delete_video_home{
-        font-size: 17px;
-    }
+
+
     .first p{
         font-size: 50px;
     }
 }
 
 @media (max-width: 1600px){
-    .square_book_span{
-        font-size: 15px;
 
-    }
     .delete_video_home{
         font-size: 15px;
         padding: 23px 17px;

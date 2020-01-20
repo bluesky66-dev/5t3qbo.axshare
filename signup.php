@@ -1,27 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title> nolawyer.org.uk </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="" name="keywords">
-
-     <link href="images/onboarding_icon2_u12.png" rel="icon">
-
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">-->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <script src="https://js.stripe.com/v3"></script>
+  <script src="https://js.stripe.com/v3"></script>
     <script>
         function insign() {
             var xhttp = new XMLHttpRequest();
@@ -36,9 +14,6 @@
         }
         </script>
 
-</head>
-
-<body>
 
     <div id="insign"   style="padding-left: 40px;">
                         <div class="square-landing-book">
@@ -65,7 +40,7 @@
                                         </label>
                                     </div>
 
-                                    <a href="Home.html"><button class="your-cvlink">Sign up & Get your cvlink</button></a>
+                                    <a href="Home.php"><button class="your-cvlink">Sign up & Get your cvlink</button></a>
                                 </div>
                             </div>
 
@@ -73,31 +48,3 @@
 
                     </div>
 
-    <script src="lib/jquery/jquery.min.js"></script>
-<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/additional-methods.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-    <script src="js/book.js"></script>
-
-
-
-
-
-</body>
-</html>

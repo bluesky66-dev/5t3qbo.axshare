@@ -1,147 +1,100 @@
-<footer class="main-footer">
-<!--    <strong>Copyright &copy; 2017-2018 <a href="#">MeadowAndPine</a>.</strong> All rights reserved.-->
-</footer>
+<div class="footer">
+    <div class="row footer-first" >
+        <div class="col-xl-5 footer-circle">
+            <div class="circle-sa51">
+                <div class="sa51">
+                    <a href="Home.html"><img src="images/sa51.png"></a>
+                </div>
+                <div class="sa-span">
+                    <a href="Home.html"><span>CVLink</span></a>
+                </div>
+
+            </div>
+            <div class="circle-sa51 send">
+                <span>Don't just send your CV into a black hole, rather pitch employers with CVLink and make that first and lasing impression count.</span>
+
+            </div>
+        </div>
+
+        <div class="col-xl-2 space col-md-2">
+        </div>
+
+        <div class="col-xl-2 col-md-5">
+            <div class="our-company">
+                <p>Our Company</p>
+                <a href="#"><span>How it works</span></a>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-5" style="margin: 0px;">
+            <div class="our-company">
+                <p>Our Social Media Presence</p>
+                <div class="footer-right" >
+                    <div>
+                        <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                    </div>
+                    <div class="footer-span">
+                        <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                    </div>
+                </div>
+
+                <div class="footer-right" >
+                    <div>
+                        <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                    </div>
+                    <div class="footer-span">
+                        <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer-second " >
+        <div class="col-xl-5 col-md-4 footer-circle">
+            <div class="footer-2019">
+                <p>© 2019 CVLink</p>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-4 space"></div>
+
+        <div class="col-xl-3 col-md-4">
+            <div class="footer-bottom">
+                <div >
+                    <a href="privacy.html"><span>Privacy Policy</span></a>
+                </div>
+                <div class="footer-term">
+                    <a href="terms.html"><span>Terms & Conditions</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!-- /.wrapper -->
 
 <!-- Start Core Plugins
    =====================================================================-->
 <!-- jQuery -->
-<script src="assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
-<!-- jquery-ui -->
-<script src="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
-<!-- Bootstrap -->
-<script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/jquery.simplePagination.js" type="text/javascript"></script>
-<!-- lobipanel -->
-<script src="assets/plugins/lobipanel/lobipanel.min.js" type="text/javascript"></script>
-<!-- Pace js -->
-<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
-<!-- SlimScroll -->
-<script src="assets/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript">    </script>
-<!-- FastClick -->
-<script src="assets/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
-<!-- CRMadmin frame -->
-<script src="assets/dist/js/custom.js" type="text/javascript"></script>
-<!-- End Core Plugins
-   =====================================================================-->
-<!-- Start Page Lavel Plugins
-   =====================================================================-->
-<!-- Counter js -->
-<script src="assets/plugins/counterup/waypoints.js" type="text/javascript"></script>
-<script src="assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-<script src="assets/mdl/material.min.js" type="text/javascript"></script>
-<!-- End Page Lavel Plugins
-   =====================================================================-->
-<script src="js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="js/jquery.blockUI.js" type="text/javascript"></script>
-<script src="js/jquery.form.js" type="text/javascript"></script>
-<!-- Start Theme label Script
-   =====================================================================-->
-<!-- Dashboard js -->
-<script type="text/javascript">
-    function insertParam(uri, key, value) {
-        var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-        var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-        if (uri.match(re)) {
-            return uri.replace(re, '$1' + key + "=" + value + '$2');
-        }
-        else {
-            return uri + separator + key + "=" + value;
-        }
-    }
-	$(function() {
-		"use strict"; // Start of use strict
-		//back to top
-		$('body').append('<div id="toTop" class="btn back-top"><span class="ti-arrow-up"></span></div>');
-		$(window).on("scroll", function () {
-			if ($(this).scrollTop() !== 0) {
-				$('#toTop').fadeIn();
-			} else {
-				$('#toTop').fadeOut();
-			}
-		});
-		$('#toTop').on("click", function () {
-			$("html, body").animate({scrollTop: 0}, 600);
-			return false;
-		});
+<script src="lib/jquery/jquery.min.js"></script>
+<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/mobile-nav/mobile-nav.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 
-		//lobipanel
-		$('.lobidrag').lobiPanel({
-			sortable: true,
-			editTitle: {
-				icon: 'ti-pencil'
-			},
-			unpin: {
-				icon: 'ti-move'
-			},
-			reload: {
-				icon: 'ti-reload'
-			},
-			minimize: {
-				icon: 'ti-minus',
-				icon2: 'ti-plus'
-			},
-			close: {
-				icon: 'ti-close'
-			},
-			expand: {
-				icon: 'ti-fullscreen',
-				icon2: 'ti-fullscreen'
-			}
-		});
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-		$('.lobidisable').lobiPanel({
-			reload: false,
-			close: false,
-			editTitle: false,
-			sortable: true,
-			unpin: {
-				icon: 'ti-move'
-			},
-			minimize: {
-				icon: 'ti-minus',
-				icon2: 'ti-plus'
-			},
-			expand: {
-				icon: 'ti-fullscreen',
-				icon2: 'ti-fullscreen'
-			}
-		});
-		//search
-		$('a[href="#search"]').on('click', function(event) {
-			event.preventDefault();
-			$('#search').addClass('open');
-			$('#search > form > input[type="search"]').focus();
-		});
-		$('#search, #search button.close').on('click keyup', function(event) {
-			if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-				$(this).removeClass('open');
-			}
-		});
-		//Datepicker
-		function datepic() {
-			var date = $('#minMaxExample,#minMaxExample2');
-			$(date).datepicker({
-				language: 'en',
-				minDate: new Date() // Now can select only dates, which goes after today
-			});
-		}
-		datepic();
-		//preloader
-		// makes sure the whole site is loaded
-		$( window ).on( "load", function() {
-			// will first fade out the loading animation
-			jQuery("#status").fadeOut();
-			// will fade out the whole DIV that covers the website.
-			jQuery("#preloader").delay(1000).fadeOut("slow");
-		});
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="js/book.js"></script>
 
-	});
-
-</script>
-<!-- End Theme label Script
-   =====================================================================-->
 </body>
 </html>
-
