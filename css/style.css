@@ -175,7 +175,7 @@ a {
     font-weight: 900;
     font-style: normal;
     font-size: 24px;
-    color: #077CFF;
+    color: #131031;
     margin-left: 10px;
 }
 #header .rec-logo {
@@ -384,7 +384,7 @@ a {
 }
 
 #about {
-    margin-top: 60px;
+    margin-top:  70px;
 }
 
 
@@ -1656,8 +1656,11 @@ textarea {
 }
 .your-second{
     padding: 0;
+    margin-top: 40px;
 }
-
+#mission-row{
+    padding-top:150px;padding-bottom: 110px;
+}
 
 
 @media (max-width: 1700px){
@@ -1690,6 +1693,9 @@ textarea {
     .square_book_span{
         font-size: 13px;
 
+    }
+    .your-second{
+        padding-left: 40px;
     }
 
 }
@@ -1742,6 +1748,9 @@ textarea {
     .forgot{
         margin: 0;
         text-align: center;
+    }
+    .your-second{
+        padding: 0;
     }
 
     /*.footer-circle{*/
@@ -1906,27 +1915,73 @@ textarea {
     /*}*/
 }
 
-@media (max-width: 767px){
-    .angle-landing{
+@media (max-width: 767px) {
+    .angle-landing {
         margin: 70px 15px 0px 15px;
         padding: 0px 15px;
     }
-    .our-company{
+
+    .our-company {
         text-align: center;
     }
-    .our-company{
+
+    .our-company {
         text-align: center;
     }
-    .footer-right{
+
+    .footer-right {
         display: flex;
         justify-content: center;
     }
-    .first p{
+
+    .first p {
         font-size: 42px;
         max-width: 600px;
     }
-    .we_are{
+
+    .we_are {
         font-size: 45px;
+    }
+
+    .footer-circle {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-pt {
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .circle-sa51 {
+        justify-content: center;
+    }
+
+    .send {
+        margin: 0 auto;
+    }
+
+    .cv-get button {
+        font-size: 15px;
+        padding: 34px 20px;
+    }
+
+    .header-button button {
+        font-size: 13px;
+    }
+    #mission-row{
+        padding-top: 60px;
+       padding-bottom: 100px;
+    }
+
+    .mission{
+        margin: 0;
     }
 }
 @media (max-width: 510px){
@@ -2344,7 +2399,7 @@ textarea {
     }
 
     .sa-span span {
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .header-home {
@@ -2388,7 +2443,7 @@ textarea {
 
     .footer-2019 p {
         margin: 0;
-        width: 150px;
+
     }
 
     .first p {

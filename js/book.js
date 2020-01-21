@@ -336,16 +336,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-    $("#never").click(function () {
-        never(true);
-    });
-
-
     $('#when_come').data('datepicker');
 
      $("#read").click(function () {
