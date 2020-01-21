@@ -10,28 +10,9 @@ function upsign() {
     xhttp.open("GET", "signup.html", true);
     xhttp.send();
 }
-function forgotpass() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("insign").innerHTML =
-                this.responseText;
-        }
-    };
-    xhttp.open("GET", "forgot.html", true);
-    xhttp.send();
-}
-function never() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("insign").innerHTML =
-                this.responseText;
-        }
-    };
-    xhttp.open("GET", "sign-in.html", true);
-    xhttp.send();
-}
+
+
+
 function square1() {
     $.ajax({
         method: "GET",
@@ -117,6 +98,30 @@ function word(){
     $('.word').css('top','30px');
 
 }
+
+function insign(){
+    $('.login').css('display','none');
+    $('.login-signin').css('display','block');
+}
+
+function upsign(){
+    $('.login-signin').css('display','none');
+    $('.login').css('display','block');
+}
+function forgotpass(){
+    $('.login-signin').css('display','none');
+    $('.forgot-screen').css('display','block');
+}
+function never(){
+
+    $('.forgot-screen').css('display','none');
+    $('.login-signin').css('display','block');
+}
+
+
+
+
+
 validateEmail('newtheme@outlook.com');
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -327,7 +332,10 @@ $(document).ready(function () {
 
     $("#word-see").click(function () {
         word(true);
-    })
+    });
+
+
+
 
 
 
@@ -336,12 +344,8 @@ $(document).ready(function () {
     $("#never").click(function () {
         never(true);
     });
-    $("#upsign").click(function () {
-        upsign(true);
-    });
-    $("#forgot").click(function () {
-        forgotpass(true);
-    });
+
+
     $('#when_come').data('datepicker');
 
      $("#read").click(function () {

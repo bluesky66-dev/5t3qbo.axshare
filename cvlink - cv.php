@@ -31,7 +31,7 @@
     <div class="overlay-bg">
     <div class="white-background">
         <header id="cv-header">
-            <a href="recruiter_home.php"><img src="images/red%20triangle.png"></a>
+            <a href="recruiter_home.html"><img src="images/red%20triangle.png"></a>
             <h1>Send interview invite</h1>
         </header>
 

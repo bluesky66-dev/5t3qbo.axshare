@@ -22,19 +22,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://js.stripe.com/v3"></script>
-    <script>
-        function insign() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("insign").innerHTML =
-                        this.responseText;
-                }
-            };
-            xhttp.open("GET", "sign-in.html", true);
-            xhttp.send();
-        }
-    </script>
+
 </head>
 <body>
 
@@ -93,44 +81,103 @@
 
                     </div>
 
-                    <div id="insign" class="col-xl-6" style="">
-                        <div class="square-landing-book">
-                            <h1 class="sign-name"> Sign up</h1>
-                            <span class="account">Already have account?</span>
-                            <button class="login-button" onclick="insign()">
-                                Login
-                            </button>
-                        </div>
+                    <div  class="col-xl-6 your-second" style="">
+                        <div class="login">
+                            <div class="square-landing-book">
+                                <h1 class="sign-name"> Sign up</h1>
+                                <span class="account">Already have account?</span>
+                                <button class="login-button" onclick="insign()">
+                                    Login
+                                </button>
+                            </div>
 
-                        <div class="square-sign-login-box">
-                            <div class="square-sign-box">
-                                <input id="first_name" type="text" name="first_name" value="" placeholder="First name"
-                                       class="register-input">
-                                <input id="last_name" type="text" name="last_name" value="" placeholder="Last name"
-                                       class="register-input">
-                                <input id="email" type="email" name="email" value="" placeholder="Email address"
-                                       class="register-input">
-                                <input id="password" type="password" name="password" value="" placeholder="Password"
-                                       class="register-input">
-                                <input id="repeat-password" type="password" name="repeat-password" value=""
-                                       placeholder="Your one liner e.g. 'Hardworking,Trustworthy,Dynamic, and Determined Individual' "
-                                       class="register-input">
-                                <div class="landing-bottom">
-                                    <div class="example">
-                                        <label class="checkbox-button">
-                                            <input type="checkbox" class="checkbox-button__input" id="choice1-1"
-                                                   name="choice1">
-                                            <span class="checkbox-button__control"></span>
-                                            <span class="checkbox-button__label"
-                                                  style="color:  #131031;">I agree to  <span class="terms"> mycvlink terms</span></span>
-                                        </label>
+                            <div class="square-sign-login-box">
+                                <div class="square-sign-box">
+                                    <input id="first_name" type="text" name="first_name" value="" placeholder="First name"
+                                           class="register-input">
+                                    <input id="last_name" type="text" name="last_name" value="" placeholder="Last name"
+                                           class="register-input">
+                                    <input id="email" type="email" name="email" value="" placeholder="Email address"
+                                           class="register-input">
+                                    <input id="password" type="password" name="password" value="" placeholder="Password"
+                                           class="register-input">
+                                    <input id="repeat-password" type="password" name="repeat-password" value=""
+                                           placeholder="Your one liner e.g. 'Hardworking,Trustworthy,Dynamic, and Determined Individual' "
+                                           class="register-input">
+                                    <div class="landing-bottom">
+                                        <div class="example">
+                                            <label class="checkbox-button">
+                                                <input type="checkbox" class="checkbox-button__input" id="choice1-1"
+                                                       name="choice1">
+                                                <span class="checkbox-button__control"></span>
+                                                <span class="checkbox-button__label"
+                                                      style="color:  #131031;">I agree to  <span class="terms"> mycvlink terms</span></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="your-cvlink"><a href="Home.html">
+                                            <button >Sign up & Get your cvlink</button></a></div>
+
                                     </div>
-
-                                    <div class="your-cvlink"><a href="Home.html">
-                                        <button >Sign up & Get your cvlink</button></a></div>
-
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="login-signin"   style="display: none;">
+                            <div class="square-landing-book">
+                                <h1 class="sign-name" > Sign in</h1>
+                                <span  class="account">Don't have an account?</span>
+                                <button id="upsign" class="login-button" onclick="upsign()" >
+                                    Sign up
+                                </button>
+                            </div>
+
+                            <div class="square-sign-login-box">
+                                <div class="square-sign-box">
+                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <input  type="password" name="password" value="" placeholder="Password"  class="register-input">
+                                    <div class="landing-bottom">
+                                        <div class="example">
+                                            <label class="checkbox-button">
+                                                <input type="checkbox" class="checkbox-button__input" id="" name="choice1">
+                                                <span class="checkbox-button__control"></span>
+                                                <span class="checkbox-button__label" style="color:  #131031;">Remember me</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="your-cvlink sign-in" ><a href="Home.html"><button >Sign in</button></a></div>
+
+                                    </div>
+                                    <a href="#"><div class="forgot">
+                                        <p id="forgot" onclick="forgotpass()">Forgot your password?</p>
+                                    </div></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div   class="forgot-screen" style="display: none">
+                            <div class="square-landing-book">
+                                <h1 class="sign-name" > Forgot your password?</h1>
+                            </div>
+
+                            <div>
+                                <div class="square-sign-box">
+                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <div class="landing-recover-bottom">
+                                        <button class="recover" style="width: 100%">Recover password</button>
+                                    </div>
+                                    <a href="#">
+                                        <div class="never">
+                                        <p onclick="never()">Never mind I have remembered</p>
+                                    </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
@@ -269,6 +316,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- /.wrapper -->
 
