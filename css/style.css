@@ -66,7 +66,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #f3f5f9;
     color: #444;
     font-family: 'Poppins Black', 'Poppins Regular', 'Poppins';
 }
@@ -156,7 +156,7 @@ a {
 #header .logo {
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 40px;
 }
 
 
@@ -204,7 +204,7 @@ a {
 
 .header-button {
     position: absolute;
-    right: 120px;
+    right: 40px;
 }
 
 .header-button button {
@@ -220,7 +220,7 @@ a {
     color: white;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 #header .right_button {
@@ -624,6 +624,7 @@ square-landing-book span{
     border-radius: 10px;
     padding: 12px;
     max-width: 600px;
+    background:#cfd8e9;
 }
 
 .make-first {
@@ -645,19 +646,19 @@ square-landing-book span{
 
 .login-button {
     position: absolute;
-    right: 40px;
+    right: 0px;
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
     color: #077CFF;
-    background: #ffffff;
+    background: #f3f5f9;
     border: 0;
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 
 .account {
     position: absolute;
-    right: 136px;
+    right: 117px;
     font-family: 'Poppins';
     font-weight: 400;
     font-style: normal;
@@ -676,6 +677,7 @@ square-landing-book span{
     padding-left: 20px;
     margin: 10px 0px;
     font-family: 'Poppins';
+    background-color: white;
     /*border-color: transparent;*/
 }
 
@@ -915,6 +917,7 @@ input {
     color: #131031;
     border: 1px solid #797979;
     border-radius: 5px;
+    background-color: white;
 }
 
 .checkbox-button__input:checked + .checkbox-button__control:after {
@@ -1414,7 +1417,9 @@ textarea {
 
 .footer {
     position: relative;
-    top: 35px;
+    top: 0;
+    margin-top: -16px;
+    background: white;
 }
 
 .footer-first {
@@ -1434,7 +1439,9 @@ textarea {
 .footer-circle {
     margin-left: 50px;
 }
-
+.footer-back{
+    padding-top: 50px;
+}
 .circle-sa51 {
     display: flex;
     align-items: center;
@@ -1539,10 +1546,11 @@ textarea {
 }
 .footer-pt{
     margin-left: -70px;
+    width: calc(100% - 150px);
 }
 .footer-term {
     margin-left: 30px;
-    margin-right: 40px;
+
 }
 .home-row{
     padding-bottom: 185px;
@@ -1570,11 +1578,11 @@ textarea {
 }
 #insign{
     padding-left: 80px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
-.angle-landing{
-    margin: 70px 120px 0px 120px;
-}
+/*.angle-landing{*/
+/*    margin: 70px 120px 0px 120px;*/
+/*}*/
 .your-first{
     margin: 0;
     padding: 0;
@@ -1628,7 +1636,9 @@ textarea {
     top: 25px;
     left: 30px;
 }
-
+.angle-landing{
+    margin: 0px 30px;
+}
 
 
 
@@ -1650,7 +1660,8 @@ textarea {
 
 @media (max-width: 1500px){
     .first p{
-        font-size: 44px;
+        font-size: 43px;
+        max-width: 600px;
     }
 
 }
@@ -1703,6 +1714,9 @@ textarea {
     }
     .first p{
         font-size: 50px;
+    }
+    .send{
+        margin-bottom: 50px;
     }
 
     /*.footer-circle{*/
@@ -1867,7 +1881,35 @@ textarea {
     /*}*/
 }
 
-
+@media (max-width: 767px){
+    .angle-landing{
+        margin: 70px 15px 0px 15px;
+        padding: 0px 15px;
+    }
+    .our-company{
+        text-align: center;
+    }
+    .our-company{
+        text-align: center;
+    }
+    .footer-right{
+        display: flex;
+        justify-content: center;
+    }
+    .first p{
+        font-size: 42px;
+        max-width: 600px;
+    }
+    .we_are{
+        font-size: 45px;
+    }
+}
+@media (max-width: 510px){
+    .first p{
+        font-size: 32px;
+        max-width: 500px;
+    }
+}
 
 
 
@@ -2099,7 +2141,7 @@ textarea {
         padding: 0;
     }
     .first p{
-        font-size: 32px;
+        font-size: 27px;
     }
     #header .rec-logo{
         position: absolute;
@@ -2190,7 +2232,7 @@ textarea {
 
 
     .first p {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     #header .rec-logo {
@@ -2251,7 +2293,11 @@ textarea {
 
     }
 
-
+@media (max-width: 374px){
+    .first p{
+        font-size: 22px;
+    }
+}
 
 @media (max-width:  320px) {
     .container {
@@ -2317,10 +2363,11 @@ textarea {
 
     .footer-2019 p {
         margin: 0;
+        width: 150px;
     }
 
     .first p {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .your-cvlink button {
