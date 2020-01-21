@@ -1305,8 +1305,8 @@ textarea {
     font-size: 24px;
     color: #131031;
     text-align: center;
-    margin-bottom: 180px;
-    max-width: 980px;
+
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -1332,7 +1332,7 @@ textarea {
     font-style: normal;
     font-size: 16px;
     text-align: center;
-    padding: 0 98px;
+    padding: 0 74px;
 }
 .subject{
     margin: 30px 0px 0px 0px;
@@ -1651,8 +1651,7 @@ textarea {
     }
     .account {
         position: unset;
-        padding: 20px 0px;
-        margin-left: 30px;
+
     }
     .login-button {
         position: unset;
@@ -1682,9 +1681,9 @@ textarea {
     .home-right{
         margin-top: 170px;
     }
-    .footer-circle{
-        margin-bottom:50px;
-    }
+    /*.footer-circle{*/
+    /*    margin-bottom:50px;*/
+    /*}*/
 
 }
 @media (max-width:800px){
@@ -1741,6 +1740,13 @@ textarea {
         margin-left: 20px;
     }
     .header-home{
+        position: absolute;
+        right: 20px;
+    }
+    .account-span{
+        padding: 0px 53px;
+    }
+    .header-button {
         position: absolute;
         right: 20px;
     }
@@ -1971,8 +1977,6 @@ textarea {
     }
     .account{
         position: unset;
-        padding: 20px 0px;
-        margin-left: 30px;
 
     }
     .square-landing-book{
@@ -2086,10 +2090,19 @@ textarea {
         paddiing:11px 8px!important;
         font-size: 12px;
     }
-    #header .right_button2{
-        font-size: 11px;
-        padding: 10px 22px;
+    #header .right_button2
+    .we_are {
+        font-size: 35px;}
+    .give{
+        font-size: 17px;
     }
+    .mission{
+        margin-bottom: 50px;
+    }
+    .account_people{
+        margin-bottom: 40px;
+    }
+
 
 
 }
@@ -2188,9 +2201,25 @@ textarea {
 
 
     }
+    .we_are {
+        font-size: 33px;}
+
+    .give{
+        font-size: 17px;
+    }
+    .mission{
+        margin-bottom: 50px;
+    }
+    .account_people{
+        margin-bottom: 40px;
+    }
+    .header-button button{
+        font-size: 13px;
+    }
 
 
-}
+
+    }
 
 
 
@@ -2278,6 +2307,9 @@ textarea {
     }
 
     .see {
+        font-size: 10px;
+    }
+    .header-button button {
         font-size: 10px;
     }
 
