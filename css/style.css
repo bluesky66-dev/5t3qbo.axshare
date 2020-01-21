@@ -970,20 +970,20 @@ input {
 .white-background {
     background-color: white;
     width:400px;
-    height: 100vh;
+    height: 90vh;
     right: 0;
     position: fixed;
     top: 0;
     -webkit-transtition: left .3s ease-in-out, right .3s ease-in-out;
     transition: left .3s ease-in-out, right .3s ease-in-out;
     z-index: 1000;
-    overflow: scroll;
+
 
 }
 
 .cv-header {
     background-color: #dae2ef;
-    height: 100px;
+    height: 60px;
     z-index: 997;
     width: 400px;
     position: fixed;
@@ -993,12 +993,12 @@ input {
 
 .cv-header img {
     position: absolute;
-    left: 18px;
-    top: 25px;
+    left:  30px;
+    top: 18px;
 }
 
 .cv-header h1 {
-    margin-top: 38px;
+    margin-top: 18px;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
@@ -1009,7 +1009,7 @@ input {
 }
 
 .content-space {
-    height: 160px;
+height: 85px;
 }
 
 /*.content span {*/
@@ -1085,20 +1085,42 @@ input {
 
 .from-span {
     font-size: 14px;
-    width: 5vw;
+    width: 100vw;
     align-items: center;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
     font-weight: 500;
     font-style: normal;
     color: #131031;
-    text-align: center;
+    margin: 0px 0px 15px 0px;
+
 }
 
 .input-text {
     width: 100%;
 
 }
+.from-reject-input-1 {
+    padding-left: 0px;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    border: 0;
+    width: 100%;
+}
+.from-reject-input-2 {
+    padding-left: 0px;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    border: 0;
+    width: 100%;
 
+}
+.input-text-1{
+    display: flex;
+}
 .from-reject-input {
     padding-left: 0px;
     font-family: Poppins;
@@ -1508,15 +1530,18 @@ textarea {
 
 .footer-bottom {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     /*margin-left: 40px;*/
     color: white;
     font-family: 'Poppins';
     font-size: 14px;
 }
-
+.footer-pt{
+    margin-left: -70px;
+}
 .footer-term {
     margin-left: 30px;
+    margin-right: 40px;
 }
 .home-row{
     padding-bottom: 185px;
@@ -1678,9 +1703,7 @@ textarea {
     .first p{
         font-size: 50px;
     }
-    .home-right{
-        margin-top: 170px;
-    }
+
     /*.footer-circle{*/
     /*    margin-bottom:50px;*/
     /*}*/
@@ -2101,6 +2124,12 @@ textarea {
     }
     .account_people{
         margin-bottom: 40px;
+    }
+    .footer-pt{
+        margin: 0;
+    }
+    .footer-term{
+        margin-right: 0;
     }
 
 
