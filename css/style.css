@@ -156,7 +156,7 @@ a {
 #header .logo {
     display: flex;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 120px;
 }
 
 
@@ -204,7 +204,7 @@ a {
 
 .header-button {
     position: absolute;
-    right: 20px;
+    right: 120px;
 }
 
 .header-button button {
@@ -220,7 +220,7 @@ a {
     color: white;
 }
 .container{
-    max-width: 1700px;
+    max-width: 1400px;
 }
 
 #header .right_button {
@@ -244,7 +244,7 @@ a {
 }
 .header-home{
     position: absolute;
-    right: 30px;
+    right: 120px;
     display: flex;
     align-items: center;
 }
@@ -291,7 +291,7 @@ a {
 }
 .angle-home{
     height: 100%;
-    margin: 300px 120px 112px 120px;
+    margin: 300px 120px 280px 120px;
 }
 
 .mobile-nav {
@@ -475,7 +475,7 @@ a {
     font-family: 'Poppins Medium', 'Poppins';
     font-weight: 500;
     font-style: normal;
-    font-size: 17px;
+    font-size: 14px;
     color: #131031;
     text-align: center;
     border-radius: 0px 20px 20px 0px;
@@ -505,13 +505,13 @@ a {
 }
 
 #about .square_video img {
-    margin-top: 60px;
-    border-width: 20px;
+    margin-top: 27px;
+    border-width: 10px;
     border-style: solid;
     border-color: rgba(153, 153, 153, 1);
-    border-radius: 50px;
-    padding: 50px;
-    margin-bottom: 40px;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    padding: 19px 21px;
 
 }
 
@@ -527,8 +527,8 @@ a {
     line-height: 19px;
 }
 .square_video .upload-video {
-    width: 187px;
-    height: 72px;
+    width: 178px;
+    height: 60px;
     background: inherit;
     background-color: rgba(7, 124, 255, 1);
     border-radius: 10px;
@@ -639,7 +639,7 @@ square-landing-book span{
     font-size: 30px;
     color: #131031;
     margin: 0;
-    padding-left: 37px;
+    /*padding-left: 37px;*/
     font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins';
 }
 
@@ -668,27 +668,28 @@ square-landing-book span{
 
 .register-input {
     width: 100%;
-    height: 73px;
-    font-size: 18px;
+    height: 46px;
+    font-size: 14px;
     font-weight: 400;
-    border-radius: 12px;
+    border-radius: 10px;
     border: solid 1px #d0daeb;
     padding-left: 20px;
-    margin: 15px 25px;
+    margin: 10px 0px;
     font-family: 'Poppins';
     /*border-color: transparent;*/
 }
 
 .square-sign-box {
-    margin-top: 30px;
-    height: 100%;
+    margin-top: 5px;
+    width: 100%;
     border-radius: 10px;
     display: block;
     text-align: center;
+
 }
 
 .square-sign-login-box {
-    width: 95%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -704,11 +705,11 @@ square-landing-book span{
     left: 0;
 }
 
-.your-cvlink {
+.your-cvlink button {
 
 
     position: absolute;
-    right: -50px;
+    right: 0px;
     background: inherit;
     background-color: rgba(7, 124, 255, 1);
     border: none;
@@ -721,15 +722,17 @@ square-landing-book span{
     font-style: normal;
     font-size: 16px;
     color: #ffffff;
-    padding: 18px 40px;
+    padding: 18px 27px;
 }
 
 .landing-bottom {
     position: relative;
-    margin: 45px 25px;
+    margin: 45px 0px;
     align-items: center;
 }
-
+.mission{
+    margin-bottom: 180px;
+}
 /*@media (max-width: 2500px) {*/
 /*    #header{*/
 /*        width: 2560px;*/
@@ -1264,6 +1267,7 @@ textarea {
     font-weight: 900;
     font-size: 60px;
     color: #077CFF;
+    max-width: 700px;
 }
 
 .see {
@@ -1301,11 +1305,14 @@ textarea {
     font-size: 24px;
     color: #131031;
     text-align: center;
+    margin-bottom: 180px;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .account_people {
     text-align: center;
-    margin: 200px 0px;
+    margin-bottom: 150px;
 }
 
 .account_p {
@@ -1351,6 +1358,7 @@ textarea {
 /*}*/
 
 .let_your {
+    margin-top: 50px;
     text-align: center;
     font-family: 'Poppins Black', 'Poppins Regular', 'Poppins';
     font-weight: 900;
@@ -1376,6 +1384,8 @@ textarea {
     font-size: 22px;
     padding: 34px 125px;
     color: white;
+    height: 100px;
+    font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
 
 }
 
@@ -1385,7 +1395,10 @@ textarea {
 }
 
 .footer-first {
-    margin: 50px 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+
 }
 
 .footer-second {
@@ -1425,7 +1438,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 0px;
-    font-weight: 700;
+    font-weight:  900;
     font-style: normal;
     font-size: 60px;
     color: #077CFF;
@@ -1440,7 +1453,7 @@ textarea {
     font-weight: 400;
     font-style: normal;
     color: #131031;
-    max-width: 764px;
+    max-width: 640px;
     padding-top: 30px;
 }
 
@@ -1487,14 +1500,19 @@ textarea {
 .footer-2019 {
     font-family: 'Poppins';
     color: white;
+    font-size: 14px;
+}
+.footer-2019 p{
+    margin: 0;
 }
 
 .footer-bottom {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     color: white;
     font-family: 'Poppins';
+    font-size: 14px;
 }
 
 .footer-term {
@@ -1525,13 +1543,15 @@ textarea {
 
 }
 #insign{
-    padding-left: 40px;
+    padding-left: 80px;
+    margin-top: 50px;
 }
 .angle-landing{
-    margin: 160px 120px 0px 120px;
+    margin: 70px 120px 0px 120px;
 }
 .your-first{
-    padding-right: 40px;
+    margin: 0;
+    padding: 0;
 }
 .rec-left{
     padding-right: 40px
@@ -1589,39 +1609,29 @@ textarea {
 
 @media (max-width: 1700px){
 
-
-    .first p{
-        font-size: 50px;
-    }
 }
-
 @media (max-width: 1600px){
-
-    .delete_video_home{
-        font-size: 15px;
-        padding: 23px 17px;
-    }
-    .your-cvlink {
+    .your-cvlink button {
         position: unset;
         margin-top: 70px;
     }
-
-}
-@media (max-width: 1500px){
     .first p{
-        font-size: 40px;
+
+        font-size: 55px;
     }
 
+}
+
+@media (max-width: 1500px){
+    .first p{
+        font-size: 44px;
+    }
 
 }
 @media (max-width: 1400px){
     .square_book_span{
         font-size: 13px;
 
-    }
-    .delete_video_home{
-        font-size: 13px;
-        padding: 23px 7px;
     }
 
 }
@@ -1632,8 +1642,7 @@ textarea {
     }
     .delete_video_home{
         font-size: 13px;
-        padding: 23px 3px;
-    }
+       }
     .user-name{
         font-size: 15px;
     }
@@ -1653,9 +1662,7 @@ textarea {
 
 }
 @media (max-width:1250px){
-    .first p{
-        font-size: 35px;
-    }
+
 }
 @media (max-width: 1200px){
     .square_book_span{
@@ -1664,15 +1671,27 @@ textarea {
     }
     .delete_video_home{
         font-size: 13px;
-        padding: 23px 3px;
     }
     #insign {
         padding: 0;
         margin-top: 70px;
     }
+    .first p{
+        font-size: 50px;
+    }
+    .home-right{
+        margin-top: 170px;
+    }
+    .footer-circle{
+        margin-bottom:50px;
+    }
 
 }
-
+@media (max-width:800px){
+    .first p{
+        font-size: 42px;
+    }
+}
 
 @media (max-width: 1024px){
     .container{
@@ -1718,6 +1737,13 @@ textarea {
         height: 100%;
 
     }
+    #header .logo{
+        margin-left: 20px;
+    }
+    .header-home{
+        position: absolute;
+        right: 20px;
+    }
 
 }
 
@@ -1756,7 +1782,7 @@ textarea {
 
     #header .logo {
         margin-top: 10px;
-        margin-left: 70px;
+        margin-left: 30px;
         display: flex;
         justify-content: center;
     }
@@ -1792,6 +1818,10 @@ textarea {
     .cv-get button {
         font-size: 20px;
     }
+    .header-home{
+        position: absolute;
+        right: 20px;
+    }
 
     /*.logo-button {*/
     /*    display: flex;*/
@@ -1816,7 +1846,7 @@ textarea {
         padding: 0;
     }
     .angle-home{
-        margin: 170px 15px 0px 15px;
+        margin: 170px 15px 155px 15px;
     }
     #header {
         height: 120px ;
@@ -1863,22 +1893,48 @@ textarea {
         display: block;
         text-align: center;
     }
-    .delete_video_home{
+    .square_book .delete_video_home{
         position: unset;
         margin-top: 36px;
         border-radius: 20px;
         padding: 23px 80px;
     }
-    #demo{
-        margin-top: 120px;
-    }
+
     .repost{
         display: flex;
         justify-content: center;
         align-self: center;
         margin-top: 70px;
     }
-    .footer-circle{
+
+    .repost .delete_video_home {
+        margin-top: 54px;
+        position: unset;
+        border-radius: 20px;
+        padding: 23px 80px;
+    }
+    .square_video_box{
+        margin-top: 126px;
+    }
+
+    .delete_video {
+        margin-top: 55px;
+    }
+    .repost {
+        justify-content: center;
+        align-self: center;
+        margin-top: 70px;
+        position: unset;
+        display: block;
+        text-align: center;
+    }
+
+    .repost .user-name {
+        margin-top: 27px;
+    }
+    #demo{
+        margin-top: 120px;
+    }.footer-circle{
         margin: 0;
     }
     .send{
@@ -1929,7 +1985,7 @@ textarea {
     .cv-get button{
         padding: 18px 36px;
     }
-    .your-cvlink{
+    .your-cvlink button{
         position: unset;
         margin-top: 70px;
 
@@ -2037,66 +2093,107 @@ textarea {
 
 
 }
-@media (max-width:  375px){
-    .delete_video_home{
-        margin-top: 36px;
+@media (max-width:  375px) {
+    .square_book .delete_video_home {
+        margin-top: 40px;
     }
-    .delete_video{
-        margin-top:  37px;
+
+    .repost .delete_video_home {
+        margin-top: -5px;
     }
-    .cv-header img{
+
+    .delete_video {
+        margin-top: 55px;
+    }
+    .repost {
+        justify-content: center;
+        align-self: center;
+        margin-top: 70px;
+        position: unset;
+        display: block;
+        text-align: center;
+    }
+
+    .repost .user-name {
+        margin-top: 27px;
+    }
+    .cv-header img {
         left: 10px;
     }
-    .square-invite-ajax{
+
+    .square-invite-ajax {
         width: 30%;
     }
+
     .home-button button {
         padding: 3px 5px 4px 5px;
         font-size: 13px;
     }
+
     .blue_span {
         padding: 5px 5px;
         font-size: 12px;
     }
-    .square_book_span{
+
+    .square_book_span {
         padding: 0;
         text-align: center;
     }
+
     #demo {
         margin-top: 120px;
     }
-    .repost {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-top: 70px;
-    }
-    .first p{
+
+
+
+    .first p {
         font-size: 30px;
     }
-    #header .rec-logo{
+
+    #header .rec-logo {
         position: absolute;
         top: 2px;
     }
+
     .logo-button {
         display: flex;
         justify-content: center;
         margin-top: 70px;
     }
-    #header .right_button{
-        paddiing:11px 8px!important;
+
+    #header .right_button {
+        paddiing: 11px 8px !important;
         font-size: 12px;
     }
-    #header .right_button2{
+
+    #header .right_button2 {
         font-size: 11px;
         padding: 10px 22px;
     }
+
     .square-rec-video-box {
         margin-top: 120px;
     }
 
+    .square_video_box {
+        margin-top: 136px;
+    }
+
+    .repository {
+        height: 86px;
+    }
+
+    .angle-home {
+        margin: 170px 15px 142px 15px;
+
+
+    }
+
 
 }
+
+
+
 @media (max-width:  320px) {
     .container {
         padding: 0;
@@ -2152,7 +2249,7 @@ textarea {
     }
 
     .delete_video_home {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .footer-bottom {
@@ -2167,7 +2264,7 @@ textarea {
         font-size: 24px;
     }
 
-    .your-cvlink {
+    .your-cvlink button {
         font-size: 10px;
         margin-top: 80px;
     }
