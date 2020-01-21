@@ -1,0 +1,256 @@
+{% capture email_title %}Thank you for your purchase! {% endcapture %}
+{% capture email_body %}
+{% if requires_shipping %}
+Hi {{ customer.first_name }}, we're getting your order ready to be shipped. We will notify you when it has been sent.
+{% endif %}
+{% endcapture %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>email Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <style>
+        .total{
+            border:2px solid black;
+            width:100%;
+        }
+        .first{
+            height:100px;
+            text-align:center;
+        }
+        .second{
+            height:40px;
+        }
+        .secondcol{
+            border-bottom: 2px dashed black;
+            border-top:2px dashed black;
+            width:25%;
+        }
+        .third{
+            font-size:35px;
+        }
+        .thirdcol{
+            padding-top: 46px;
+            padding-bottom: 16px;
+        }
+        .fourth{
+            font-size:18px;
+
+        }
+        .fourthcol{
+            font-family: Century Gothic;
+
+        }
+
+        .fourthcol  .mar {
+            margin-top: 15px;
+        }
+        .fifth2{
+            height:283px;
+            border:2px solid black;
+            /*background-image: url(img/R1049_1024x1024@2x.jpg);*/
+
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center;*/
+        }
+        .sixth{
+            height:50px;
+            font-size:24px;
+        }
+        .seventhcol p{
+            font-size:18px;
+            font-family: Century Gothic;
+        }
+        .eighth1{
+            border-right:2px dashed black;
+            border-top:2px dashed black;
+            width: 33%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .eighth2{
+            border-right:2px dashed black;
+            border-top:2px dashed black;
+            width: 34%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .eighth3{
+            border-top:2px dashed black;
+            width: 33%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .eighth1  .middle{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .eighth2  .middle{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .eighth1 a{
+            color:black;
+            text-decoration: none;
+        }
+        .eighth1 a:hover{
+            color:black;
+        }
+        .eighth2 a{
+            color:black;
+            text-decoration: none;
+        }
+        .eighth2 a:hover{
+            color:black;
+        }
+        .modify1 a{
+            font-size:19px;
+            height:50px;
+            background-color:#d6f0f1;
+            outline:none;
+            border:0;
+            border-radius: 3px;
+            font-family: Century Gothic;
+            font-weight:600;
+            color:black;
+            text-decoration: none;
+            padding-top:8px;
+            padding-bottom:8px;
+        }
+        .modify1{
+            padding-top:30px;
+        }
+        .modify2 a{
+            font-size:19px;
+            height:50px;
+            background-color:#d6f0f1;
+            outline:none;
+            border:0;
+            border-radius: 3px;
+            font-family: Century Gothic;
+            font-weight:600;
+            color:black;
+            text-decoration: none;
+            padding-top:8px;
+            padding-bottom:8px;
+        }
+        .middle{
+            font-family: Century Gothic;
+            font-weight:600;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size:13px;
+        }
+        @media (min-width: 1290px){
+            .total {
+                max-width: 600px;
+            }
+        }
+
+        @media (min-width: 1290px) {
+            .footer {
+                max-width: 600px;
+            }
+        }
+        @media (max-width:640px) {
+            .total  .fifth2 {
+                height:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<table class="total" align="center">
+    <tr class="first" align="center"><td colspan="4"><img src="https://cdn.shopify.com/s/files/1/0287/3812/5868/files/ornamental-things-logo_720x_360x_54b42120-a903-4593-a3da-9c07ca19009d.jpg?v=1579425068"></td></tr>
+    <tr class="second" align="center">
+        <td class="secondcol">NECKLACES</td>
+        <td class="secondcol">BRACELETS</td>
+        <td class="secondcol">EARRINGS</td>
+        <td class="secondcol">RINGS</td>
+    </tr>
+    <tr align="center">
+        <td colspan="4" class="modify1">
+            <a href="#">COMPLETE YOUR PURCHASE</a>
+        </td>
+    </tr>
+
+    <tr class="fourth" align="center">
+        <td class="fourthcol" colspan="4">
+            <p class="mar">Here's what you left in your shopping cart.</p>
+            <p>Nice choice,btw,you've obviously got great taste.</p>
+        </td>
+    </tr>
+    <tr class="fifth" align="center">
+        <td class="fifth1" colspan="1"></td>
+
+        <td class="fifth2"  colspan="2" align="center" class="esd-block-image " >
+            {% if line.image %}
+            <a target="_blank"><img class="adapt-img" src="{{ line | img_url: 'compact_cropped' }}" alt="{{ line.title }}" style="display: block;" esd-img-orig-w="126.9625015258789"></a>
+            {% endif %}
+        </td>
+        <td class="fifth1" colspan="1"></td>
+    </tr>
+    <tr class="sixth" align="center">
+        <td class="sixth1" colspan="4">FILIGREE MOON RING</td>
+    </tr>
+    <tr class="seventh" align="center">
+        <td class="seventhcol" colspan="4">
+            <p>Hurry back to complete your order before this limited<br>edition jewelry is gone. You owe it to yourself!</p>
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="4" class="modify2">
+            <a href="#">COMPLETE YOUR PURCHASE</a>
+        </td>
+    </tr>
+    <tr class="seventh" align="center">
+        <td class="seventhcol" colspan="4">
+            <p>To sweeten the deal,use code<br>WELCOMEBACK to take 15% off your order</p>
+        </td>
+    </tr>
+    <tr class="ninth">
+        <td clss="ninth1" colspan="4">
+            <table class="ninth2" style="width:100%;">
+                <tr class="eighth" align="center">
+                    <td class="eighth1">
+                        <p class="middle">
+                            Free Shipping<br>to US & Canada<br>Express option available.
+                        </p>
+                    </td>
+                    <td class="eighth2">
+                        <p class="middle">
+                            Return within 7 days if it <br>doesn't work out.
+                        </p>
+                    </td>
+                    <td class="eighth3">
+                        <p class="middle">
+                            Any order question?<br> Contact Us:<br>512-912-9450<br>hello@ornamentalthings.com
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table align="center" style="width:100%;height:50px;" class="footer">
+    <tr>
+        <td style="width:33%;"></td>
+        <td style="width:34%;">
+            <table style="width:100%;">
+                <tr align="center">
+                    <td style="width:25%"><a href="https://www.facebook.com/ornamentalthings/"><img src="img/icons8-facebook-old-24.png"></a></td>
+                    <td style="width:25%"><a href="https://twitter.com/OrnamntalThings"><img src="img/icons8-twitter-24.png"></a></td>
+                    <td style="width:25%"><a href="https://www.pinterest.com/ornamntalthings/"><img src="img/icons8-material-filled-24.png"></a></td>
+                    <td style="width:25%"><a href="https://www.instagram.com/ornamentalthings/"><img src="img/icons8-instagram-24.png"></a></td>
+                </tr>
+            </table>
+        </td>
+        <td style="width:33%;"></td>
+    </tr>
+</table>
+</html>
