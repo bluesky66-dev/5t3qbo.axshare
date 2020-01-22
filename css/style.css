@@ -1464,6 +1464,7 @@ textarea {
 
 .footer-circle {
     margin-left: 50px;
+    padding: 0;
 }
 .footer-back{
     padding-top: 50px;
@@ -1572,7 +1573,7 @@ textarea {
 }
 .footer-pt{
     margin-left: -70px;
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
 }
 .footer-term {
     margin-left: 30px;
@@ -1765,12 +1766,18 @@ textarea {
     }
     .your-second{
         padding: 0;
+        margin-top: 80px;
     }
 
     /*.footer-circle{*/
     /*    margin-bottom:50px;*/
     /*}*/
 
+}
+@media (max-width: 1199px){
+    .your-cvlink{
+        text-align: left;
+    }
 }
 @media (max-width:800px){
     .first p{
@@ -1996,6 +2003,9 @@ textarea {
 
     .mission{
         margin: 0;
+    }
+    .your-cvlink{
+        text-align: left;
     }
 }
 @media (max-width: 510px){
