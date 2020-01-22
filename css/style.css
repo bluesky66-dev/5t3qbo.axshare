@@ -1768,6 +1768,9 @@ textarea {
         padding: 0;
         margin-top: 80px;
     }
+    .landing-row{
+        margin: 0;
+    }
 
     /*.footer-circle{*/
     /*    margin-bottom:50px;*/
