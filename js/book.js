@@ -123,7 +123,10 @@ function nextoverlay(){
     $('.overlay-next-home').css('display','block');
 }
 
-
+function backoverlay(){
+    $('.overlay-next-home').css('display','none');
+    $('.overlay-home').css('display','block');
+}
 
 
 
