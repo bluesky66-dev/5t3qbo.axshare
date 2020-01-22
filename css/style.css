@@ -1572,8 +1572,8 @@ textarea {
     font-size: 14px;
 }
 .footer-pt{
-    margin-left: -70px;
-    width: calc(100% - 200px);
+    margin-left: -50px;
+    width: calc(100% - 150px);
 }
 .footer-term {
     margin-left: 30px;
@@ -1591,7 +1591,8 @@ textarea {
     padding-left: 20px;
 }
 .our-company{
-    margin: 0;
+
+    margin-left: 75px;
 }
 .square_book_span{
     font-style: normal;
@@ -1682,10 +1683,7 @@ textarea {
 
 }
 @media (max-width: 1600px){
-    .your-cvlink button {
-        position: unset;
-        margin-top: 70px;
-    }
+
     .first p{
 
         font-size: 55px;
@@ -1949,10 +1947,6 @@ textarea {
         text-align: center;
     }
 
-    .our-company {
-        text-align: center;
-    }
-
     .footer-right {
         display: flex;
         justify-content: center;
@@ -2007,11 +2001,14 @@ textarea {
     .mission{
         margin: 0;
     }
-    .your-cvlink{
-        text-align: left;
+    .your-cvlink button{
+        font-size:10px ;
     }
     .account-span{
         padding: 0;
+    }
+    .sa-span span{
+        font-size: 50px;
     }
 }
 @media (max-width: 510px){
