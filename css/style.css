@@ -1721,18 +1721,9 @@ textarea {
     .user-name{
         font-size: 15px;
     }
-    /*.square-landing-book {*/
-    /*    display: unset;*/
-    /*}*/
-    /*.account {*/
-    /*    position: unset;*/
-
-    /*}*/
-    /*.login-button {*/
-    /*    position: unset;*/
-    /*}*/
-
-
+    .our-company p{
+        font-size: 22px;
+    }
 
 }
 @media (max-width:1250px){
@@ -1773,6 +1764,12 @@ textarea {
 @media (max-width: 1199px){
     .your-cvlink{
         text-align: left;
+    }
+    .footer-social {
+        display: flex;
+        justify-content: flex-end;
+        width: fit-content;
+      padding: 0;
     }
 }
 @media (max-width:800px){
