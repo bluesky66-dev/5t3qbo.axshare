@@ -117,6 +117,11 @@ function never(){
     $('.forgot-screen').css('display','none');
     $('.login-signin').css('display','block');
 }
+function nextoverlay(){
+
+    $('.overlay-home').css('display','none');
+    $('.overlay-next-home').css('display','block');
+}
 
 
 
