@@ -1762,7 +1762,7 @@ textarea {
     }
     .forgot{
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
     .your-second{
         padding: 0;
@@ -2009,6 +2009,9 @@ textarea {
     }
     .your-cvlink{
         text-align: left;
+    }
+    .account-span{
+        padding: 0;
     }
 }
 @media (max-width: 510px){
@@ -2478,7 +2481,7 @@ textarea {
     }
 
     .your-cvlink button {
-        font-size: 10px;
+        font-size: 14px;
         margin-top: 80px;
     }
 
