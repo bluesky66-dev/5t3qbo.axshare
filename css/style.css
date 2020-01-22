@@ -985,7 +985,7 @@ input {
 .white-background {
     background-color: white;
     width:400px;
-    height: 90vh;
+    height: 95vh;
     right: 0;
     position: fixed;
     top: 0;
@@ -1245,13 +1245,27 @@ height: 85px;
     border: 1px solid #dce3f0;
     border-radius: 10px;
     width: 100%;
-    height: 100vh;
-    margin-top: 30px;
+    height: 33vh;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 13px;
+    margin-bottom: 5px;
 }
-
+.overlay-home-bottom{
+    background-color:#131031;
+    border-radius: 10px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.overlay-home-bottom span{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins SemiBold", "Poppins Regular", Poppins;
+    color: white;
+}
 textarea {
     width: 100%;
     height: 100vh;
