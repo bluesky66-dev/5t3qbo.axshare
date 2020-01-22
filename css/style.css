@@ -658,7 +658,7 @@ square-landing-book span{
 
 .account {
     position: absolute;
-    right: 117px;
+    right: 96px;
     font-family: 'Poppins';
     font-weight: 400;
     font-style: normal;
@@ -1572,8 +1572,7 @@ textarea {
     font-size: 14px;
 }
 .footer-pt{
-    margin-left: -50px;
-    width: calc(100% - 150px);
+    width: calc(100% - 195px);
 }
 .footer-term {
     margin-left: 30px;
@@ -1590,10 +1589,7 @@ textarea {
 .home-right{
     padding-left: 20px;
 }
-.our-company{
 
-    margin-left: 75px;
-}
 .square_book_span{
     font-style: normal;
     font-size: 15px;
@@ -1677,7 +1673,12 @@ textarea {
 #mission-row{
     padding-top:150px;padding-bottom: 110px;
 }
-
+.footer-social{
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    padding-right: 50px;
+}
 
 @media (max-width: 1700px){
 
@@ -1723,16 +1724,16 @@ textarea {
     .user-name{
         font-size: 15px;
     }
-    .square-landing-book {
-        display: unset;
-    }
-    .account {
-        position: unset;
+    /*.square-landing-book {*/
+    /*    display: unset;*/
+    /*}*/
+    /*.account {*/
+    /*    position: unset;*/
 
-    }
-    .login-button {
-        position: unset;
-    }
+    /*}*/
+    /*.login-button {*/
+    /*    position: unset;*/
+    /*}*/
 
 
 
@@ -2010,6 +2011,21 @@ textarea {
     .sa-span span{
         font-size: 50px;
     }
+    .sign-name{
+        font-size: 20px;
+    }
+    .account{
+        font-size: 12px;
+    }
+    .login-button{
+        font-size: 14px;
+    }
+    .footer-social{
+        display: unset;
+        padding: 0;
+        width: 100%;
+    }
+
 }
 @media (max-width: 510px){
     .first p{
@@ -2148,17 +2164,8 @@ textarea {
     #under{
         padding-top: 50px;
     }
-    .account{
-        position: unset;
 
-    }
-    .square-landing-book{
-        display: unset;
 
-    }
-    .login-button{
-        position: unset;
-    }
     .cv-get button{
         padding: 18px 36px;
     }
@@ -2280,6 +2287,13 @@ textarea {
     }
     .footer-term{
         margin-right: 0;
+    }
+    .account{
+        position: absolute;
+        right: 45px;
+    }
+    .sign-name{
+        font-size: 14px;
     }
 
 
