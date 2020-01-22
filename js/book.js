@@ -117,14 +117,7 @@ function never(){
     $('.forgot-screen').css('display','none');
     $('.login-signin').css('display','block');
 }
-function loadVid(){
-    $('.square_video').css('display','none');
-    $('.square-video-video-box').css('display','block');
-}
-function loadDoc(){
-    $('.square_video').css('display','none');
-    $('.full').css('display','block');
-}
+
 
 
 
