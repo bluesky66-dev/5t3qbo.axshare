@@ -291,7 +291,7 @@ a {
 }
 .angle-home{
     height: 100%;
-    margin: 300px 120px 280px 120px;
+    margin: 150px 70px 280px 70px;
 }
 
 .mobile-nav {
@@ -399,13 +399,13 @@ a {
     position: relative;
     display: flex;
     border-radius: 20px;
-
     height: 86px;
     box-shadow: none;
     font-family: 'Poppins Black', 'Poppins';
     text-align: left;
     align-items: center;
     border: 5px solid #dce3f0;
+    background-color: white;
 }
 
 .square_book .user-name {
@@ -415,14 +415,16 @@ a {
     margin: 0;
     padding-left: 15px;
 }
-
+.email-url{
+    width: fit-content;
+}
 .blue_span {
     background-color: rgba(19, 16, 49, 1);;
     box-sizing: border-box;
     border-width: 5px;
     border-style: solid;
     border-color: rgba(7, 124, 255, 1);
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 8px;
     font-family: 'Poppins Medium', 'Poppins';
     font-weight: 500;
     font-size: 15px;
@@ -432,6 +434,9 @@ a {
     justify-items: center;
     text-align: center;
     padding: 12px 38px 12px 38px;
+    width: 23%;
+    margin-bottom: 25px;
+    width: fit-content;
 }
 .home-button button{
     background-color: rgba(7, 124, 255, 1);
@@ -439,7 +444,7 @@ a {
     border-width: 5px;
     border-style: solid;
     border-color: rgba(7, 124, 255, 1);
-    border-radius: 0px 5px 5px 0px;
+    border-radius:5px;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -495,6 +500,7 @@ a {
     margin-top: 30px;
     height: 100%;
     border-radius: 10px;
+    background-color: white;
 }
 
 .square_video_box .square_video {
@@ -1584,10 +1590,10 @@ textarea {
 }
 
 .home-left{
-    padding-right: 20px;
+    padding: 0px 25px 0px 0px;
 }
 .home-right{
-    padding-left: 20px;
+    padding: 0px 0px 0px 25px;
 }
 
 .square_book_span{
@@ -1606,7 +1612,10 @@ textarea {
 }
 /*.angle-landing{*/
 /*    margin: 70px 120px 0px 120px;*/
-/*}*/
+
+.square-col-pdf-box{
+    background-color: white;
+}
 .your-first{
     margin: 0;
     padding: 0;
@@ -1770,6 +1779,10 @@ textarea {
         justify-content: flex-end;
         width: fit-content;
       padding: 0;
+    }
+    .home-right{
+        padding: 0;
+        margin-top: 200px;
     }
 }
 @media (max-width:800px){
@@ -2088,7 +2101,8 @@ textarea {
         padding: 1px 5px;
 
     }
-    .square_book{
+    .square_book
+    {
         position: unset;
         display: block;
         text-align: center;
