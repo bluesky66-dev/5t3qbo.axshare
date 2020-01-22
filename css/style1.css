@@ -1603,7 +1603,11 @@ ul.index_span{
     margin-top: 20px;
     padding-left: 120px;
 }
-
+@media (max-width: 1500px){
+    .nolawyer .nolawyer_p{
+        font-size: 100px;
+    }
+}
 
 @media (min-width: 1202px) {
     #call-to-action .cta-btn-container {
@@ -1983,7 +1987,7 @@ ul.index_span{
     }
 
     .angle {
-        margin-top: 135px;
+        margin: 135px 20px 20px 20px;
     }
 
     .nolawyer .nolawyer_p {
@@ -2123,7 +2127,11 @@ ul.index_span{
 
 
 }
-
+@media (max-width:767px){
+    .angle{
+        margin: 135px 20px 20px 20px;
+    }
+}
 @media (max-width: 414px) {
     .img {
         margin-bottom: 25px;
