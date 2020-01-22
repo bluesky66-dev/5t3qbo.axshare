@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="1771" column="17" selection-start-line="1771" selection-start-column="17" selection-end-line="1771" selection-end-column="17" />
+            <state relative-caret-position="281">
+              <caret line="126" selection-start-line="126" selection-start-column="2" selection-end-line="128" selection-end-column="3" />
               <folding>
                 <element signature="e#11#129#0" />
                 <element signature="e#154#271#0" />
@@ -111,7 +111,6 @@
                 <element signature="e#2690#2770#0" />
                 <element signature="e#2780#2864#0" />
                 <element signature="e#2877#3077#0" />
-                <element signature="e#3092#3121#0" />
                 <element signature="e#3128#3155#0" />
                 <element signature="e#3202#3274#0" />
                 <element signature="e#3332#3466#0" />
@@ -1577,7 +1576,7 @@
       <workItem from="1579404133638" duration="11275000" />
       <workItem from="1579473502870" duration="37549000" />
       <workItem from="1579586614131" duration="5637000" />
-      <workItem from="1579597123404" duration="32350000" />
+      <workItem from="1579597123404" duration="32554000" />
     </task>
     <task id="LOCAL-00001" summary="font reset">
       <created>1579313036905</created>
@@ -1754,11 +1753,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579686565020</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="landing">
+      <created>1579687150832</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579687150832</updated>
+    </task>
+    <task id="LOCAL-00027" summary="landing">
+      <created>1579687273819</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1579687273819</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112948000" />
+    <option name="totallyTimeSpent" value="113152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2954,8 +2967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="1771" column="17" selection-start-line="1771" selection-start-column="17" selection-end-line="1771" selection-end-column="17" />
+        <state relative-caret-position="281">
+          <caret line="126" selection-start-line="126" selection-start-column="2" selection-end-line="128" selection-end-column="3" />
           <folding>
             <element signature="e#11#129#0" />
             <element signature="e#154#271#0" />
@@ -2976,7 +2989,6 @@
             <element signature="e#2690#2770#0" />
             <element signature="e#2780#2864#0" />
             <element signature="e#2877#3077#0" />
-            <element signature="e#3092#3121#0" />
             <element signature="e#3128#3155#0" />
             <element signature="e#3202#3274#0" />
             <element signature="e#3332#3466#0" />

@@ -124,9 +124,9 @@ a {
 
 }
 
-#mission-row {
-    transition: all 5.5s;
-}
+/*#mission-row {*/
+/*    transition: all 5.5s;*/
+/*}*/
 #under{
     padding-top: 150px;
 }
