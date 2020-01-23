@@ -2014,12 +2014,16 @@ textarea {
         max-width: 500px;
     }
     .sign-in button{
-        padding: 18px 30px;
-    }
-
-    .sign-in button{
         font-size: 10px;
         padding: 18px 15px;
+    }
+    .square_book .user-name{
+        font-size: 11px;
+
+    }
+    .delete_video_home{
+        font-size: 11px;
+        padding: 23px 9px;
     }
 }
 
@@ -2030,7 +2034,7 @@ textarea {
         padding: 0;
     }
     .angle-home{
-        margin: 170px 15px 155px 15px;
+        margin: 170px 15px 0px 15px;
     }
     /*#header {*/
     /*    height: 120px ;*/
@@ -2282,7 +2286,7 @@ textarea {
     }
 
     .angle-home {
-        margin: 170px 15px 142px 15px;
+        margin: 170px 15px 0px 15px;
 
 
     }
