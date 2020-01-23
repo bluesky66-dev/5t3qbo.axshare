@@ -73,6 +73,7 @@ function view_overlay() {
 }
 function view_overlay_reject() {
     $('.overlay-reject').css('display', 'block');
+    $('body').css('overflow-y', 'hidden');
 
 }
 
