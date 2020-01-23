@@ -556,6 +556,7 @@ a {
     height: 100%;
     border-radius: 10px;
     padding: 12px;
+    background-color: white;
 }
 
 .square-rec-video-box .square-rec-video {
@@ -580,6 +581,7 @@ a {
     margin-top: 30px;
     height: 100%;
     border-radius: 10px;
+    background-color: white;
 }
 
 .square-col-video-box .square-col-video {
@@ -1752,8 +1754,6 @@ textarea {
 
 }
 @media (max-width: 1200px){
-
-
     .delete_video_home{
         font-size: 13px;
     }
@@ -1775,11 +1775,13 @@ textarea {
     .landing-row{
         margin: 0;
     }
-
-    /*.footer-circle{*/
-    /*    margin-bottom:50px;*/
-    /*}*/
-
+    .rec-right{
+        padding: 0;
+        margin-top: 170px;
+    }
+    .rec-left{
+        padding: 0;
+    }
 }
 @media (max-width: 1199px){
     .your-cvlink{
@@ -1861,6 +1863,9 @@ textarea {
         position: absolute;
         right: 20px;
     }
+    .rec-right{
+        margin: 0;
+    }
 
 }
 
@@ -1934,6 +1939,7 @@ textarea {
 
     .send {
         margin: 0 auto;
+        padding: 30px 20px 0px 20px;
     }
 
     .cv-get button {
@@ -1990,9 +1996,7 @@ textarea {
         width: 24px;
         height: 25px;
     }
-    .footer{
-        padding: 0px 20px;
-    }
+
 
 
 
