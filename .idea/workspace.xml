@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruiter_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/recruiter_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/square1.php" beforeDir="false" afterPath="$PROJECT_DIR$/square1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/square2.php" beforeDir="false" afterPath="$PROJECT_DIR$/square2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/square3.php" beforeDir="false" afterPath="$PROJECT_DIR$/square3.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/recruiter_home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="655">
-              <caret line="422" column="59" selection-start-line="422" selection-start-column="59" selection-end-line="422" selection-end-column="59" />
+              <caret line="422" column="59" selection-start-line="422" selection-start-column="61" selection-end-line="422" selection-end-column="65" />
               <folding>
                 <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
@@ -651,14 +650,7 @@
       <workItem from="1579404133638" duration="11275000" />
       <workItem from="1579473502870" duration="37549000" />
       <workItem from="1579586614131" duration="5637000" />
-      <workItem from="1579597123404" duration="69904000" />
-    </task>
-    <task id="LOCAL-00003" summary="fix 1.17/20hours">
-      <created>1579319912992</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1579319912992</updated>
+      <workItem from="1579597123404" duration="70101000" />
     </task>
     <task id="LOCAL-00004" summary="Home response">
       <created>1579394944768</created>
@@ -996,15 +988,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579766740933</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="footer-bottom">
+      <created>1579774059414</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1579774059414</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150502000" />
+    <option name="totallyTimeSpent" value="150699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2973,7 +2971,7 @@
     <entry file="file://$PROJECT_DIR$/recruiter_home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
-          <caret line="422" column="59" selection-start-line="422" selection-start-column="59" selection-end-line="422" selection-end-column="59" />
+          <caret line="422" column="59" selection-start-line="422" selection-start-column="61" selection-end-line="422" selection-end-column="65" />
           <folding>
             <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
