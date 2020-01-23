@@ -2165,6 +2165,9 @@ textarea {
     .white-background{
         width: 100%;
     }
+    .white-background2{
+        width: 100%;
+    }
     .cv-header{
         width: 100%;
     }
@@ -2397,7 +2400,7 @@ textarea {
     .square-reject-half{
         width: 100%;
     }
-    .white-background{
+    .white-background2{
         height: 100vh;
         overflow-y: auto;
     }
