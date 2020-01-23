@@ -69,7 +69,7 @@ body {
     background: #f3f5f9;
     color: #444;
     font-family: 'Poppins Black', 'Poppins Regular', 'Poppins';
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 a:hover {
@@ -442,15 +442,13 @@ a {
 .home-button button{
     background-color: rgba(7, 124, 255, 1);
     box-sizing: border-box;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgba(7, 124, 255, 1);
     border-radius:5px;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
-    padding: 8px 47px;
+    padding: 13px 27px;
     color: white;
+    border: 0;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
 }
 .home-button button:hover{
@@ -985,7 +983,8 @@ input {
     width: 100vw;
     height: 100vh;
     opacity: 0.92;
-    background-color: rgb(123, 179, 179);
+    background-color: rgb(47, 79, 79);
+    opacity: 0.607843;
     z-index: 999;
 }
 
@@ -1109,7 +1108,7 @@ height: 85px;
     width: 100vw;
     align-items: center;
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     color: #131031;
     margin: 0px 0px 15px 0px;
@@ -1123,7 +1122,7 @@ height: 85px;
 .from-reject-input-1 {
     padding-left: 0px;
     font-family: Poppins;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     color: rgb(153, 153, 153);
     border: 0;
@@ -1132,7 +1131,7 @@ height: 85px;
 .from-reject-input-2 {
     padding-left: 0px;
     font-family: Poppins;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     color: rgb(153, 153, 153);
     border: 0;
@@ -1254,6 +1253,7 @@ height: 85px;
     font-weight: 400;
     font-size: 13px;
     margin-bottom: 5px;
+    padding: 7px;
 }
 .overlay-home-bottom{
     background-color:#131031;
@@ -1697,8 +1697,8 @@ textarea {
     border: 1px solid #dce3f0;;
     margin-top: 70px;
     margin-bottom: 10px;
-    width: 450px;
-    height: 725px;
+    width: 100%;
+    height: 758px;
     padding-top: 230px;
 }
 .back-overlay{
@@ -1872,10 +1872,6 @@ textarea {
 
     .blue_span {
         padding: 5px 5px;
-    }
-
-    .home-button button {
-        padding: 1px 5px;
     }
 
     .let_your {
@@ -2073,7 +2069,7 @@ textarea {
         padding: 5px 5px;
     }
     .home-button button{
-        padding: 1px 5px;
+        padding: 10px 5px;
 
     }
 
@@ -2236,12 +2232,9 @@ textarea {
 
 }
 @media (max-width:  375px) {
-
-
     .delete_video {
         margin-top: 55px;
     }
-
     .cv-header img {
         left: 10px;
     }
@@ -2251,7 +2244,6 @@ textarea {
     }
 
     .home-button button {
-        padding: 3px 5px 4px 5px;
         font-size: 13px;
     }
 
@@ -2262,8 +2254,6 @@ textarea {
 
     .square_book_span {
         padding: 0;
-
-
     }
 
     .first p {
@@ -2331,7 +2321,7 @@ textarea {
     }
 
     .home-button button {
-        padding: 3px 5px 4px 5px;
+        margin-left: 10px;
         font-size: 13px;
     }
 
@@ -2346,14 +2336,6 @@ textarea {
 
     .header-home {
         position: unset;
-    }
-
-    .delete_video_home {
-        margin-top: 36px;
-    }
-
-    .delete_video {
-        margin-top: 39px;
     }
 
     .cv-header img

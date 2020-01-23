@@ -87,7 +87,8 @@ function hide_overlay_reject() {
 
 function view_overlay_home() {
     $('.overlay-home').css('display', 'block');
-    $('.overlay-home').css('overflow', 'scroll');
+    $('.overlay-home').css('overflow-y', 'scroll');
+
 }
 function hide_overlay_home() {
     $('.overlay-home').css('display', 'none');
