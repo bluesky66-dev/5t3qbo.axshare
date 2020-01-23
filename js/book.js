@@ -87,9 +87,11 @@ function hide_overlay_reject() {
 
 function view_overlay_home() {
     $('.overlay-home').css('display', 'block');
+    $('.overlay-home').css('overflow', 'scroll');
 }
 function hide_overlay_home() {
     $('.overlay-home').css('display', 'none');
+    $('.overlay-next-home').css('display', 'none');
 }
 
 function word(){
