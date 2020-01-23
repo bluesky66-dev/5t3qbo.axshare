@@ -18,7 +18,7 @@ function square1() {
         method: "GET",
         url: "square1.html",
     }).done(function( responseText ) {
-        $('#text-area').text(responseText);
+        $('#text-area-interview').text(responseText);
     });
 }
 function square2() {
@@ -27,7 +27,7 @@ function square2() {
         method: "GET",
         url: "square2.html",
     }).done(function( responseText ) {
-        $('#text-area').text(responseText);
+        $('#text-area-interview').text(responseText);
     });
 }
 function square3() {
@@ -45,7 +45,7 @@ function square1_cover() {
         method: "GET",
         url: "square1-cover.html",
     }).done(function( responseText ) {
-        $('#text-area').text(responseText);
+        $('#text-area-interview').text(responseText);
     });
 }
 function square2_cover() {
