@@ -2291,19 +2291,6 @@ textarea {
     .angle-recruiter{
         margin: 150px 15px 0px 15px;
     }
-    #header .right_button{
-        position: unset;
-    }
-    #header .right_button2{
-        position: unset;
-        margin-left: 20px;
-
-    }
-    .logo-button{
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
-    }
     .delete_video {
         position: unset;
         border-left-width: 5px;
@@ -2359,20 +2346,6 @@ textarea {
     .first p{
         font-size: 27px;
     }
-    #header .rec-logo{
-        position: absolute;
-        top: 2px;
-    }
-    .logo-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-    }
-    #header .right_button{
-        paddiing:11px 8px!important;
-        font-size: 12px;
-    }
-    #header .right_button2
     .we_are {
         font-size: 35px;}
     .give{
@@ -2403,6 +2376,10 @@ textarea {
     .white-background2{
         height: 100vh;
         overflow-y: auto;
+    }
+    .white-background{
+     overflow-y: auto;
+        height: 93vh;
     }
     .cv-header img {
         position: absolute;
@@ -2441,31 +2418,11 @@ textarea {
         font-size: 27px;
     }
 
-    #header .rec-logo {
-        position: absolute;
-        top: 2px;
-    }
-
-    .logo-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-    }
-
-    #header .right_button {
-        paddiing: 11px 8px !important;
-        font-size: 12px;
-    }
-
-    #header .right_button2 {
-        font-size: 11px;
-        padding: 10px 22px;
-    }
-
     .angle-home {
         margin: 170px 15px 0px 15px;
-
-
+    }
+    .logo-span a{
+        font-size: 18px;
     }
     .we_are {
         font-size: 33px;}

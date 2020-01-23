@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+            <state relative-caret-position="619">
+              <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
               <folding>
                 <element signature="e#101#269#0" />
                 <element signature="e#159#263#0" />
@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recruiter_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="309" column="22" lean-forward="true" selection-start-line="309" selection-start-column="22" selection-end-line="309" selection-end-column="22" />
+            <state relative-caret-position="606">
+              <caret line="300" column="37" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
               <folding>
                 <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
@@ -121,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="2158" lean-forward="true" selection-start-line="2158" selection-end-line="2158" />
+            <state relative-caret-position="281">
+              <caret line="2424" column="21" selection-start-line="2424" selection-start-column="21" selection-end-line="2424" selection-end-column="21" />
               <folding>
                 <element signature="e#11#129#0" />
                 <element signature="e#154#271#0" />
@@ -398,9 +398,6 @@
                 <element signature="e#37076#37111#0" />
                 <element signature="e#40009#40025#0" />
                 <element signature="e#37215#37259#0" />
-                <element signature="e#37285#37317#0" />
-                <element signature="e#37344#37404#0" />
-                <element signature="e#37421#37509#0" />
                 <element signature="e#37528#37675#0" />
                 <element signature="e#37826#37885#0" />
                 <element signature="e#37904#37939#0" />
@@ -409,9 +406,6 @@
                 <element signature="e#38263#38448#0" />
                 <element signature="e#38471#38502#0" />
                 <element signature="e#38776#38808#0" />
-                <element signature="e#38830#38883#0" />
-                <element signature="e#38901#38990#0" />
-                <element signature="e#39016#39085#0" />
                 <element signature="e#39125#39152#0" />
                 <element signature="e#39162#39194#0" />
                 <element signature="e#39207#39243#0" />
@@ -424,10 +418,6 @@
                 <element signature="e#39927#39954#0" />
                 <element signature="e#40063#40121#0" />
                 <element signature="e#40263#40295#0" />
-                <element signature="e#40319#40372#0" />
-                <element signature="e#40391#40480#0" />
-                <element signature="e#40508#40579#0" />
-                <element signature="e#40608#40668#0" />
                 <element signature="e#40914#40941#0" />
                 <element signature="e#40952#40984#0" />
                 <element signature="e#40997#41033#0" />
@@ -493,9 +483,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.overlay-home-bottom</find>
       <find>.back-overlay</find>
-      <find>white-background</find>
       <find>.square_book_span</find>
       <find>body</find>
       <find>#text-area</find>
@@ -505,7 +493,6 @@
       <find>square-col-video-box</find>
       <find>delete_video</find>
       <find>1200</find>
-      <find>767</find>
       <find>text-area</find>
       <find>full</find>
       <find>reject-full</find>
@@ -521,8 +508,11 @@
       <find>reject</find>
       <find>half</find>
       <find>from</find>
-      <find>white</find>
       <find>414</find>
+      <find>767</find>
+      <find>white</find>
+      <find>white-background2</find>
+      <find>white-background</find>
     </findStrings>
     <replaceStrings>
       <replace>images/yellow-sa.png</replace>
@@ -558,8 +548,8 @@
         <option value="$PROJECT_DIR$/pdf-png.html" />
         <option value="$PROJECT_DIR$/landing.html" />
         <option value="$PROJECT_DIR$/Home.html" />
-        <option value="$PROJECT_DIR$/recruiter_home.html" />
         <option value="$PROJECT_DIR$/js/book.js" />
+        <option value="$PROJECT_DIR$/recruiter_home.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -651,21 +641,7 @@
       <workItem from="1579404133638" duration="11275000" />
       <workItem from="1579473502870" duration="37549000" />
       <workItem from="1579586614131" duration="5637000" />
-      <workItem from="1579597123404" duration="76481000" />
-    </task>
-    <task id="LOCAL-00008" summary="word">
-      <created>1579471957978</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1579471957978</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix">
-      <created>1579510231627</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1579510231627</updated>
+      <workItem from="1579597123404" duration="77298000" />
     </task>
     <task id="LOCAL-00010" summary="landing?">
       <created>1579567615781</created>
@@ -996,11 +972,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579782845287</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="recruiter_home">
+      <created>1579783336280</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1579783336280</updated>
+    </task>
+    <task id="LOCAL-00058" summary="recruiter_home">
+      <created>1579783582975</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1579783582976</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157079000" />
+    <option name="totallyTimeSpent" value="157896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2609,8 +2599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recruiter_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="309" column="22" lean-forward="true" selection-start-line="309" selection-start-column="22" selection-end-line="309" selection-end-column="22" />
+        <state relative-caret-position="606">
+          <caret line="300" column="37" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
           <folding>
             <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" />
@@ -2641,8 +2631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+        <state relative-caret-position="619">
+          <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="e#101#269#0" />
             <element signature="e#159#263#0" />
@@ -2661,8 +2651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="2158" lean-forward="true" selection-start-line="2158" selection-end-line="2158" />
+        <state relative-caret-position="281">
+          <caret line="2424" column="21" selection-start-line="2424" selection-start-column="21" selection-end-line="2424" selection-end-column="21" />
           <folding>
             <element signature="e#11#129#0" />
             <element signature="e#154#271#0" />
@@ -2938,9 +2928,6 @@
             <element signature="e#37076#37111#0" />
             <element signature="e#40009#40025#0" />
             <element signature="e#37215#37259#0" />
-            <element signature="e#37285#37317#0" />
-            <element signature="e#37344#37404#0" />
-            <element signature="e#37421#37509#0" />
             <element signature="e#37528#37675#0" />
             <element signature="e#37826#37885#0" />
             <element signature="e#37904#37939#0" />
@@ -2949,9 +2936,6 @@
             <element signature="e#38263#38448#0" />
             <element signature="e#38471#38502#0" />
             <element signature="e#38776#38808#0" />
-            <element signature="e#38830#38883#0" />
-            <element signature="e#38901#38990#0" />
-            <element signature="e#39016#39085#0" />
             <element signature="e#39125#39152#0" />
             <element signature="e#39162#39194#0" />
             <element signature="e#39207#39243#0" />
@@ -2964,10 +2948,6 @@
             <element signature="e#39927#39954#0" />
             <element signature="e#40063#40121#0" />
             <element signature="e#40263#40295#0" />
-            <element signature="e#40319#40372#0" />
-            <element signature="e#40391#40480#0" />
-            <element signature="e#40508#40579#0" />
-            <element signature="e#40608#40668#0" />
             <element signature="e#40914#40941#0" />
             <element signature="e#40952#40984#0" />
             <element signature="e#40997#41033#0" />
