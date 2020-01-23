@@ -1931,6 +1931,7 @@ textarea {
 
     .footer-bottom {
         justify-content: center;
+        margin-top: 12px;
     }
 
     .circle-sa51 {
@@ -1995,6 +1996,11 @@ textarea {
         left: 6;
         width: 24px;
         height: 25px;
+    }
+    .footer-second{
+        align-items: center;
+        align-content: center;
+
     }
 
 }
