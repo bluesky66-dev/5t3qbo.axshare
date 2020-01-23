@@ -83,6 +83,7 @@ function hide_overlay() {
 }
 function hide_overlay_reject() {
     $('.overlay-reject').css('display', 'none');
+    $('body').css('overflow-y', 'scroll');
 
 }
 
