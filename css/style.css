@@ -288,7 +288,7 @@ a {
 }
 .angle-recruiter{
     height: 100%;
-    margin: 300px 120px 300px 120px;
+    margin: 240px 70px 350px 70px;
 }
 .angle-home{
     height: 100%;
@@ -1215,7 +1215,7 @@ height: 85px;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0px;
     margin: 0px 5px 15px 5px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -1229,7 +1229,7 @@ height: 85px;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 0px;
     margin: 0px 5px 15px 5px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -1249,7 +1249,7 @@ height: 85px;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 0px;
     margin: 0px 5px 15px 5px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -1279,7 +1279,7 @@ height: 85px;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0px;
     margin: 0px 5px 15px 5px;
     font-family: 'Poppins';
     font-weight: 400;
