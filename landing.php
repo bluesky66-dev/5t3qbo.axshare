@@ -72,7 +72,7 @@ require_once( "common/header.php" );
                                            class="register-input">
                                     <input id="password" type="password" name="password" value="" placeholder="Password"
                                            class="register-input">
-                                    <input id="repeat-password" type="password" name="repeat-password" value=""
+                                    <input id="user_liner" type="password" name="repeat-password" value=""
                                            placeholder="Your one liner e.g. 'Hardworking,Trustworthy,Dynamic, and Determined Individual' "
                                            class="register-input" maxlength="100">
                                     <div class="landing-bottom">

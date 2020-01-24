@@ -220,32 +220,25 @@ $(document).ready(function () {
     if (typeof validate !== 'undefined') {
         var validator = $('#contact-form').validate({
             rules: {
-                user_name: {
+                first_name: {
                     required: true
                 },
-                f_name: {
+                last_name: {
                     required: true
                 },
-                l_name: {
-                    required: true
-                },
+
                 email: {
                     required: true,
                     email: true
                 },
-                user_liner: {
+                password: {
                     required: true,
 
                 },
-                token: {
+                user_liner: {
                     required: true,
                 },
-                update_time: {
-                    required: true,
-                },
-                create_time: {
-                    required: true,
-                },
+
 
             },
             errorElement : 'div',
@@ -257,19 +250,18 @@ $(document).ready(function () {
                 var email = $("#email").val();
                 var first_name = $("#first_name").val();
                 var last_name = $("#last_name").val();
-                var email_number = $("#email_number").val();
-                var legal_problem = $("#legal_problem").val();
-                var when_come = $("#when_come").val();
-                var hours = $("#hours").val();
+                var password = $("#password").val();
+                var user_line = $("#user_liner").val();
+
                 var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
 
                 var formData = {
                     email: email,
-                    user_name: user_name,
-                    email_number: email_number,
-                    legal_problem: legal_problem,
-                    when_come: when_come,
-                    hours: hours,
+                    first_name: first_name,
+                    last_name: last_name,
+                    password: password,
+                    user_line: user_line,
+
                 };
 
                 console.log('formData', formData);
