@@ -1,3 +1,7 @@
+<?php
+global $pageName;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,10 +23,15 @@
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
+    <?php
+    if (isset($pageName) && $pageName == 'terms') {
+        ?>
+        <link href="css/style1.css" rel="stylesheet">
+        <?php
+    }
+    ?>
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="https://js.stripe.com/v3"></script>
     <script>
         function loadVid() {
             var xhttp = new XMLHttpRequest();

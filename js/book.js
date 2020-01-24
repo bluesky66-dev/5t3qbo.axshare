@@ -10,9 +10,6 @@ function upsign() {
     xhttp.open("GET", "signup.html", true);
     xhttp.send();
 }
-
-
-
 function square1() {
     $.ajax({
         method: "GET",
@@ -39,7 +36,6 @@ function square3() {
         $('#text-area').text(responseText);
     });
 }
-
 function square1_cover() {
     $.ajax({
         method: "GET",
@@ -66,7 +62,6 @@ function square3_cover() {
         $('#text-area').text(responseText);
     });
 }
-
 function view_overlay() {
     $('.overlay').css('display', 'block') ;
 
@@ -76,7 +71,6 @@ function view_overlay_reject() {
     $('body').css('overflow-y', 'hidden');
 
 }
-
 function hide_overlay() {
     $('.overlay').css('display', 'none');
     $('.overlay-reject').css('display', 'none');
@@ -86,7 +80,6 @@ function hide_overlay_reject() {
     $('body').css('overflow-y', 'scroll');
 
 }
-
 function view_overlay_home() {
     $('.overlay-home').css('display', 'block');
     $('.overlay-home').css('overflow-y', 'scroll');
@@ -96,19 +89,16 @@ function hide_overlay_home() {
     $('.overlay-home').css('display', 'none');
     $('.overlay-next-home').css('display', 'none');
 }
-
 function word(){
     $('.word').css('display','block');
     $('.word').css('position','absolute');
     $('.word').css('top','30px');
 
 }
-
 function insign(){
     $('.login').css('display','none');
     $('.login-signin').css('display','block');
 }
-
 function upsign(){
     $('.login-signin').css('display','none');
     $('.login').css('display','block');
@@ -127,14 +117,10 @@ function nextoverlay(){
     $('.overlay-home').css('display','none');
     $('.overlay-next-home').css('display','block');
 }
-
 function backoverlay(){
     $('.overlay-next-home').css('display','none');
     $('.overlay-home').css('display','block');
 }
-
-
-
 validateEmail('newtheme@outlook.com');
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -148,8 +134,6 @@ function user_name1(user_name) {
     var name=/^[A-Za-z\s]+$/;
     return name.test(user_name);
 }
-
-
 if (typeof Stripe !== "undefined") {
     var stripe = Stripe('pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW');
 }
@@ -218,103 +202,89 @@ function signup() {//var $result = $("#result");
 
 $(document).ready(function () {
 
-    if (typeof validate !== 'undefined') {
-        var validator = $('#contact-form').validate({
-            rules: {
-                first_name: {
-                    required: true
-                },
-                last_name: {
-                    required: true
-                },
-
-                email: {
-                    required: true,
-                    // email: true
-                },
-                password: {
-                    required: true,
-
-                },
-                user_liner: {
-                    required: true,
-                },
-
+    var validator = $('#contact-form').validate({
+        rules: {
+            first_name: {
+                required: true
+            },
+            last_name: {
+                required: true
+            },
+            email: {
+                required: true,
+                // email: true
+            },
+            password: {
+                required: true,
 
             },
-            errorElement : 'div',
-            errorLabelContainer: '.errorTxt',
-            submitHandler: function(form) {
-                // some other code
-                // maybe disabling submit button
-                // then:
-                var email = $("#email").val();
-                var first_name = $("#first_name").val();
-                var last_name = $("#last_name").val();
-                var password = $("#password").val();
-                var user_line = $("#user_liner").val();
-
-                var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
-
-                var formData = {
-                    email: email,
-                    first_name: first_name,
-                    last_name: last_name,
-                    password: password,
-                    user_line: user_line,
-
-                };
-
-                console.log('formData', formData);
-
-                window.localStorage.setItem('formData', JSON.stringify(formData)); //payment set
-                // alert("ok");
-
-
-
-                console.log('checkout', validator);
-                if (typeof stripe !== "undefined") { //undefined next
-                    stripe.redirectToCheckout({
-                        items: [{sku: 'sku_GPn9Mb0xZnqcYo', quantity: parseInt(hours)}],
-
-                        // Do not rely on the redirect to the successUrl for fulfilling
-                        // purchases, customers may not always reach the success_url after
-                        // a success    ful payment.
-                        // Instead use one of the strategies described in
-                        // https://stripe.com/docs/payments/checkout/fulfillment
-                        // successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
-                        // cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
-                    })
-                        .then(function (result) {
-                            if (result.error) {
-                                // If `redirectToCheckout` fails due to a browser or network
-                                // error, display the localized error message to your customer.
-                                var displayError = document.getElementById('error-message');
-                                displayError.textContent = result.error.message;
-                                alert(result.error.message)
-                            } else {
-                                console.log('checkout', result);
-                                signup();
-                            }
-                        });
-                }
+            user_liner: {
+                required: true,
             },
-            invalidHandler: function (e, validator) {
-                // $("div.error").hide();
-            },
-        });
-    }
-    if (typeof daterangepicker !== 'undefined') {
-        $('#when_come').daterangepicker({  /*calendar*/
-            singleDatePicker: true,
-            // showDropdowns: true,
-            // minYear: 1901,
-            // maxYear: parseInt(moment().format('YYYY'),10)com
-        }, function(start, end, label) {
-            var years = moment().diff(start, 'years');
-            console.log("You are " + years + " years old!");
-        });
-    }
+
+
+        },
+        errorElement : 'div',
+        errorLabelContainer: '.errorTxt',
+        submitHandler: function(form) {
+            // some other code
+            // maybe disabling submit button
+            // then:
+            var email = $("#email").val();
+            var first_name = $("#first_name").val();
+            var last_name = $("#last_name").val();
+            var password = $("#password").val();
+            var user_line = $("#user_liner").val();
+
+            var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
+
+            var formData = {
+                email: email,
+                first_name: first_name,
+                last_name: last_name,
+                password: password,
+                user_line: user_line,
+
+            };
+
+            console.log('formData', formData);
+
+            window.localStorage.setItem('formData', JSON.stringify(formData)); //payment set
+            // alert("ok");
+
+
+
+            console.log('checkout', validator);
+            if (typeof stripe !== "undefined") { //undefined next
+                stripe.redirectToCheckout({
+                    items: [{sku: 'sku_GPn9Mb0xZnqcYo', quantity: parseInt(hours)}],
+
+                    // Do not rely on the redirect to the successUrl for fulfilling
+                    // purchases, customers may not always reach the success_url after
+                    // a success    ful payment.
+                    // Instead use one of the strategies described in
+                    // https://stripe.com/docs/payments/checkout/fulfillment
+                    // successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
+                    // cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
+                })
+                    .then(function (result) {
+                        if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                            alert(result.error.message)
+                        } else {
+                            console.log('checkout', result);
+                            signup();
+                        }
+                    });
+            }
+        },
+        invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
     $("#square1_cover").click(function () {
         square1_cover(true);
     });

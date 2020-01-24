@@ -87,7 +87,7 @@ require_once( "common/header.php" );
                                         </div>
 
                                         <div class="your-cvlink"><a href="javascript: void (0);">
-                                            <button type="submit" onclick="signup()">Sign up</button></a></div>
+                                            <button type="submit">Sign up</button></a></div>
                                         <div class="col-md-12">
                                             <div class="contact-result" style="display: none;"></div>
                                         </div>
