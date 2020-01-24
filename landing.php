@@ -62,7 +62,7 @@ require_once( "common/header.php" );
                                 </button>
                             </div>
 
-                            <form id="contact-form" class="square-sign-login-box">
+                            <form id="register-form" class="square-sign-login-box">
                                 <div class="square-sign-box">
                                     <input id="first_name" type="text" name="first_name" value="" placeholder="First name"
                                            class="register-input">
@@ -72,7 +72,7 @@ require_once( "common/header.php" );
                                            class="register-input">
                                     <input id="password" type="password" name="password" value="" placeholder="Password"
                                            class="register-input">
-                                    <input id="user_liner" type="password" name="user_liner" value=""
+                                    <input id="user_liner" type="text" name="user_liner" value=""
                                            placeholder="Your one liner e.g. 'Hardworking,Trustworthy,Dynamic, and Determined Individual' "
                                            class="register-input" maxlength="100">
                                     <div class="landing-bottom">
@@ -86,8 +86,9 @@ require_once( "common/header.php" );
                                             </label>
                                         </div>
 
-                                        <div class="your-cvlink"><a href="javascript: void (0);">
-                                            <button type="submit">Sign up</button></a></div>
+                                        <div class="your-cvlink">
+                                            <button type="submit">Sign up</button>
+                                        </div>
                                         <div class="col-md-12">
                                             <div class="contact-result" style="display: none;"></div>
                                         </div>
@@ -106,7 +107,7 @@ require_once( "common/header.php" );
                                 </button>
                             </div>
 
-                            <form id="contact-form" class="square-sign-login-box">
+                            <form id="login-form" class="square-sign-login-box">
                                 <div class="square-sign-box">
                                     <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
                                     <input  type="password" name="password" value="" placeholder="Password"  class="register-input">

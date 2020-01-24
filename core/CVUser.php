@@ -131,12 +131,13 @@ class CVUser {
 
 		$data = CV_realEscapeArray( $data );
 
-		$usName      = "";
 		$usFirstName = isset( $data["usFirstName"] ) ? $data["usFirstName"] : "";
 		$usLastName  = isset( $data["usLastName"] ) ? $data["usLastName"] : "";
 		$usPassword  = isset( $data["usPassword"] ) ? $data["usPassword"] : "";
 		$usEmail     = isset( $data["usEmail"] ) ? $data["usEmail"] : "";
 		$userLiner     = isset( $data["userLiner"] ) ? $data["userLiner"] : "";
+
+        $usName = CV_generateUsername($usFirstName, $usLastName);
 		$usToken     = time() . CV_generateRandom( 32 );
 
 		$sql = "INSERT INTO tbl_user

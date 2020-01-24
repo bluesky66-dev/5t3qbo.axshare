@@ -202,7 +202,7 @@ function signup() {//var $result = $("#result");
 
 $(document).ready(function () {
 
-    var validator = $('#contact-form').validate({
+    $('#register-form').validate({
         rules: {
             first_name: {
                 required: true
@@ -226,7 +226,16 @@ $(document).ready(function () {
         },
         errorElement : 'div',
         errorLabelContainer: '.errorTxt',
-        submitHandler: function(form) {
+        errorPlacement: function(error, element) {
+            if (element.attr("name") == "first_name" )
+                error.insertAfter(".square-sign-box");
+            else if  (element.attr("name") == "phone" )
+                error.insertAfter(".some-other-class");
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function(form, e) {
+            e.preventDefault();
             // some other code
             // maybe disabling submit button
             // then:
@@ -236,7 +245,72 @@ $(document).ready(function () {
             var password = $("#password").val();
             var user_line = $("#user_liner").val();
 
-            var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
+            var formData = {
+                email: email,
+                first_name: first_name,
+                last_name: last_name,
+                password: password,
+                user_line: user_line,
+
+            };
+            $.ajax({
+                method: "POST",
+                url: "async/register.php",
+                dataType: "json",
+                data: formData
+
+            }).done(function (result) {
+                var $resultDiv = $(".contact-result");
+                $resultDiv.show();
+                $resultDiv.removeClass("text-success text-danger");
+                if (result.type === "error") {
+                    $resultDiv.addClass("text-danger");
+                    $resultDiv.text(result.text);
+                } else {
+                    document.getElementById("contact-form").reset();
+                    $resultDiv.addClass("text-success");
+                    $resultDiv.text("Thank you, your message has been sent successfully.");
+                }
+            });
+
+        },
+        invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
+    $('#login-form').validate({
+        rules: {
+            email: {
+                required: true,
+                // email: true
+            },
+            password: {
+                required: true,
+
+            },
+        },
+        errorElement : 'div',
+        errorLabelContainer: '.errorTxt',
+        errorPlacement: function(error, element) {
+            if (element.attr("name") == "first_name" )
+                error.insertAfter(".square-sign-box");
+            //border-red//
+
+            else if  (element.attr("name") == "phone" )
+                error.insertAfter(".some-other-class");
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function(form, e) {
+            e.preventDefault();
+            // some other code
+            // maybe disabling submit button
+            // then:
+            var email = $("#email").val();
+            var first_name = $("#first_name").val();
+            var last_name = $("#last_name").val();
+            var password = $("#password").val();
+            var user_line = $("#user_liner").val();
 
             var formData = {
                 email: email,
@@ -246,40 +320,26 @@ $(document).ready(function () {
                 user_line: user_line,
 
             };
+            $.ajax({
+                method: "POST",
+                url: "async/register.php",
+                dataType: "json",
+                data: formData
 
-            console.log('formData', formData);
+            }).done(function (result) {
+                var $resultDiv = $(".contact-result");
+                $resultDiv.show();
+                $resultDiv.removeClass("text-success text-danger");
+                if (result.type === "error") {
+                    $resultDiv.addClass("text-danger");
+                    $resultDiv.text(result.text);
+                } else {
+                    document.getElementById("contact-form").reset();
+                    $resultDiv.addClass("text-success");
+                    $resultDiv.text("Thank you, your message has been sent successfully.");
+                }
+            });
 
-            window.localStorage.setItem('formData', JSON.stringify(formData)); //payment set
-            // alert("ok");
-
-
-
-            console.log('checkout', validator);
-            if (typeof stripe !== "undefined") { //undefined next
-                stripe.redirectToCheckout({
-                    items: [{sku: 'sku_GPn9Mb0xZnqcYo', quantity: parseInt(hours)}],
-
-                    // Do not rely on the redirect to the successUrl for fulfilling
-                    // purchases, customers may not always reach the success_url after
-                    // a success    ful payment.
-                    // Instead use one of the strategies described in
-                    // https://stripe.com/docs/payments/checkout/fulfillment
-                    // successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
-                    // cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
-                })
-                    .then(function (result) {
-                        if (result.error) {
-                            // If `redirectToCheckout` fails due to a browser or network
-                            // error, display the localized error message to your customer.
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                            alert(result.error.message)
-                        } else {
-                            console.log('checkout', result);
-                            signup();
-                        }
-                    });
-            }
         },
         invalidHandler: function (e, validator) {
             // $("div.error").hide();

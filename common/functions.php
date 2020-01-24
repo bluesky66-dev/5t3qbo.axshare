@@ -316,4 +316,8 @@ function CV_array_to_csv($data, $filename, $attachment = false, $headers = true)
 	fclose($fp);
 }
 
+function CV_generateUsername($firstName, $lastName){
+    $username = "";
+    return $username;
+}
 ?>
