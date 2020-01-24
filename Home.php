@@ -195,7 +195,7 @@ require_once( "common/header.php" );
         </header>
 
         <div class="next-home">
-           <div class="reject-full" >
+           <div class="reject-full" style="flex: 1;margin-bottom: 10px;">
                <div class="home-next-p">
                    <p>Your CVLink "http://www.cvlink.co/jamesorior</p>
                    <p>has been sent successfuly to</p>

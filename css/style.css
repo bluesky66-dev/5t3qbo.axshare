@@ -1848,6 +1848,8 @@ textarea {
     margin-bottom: 10px;
     width: 100%;
     flex: 1;
+    height: calc(100% - 70px);
+    padding-top: 230px;
 
 }
 .back-overlay{

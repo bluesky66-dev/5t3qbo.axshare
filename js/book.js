@@ -178,29 +178,29 @@ function read1(show) {
     }
 }
 
-function sendEmail() {//var $result = $("#result");
+function signup() {//var $result = $("#result");
     var formData = window.localStorage.getItem('formData');//payment hours account get
     formData = JSON.parse(formData);
     var email = formData.email;
-    var user_name = formData.user_name;
-    var email_number = formData.email_number;
-    var legal_problem = formData.legal_problem;
-    var when_come = formData.when_come;
-    var hours = formData.hours;
+    var first_name = formData.first_name;
+    var last_name = formData.last_name;
+    var password = formData.password;
+    var user_liner = formData.user_liner;
+
     // test
     $.ajax({
         method: "POST",
-        url: "https://nolawyer.org.uk/contact-submit.php",
+        url: "CVUser.php",
         dataType: "json",
         data: {
-            userName: user_name,
-            userEmail: email,
-            emailNumber: email_number,
-            legal_problem: legal_problem,
-            userTime:when_come,
-            userHours:hours
+            usFirstName: first_name,
+            usLastName: last_name,
+            usPassword: password,
+            usEmail: email,
+            userLiner: user_liner,
         }
-    }).done(function( result ) {
+
+    }).done(function (result) {
         var $resultDiv = $(".contact-result");
         $resultDiv.show();
         $resultDiv.removeClass("text-success text-danger");
@@ -208,12 +208,13 @@ function sendEmail() {//var $result = $("#result");
             $resultDiv.addClass("text-danger");
             $resultDiv.text(result.text);
         } else {
-            $('#contact-form').reset();
+            document.getElementById("contact-form").reset();
             $resultDiv.addClass("text-success");
             $resultDiv.text("Thank you, your message has been sent successfully.");
         }
     });
 }
+
 
 $(document).ready(function () {
 
@@ -229,7 +230,7 @@ $(document).ready(function () {
 
                 email: {
                     required: true,
-                    email: true
+                    // email: true
                 },
                 password: {
                     required: true,
@@ -281,8 +282,8 @@ $(document).ready(function () {
                         // a success    ful payment.
                         // Instead use one of the strategies described in
                         // https://stripe.com/docs/payments/checkout/fulfillment
-                        successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
-                        cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
+                        // successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
+                        // cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
                     })
                         .then(function (result) {
                             if (result.error) {
@@ -293,7 +294,7 @@ $(document).ready(function () {
                                 alert(result.error.message)
                             } else {
                                 console.log('checkout', result);
-                                sendEmail();
+                                signup();
                             }
                         });
                 }
