@@ -19,6 +19,7 @@
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://js.stripe.com/v3"></script>

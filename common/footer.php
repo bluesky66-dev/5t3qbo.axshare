@@ -62,10 +62,10 @@
             <div class=" footer-pt " >
                 <div class="footer-bottom" >
                     <div>
-                        <a href="privacy.html"><span>Privacy Policy</span></a>
+                        <a href="privacy.php"><span>Privacy Policy</span></a>
                     </div>
                     <div class="footer-term">
-                        <a href="terms.html"><span>Terms & Conditions</span></a>
+                        <a href="terms.php"><span>Terms & Conditions</span></a>
                     </div>
                 </div>
             </div>
