@@ -1,16 +1,13 @@
-<?php require_once( "load.php" );
-global $user, $isLogin;
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title> nolawyer.org.uk </title>
+    <title> CV Link </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="keywords">
 
-    <link href="images/onboarding_icon2_u12.png" rel="icon">
+    <link href="images/favicon.png" rel="icon">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">

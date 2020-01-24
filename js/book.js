@@ -217,104 +217,111 @@ function sendEmail() {//var $result = $("#result");
 
 $(document).ready(function () {
 
-    // if (typeof validate !== 'undefined') {
-    //     var validator = $('#contact-form').validate({
-    //         rules: {
-    //             user_name: {
-    //                 required: true
-    //             },
-    //             email: {
-    //                 required: true,
-    //                 email: true
-    //             },
-    //             email_number: {
-    //                 required: true,
-    //                 number: true
-    //             },
-    //             legal_problem: {
-    //                 required: true,
-    //             },
-    //             when_come: {
-    //                 required: true,
-    //             },
-    //             hours: {
-    //                 required: true,
-    //             },
-    //
-    //         },
-    //         errorElement : 'div',
-    //         errorLabelContainer: '.errorTxt',
-    //         submitHandler: function(form) {
-    //             // some other code
-    //             // maybe disabling submit button
-    //             // then:
-    //             var email = $("#email").val();
-    //             var user_name = $("#user_name").val();
-    //             var email_number = $("#email_number").val();
-    //             var legal_problem = $("#legal_problem").val();
-    //             var when_come = $("#when_come").val();
-    //             var hours = $("#hours").val();
-    //             var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
-    //
-    //             var formData = {
-    //                 email: email,
-    //                 user_name: user_name,
-    //                 email_number: email_number,
-    //                 legal_problem: legal_problem,
-    //                 when_come: when_come,
-    //                 hours: hours,
-    //             };
-    //
-    //             console.log('formData', formData);
-    //
-    //             window.localStorage.setItem('formData', JSON.stringify(formData)); //payment set
-    //             // alert("ok");
-    //
-    //
-    //
-    //             console.log('checkout', validator);
-    //             if (typeof stripe !== "undefined") { //undefined next
-    //                 stripe.redirectToCheckout({
-    //                     items: [{sku: 'sku_GPn9Mb0xZnqcYo', quantity: parseInt(hours)}],
-    //
-    //                     // Do not rely on the redirect to the successUrl for fulfilling
-    //                     // purchases, customers may not always reach the success_url after
-    //                     // a success    ful payment.
-    //                     // Instead use one of the strategies described in
-    //                     // https://stripe.com/docs/payments/checkout/fulfillment
-    //                     successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
-    //                     cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
-    //                 })
-    //                     .then(function (result) {
-    //                         if (result.error) {
-    //                             // If `redirectToCheckout` fails due to a browser or network
-    //                             // error, display the localized error message to your customer.
-    //                             var displayError = document.getElementById('error-message');
-    //                             displayError.textContent = result.error.message;
-    //                             alert(result.error.message)
-    //                         } else {
-    //                             console.log('checkout', result);
-    //                             sendEmail();
-    //                         }
-    //                     });
-    //             }
-    //         },
-    //         invalidHandler: function (e, validator) {
-    //             // $("div.error").hide();
-    //         },
-    //     });
-    // }
-    // if (typeof daterangepicker !== 'undefined') {
-    //     $('#when_come').daterangepicker({  /*calendar*/
-    //         singleDatePicker: true,
-    //         // showDropdowns: true,
-    //         // minYear: 1901,
-    //         // maxYear: parseInt(moment().format('YYYY'),10)com
-    //     }, function(start, end, label) {
-    //         var years = moment().diff(start, 'years');
-    //         console.log("You are " + years + " years old!");
-    //     });
-    // }
+    if (typeof validate !== 'undefined') {
+        var validator = $('#contact-form').validate({
+            rules: {
+                user_name: {
+                    required: true
+                },
+                f_name: {
+                    required: true
+                },
+                l_name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                user_liner: {
+                    required: true,
+
+                },
+                token: {
+                    required: true,
+                },
+                update_time: {
+                    required: true,
+                },
+                create_time: {
+                    required: true,
+                },
+
+            },
+            errorElement : 'div',
+            errorLabelContainer: '.errorTxt',
+            submitHandler: function(form) {
+                // some other code
+                // maybe disabling submit button
+                // then:
+                var email = $("#email").val();
+                var first_name = $("#first_name").val();
+                var last_name = $("#last_name").val();
+                var email_number = $("#email_number").val();
+                var legal_problem = $("#legal_problem").val();
+                var when_come = $("#when_come").val();
+                var hours = $("#hours").val();
+                var stripe = Stripe("pk_test_Q1zE6Ng0BGqpUE4vv0h3gvqj00EL6S0bkW"); //payment
+
+                var formData = {
+                    email: email,
+                    user_name: user_name,
+                    email_number: email_number,
+                    legal_problem: legal_problem,
+                    when_come: when_come,
+                    hours: hours,
+                };
+
+                console.log('formData', formData);
+
+                window.localStorage.setItem('formData', JSON.stringify(formData)); //payment set
+                // alert("ok");
+
+
+
+                console.log('checkout', validator);
+                if (typeof stripe !== "undefined") { //undefined next
+                    stripe.redirectToCheckout({
+                        items: [{sku: 'sku_GPn9Mb0xZnqcYo', quantity: parseInt(hours)}],
+
+                        // Do not rely on the redirect to the successUrl for fulfilling
+                        // purchases, customers may not always reach the success_url after
+                        // a success    ful payment.
+                        // Instead use one of the strategies described in
+                        // https://stripe.com/docs/payments/checkout/fulfillment
+                        successUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/Book_Consultation.html',
+                        cancelUrl: 'https://bluesky66-dev.github.io/nolaywer.co.uk/canceled.html',
+                    })
+                        .then(function (result) {
+                            if (result.error) {
+                                // If `redirectToCheckout` fails due to a browser or network
+                                // error, display the localized error message to your customer.
+                                var displayError = document.getElementById('error-message');
+                                displayError.textContent = result.error.message;
+                                alert(result.error.message)
+                            } else {
+                                console.log('checkout', result);
+                                sendEmail();
+                            }
+                        });
+                }
+            },
+            invalidHandler: function (e, validator) {
+                // $("div.error").hide();
+            },
+        });
+    }
+    if (typeof daterangepicker !== 'undefined') {
+        $('#when_come').daterangepicker({  /*calendar*/
+            singleDatePicker: true,
+            // showDropdowns: true,
+            // minYear: 1901,
+            // maxYear: parseInt(moment().format('YYYY'),10)com
+        }, function(start, end, label) {
+            var years = moment().diff(start, 'years');
+            console.log("You are " + years + " years old!");
+        });
+    }
     $("#square1_cover").click(function () {
         square1_cover(true);
     });

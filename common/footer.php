@@ -1,73 +1,79 @@
+<hr style="background: #077cff">
+
 <div class="footer">
-    <div class="row footer-first" >
-        <div class="col-xl-5 footer-circle">
-            <div class="circle-sa51">
-                <div class="sa51">
-                    <a href="Home.html"><img src="images/sa51.png"></a>
+    <div class="footer-back">
+        <div class="row footer-first" >
+            <div class="col-xl-5 footer-circle">
+                <div class="circle-sa51">
+                    <div class="sa51">
+                        <a href="Home.php"><img src="images/sa51.png"></a>
+                    </div>
+                    <div class="sa-span">
+                        <a href="Home.php"><span>CVLink</span></a>
+                    </div>
+
                 </div>
-                <div class="sa-span">
-                    <a href="Home.html"><span>CVLink</span></a>
+                <div class="circle-sa51 send">
+                    <span>Don't just send your CV into a black hole, rather pitch employers with CVLink and make that first and lasing impression count.</span>
+
                 </div>
-
             </div>
-            <div class="circle-sa51 send">
-                <span>Don't just send your CV into a black hole, rather pitch employers with CVLink and make that first and lasing impression count.</span>
 
+            <div class="col-xl-1 space col-md-1">
+            </div>
+
+            <div class="col-xl-2 col-md-6">
+                <div class="our-company">
+                    <p>Our Company</p>
+                    <a href="Home.php"><span>How it works</span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-5 footer-social" style="margin: 0px;">
+                <div class="our-company">
+                    <p>Our Social Media Presence</p>
+                    <div class="footer-right" >
+                        <div>
+                            <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right" >
+                        <div>
+                            <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
+                        </div>
+                        <div class="footer-span">
+                            <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="col-xl-2 space col-md-2">
-        </div>
-
-        <div class="col-xl-2 col-md-5">
-            <div class="our-company">
-                <p>Our Company</p>
-                <a href="#"><span>How it works</span></a>
+        <div class="row footer-second " >
+            <div class=" footer-circle">
+                <div class="footer-2019">
+                    <p>© 2019 CVLink</p>
+                </div>
             </div>
-        </div>
-        <div class="col-xl-3 col-md-5" style="margin: 0px;">
-            <div class="our-company">
-                <p>Our Social Media Presence</p>
-                <div class="footer-right" >
+
+
+            <div class=" footer-pt " >
+                <div class="footer-bottom" >
                     <div>
-                        <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
+                        <a href="privacy.html"><span>Privacy Policy</span></a>
                     </div>
-                    <div class="footer-span">
-                        <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
+                    <div class="footer-term">
+                        <a href="terms.html"><span>Terms & Conditions</span></a>
                     </div>
-                </div>
-
-                <div class="footer-right" >
-                    <div>
-                        <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
-                    </div>
-                    <div class="footer-span">
-                        <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row footer-second " >
-        <div class="col-xl-5 col-md-4 footer-circle">
-            <div class="footer-2019">
-                <p>© 2019 CVLink</p>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-4 space"></div>
-
-        <div class="col-xl-3 col-md-4">
-            <div class="footer-bottom">
-                <div >
-                    <a href="privacy.html"><span>Privacy Policy</span></a>
-                </div>
-                <div class="footer-term">
-                    <a href="terms.html"><span>Terms & Conditions</span></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <!-- /.wrapper -->
 

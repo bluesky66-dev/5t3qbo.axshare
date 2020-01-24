@@ -1,41 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title> CV Link</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="" name="keywords">
-
-    <link href="images/favicon.png" rel="icon">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
-
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <script src="https://js.stripe.com/v3"></script>
-
-</head>
-<body>
-
-
+<?php
+require_once( "common/header.php" );
+?>
 
 <header id="header">
     <div id="newset" class="header-relative">
         <div id="landing-img" class="logo">
             <div class="logo-img">
-                <a href="landing.html"><img src="images/tag.png"></a>
+                <a href="landing.php"><img src="images/tag.png"></a>
             </div>
             <div class="logo-span">
-                <a href="landing.html"><span>CVLink</span></a>
+                <a href="landing.php"><span>CVLink</span></a>
             </div>
 
         </div>
@@ -56,7 +30,7 @@
                 <div class="row landing-row">
                     <div class="col-xl-6 your-first">
                         <div class="first">
-                            <a href="Home.html"><p>Your first impression starts here!</p></a>
+                            <a href="Home.php"><p>Your first impression starts here!</p></a>
                         </div>
                         <div class="first-span">
                             <span style="font-family:'Poppins';font-weight:400;">Don't just send your CV into a </span>
@@ -112,7 +86,7 @@
                                             </label>
                                         </div>
 
-                                        <div class="your-cvlink"><a href="Home.html">
+                                        <div class="your-cvlink"><a href="Home.php">
                                             <button >Sign up</button></a></div>
 
                                     </div>
@@ -142,7 +116,7 @@
                                             </label>
                                         </div>
 
-                                        <div class=" sign-in" ><a href="Home.html"><button >Sign in</button></a></div>
+                                        <div class=" sign-in" ><a href="Home.php"><button >Sign in</button></a></div>
 
                                     </div>
                                     <a href="javascript: void (0);"><div class="forgot">
@@ -239,110 +213,7 @@
         </div>
     </div>
 </div>
-<hr style="background: #077cff">
-
-<div class="footer">
-    <div class="footer-back">
-        <div class="row footer-first" >
-            <div class="col-xl-5 footer-circle">
-                <div class="circle-sa51">
-                    <div class="sa51">
-                        <a href="Home.html"><img src="images/sa51.png"></a>
-                    </div>
-                    <div class="sa-span">
-                        <a href="Home.html"><span>CVLink</span></a>
-                    </div>
-
-                </div>
-                <div class="circle-sa51 send">
-                    <span>Don't just send your CV into a black hole, rather pitch employers with CVLink and make that first and lasing impression count.</span>
-
-                </div>
-            </div>
-
-            <div class="col-xl-1 space col-md-1">
-            </div>
-
-            <div class="col-xl-2 col-md-6">
-                <div class="our-company">
-                    <p>Our Company</p>
-                    <a href="Home.html"><span>How it works</span></a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-5 footer-social" style="margin: 0px;">
-                <div class="our-company">
-                    <p>Our Social Media Presence</p>
-                    <div class="footer-right" >
-                        <div>
-                            <a href="https://www.facebook.com/nolawyeruk/"><img src="images/face.png"></a>
-                        </div>
-                        <div class="footer-span">
-                            <a href="https://www.facebook.com/nolawyeruk/"><span>Facebook</span></a>
-                        </div>
-                    </div>
-
-                    <div class="footer-right" >
-                        <div>
-                            <a href=" https://twitter.com/nolawyeruk"><img src="images/bird.png"></a>
-                        </div>
-                        <div class="footer-span">
-                            <a href=" https://twitter.com/nolawyeruk"><span>Twitter</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row footer-second " >
-            <div class=" footer-circle">
-                <div class="footer-2019">
-                    <p>© 2019 CVLink</p>
-                </div>
-            </div>
-
-
-            <div class=" footer-pt " >
-                <div class="footer-bottom" >
-                    <div>
-                        <a href="privacy.html"><span>Privacy Policy</span></a>
-                    </div>
-                    <div class="footer-term">
-                        <a href="terms.html"><span>Terms & Conditions</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- /.wrapper -->
-
-<!-- Start Core Plugins
-   =====================================================================-->
-<!-- jQuery -->
-<script src="lib/jquery/jquery.min.js"></script>
-<!--    <script src="lib/jquery/jquery-3.2.1.min.js"></script>-->
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/mobile-nav/mobile-nav.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.validate.js"></script>
-<script type="text/javascript" src="js/additional-methods.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-<!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
-<script src="js/book.js"></script>
-
-</body>
-</html>
+<?php
+require_once( "common/footer.php" );
+?>
 
