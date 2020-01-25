@@ -1,4 +1,10 @@
-
+$.validator.addMethod(
+    "strongPassword",
+    function(value, element) {
+        return /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/.test(value) && /[A-Z]/.test(value) && /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value) && value.length>7
+    },
+    "should include alphabets, numbers and special characters."
+);
 function upsign() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -219,6 +225,7 @@ $(document).ready(function () {
             },
             password: {
                 required: true,
+                strongPassword: true,
 
             },
             user_liner: {
@@ -228,13 +235,14 @@ $(document).ready(function () {
                 required: true,
             },
 
-
         },
         messages: {
             first_name: "Enter your first name",
             last_name: "Enter your last name",
             email: "Enter your email",
-            password: "Enter your password",
+            password: {
+                required: "Enter your password"
+            },
             user_liner: "Enter your user liner",
             check_out: "Enter your check",
         },
@@ -258,7 +266,6 @@ $(document).ready(function () {
                 $(".error-liner").html(error);
             else if (element.attr("name") == "check_out" )
                 $(".error-check").html(error);
-
             else
                 error.insertAfter(element);
         },
@@ -460,7 +467,6 @@ $(document).ready(function () {
         },
     });
 
-
     $("#square1_cover").click(function () {
         square1_cover(true);
     });
@@ -492,8 +498,6 @@ $(document).ready(function () {
     $("#word-see").click(function () {
         word(true);
     });
-
-
 
     $('#when_come').data('datepicker');
 
