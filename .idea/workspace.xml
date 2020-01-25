@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/async/category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/async/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/async/sales.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contactform/contactform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/CVUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/async/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing.php" afterDir="false" />
     </list>
@@ -30,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="625">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
@@ -39,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="242" column="52" lean-forward="true" selection-start-line="242" selection-start-column="52" selection-end-line="242" selection-end-column="52" />
+            <state relative-caret-position="481">
+              <caret line="395" column="39" selection-start-line="395" selection-start-column="39" selection-end-line="395" selection-end-column="39" />
               <folding>
                 <element signature="n#!!block;n#upsign#0" />
                 <element signature="e#101#269#0" />
@@ -69,7 +64,7 @@
                 <element signature="n#!!block;n#user_name1#0" />
                 <element signature="n#!!block;n#read#0" />
                 <element signature="n#!!block;n#read1#0" />
-                <element signature="e#8222#9629#0" />
+                <element signature="e#8948#11253#0" />
               </folding>
             </state>
           </provider>
@@ -78,8 +73,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/landing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="64" column="46" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="46" />
+            <state relative-caret-position="503">
+              <caret line="176" column="67" selection-start-line="176" selection-start-column="67" selection-end-line="176" selection-end-column="67" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="759" column="20" selection-start-line="759" selection-start-column="20" selection-end-line="759" selection-end-column="20" />
+              <folding>
+                <element signature="e#11#129#0" />
+                <element signature="e#154#271#0" />
+                <element signature="e#284#395#0" />
+                <element signature="e#408#740#0" />
+                <element signature="e#753#1202#0" />
+                <element signature="e#1215#1650#0" />
+                <element signature="e#1663#2112#0" />
+                <element signature="e#2119#2151#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="350">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -96,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/CVUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="138" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="666">
+              <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -105,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="320" column="21" lean-forward="true" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
+            <state relative-caret-position="675">
+              <caret line="320" column="21" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -122,11 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>overlay-home-bottom</find>
-      <find>.angle-recruiter</find>
-      <find>reject</find>
-      <find>half</find>
-      <find>from</find>
       <find>414</find>
       <find>767</find>
       <find>white-background2</find>
@@ -152,6 +165,11 @@
       <find>stripe</find>
       <find>shops[0]</find>
       <find>how</find>
+      <find>.square-sign-login-box</find>
+      <find>userName</find>
+      <find>userEmail</find>
+      <find>$to_Email</find>
+      <find>error</find>
     </findStrings>
     <replaceStrings>
       <replace>images/yellow-sa.png</replace>
@@ -186,7 +204,6 @@
         <option value="$PROJECT_DIR$/recruiter_home.php" />
         <option value="$PROJECT_DIR$/common/DB_Connection.php" />
         <option value="$PROJECT_DIR$/Home.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/privacy.html" />
         <option value="$PROJECT_DIR$/terms.html" />
         <option value="$PROJECT_DIR$/common/footer.php" />
@@ -195,10 +212,11 @@
         <option value="$PROJECT_DIR$/common/header.php" />
         <option value="$PROJECT_DIR$/async/shop.php" />
         <option value="$PROJECT_DIR$/common/config.php" />
-        <option value="$PROJECT_DIR$/landing.php" />
-        <option value="$PROJECT_DIR$/async/register.php" />
         <option value="$PROJECT_DIR$/common/functions.php" />
         <option value="$PROJECT_DIR$/core/CVUser.php" />
+        <option value="$PROJECT_DIR$/async/register.php" />
+        <option value="$PROJECT_DIR$/landing.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/book.js" />
       </list>
     </option>
@@ -211,8 +229,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="246" />
-    <option name="y" value="313" />
+    <option name="x" value="281" />
     <option name="width" value="1647" />
     <option name="height" value="578" />
   </component>
@@ -308,14 +325,8 @@
       <workItem from="1579586614131" duration="5637000" />
       <workItem from="1579597123404" duration="85968000" />
       <workItem from="1579847683631" duration="4934000" />
-      <workItem from="1579852855528" duration="11654000" />
-    </task>
-    <task id="LOCAL-00018" summary="landing?">
-      <created>1579643714166</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1579643714166</updated>
+      <workItem from="1579852855528" duration="17582000" />
+      <workItem from="1579913851235" duration="5892000" />
     </task>
     <task id="LOCAL-00019" summary="home-overlay">
       <created>1579658239000</created>
@@ -653,21 +664,28 @@
       <option name="project" value="LOCAL" />
       <updated>1579862303532</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="change html-&gt;php">
+      <created>1579867951808</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1579867951809</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183154000" />
+    <option name="totallyTimeSpent" value="194974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.032502707" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -737,7 +755,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/landing.php</url>
-          <line>168</line>
+          <line>208</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -1911,23 +1929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="1851" column="22" selection-start-line="1851" selection-start-column="22" selection-end-line="1851" selection-end-column="22" />
-          <folding>
-            <element signature="e#11#129#0" />
-            <element signature="e#154#271#0" />
-            <element signature="e#284#395#0" />
-            <element signature="e#408#740#0" />
-            <element signature="e#753#1202#0" />
-            <element signature="e#1215#1650#0" />
-            <element signature="e#1663#2112#0" />
-            <element signature="e#2119#2151#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -2380,45 +2381,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="320" column="21" lean-forward="true" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
+        <state relative-caret-position="675">
+          <caret line="320" column="21" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="625">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="759" column="20" selection-start-line="759" selection-start-column="20" selection-end-line="759" selection-end-column="20" />
+          <folding>
+            <element signature="e#11#129#0" />
+            <element signature="e#154#271#0" />
+            <element signature="e#284#395#0" />
+            <element signature="e#408#740#0" />
+            <element signature="e#753#1202#0" />
+            <element signature="e#1215#1650#0" />
+            <element signature="e#1663#2112#0" />
+            <element signature="e#2119#2151#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="64" column="46" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="46" />
+        <state relative-caret-position="503">
+          <caret line="176" column="67" selection-start-line="176" selection-start-column="67" selection-end-line="176" selection-end-column="67" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="242" column="52" lean-forward="true" selection-start-line="242" selection-start-column="52" selection-end-line="242" selection-end-column="52" />
+        <state relative-caret-position="481">
+          <caret line="395" column="39" selection-start-line="395" selection-start-column="39" selection-end-line="395" selection-end-column="39" />
           <folding>
             <element signature="n#!!block;n#upsign#0" />
             <element signature="e#101#269#0" />
@@ -2447,7 +2476,7 @@
             <element signature="n#!!block;n#user_name1#0" />
             <element signature="n#!!block;n#read#0" />
             <element signature="n#!!block;n#read1#0" />
-            <element signature="e#8222#9629#0" />
+            <element signature="e#8948#11253#0" />
           </folding>
         </state>
       </provider>

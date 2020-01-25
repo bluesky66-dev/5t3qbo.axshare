@@ -14,13 +14,71 @@ $postData["usPassword"] = $_POST["password"];
 $postData["usEmail"] = $_POST["email"];
 $postData["userLiner"] = $_POST["user_line"];
 
-$queryResult = CVUser::insertUser($postData);
+if($_POST) {
+    //check if its an ajax request, exit if not
+    if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
-if ( ! $queryResult ) {
-    $result = "failed";
+        //exit script outputting json data
+        $output = json_encode(
+            array(
+                'type'=>'error',
+                'text' => 'Request must come from Ajax'
+            ));
+
+        die($output);
+    }
+
+    //check $_POST vars are set, exit if any missing
+    if(!isset($_POST["first_name"]) || !isset($_POST["last_name"]) || !isset($_POST["password"]) ||
+        !isset($_POST["email"])|| !isset($_POST["user_line"]))
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
+        die($output);
+    }
+
+    //Sanitize input data using PHP filter_var().
+    $first_name       = filter_var($_POST["first_name"], FILTER_SANITIZE_STRING);
+    $last_name     = filter_var($_POST["last_name"], FILTER_SANITIZE_STRING);
+    $email      = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $password      = filter_var($_POST["password"], FILTER_SANITIZE_EMAIL);
+    $user_line     = filter_var($_POST["user_line"], FILTER_SANITIZE_STRING);
+
+    //additional php validation
+    if(strlen($first_name)<3) // If length is less than 3 it will throw an HTTP error.
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'First Name is too short or empty!'));
+        die($output);
+    }
+    if(strlen($last_name)<3) // If length is less than 3 it will throw an HTTP error.
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Last Name is too short or empty!'));
+        die($output);
+    }
+
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) //email validation
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
+        die($output);
+    }
+    if(strlen($password)<10) // If length is less than 4 it will throw an HTTP error.
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid Password!'));
+        die($output);
+    }
+    if(strlen($user_line)<3) //check  message
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Too short user line! Please enter something.'));
+        die($output);
+    }
+
+    $queryResult = CVUser::insertUser($postData);
+
+    if ( ! $queryResult ) {
+        $result = "failed";
+    }
+    $data['result'] = $result;
+    $data['data']   = $queryResult;
+    $data['error']  = $error;
+    header( 'Content-Type: application/json' );
+    echo json_encode( $data );
 }
-$data['result'] = $result;
-$data['data']   = $queryResult;
-$data['error']  = $error;
-header( 'Content-Type: application/json' );
-echo json_encode( $data );

@@ -699,11 +699,72 @@ square-landing-book span{
 
 .square-sign-login-box {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
+}
+.error-textarea{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-last{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-email{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-password{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-liner{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-email-signin{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-password-signin{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-email-address{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
 .terms {
     font-weight: 700;
     color: #077CFF;

@@ -192,7 +192,7 @@ function signup() {//var $result = $("#result");
             $resultDiv.addClass("text-danger");
             $resultDiv.text(result.text);
         } else {
-            document.getElementById("contact-form").reset();
+            document.getElementById("register-form").reset();
             $resultDiv.addClass("text-success");
             $resultDiv.text("Thank you, your message has been sent successfully.");
         }
@@ -207,6 +207,7 @@ $(document).ready(function () {
             first_name: {
                 required: true
             },
+
             last_name: {
                 required: true
             },
@@ -222,13 +223,110 @@ $(document).ready(function () {
                 required: true,
             },
 
+        },
+        messages: {
+            first_name: "Enter your first name",
+            last_name: "Enter your last name",
+            email: "Enter your email",
+            password: "Enter your password",
+            user_liner: "Enter your user liner",
+        },
+        errorElement : 'div',
+        errorLabelContainer: '.errorTxt',
+        errorPlacement: function(error, element) {
+            // if (element.attr("name") == "first_name" )
+            //     $(".error-textarea").html(error);
+            // else if (element.attr("name") == "email" )
+            //     $(".error-email").html(error);
+
+            if (element.attr("name") == "first_name" )
+                $(".error-textarea").html(error);
+            else if (element.attr("name") == "last_name" )
+                 $(".error-last").html(error);
+            else if (element.attr("name") == "email" )
+                $(".error-email").html(error);
+            else if (element.attr("name") == "password" )
+                $(".error-password").html(error);
+            else if (element.attr("name") == "user_liner" )
+                $(".error-liner").html(error);
+
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function(form, e) {
+            e.preventDefault();
+            // some other code
+            // maybe disabling submit button
+            // then:
+            var email = $("#email").val();
+            var first_name = $("#first_name").val();
+            var last_name = $("#last_name").val();
+            var password = $("#password").val();
+            var user_line = $("#user_liner").val();
+
+            var formData = {
+                email: email,
+                first_name: first_name,
+                last_name: last_name,
+                password: password,
+                user_line: user_line,
+
+            };
+            $.ajax({
+                method: "POST",
+                url: "async/register.php",
+                dataType: "json",
+                data: formData
+
+            }).done(function (result) {
+                var $resultDiv = $(".contact-result");
+                $resultDiv.show();
+                $resultDiv.removeClass("text-success text-danger");
+                if (result.type === "error") {
+                    $resultDiv.addClass("text-danger");
+                    $resultDiv.text(result.text);
+                } else {
+                    document.getElementById("register-form").reset();
+                    $resultDiv.addClass("text-success");
+                    $resultDiv.text("Thank you, your message has been sent successfully.");
+                }
+            });
+
+        },
+        invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
+    $('#login-form').validate({
+        rules: {
+            email: {
+                required: true,
+                // email: true
+            },
+            password: {
+                required: true,
+
+            },
+        },
+        messages: {
+
+            email: "Enter your email",
+            password: "Enter your password",
 
         },
         errorElement : 'div',
         errorLabelContainer: '.errorTxt',
         errorPlacement: function(error, element) {
-            if (element.attr("name") == "first_name" )
-                error.insertAfter(".square-sign-box");
+
+            if (element.attr("name") == "email" )
+                $(".error-email-signin").html(error);
+            else if (element.attr("name") == "password" )
+                $(".error-password-signin").html(error);
+
+
+
+            //border-red//
+
             else if  (element.attr("name") == "phone" )
                 error.insertAfter(".some-other-class");
             else
@@ -278,22 +376,25 @@ $(document).ready(function () {
             // $("div.error").hide();
         },
     });
-    $('#login-form').validate({
+
+    $('#login-forgot').validate({
         rules: {
             email: {
                 required: true,
                 // email: true
             },
-            password: {
-                required: true,
 
-            },
+        },
+        messages: {
+            email: "Enter your email",
         },
         errorElement : 'div',
         errorLabelContainer: '.errorTxt',
         errorPlacement: function(error, element) {
-            if (element.attr("name") == "first_name" )
-                error.insertAfter(".square-sign-box");
+
+            if (element.attr("name") == "email" )
+                $(".error-email-address").html(error);
+
             //border-red//
 
             else if  (element.attr("name") == "phone" )
