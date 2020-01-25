@@ -61,7 +61,7 @@ if($_POST) {
         $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
         die($output);
     }
-    if(strlen($password)<10) // If length is less than 4 it will throw an HTTP error.
+    if(strlen($password)<4) // If length is less than 4 it will throw an HTTP error.
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid Password!'));
         die($output);
