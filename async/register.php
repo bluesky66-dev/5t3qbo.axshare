@@ -13,6 +13,7 @@ $postData["usLastName"] = $_POST["last_name"];
 $postData["usPassword"] = $_POST["password"];
 $postData["usEmail"] = $_POST["email"];
 $postData["userLiner"] = $_POST["user_line"];
+$postData["usCheckout"] = $_POST["check_out"];
 
 if($_POST) {
     //check if its an ajax request, exit if not

@@ -170,6 +170,7 @@ function signup() {//var $result = $("#result");
     var last_name = formData.last_name;
     var password = formData.password;
     var user_liner = formData.user_liner;
+    var check_out = formData.check_out;
 
     // test
     $.ajax({
@@ -182,6 +183,7 @@ function signup() {//var $result = $("#result");
             usPassword: password,
             usEmail: email,
             userLiner: user_liner,
+            usCheckout:check_out,
         }
 
     }).done(function (result) {
@@ -222,6 +224,10 @@ $(document).ready(function () {
             user_liner: {
                 required: true,
             },
+            check_out: {
+                required: true,
+            },
+
 
         },
         messages: {
@@ -230,6 +236,7 @@ $(document).ready(function () {
             email: "Enter your email",
             password: "Enter your password",
             user_liner: "Enter your user liner",
+            check_out: "Enter your check",
         },
         errorElement : 'div',
         errorLabelContainer: '.errorTxt',
@@ -249,6 +256,8 @@ $(document).ready(function () {
                 $(".error-password").html(error);
             else if (element.attr("name") == "user_liner" )
                 $(".error-liner").html(error);
+            else if (element.attr("name") == "check_out" )
+                $(".error-check").html(error);
 
             else
                 error.insertAfter(element);
@@ -263,6 +272,7 @@ $(document).ready(function () {
             var last_name = $("#last_name").val();
             var password = $("#password").val();
             var user_line = $("#user_liner").val();
+            var check_out = $("#check_out").val();
 
             var formData = {
                 email: email,
@@ -270,6 +280,7 @@ $(document).ready(function () {
                 last_name: last_name,
                 password: password,
                 user_line: user_line,
+                check_out: check_out,
 
             };
             $.ajax({
@@ -297,6 +308,8 @@ $(document).ready(function () {
             // $("div.error").hide();
         },
     });
+
+
     $('#login-form').validate({
         rules: {
             email: {
@@ -446,6 +459,8 @@ $(document).ready(function () {
             // $("div.error").hide();
         },
     });
+
+
     $("#square1_cover").click(function () {
         square1_cover(true);
     });

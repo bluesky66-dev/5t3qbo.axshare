@@ -146,11 +146,20 @@ require_once( "common/header.php" );
                                         </div>
                                     </div>
                                     <input  type="password" name="password" value="" placeholder="Password"  class="register-input">
+
+
                                     <div class="landing-bottom">
-                                        <div class="example">
-                                            <label class="checkbox-button">
-                                                <input type="checkbox" class="checkbox-button__input" id="" name="choice1">
-                                                <span class="checkbox-button__control"></span>
+                                        <div class="error-check">
+                                            <div class="col-md-12">
+                                                <div class="contact-result" style=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="example" >
+                                            <label class="checkbox-button" >
+
+
+                                                <input type="checkbox" class="checkbox-button__input" id="check_out" name="check_out">
+                                                <span class="checkbox-button__control" ></span>
                                                 <span class="checkbox-button__label" style="color:  #131031;">Remember me</span>
                                             </label>
                                         </div>
