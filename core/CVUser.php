@@ -7,6 +7,10 @@ class CVUser {
 	function __construct() {
 	}
 
+	function normalFunction(){
+	    return;
+    }
+
 	static public function getAllUsers() {
 		global $db;
 		$sql    = "SELECT us.user_id AS usId,
@@ -41,9 +45,19 @@ class CVUser {
 		return $result;
 	}
 
+	static public function checkUserName($username) {
+        global $db;
+        $sql    = "SELECT us.user_name FROM tbl_user us WHERE us.user_name LIKE '$username%' ORDER BY us.user_id DESC LIMIT 1";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            return false;
+        }
+        return $result[0];
+    }
+
 	static public function getUserById( $id ) {
 		global $db;
-		$sql    = "us.user_id AS usId,
+		$sql    = "SELECT us.user_id AS usId,
 						us.user_name AS usName,
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
@@ -64,7 +78,7 @@ class CVUser {
 
 	static public function getUserByToken( $token ) {
 		global $db;
-		$sql    = "us.user_id AS usId,
+		$sql    = "SELECT us.user_id AS usId,
 						us.user_name AS usName,
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
@@ -85,7 +99,7 @@ class CVUser {
 
 	static public function isLoginByEmail( $usEmail, $usPassword ) {
 		global $db;
-		$sql    = "us.user_id AS usId,
+		$sql    = "SELECT us.user_id AS usId,
 						us.user_name AS usName,
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
@@ -107,7 +121,7 @@ class CVUser {
 
 	static public function getUserByEmail( $email ) {
 		global $db;
-		$sql    = "us.user_id AS usId,
+		$sql    = "SELECT us.user_id AS usId,
 						us.user_name AS usName,
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
@@ -153,6 +167,7 @@ class CVUser {
 		$db->queryInsert( $sql );
 
 		$result = $db->getPrevInsertId();
+
 
 		return $result;
 	}
@@ -229,3 +244,6 @@ class CVUser {
 		return $fileManager;
 	}
 }
+
+//$cvUser = new CVUser();
+//$cvUser->normalFunction();

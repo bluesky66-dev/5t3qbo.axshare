@@ -279,8 +279,11 @@ $(document).ready(function () {
             var last_name = $("#last_name").val();
             var password = $("#password").val();
             var user_line = $("#user_liner").val();
-            var check_out = $("#check_out").val();
-
+            var check_out = $("#term_check").val();
+            if (!$('#term_check').is(":checked")) {
+                alert('You much agree the terms!');
+                return false;
+            }
             var formData = {
                 email: email,
                 first_name: first_name,
@@ -288,7 +291,6 @@ $(document).ready(function () {
                 password: password,
                 user_line: user_line,
                 check_out: check_out,
-
             };
             $.ajax({
                 method: "POST",
@@ -297,7 +299,7 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-result");
+                var $resultDiv = $(".contact-result-show");
                 $resultDiv.show();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
@@ -307,6 +309,7 @@ $(document).ready(function () {
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
+                    insign();
                 }
             });
 
@@ -378,14 +381,14 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-result");
+                var $resultDiv = $(".contact-result-show");
                 $resultDiv.show();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
                 } else {
-                    document.getElementById("contact-form").reset();
+                    document.getElementById("contact-form-show").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
                 }

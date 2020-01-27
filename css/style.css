@@ -766,11 +766,12 @@ square-landing-book span{
 
 }
 .error-check{
-    text-align: right;
+    text-align: center;
     color: red;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Poppins Regular';
-    font-size: 12px;
+    font-size: 18px;
+    margin-top: 125px;
 
 }
 .terms {

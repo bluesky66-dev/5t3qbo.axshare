@@ -317,7 +317,18 @@ function CV_array_to_csv($data, $filename, $attachment = false, $headers = true)
 }
 
 function CV_generateUsername($firstName, $lastName){
-    $username = "";
+    $username = $firstName.$lastName;
+    $isExist = CVUser::checkUserName($username);
+    if ($isExist) {
+        $lastIndex = str_replace($username, "", $isExist['user_name']);
+        echo $lastIndex;
+        if (!$lastIndex) {
+            $username = $username."1";
+        } else {
+            $lastIndex = $lastIndex * 1 + 1;
+            $username = $username.$lastIndex;
+        }
+    }
     return $username;
 }
 ?>

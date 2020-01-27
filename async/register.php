@@ -71,8 +71,21 @@ if($_POST) {
         $output = json_encode(array('type'=>'error', 'text' => 'Too short user line! Please enter something.'));
         die($output);
     }
+    $isExist = CVUser::getUserByEmail($email);
+    $queryResult = false;
 
-    $queryResult = CVUser::insertUser($postData);
+    if ($isExist) {
+        $output = json_encode(array('type'=>'error', 'text' => 'The email is already exist!'));
+
+        die($output);
+
+        echo "If you view the page source \r\n you will find a newline in this string.";
+    } else {
+        $queryResult = CVUser::insertUser($postData);
+        $queryResult = false;
+
+
+    }
 
     if ( ! $queryResult ) {
         $result = "failed";

@@ -105,11 +105,9 @@ require_once( "common/header.php" );
                                     <div class="landing-bottom">
                                         <div class="example">
                                             <label class="checkbox-button">
-                                                <input type="checkbox" class="checkbox-button__input" id="choice1-1"
-                                                       name="choice1">
+                                                <input type="checkbox" class="checkbox-button__input" id="term_check" name="term_check" value="1">
                                                 <span class="checkbox-button__control"></span>
-                                                <span class="checkbox-button__label"
-                                                      style="color:  #131031;">I agree to  <span class="terms"> cvlink terms</span></span>
+                                                <span class="checkbox-button__label" style="color:  #131031;">I agree to  <span class="terms"> cvlink terms</span></span>
                                             </label>
                                         </div>
 
@@ -121,6 +119,12 @@ require_once( "common/header.php" );
                                     </div>
                                 </div>
                             </form>
+
+                        </div>
+                        <div class="error-check">
+                            <div class="col-md-12">
+                                <div class="contact-result-show" style=""></div>
+                            </div>
                         </div>
 
                         <div class="login-signin"   style="display: none;">
@@ -148,14 +152,10 @@ require_once( "common/header.php" );
                                     <input  type="password" name="password" value="" placeholder="Password"  class="register-input">
 
                                     <div class="landing-bottom">
-                                        <div class="error-check">
-                                            <div class="col-md-12">
-                                                <div class="contact-result" style=""></div>
-                                            </div>
-                                        </div>
+
                                         <div class="example" >
                                             <label class="checkbox-button" >
-0                                               <input type="checkbox" class="checkbox-button__input" id="check_out" name="check_out">
+                                               <input type="checkbox" class="checkbox-button__input" id="check_out" name="check_out">
                                                 <span class="checkbox-button__control" ></span>
                                                 <span class="checkbox-button__label" style="color:  #131031;">Remember me</span>
                                             </label>
@@ -170,6 +170,7 @@ require_once( "common/header.php" );
                                 </div>
 
                             </form>
+
 
                         </div>
 
@@ -202,6 +203,7 @@ require_once( "common/header.php" );
                         </div>
 
                     </div>
+
                 </div>
                 <div id="mission-row" style="">
 
