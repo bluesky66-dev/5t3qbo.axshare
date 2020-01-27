@@ -76,10 +76,7 @@ if($_POST) {
 
     if ($isExist) {
         $output = json_encode(array('type'=>'error', 'text' => 'The email is already exist!'));
-
         die($output);
-
-        echo "If you view the page source \r\n you will find a newline in this string.";
     } else {
         $queryResult = CVUser::insertUser($postData);
         $queryResult = false;

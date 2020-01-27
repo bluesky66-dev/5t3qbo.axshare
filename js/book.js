@@ -274,6 +274,8 @@ $(document).ready(function () {
             // some other code
             // maybe disabling submit button
             // then:
+            var $resultDiv = $(".contact-result-show");
+            $resultDiv.text("");
             var email = $("#email").val();
             var first_name = $("#first_name").val();
             var last_name = $("#last_name").val();
@@ -299,7 +301,7 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-result-show");
+
                 $resultDiv.show();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {

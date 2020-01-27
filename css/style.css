@@ -774,6 +774,14 @@ square-landing-book span{
     margin-top: 125px;
 
 }
+.register-input.error,textarea.error{
+    border: 1px solid red;
+}
+
+
+#contact-form div.error{
+    display: none !important;
+}
 .terms {
     font-weight: 700;
     color: #077CFF;
