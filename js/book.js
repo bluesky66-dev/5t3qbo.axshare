@@ -117,6 +117,7 @@ function word() {
 }
 
 function insign() {
+    console.log("ddddddddddddd");
     $('.login').css('display', 'none');
     $('.login-signin').css('display', 'block');
 }

@@ -10,7 +10,7 @@ if (!$url) {
 } elseif ($url) {
     if ($user && $isLogin == "Y" && $url==$user['usName']) {
         require_once "Home.php";
-    } elseif($isLogin == "N") {
+    } elseif($user && !$isLogin == "N") {
 
         require_once "recruiter_home.php";
     }

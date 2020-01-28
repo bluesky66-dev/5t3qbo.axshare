@@ -1,4 +1,4 @@
-
+<hr style="background: #077cff;margin-top: 0;">
 
 <div class="footer">
     <div class="footer-back">

@@ -1,3 +1,6 @@
+<?php
+require_once( "common/header.php" );
+?>
 <header id="header">
     <div class="header-relative">
         <div class="logo">
@@ -25,7 +28,7 @@
                 <div class="blue_span">
                 <span >http://www.cvlink.co/</span>
                     <span>
-                        <?php echo "$url"?>
+                        <?php echo $url?>
                     </span>
             </div>
             </div>
@@ -80,7 +83,7 @@
         </div>
     </div>
 </div>
-<hr style="background: #077cff">
+
 
  <div class="overlay-home" style=" display: none">
 
