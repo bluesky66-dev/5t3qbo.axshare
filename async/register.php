@@ -87,9 +87,9 @@ if($_POST) {
     if ( ! $queryResult ) {
         $result = "failed";
     }
-    $data['result'] = $result;
+    $data['type'] = $result;
     $data['data']   = $queryResult;
-    $data['error']  = $error;
+    $data['text']  = $error;
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
 }

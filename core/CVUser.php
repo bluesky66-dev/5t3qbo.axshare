@@ -76,6 +76,27 @@ class CVUser {
 		return $result[0];
 	}
 
+    static public function getUserByUsername( $username ) {
+        global $db;
+        $sql    = "SELECT us.user_id AS usId,
+						us.user_name AS usName,
+						us.f_name AS usFirstName,
+						us.l_name AS usLastName,
+						us.email AS usEmail,
+						us.user_liner AS userLiner,
+						us.token AS usToken,
+						us.update_time AS updateTime,
+						us.create_time AS createTime
+						FROM tbl_user us
+				      WHERE us.user_name = '$username' ";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result[0] = [];
+        }
+
+        return $result[0];
+    }
+
 	static public function getUserByToken( $token ) {
 		global $db;
 		$sql    = "SELECT us.user_id AS usId,

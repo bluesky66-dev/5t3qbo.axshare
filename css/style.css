@@ -766,13 +766,21 @@ square-landing-book span{
 
 }
 .error-check{
-    text-align: center;
+    text-align: left;
     color: red;
     font-weight: 500;
     font-family: 'Poppins Regular';
     font-size: 18px;
     margin-top: 125px;
 
+}
+.error-check-remember{
+    text-align: left;
+    color: red;
+    font-weight: 500;
+    font-family: 'Poppins Regular';
+    font-size: 18px;
+    padding-top: 125px;
 }
 .register-input.error,textarea.error{
     border: 1px solid red;

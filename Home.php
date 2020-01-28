@@ -1,7 +1,3 @@
-<?php
-require_once( "common/header.php" );
-?>
-
 <header id="header">
     <div class="header-relative">
         <div class="logo">
@@ -27,7 +23,10 @@ require_once( "common/header.php" );
         <div id="about">
             <div class="email-url">
                 <div class="blue_span">
-                <span >http://www.cvlink.co/jamesorior</span>
+                <span >http://www.cvlink.co/</span>
+                    <span>
+                        <?php echo "$url"?>
+                    </span>
             </div>
             </div>
 

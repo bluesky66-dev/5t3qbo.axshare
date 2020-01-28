@@ -1,7 +1,3 @@
-<?php
-require_once( "common/header.php" );
-?>
-
 <header id="header">
     <div id="newset" class="header-relative">
         <div id="landing-img" class="logo">
@@ -119,13 +115,13 @@ require_once( "common/header.php" );
                                     </div>
                                 </div>
                             </form>
-
-                        </div>
-                        <div class="error-check">
-                            <div class="col-md-12">
-                                <div class="contact-result-show" style=""></div>
+                            <div class="error-check">
+                                <div class="col-md-12">
+                                    <div class="contact-result-show" style=""></div>
+                                </div>
                             </div>
                         </div>
+
 
                         <div class="login-signin"   style="display: none;">
                             <div class="square-landing-book">
@@ -143,19 +139,19 @@ require_once( "common/header.php" );
                                             <div class="contact-result" style=""></div>
                                         </div>
                                     </div>
-                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <input id="loginEmail" type="email" name="email" value="" placeholder="Email address"  class="register-input">
                                     <div class="error-password-signin">
                                         <div class="col-md-12">
                                             <div class="contact-result" style=""></div>
                                         </div>
                                     </div>
-                                    <input  type="password" name="password" value="" placeholder="Password"  class="register-input">
+                                    <input id="loginPass" type="password" name="password" value="" placeholder="Password"  class="register-input">
 
                                     <div class="landing-bottom">
 
                                         <div class="example" >
                                             <label class="checkbox-button" >
-                                               <input type="checkbox" class="checkbox-button__input" id="check_out" name="check_out">
+                                               <input type="checkbox" class="checkbox-button__input" id="remember-check" name="remember-check">
                                                 <span class="checkbox-button__control" ></span>
                                                 <span class="checkbox-button__label" style="color:  #131031;">Remember me</span>
                                             </label>
@@ -172,6 +168,11 @@ require_once( "common/header.php" );
                             </form>
 
 
+                        </div>
+                        <div class="error-check-remember">
+                            <div class="col-md-12">
+                                <div class="contact-logo-show" style=""></div>
+                            </div>
                         </div>
 
                         <div   class="forgot-screen" style="display: none">

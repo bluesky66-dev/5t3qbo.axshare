@@ -1,7 +1,7 @@
 <?php
 require_once( "../common/load.php" );
 global $user;
-if ( ! $user || ! MD_isAdmin() ) {
+if ( ! $user || ! CV_isAdmin() ) {
     header( "Status: 404 Not Found" );
     exit();
 }

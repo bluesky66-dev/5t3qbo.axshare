@@ -1,6 +1,7 @@
 <?php
 ob_start();
 session_start();
+
 if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
 	define( "DB_TYPE", "mysql" );
 	define( "DB_HOSTNAME", "localhost" );
@@ -27,12 +28,12 @@ define( "CV_SHARED_SECRET", "3lrmny1zu6" );
 
 
 if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
-	define( "CV_BACKEND", "http://localhost:7005/admin/" );
-	define( "CV_FRONTEND", "http://localhost:7005/" );
+	define( "CV_BACKEND", "" );
+	define( "CV_FRONTEND", "" );
 	define("CV_SERVER_DOCUMENT_ROOT", $_SERVER['DOCUMENT_ROOT']."/");
 	define("CV_ADMIN_SERVER_DOCUMENT_ROOT", $_SERVER['DOCUMENT_ROOT']."/admin/");
 	define("CV_MEDIA_DIR", $_SERVER['DOCUMENT_ROOT']."/images/");
-	define("CV_MEDIA_PATH", "http://localhost:7005/images/");
+	define("CV_MEDIA_PATH", "");
 }else{
 	define( "CV_BACKEND", "" );
 	define( "CV_FRONTEND", "" );
