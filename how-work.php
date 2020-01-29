@@ -54,7 +54,7 @@
         </div>
 
         <div class="header-button ">
-            <a href="how-work.html">
+            <a href="how-work.php">
                 <button>How it works</button>
             </a>
         </div>
@@ -134,7 +134,7 @@
             <div class="col-xl-2 col-md-6">
                 <div class="our-company">
                     <p>Our Company</p>
-                    <a href="how-work.html"><span>How it works</span></a>
+                    <a href="how-work.php"><span>How it works</span></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-5 footer-social" style="margin: 0px;">
