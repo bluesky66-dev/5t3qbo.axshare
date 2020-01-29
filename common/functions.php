@@ -321,7 +321,6 @@ function CV_generateUsername($firstName, $lastName){
     $isExist = CVUser::checkUserName($username);
     if ($isExist) {
         $lastIndex = str_replace($username, "", $isExist['user_name']);
-        echo $lastIndex;
         if (!$lastIndex) {
             $username = $username."1";
         } else {

@@ -12,7 +12,7 @@ $postData["usFirstName"] = $_POST["first_name"];
 $postData["usLastName"] = $_POST["last_name"];
 $postData["usPassword"] = $_POST["password"];
 $postData["usEmail"] = $_POST["email"];
-$postData["userLiner"] = $_POST["user_line"];
+$postData["userLiner"] = $_POST["user_liner"];
 $postData["usCheckout"] = $_POST["check_out"];
 
 if($_POST) {
@@ -31,7 +31,7 @@ if($_POST) {
 
     //check $_POST vars are set, exit if any missing
     if(!isset($_POST["first_name"]) || !isset($_POST["last_name"]) || !isset($_POST["password"]) ||
-        !isset($_POST["email"])|| !isset($_POST["user_line"]))
+        !isset($_POST["email"])|| !isset($_POST["user_liner"]))
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
         die($output);
@@ -42,7 +42,7 @@ if($_POST) {
     $last_name     = filter_var($_POST["last_name"], FILTER_SANITIZE_STRING);
     $email      = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $password      = filter_var($_POST["password"], FILTER_SANITIZE_EMAIL);
-    $user_line     = filter_var($_POST["user_line"], FILTER_SANITIZE_STRING);
+    $user_liner     = filter_var($_POST["user_liner"], FILTER_SANITIZE_STRING);
 
     //additional php validation
     if(strlen($first_name)<3) // If length is less than 3 it will throw an HTTP error.
@@ -66,22 +66,18 @@ if($_POST) {
         $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid Password!'));
         die($output);
     }
-    if(strlen($user_line)<3) //check  message
+    if(strlen($user_liner)<3) //check  message
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Too short user line! Please enter something.'));
         die($output);
     }
     $isExist = CVUser::getUserByEmail($email);
-    $queryResult = false;
 
     if ($isExist) {
         $output = json_encode(array('type'=>'error', 'text' => 'The email is already exist!'));
         die($output);
     } else {
         $queryResult = CVUser::insertUser($postData);
-        $queryResult = false;
-
-
     }
 
     if ( ! $queryResult ) {

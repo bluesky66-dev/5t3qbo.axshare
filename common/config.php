@@ -9,11 +9,11 @@ if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
 	define( "DB_PASSWORD", "" );
 	define( "DB_DATABASE", "cvlink" );
 } else {
-	define( "DB_TYPE", "mysql" );
-	define( "DB_HOSTNAME", "localhost" );
-	define( "DB_USERNAME", "root" );
-	define( "DB_PASSWORD", "" );
-	define( "DB_DATABASE", "cvlink" );
+    define( "DB_TYPE", "mysql" );
+    define( "DB_HOSTNAME", "localhost" );
+    define( "DB_USERNAME", "id12392180_cvlink" );
+    define( "DB_PASSWORD", "cvlink" );
+    define( "DB_DATABASE", "id12392180_cvlink" );
 }
 
 define( "HOST_SERVER", $_SERVER['SERVER_NAME'] );

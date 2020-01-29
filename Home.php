@@ -26,41 +26,41 @@ require_once( "common/header.php" );
         <div id="about">
             <div class="email-url">
                 <div class="blue_span">
-                <span >http://www.cvlink.co/</span>
+                    <span >http://www.cvlink.co/</span>
                     <span>
                         <?php echo $url?>
                     </span>
-            </div>
+                </div>
             </div>
 
             <div class="row home-row">
-                    <div class="col-xl-6 home-left" >
-                        <div class="square_book">
+                <div class="col-xl-6 home-left" >
+                    <div class="square_book">
 
-                            <div class="square_book_span"><span> Hardworking, Trustworthy, Dynamic, and Determined Individual</span></div>
-                            <button class="delete_video_home">
-                                Upload pitch
-                            </button>
+                        <div class="square_book_span"><span> Hardworking, Trustworthy, Dynamic, and Determined Individual</span></div>
+                        <button class="delete_video_home">
+                            Upload pitch
+                        </button>
 
-                        </div>
-
-                        <div id="demo" class="square_video_box">
-                            <div class="square_video">
-                                <img src="images/re-video.png">
-                                <p><span>No video pitch found</span><br>
-                                <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
-                                <button class="upload-video" onclick="loadVid()">Upload video</button>
-                            </div>
-
-                            <div class="square-video-video-box" style="display: none">
-                                <div class="square-video-video embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ohf_1212tqM? frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=yes" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
-                    <div id="demo-vid" class="col-xl-6 home-right" >
+                    <form id="demo" class="square_video_box" action="async/upload.php" method="post" enctype="multipart/form-data">
+                        <div class="square_video">
+                            <img src="images/re-video.png">
+                            <p><span>No video pitch found</span><br>
+                            <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
+                            <button class="upload-video" onclick="loadVid()" type="submit" value="Upload Image" name="submit">Upload video</button>
+                        </div>
+
+                        <div class="square-video-video-box" style="display: none" type="file" name="fileToUpload" id="fileToUpload>
+                        <div class="square-video-video embed-responsive embed-responsive-16by9" >
+<!--                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ohf_1212tqM? frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=yes" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>-->
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="demo-vid" class="col-xl-6 home-right" >
                         <div class="square_book repost">
                             <h1 class="user-name repository"> My Document Repository</h1>
                             <button class="delete_video_home">
@@ -79,13 +79,13 @@ require_once( "common/header.php" );
 
                         </div>
                     </div>
-                </div>
+
         </div>
     </div>
 </div>
 
 
- <div class="overlay-home" style=" display: none">
+<div class="overlay-home" style=" display: none">
 
     <div class="overlay-home-bg" onclick="hide_overlay_home()">
     </div>

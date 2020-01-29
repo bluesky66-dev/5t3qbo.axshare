@@ -310,17 +310,18 @@ $(document).ready(function () {
             var password = $("#password").val();
             var user_liner = $("#user_liner").val();
             var check_out = $("#term_check").val();
+
             if (!$('#term_check').is(":checked")) {
                 alert('You much agree the terms!');
                 return false;
             }
             var formData = {
                 first_name: first_name,
-                usLastName: last_name,
-                usPassword: password,
-                usEmail: email,
-                userLiner: user_liner,
-                usCheckout: check_out,
+                last_name: last_name,
+                password: password,
+                email: email,
+                user_liner: user_liner,
+                check_out: check_out,
             };
             $.ajax({
                 method: "POST",
@@ -329,13 +330,15 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-
+                console.log('dddddd');
                 $resultDiv.hide();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
+                    console.log('bbbbbbbbb');
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
                 } else {
+                    console.log('aaaaaaaaa');
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
@@ -421,7 +424,7 @@ $(document).ready(function () {
                     document.getElementById("login-form").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, You logged in successfully.");
-                    window.location.href = result.data;
+                    window.location.href += "/" + result.data;
                 }
             });
 
@@ -469,7 +472,7 @@ $(document).ready(function () {
             };
             $.ajax({
                 method: "POST",
-                url: "async/register.php",
+                url: "async/",
                 dataType: "json",
                 data: formData
 

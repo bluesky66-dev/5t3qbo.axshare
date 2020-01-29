@@ -18,7 +18,7 @@ require_once( "load.php" );
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+<!--    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>-->
 
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
