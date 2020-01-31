@@ -29,9 +29,9 @@
             <form action="async/upload.php" method="POST" enctype="multipart/form-data">
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="text" name="fileName">
-                <input type="text" name="fileName">
-                <input type="hidden" name="fileType" value="ddddd">
-                <input type="password" name="fileSize">
+<!--                <input type="text" name="fileName">-->
+<!--                <input type="hidden" name="fileType" value="ddddd">-->
+<!--                <input type="password" name="fileSize">-->
                 <input type="submit" value="Upload Image" name="submit">
             </form>
         </div>

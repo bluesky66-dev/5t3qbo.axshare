@@ -1,6 +1,6 @@
 <?php
 require_once( "../common/load.php" );
-global $user;
+global $user, $cvVerify;
 
 $result      = "success";
 $error       = "";
@@ -14,6 +14,7 @@ $postData["usPassword"] = $_POST["password"];
 $postData["usEmail"] = $_POST["email"];
 $postData["userLiner"] = $_POST["user_liner"];
 $postData["usCheckout"] = $_POST["check_out"];
+$postData["usVerify_link"] = CV_generateRandom(30);
 
 if($_POST) {
     //check if its an ajax request, exit if not
@@ -78,6 +79,12 @@ if($_POST) {
         die($output);
     } else {
         $queryResult = CVUser::insertUser($postData);
+        if ($queryResult) {
+            $postData["type"] = "RG";
+            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
+            $cvVerify_link = "http://localhost:7003/verify_email.php?token=".$postData["usVerify_link"];
+//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
+        }
     }
 
     if ( ! $queryResult ) {

@@ -2,6 +2,7 @@
 require_once( "common/header.php" );
 global $user, $isLogin;
 
+
 $url = $_GET['_url'];
 
 $url = trim($url, "/");

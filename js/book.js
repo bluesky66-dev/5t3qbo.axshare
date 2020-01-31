@@ -3,7 +3,7 @@ $.validator.addMethod(
     function (value, element) {
         return /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/.test(value) && /[A-Z]/.test(value) && /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value) && value.length > 7
     },
-    "should include alphabets, numbers and special characters."
+    "should include alphabets a-z, numbers 1-0 and special characters #&$£*?."
 );
 
 function upsign() {

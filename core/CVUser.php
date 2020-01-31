@@ -131,7 +131,8 @@ class CVUser {
 						us.create_time AS createTime
 						FROM tbl_user us
 				      WHERE us.password = MD5('$usPassword') 
-				      AND us.email = '$usEmail'";
+				      AND us.email = '$usEmail'
+				      AND us.verify = '1'";
 		$result = $db->queryArray( $sql );
 		if ( ! $result ) {
 			$result[0] = [];
@@ -153,6 +154,7 @@ class CVUser {
 						us.create_time AS createTime
 						FROM tbl_user us
 				      WHERE us.email = '$email'";
+
 		$result = $db->queryArray( $sql );
 		if ( ! $result ) {
 			$result[0] = [];
@@ -172,12 +174,10 @@ class CVUser {
 		$usEmail     = isset( $data["usEmail"] ) ? $data["usEmail"] : "";
 		$userLiner     = isset( $data["userLiner"] ) ? $data["userLiner"] : "";
 
-        $usName = CV_generateUsername($usFirstName, $usLastName);
 		$usToken     = time() . CV_generateRandom( 32 );
 
 		$sql = "INSERT INTO tbl_user
-					  SET user_name = '$usName', 
-					      f_name = '$usFirstName', 
+					  SET f_name = '$usFirstName', 
 					      l_name = '$usLastName',
 					      password = MD5('$usPassword'),
 					      email = '$usEmail',
@@ -189,11 +189,10 @@ class CVUser {
 
 		$result = $db->getPrevInsertId();
 
-
 		return $result;
 	}
 
-	static public function updateUser( $usId, $data = [] ) {
+    static public function updateUser( $usId, $data = [] ) {
 		global $db;
 
 		$data = CV_realEscapeArray( $data );
@@ -246,17 +245,17 @@ class CVUser {
 		}
 	}
 
-	static public function deleteUser( $usId ) {
-		global $db;
+    static public function deleteUser( $usId ) {
+        global $db;
 
-		CVUser::deleteFiles( $usId );
+        CVUser::deleteFiles( $usId );
 
-		$sql    = "DELETE FROM tbl_user
+        $sql    = "DELETE FROM tbl_user
 						where  user_id = '$usId'";
-		$result = $db->query( $sql );
+        $result = $db->query( $sql );
 
-		return $result;
-	}
+        return $result;
+    }
 
 	static public function getFileManager() {
 
