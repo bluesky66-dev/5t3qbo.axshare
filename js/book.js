@@ -117,7 +117,7 @@ function word() {
 }
 
 function insign() {
-    console.log("ddddddddddddd");
+
     $('.login').css('display', 'none');
     $('.login-signin').css('display', 'block');
 }
@@ -128,14 +128,13 @@ function upsign() {
 }
 
 function forgotpass() {
-    console.log("pppppppp");
+
     $('.login-signin').css('display', 'none');
     $('.forgot-screen').css('display', 'block');
 }
 function recover(){
-
-    $('.forgot-screen').css('display','none');
-    $('.forgot-reset').css('display','block');
+        //
+        // window.location.replace("http://localhost:7003/reset_password.php");
 }
 function never() {
 
@@ -477,7 +476,7 @@ $(document).ready(function () {
             };
             $.ajax({
                 method: "POST",
-                url: "async/forget.php",
+                url: "async/00000000000000000000000000000000000000000000000000000000000000000000.php",
                 dataType: "json",
                 data: formData
 

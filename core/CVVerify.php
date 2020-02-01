@@ -10,11 +10,12 @@ class CVVerify {
 
         $sql = "Select user_id from tbl_verify vr where verify_link = '$verifyLink'";
         $result = $db->queryArray( $sql );
+
         if ( ! $result ) {
             return false;
         }
-        $sql1 = "UPDATE tbl_user set verified=1 where user_id = '".$result[0]['user_id']."'";
 
+        $sql1 = "UPDATE tbl_user set verified=1 where user_id = '".$result[0]['user_id']."'";
         $result = $db->query( $sql1 );
 
         return $result;

@@ -1046,7 +1046,23 @@ input {
 .checkbox-button__control {
     transform: scale(0.75);
 }
+/**reset*/
+.reset{
+    text-align: center;
+}
+.reset h1{
 
+    color: #077CFF;
+    padding-top: 30vh;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.reset p{
+    font-family: roboto;
+    margin-top: 50px;
+}
 /*cvlink*/
 .overlay {
     position: fixed;

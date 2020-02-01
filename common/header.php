@@ -32,6 +32,7 @@ require_once( "load.php" );
     ?>
     <link href="css/style.css" rel="stylesheet">
 
+
     <script>
         function loadVid() {
             var xhttp = new XMLHttpRequest();

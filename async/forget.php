@@ -47,30 +47,18 @@ if($_POST) {
     }
     $usEmail     = isset( $_POST["usEmail"] ) ? $_POST["usEmail"] : "";
 
-    $user = CVUser::isForgetByEmail($usEmail);
-
-    if ($user) {
-        CV_setLogin($user["usToken"]);
-        $queryResult = $user['usName'];
-        $error = "";
-        $result = "OK";
-    } else {
-        $error_flag = 1;
-    }
-
     $isExist = CVUser::getUserByEmail($email);
+
+    echo json_encode($isExist);
 
     if ($isExist) {
         $output = json_encode(array('type'=>'error', 'text' => 'The email is already exist!'));
         die($output);
     } else {
-        $queryResult = CVUser::insertUser($postData);
-        if ($queryResult) {
-            $postData["type"] = "PS";
-            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
-            $cvVerify_link = "http://localhost:7003/verify_email.php?token=".$postData["usVerify_link"];
+        $postData["type"] = "PS";
+        $queryResult = $cvVerify->insertVerify($queryResult, $postData);
+        $cvVerify_link = "http://localhost:7003/reset_password.php?token=".$postData["usVerify_link"];
 //            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
-        }
     }
 
     if ( ! $queryResult ) {

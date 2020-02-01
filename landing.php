@@ -206,29 +206,7 @@
                                 <div class="contact-forget-show" style=""></div>
                             </div>
                         </div>
-                        <div   class="forgot-reset" style="display: none">
-                            <div class="square-landing-book">
-                                <h1 class="sign-name" > Enter the email to reset  </h1>
-                            </div>
 
-                            <form id="reset-forgot">
-                                <div class="square-sign-box">
-                                    <div class="error-email-address">
-                                        <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
-                                        </div>
-                                    </div>
-                                    <input   type="password" name="password" value="" placeholder="Password"  class="register-input">
-                                    <div class="landing-recover-bottom">
-                                        <button class="recover" onclick="" style="width: 100%">Reset password</button>
-                                    </div>
-
-
-                                </div>
-
-                            </form>
-
-                        </div>
 
                     </div>
 
