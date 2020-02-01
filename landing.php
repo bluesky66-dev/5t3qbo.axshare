@@ -122,7 +122,6 @@
                             </div>
                         </div>
 
-
                         <div class="login-signin"   style="display: none;">
                             <div class="square-landing-book">
                                 <h1 class="sign-name" > Sign in</h1>
@@ -212,22 +211,18 @@
                                 <h1 class="sign-name" > Enter the email to reset  </h1>
                             </div>
 
-                            <form id="login-forgot">
+                            <form id="reset-forgot">
                                 <div class="square-sign-box">
                                     <div class="error-email-address">
                                         <div class="col-md-12">
                                             <div class="contact-result" style=""></div>
                                         </div>
                                     </div>
-                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <input   type="password" name="password" value="" placeholder="Password"  class="register-input">
                                     <div class="landing-recover-bottom">
                                         <button class="recover" onclick="" style="width: 100%">Reset password</button>
                                     </div>
-                                    <a href="javascript: void (0);" >
-                                        <div class="never">
-                                            <p onclick="never()">Never mind I have remembered</p>
-                                        </div>
-                                    </a>
+
 
                                 </div>
 

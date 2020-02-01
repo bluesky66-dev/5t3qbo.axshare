@@ -254,7 +254,7 @@ $(document).ready(function () {
             },
             email: {
                 required: true,
-                // email: true
+                email: true
             },
             password: {
                 required: true,
@@ -443,7 +443,7 @@ $(document).ready(function () {
         rules: {
             email: {
                 required: true,
-
+                email:true,
             },
 
         },
@@ -473,7 +473,7 @@ $(document).ready(function () {
 
 
             var formData = {
-                usEmail: email,
+                email: email,
             };
             $.ajax({
                 method: "POST",
@@ -483,7 +483,7 @@ $(document).ready(function () {
 
             }).done(function (result) {
                 var $resultDiv = $(".contact-forget-show");
-                $resultDiv.show();
+                $resultDiv.hide();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
@@ -492,6 +492,10 @@ $(document).ready(function () {
                     document.getElementById("login-forget").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
+                    setTimeout(function () {
+                        $resultDiv.hide();
+                        recover();
+                    }, 1000);
                 }
             });
 

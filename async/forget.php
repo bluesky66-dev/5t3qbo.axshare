@@ -45,6 +45,18 @@ if($_POST) {
         $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
         die($output);
     }
+    $usEmail     = isset( $_POST["usEmail"] ) ? $_POST["usEmail"] : "";
+
+    $user = CVUser::isForgetByEmail($usEmail);
+
+    if ($user) {
+        CV_setLogin($user["usToken"]);
+        $queryResult = $user['usName'];
+        $error = "";
+        $result = "OK";
+    } else {
+        $error_flag = 1;
+    }
 
     $isExist = CVUser::getUserByEmail($email);
 
