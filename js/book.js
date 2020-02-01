@@ -128,10 +128,15 @@ function upsign() {
 }
 
 function forgotpass() {
+    console.log("pppppppp");
     $('.login-signin').css('display', 'none');
     $('.forgot-screen').css('display', 'block');
 }
+function recover(){
 
+    $('.forgot-screen').css('display','none');
+    $('.forgot-reset').css('display','block');
+}
 function never() {
 
     $('.forgot-screen').css('display', 'none');
@@ -438,7 +443,7 @@ $(document).ready(function () {
         rules: {
             email: {
                 required: true,
-                // email: true
+
             },
 
         },
@@ -464,7 +469,7 @@ $(document).ready(function () {
             // some other code
             // maybe disabling submit button
             // then:
-            var email = $("#email").val();
+            var email = $("#forgot-email").val();
 
 
             var formData = {
@@ -472,19 +477,19 @@ $(document).ready(function () {
             };
             $.ajax({
                 method: "POST",
-                url: "async/",
+                url: "async/forget.php",
                 dataType: "json",
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-result");
+                var $resultDiv = $(".contact-forget-show");
                 $resultDiv.show();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
                 } else {
-                    document.getElementById("contact-form").reset();
+                    document.getElementById("login-forget").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
                 }

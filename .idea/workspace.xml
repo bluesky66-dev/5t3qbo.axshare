@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/js/book.js" line="406" />
+    <bookmark url="file://$PROJECT_DIR$/js/book.js" line="411" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/CVVerify.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verify_email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/async/forget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/CVManagerLoad.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVManagerLoad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/CVUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/CVVerify.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVVerify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-url.php" beforeDir="false" afterPath="$PROJECT_DIR$/search-url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landing.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify_email.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify_email.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/core/CVVerify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="350">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -43,26 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/load.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="-425">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -70,8 +47,448 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/verify_email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="325">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/book.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="471" column="40" selection-start-line="471" selection-start-column="40" selection-end-line="471" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="1589" lean-forward="true" selection-start-line="1589" selection-end-line="1589" />
+              <folding>
+                <element signature="e#11#129#0" />
+                <element signature="e#154#271#0" />
+                <element signature="e#284#395#0" />
+                <element signature="e#408#740#0" />
+                <element signature="e#753#1202#0" />
+                <element signature="e#1215#1650#0" />
+                <element signature="e#1663#2112#0" />
+                <element signature="e#2119#2187#0" />
+                <element signature="e#2194#2251#0" />
+                <element signature="e#2255#2274#0" />
+                <element signature="e#2299#2386#0" />
+                <element signature="e#2401#2693#0" />
+                <element signature="e#2710#2752#0" />
+                <element signature="e#2765#2905#0" />
+                <element signature="e#2925#3259#0" />
+                <element signature="e#3261#3483#0" />
+                <element signature="e#3307#3387#0" />
+                <element signature="e#3397#3481#0" />
+                <element signature="e#3485#3699#0" />
+                <element signature="e#3523#3603#0" />
+                <element signature="e#3613#3697#0" />
+                <element signature="e#3709#3780#0" />
+                <element signature="e#3804#3829#0" />
+                <element signature="e#3855#3949#0" />
+                <element signature="e#3959#4142#0" />
+                <element signature="e#4190#4311#0" />
+                <element signature="e#4375#4378#0" />
+                <element signature="e#4436#4570#0" />
+                <element signature="e#4594#4624#0" />
+                <element signature="e#4645#4823#0" />
+                <element signature="e#4837#4861#0" />
+                <element signature="e#4870#4935#0" />
+                <element signature="e#4951#5091#0" />
+                <element signature="e#5105#5199#0" />
+                <element signature="e#5211#5265#0" />
+                <element signature="e#5274#5460#0" />
+                <element signature="e#5484#5838#0" />
+                <element signature="e#5861#6115#0" />
+                <element signature="e#6142#6392#0" />
+                <element signature="e#6414#6560#0" />
+                <element signature="e#6584#6787#0" />
+                <element signature="e#6812#7015#0" />
+                <element signature="e#7087#7369#0" />
+                <element signature="e#7453#7480#0" />
+                <element signature="e#7490#7568#0" />
+                <element signature="e#7581#7631#0" />
+                <element signature="e#7644#7707#0" />
+                <element signature="e#7721#7741#0" />
+                <element signature="e#7756#7780#0" />
+                <element signature="e#7792#7975#0" />
+                <element signature="e#7990#8063#0" />
+                <element signature="e#8085#8155#0" />
+                <element signature="e#8169#8398#0" />
+                <element signature="e#8442#8553#0" />
+                <element signature="e#8575#8710#0" />
+                <element signature="e#9411#9620#0" />
+                <element signature="e#9636#9691#0" />
+                <element signature="e#9707#9816#0" />
+                <element signature="e#9889#9938#0" />
+                <element signature="e#9973#10092#0" />
+                <element signature="e#10134#10158#0" />
+                <element signature="e#10187#10214#0" />
+                <element signature="e#10242#10285#0" />
+                <element signature="e#10313#10339#0" />
+                <element signature="e#10360#10604#0" />
+                <element signature="e#10627#10676#0" />
+                <element signature="e#10697#10878#0" />
+                <element signature="e#10899#10923#0" />
+                <element signature="e#10956#10971#0" />
+                <element signature="e#11013#11032#0" />
+                <element signature="e#11053#11207#0" />
+                <element signature="e#11227#11354#0" />
+                <element signature="e#11368#11395#0" />
+                <element signature="e#11404#11430#0" />
+                <element signature="e#11447#11571#0" />
+                <element signature="e#11591#11617#0" />
+                <element signature="e#11629#11657#0" />
+                <element signature="e#11678#11717#0" />
+                <element signature="e#11736#11982#0" />
+                <element signature="e#12002#12176#0" />
+                <element signature="e#12186#12248#0" />
+                <element signature="e#12260#12463#0" />
+                <element signature="e#12478#12636#0" />
+                <element signature="e#12651#12698#0" />
+                <element signature="e#12716#12751#0" />
+                <element signature="e#12766#12838#0" />
+                <element signature="e#12858#12862#0" />
+                <element signature="e#12882#13024#0" />
+                <element signature="e#13048#13167#0" />
+                <element signature="e#13189#13243#0" />
+                <element signature="e#13294#13370#0" />
+                <element signature="e#13392#13522#0" />
+                <element signature="e#13546#13754#0" />
+                <element signature="e#13779#13940#0" />
+                <element signature="e#13966#14071#0" />
+                <element signature="e#14093#14386#0" />
+                <element signature="e#14404#14744#0" />
+                <element signature="e#14760#14867#0" />
+                <element signature="e#14897#14942#0" />
+                <element signature="e#14967#15025#0" />
+                <element signature="e#15041#15075#0" />
+                <element signature="e#15091#15446#0" />
+                <element signature="e#15468#15516#0" />
+                <element signature="e#15536#15699#0" />
+                <element signature="e#15721#15869#0" />
+                <element signature="e#15901#15953#0" />
+                <element signature="e#15974#16003#0" />
+                <element signature="e#16023#16132#0" />
+                <element signature="e#16155#16230#0" />
+                <element signature="e#16253#16554#0" />
+                <element signature="e#16577#16688#0" />
+                <element signature="e#16710#17020#0" />
+                <element signature="e#17038#17074#0" />
+                <element signature="e#17094#17157#0" />
+                <element signature="e#17177#17227#0" />
+                <element signature="e#17247#17296#0" />
+                <element signature="e#17310#17545#0" />
+                <element signature="e#17576#17652#0" />
+                <element signature="e#17673#17796#0" />
+                <element signature="e#17821#18152#0" />
+                <element signature="e#18176#18507#0" />
+                <element signature="e#18531#18771#0" />
+                <element signature="e#18790#18848#0" />
+                <element signature="e#18870#18985#0" />
+                <element signature="e#18997#19025#0" />
+                <element signature="e#19051#19393#0" />
+                <element signature="e#19404#19605#0" />
+                <element signature="e#19619#19778#0" />
+                <element signature="e#19793#19820#0" />
+                <element signature="e#19858#20036#0" />
+                <element signature="e#20050#20078#0" />
+                <element signature="e#20086#20157#0" />
+                <element signature="e#20173#20223#0" />
+                <element signature="e#20247#20299#0" />
+                <element signature="e#20313#20444#0" />
+                <element signature="e#20457#20568#0" />
+                <element signature="e#20578#20639#0" />
+                <element signature="e#20657#20733#0" />
+                <element signature="e#20763#20825#0" />
+                <element signature="e#20853#20872#0" />
+                <element signature="e#20899#21168#0" />
+                <element signature="e#21181#21204#0" />
+                <element signature="e#21219#21264#0" />
+                <element signature="e#21277#21300#0" />
+                <element signature="e#21331#21419#0" />
+                <element signature="e#21453#21681#0" />
+                <element signature="e#21768#21790#0" />
+                <element signature="e#21835#21858#0" />
+                <element signature="e#21887#21960#0" />
+                <element signature="e#22005#22068#0" />
+                <element signature="e#22123#22163#0" />
+                <element signature="e#22224#22875#0" />
+                <element signature="e#22939#23054#0" />
+                <element signature="e#23120#23139#0" />
+                <element signature="e#23211#23233#0" />
+                <element signature="e#23296#23423#0" />
+                <element signature="e#23572#23753#0" />
+                <element signature="e#23906#23968#0" />
+                <element signature="e#24129#24156#0" />
+                <element signature="e#24321#24340#0" />
+                <element signature="e#24391#24418#0" />
+                <element signature="e#24485#24503#0" />
+                <element signature="e#24519#24542#0" />
+                <element signature="e#24574#24601#0" />
+                <element signature="e#24652#24741#0" />
+                <element signature="e#24778#24888#0" />
+                <element signature="e#24925#25011#0" />
+                <element signature="e#25047#25101#0" />
+                <element signature="e#25151#25198#0" />
+                <element signature="e#25223#25358#0" />
+                <element signature="e#25390#25423#0" />
+                <element signature="e#25431#25454#0" />
+                <element signature="e#25470#25567#0" />
+                <element signature="e#25596#26082#0" />
+                <element signature="e#26119#26195#0" />
+                <element signature="e#26230#26253#0" />
+                <element signature="e#26296#26316#0" />
+                <element signature="e#26335#26421#0" />
+                <element signature="e#26442#26526#0" />
+                <element signature="e#26550#26574#0" />
+                <element signature="e#26600#26641#0" />
+                <element signature="e#26673#26695#0" />
+                <element signature="e#26721#26763#0" />
+                <element signature="e#26774#26797#0" />
+                <element signature="e#26812#26893#0" />
+                <element signature="e#26914#26932#0" />
+                <element signature="e#26972#27019#0" />
+                <element signature="e#27039#27174#0" />
+                <element signature="e#27201#27234#0" />
+                <element signature="e#27245#27268#0" />
+                <element signature="e#27285#27456#0" />
+                <element signature="e#27479#27631#0" />
+                <element signature="e#27654#27770#0" />
+                <element signature="e#27799#27818#0" />
+                <element signature="e#27848#27963#0" />
+                <element signature="e#27992#28039#0" />
+                <element signature="e#28068#28114#0" />
+                <element signature="e#28148#28225#0" />
+                <element signature="e#28245#28310#0" />
+                <element signature="e#28340#28448#0" />
+                <element signature="e#28476#28542#0" />
+                <element signature="e#28571#28598#0" />
+                <element signature="e#28620#28880#0" />
+                <element signature="e#28908#28935#0" />
+                <element signature="e#28942#28987#0" />
+                <element signature="e#29004#29044#0" />
+                <element signature="e#29064#29104#0" />
+                <element signature="e#29123#29319#0" />
+                <element signature="e#29338#29414#0" />
+                <element signature="e#29433#29460#0" />
+                <element signature="e#29488#29510#0" />
+                <element signature="e#29539#29558#0" />
+                <element signature="e#29597#29632#0" />
+                <element signature="e#29767#29814#0" />
+                <element signature="e#29830#29880#0" />
+                <element signature="e#29881#29969#0" />
+                <element signature="e#29934#29967#0" />
+                <element signature="e#29971#30431#0" />
+                <element signature="e#30039#30429#0" />
+                <element signature="e#30434#30560#0" />
+                <element signature="e#30477#30507#0" />
+                <element signature="e#30527#30558#0" />
+                <element signature="e#30562#30740#0" />
+                <element signature="e#30608#30636#0" />
+                <element signature="e#30659#30690#0" />
+                <element signature="e#30713#30738#0" />
+                <element signature="e#30743#30849#0" />
+                <element signature="e#30812#30847#0" />
+                <element signature="e#30851#30931#0" />
+                <element signature="e#30895#30929#0" />
+                <element signature="e#30934#31063#0" />
+                <element signature="e#31019#31061#0" />
+                <element signature="e#31065#31185#0" />
+                <element signature="e#31142#31183#0" />
+                <element signature="e#31187#31384#0" />
+                <element signature="e#31252#31382#0" />
+                <element signature="e#31386#32931#0" />
+                <element signature="e#31435#31467#0" />
+                <element signature="e#31491#31583#0" />
+                <element signature="e#31609#31670#0" />
+                <element signature="e#31696#31759#0" />
+                <element signature="e#31787#31847#0" />
+                <element signature="e#31865#31901#0" />
+                <element signature="e#31921#31983#0" />
+                <element signature="e#32011#32063#0" />
+                <element signature="e#32077#32111#0" />
+                <element signature="e#32129#32236#0" />
+                <element signature="e#32249#32282#0" />
+                <element signature="e#32296#32329#0" />
+                <element signature="e#32361#32425#0" />
+                <element signature="e#32451#32479#0" />
+                <element signature="e#32509#32537#0" />
+                <element signature="e#32560#32588#0" />
+                <element signature="e#32613#32641#0" />
+                <element signature="e#32668#32696#0" />
+                <element signature="e#32748#32804#0" />
+                <element signature="e#32818#32929#0" />
+                <element signature="e#32933#33489#0" />
+                <element signature="e#33001#33043#0" />
+                <element signature="e#33070#33239#0" />
+                <element signature="e#33261#33290#0" />
+                <element signature="e#33314#33370#0" />
+                <element signature="e#33394#33431#0" />
+                <element signature="e#33455#33487#0" />
+                <element signature="e#33491#35194#0" />
+                <element signature="e#33545#33577#0" />
+                <element signature="e#33599#33631#0" />
+                <element signature="e#33659#33691#0" />
+                <element signature="e#33719#33751#0" />
+                <element signature="e#33767#33800#0" />
+                <element signature="e#33828#33862#0" />
+                <element signature="e#33880#33915#0" />
+                <element signature="e#33935#33997#0" />
+                <element signature="e#34025#34055#0" />
+                <element signature="e#34073#34207#0" />
+                <element signature="e#34239#34301#0" />
+                <element signature="e#34327#34355#0" />
+                <element signature="e#34385#34413#0" />
+                <element signature="e#34440#34468#0" />
+                <element signature="e#34520#34576#0" />
+                <element signature="e#34590#34701#0" />
+                <element signature="e#34729#34761#0" />
+                <element signature="e#34788#34928#0" />
+                <element signature="e#34950#34979#0" />
+                <element signature="e#35003#35082#0" />
+                <element signature="e#35106#35135#0" />
+                <element signature="e#35159#35191#0" />
+                <element signature="e#35196#38268#0" />
+                <element signature="e#35250#35282#0" />
+                <element signature="e#35304#35336#0" />
+                <element signature="e#35364#35396#0" />
+                <element signature="e#35424#35456#0" />
+                <element signature="e#35480#35600#0" />
+                <element signature="e#35626#35688#0" />
+                <element signature="e#35714#35749#0" />
+                <element signature="e#35772#35807#0" />
+                <element signature="e#35826#35919#0" />
+                <element signature="e#35938#36058#0" />
+                <element signature="e#36078#36110#0" />
+                <element signature="e#36123#36168#0" />
+                <element signature="e#36196#36255#0" />
+                <element signature="e#36273#36308#0" />
+                <element signature="e#36328#36452#0" />
+                <element signature="e#36480#36535#0" />
+                <element signature="e#36553#36685#0" />
+                <element signature="e#36703#36737#0" />
+                <element signature="e#36754#36788#0" />
+                <element signature="e#36809#36842#0" />
+                <element signature="e#36858#36894#0" />
+                <element signature="e#36926#36988#0" />
+                <element signature="e#37014#37042#0" />
+                <element signature="e#37072#37100#0" />
+                <element signature="e#37120#37155#0" />
+                <element signature="e#37178#37210#0" />
+                <element signature="e#37234#37266#0" />
+                <element signature="e#37291#37324#0" />
+                <element signature="e#37376#37433#0" />
+                <element signature="e#37447#37559#0" />
+                <element signature="e#37581#37615#0" />
+                <element signature="e#37632#37666#0" />
+                <element signature="e#37677#37714#0" />
+                <element signature="e#37741#37881#0" />
+                <element signature="e#37903#37932#0" />
+                <element signature="e#37956#38035#0" />
+                <element signature="e#38059#38090#0" />
+                <element signature="e#38114#38145#0" />
+                <element signature="e#38160#38193#0" />
+                <element signature="e#38211#38264#0" />
+                <element signature="e#38269#38352#0" />
+                <element signature="e#38305#38350#0" />
+                <element signature="e#38353#38979#0" />
+                <element signature="e#38390#38427#0" />
+                <element signature="e#38454#38594#0" />
+                <element signature="e#38616#38645#0" />
+                <element signature="e#38669#38748#0" />
+                <element signature="e#38772#38803#0" />
+                <element signature="e#38827#38858#0" />
+                <element signature="e#38873#38906#0" />
+                <element signature="e#38924#38976#0" />
+                <element signature="e#38981#41351#0" />
+                <element signature="e#39031#39151#0" />
+                <element signature="e#39177#39261#0" />
+                <element signature="e#39281#39313#0" />
+                <element signature="e#39341#39400#0" />
+                <element signature="e#39418#39453#0" />
+                <element signature="e#39473#39535#0" />
+                <element signature="e#39563#39680#0" />
+                <element signature="e#39698#39832#0" />
+                <element signature="e#39864#39926#0" />
+                <element signature="e#39952#39980#0" />
+                <element signature="e#40010#40038#0" />
+                <element signature="e#40050#40083#0" />
+                <element signature="e#40110#40143#0" />
+                <element signature="e#40168#40201#0" />
+                <element signature="e#40223#40257#0" />
+                <element signature="e#40287#40346#0" />
+                <element signature="e#40363#40397#0" />
+                <element signature="e#40423#40451#0" />
+                <element signature="e#40481#40509#0" />
+                <element signature="e#40561#40618#0" />
+                <element signature="e#40632#40744#0" />
+                <element signature="e#40771#40803#0" />
+                <element signature="e#40814#40851#0" />
+                <element signature="e#40878#41019#0" />
+                <element signature="e#41041#41070#0" />
+                <element signature="e#41094#41173#0" />
+                <element signature="e#41198#41229#0" />
+                <element signature="e#41244#41277#0" />
+                <element signature="e#41295#41347#0" />
+                <element signature="e#41353#43019#0" />
+                <element signature="e#41404#41436#0" />
+                <element signature="e#41470#41528#0" />
+                <element signature="e#41556#41588#0" />
+                <element signature="e#41616#41648#0" />
+                <element signature="e#41666#41701#0" />
+                <element signature="e#41721#41783#0" />
+                <element signature="e#41811#41866#0" />
+                <element signature="e#41884#42018#0" />
+                <element signature="e#42030#42063#0" />
+                <element signature="e#42089#42117#0" />
+                <element signature="e#42147#42175#0" />
+                <element signature="e#42227#42284#0" />
+                <element signature="e#42298#42410#0" />
+                <element signature="e#42437#42469#0" />
+                <element signature="e#42480#42517#0" />
+                <element signature="e#42544#42685#0" />
+                <element signature="e#42707#42736#0" />
+                <element signature="e#42760#42792#0" />
+                <element signature="e#42816#42844#0" />
+                <element signature="e#42868#42901#0" />
+                <element signature="e#42917#42945#0" />
+                <element signature="e#42963#43015#0" />
+                <element signature="e#43044#43075#0" />
+                <element signature="e#43101#43122#0" />
+                <element signature="e#43140#43189#0" />
+                <element signature="e#43215#43262#0" />
+                <element signature="e#43278#43313#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/landing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="189" column="59" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/forget.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -79,95 +496,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/CVUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="-76">
+              <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
               <folding>
                 <element signature="e#98#143#0#PHP" />
-                <element signature="e#0#301#2" />
                 <element signature="e#555#594#0#PHP" />
-                <element signature="e#0#117#2" />
                 <element signature="e#846#885#0#PHP" />
                 <element signature="e#910#1246#0#PHP" />
-                <element signature="e#0#94#0" />
                 <element signature="e#1159#1213#0#PHP" />
                 <element signature="e#1249#1766#0#PHP" />
-                <element signature="e#0#338#1" />
                 <element signature="e#1699#1741#0#PHP" />
                 <element signature="e#1772#2357#0#PHP" />
-                <element signature="e#0#340#1" />
                 <element signature="e#2266#2323#0#PHP" />
-                <element signature="e#0#336#2" />
                 <element signature="e#2886#3504#0#PHP" />
-                <element signature="e#0#408#2" />
                 <element signature="e#3437#3479#0#PHP" />
-                <element signature="e#0#367#2" />
-                <element signature="e#3994#4036#0#PHP" />
-                <element signature="e#6360#6430#0#PHP" />
-                <element signature="e#0#113#1" />
-                <element signature="e#7064#7091#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/CVVerify.php">
+        <entry file="file://$PROJECT_DIR$/async/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-              <folding>
-                <element signature="e#545#992#0#PHP" />
-                <element signature="e#671#900#0#PHP" />
-                <element signature="n#__destruct#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="e#1099#1172#0#PHP" />
-                <element signature="n#close#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="e#1222#1342#0#PHP" />
-                <element signature="n#queryRow#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="e#2122#2554#0#PHP" />
-                <element signature="e#2253#2365#0#PHP" />
-                <element signature="e#2281#2358#0#PHP" />
-                <element signature="e#2455#2554#0#PHP" />
-                <element signature="n#queryCount#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="e#2615#2856#0#PHP" />
-                <element signature="e#2755#2856#0#PHP" />
-                <element signature="e#2929#3680#0#PHP" />
-                <element signature="n#getCharactSet#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="n#RES#0;n#DatabaseManager#0;n#!!top" />
-                <element signature="n#fncReadUDL#0;n#!!top" />
-                <element signature="e#4430#5557#0#PHP" />
-                <element signature="e#4561#5552#0#PHP" />
-                <element signature="e#4762#5552#0#PHP" />
-                <element signature="e#4967#5552#0#PHP" />
-                <element signature="e#5164#5552#0#PHP" />
-                <element signature="e#5369#5552#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -183,11 +535,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.square-sign-login-box</find>
-      <find>userName</find>
-      <find>userEmail</find>
-      <find>error</find>
-      <find>user_liner</find>
       <find>.error</find>
       <find>$to_Email</find>
       <find>ORDER</find>
@@ -213,6 +560,11 @@
       <find>CV_getUserId</find>
       <find>update</find>
       <find>verified</find>
+      <find>$verifyLink</find>
+      <find>Your first impression starts here!</find>
+      <find>Recover password</find>
+      <find>error-email-signin</find>
+      <find>loginEmail</find>
     </findStrings>
     <replaceStrings>
       <replace>images/yellow-sa.png</replace>
@@ -259,7 +611,6 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/async/category.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/landing.php" />
         <option value="$PROJECT_DIR$/async/login.php" />
         <option value="$PROJECT_DIR$/common/config.php" />
         <option value="$PROJECT_DIR$/common/header.php" />
@@ -268,16 +619,18 @@
         <option value="$PROJECT_DIR$/search-url.html" />
         <option value="$PROJECT_DIR$/search-url.php" />
         <option value="$PROJECT_DIR$/async/upload.php" />
-        <option value="$PROJECT_DIR$/js/book.js" />
         <option value="$PROJECT_DIR$/common/load.php" />
         <option value="$PROJECT_DIR$/common/functions.php" />
         <option value="$PROJECT_DIR$/async/verify_email.php" />
         <option value="$PROJECT_DIR$/core/CVManagerLoad.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/async/register.php" />
-        <option value="$PROJECT_DIR$/verify_email.php" />
         <option value="$PROJECT_DIR$/core/CVUser.php" />
         <option value="$PROJECT_DIR$/core/CVVerify.php" />
+        <option value="$PROJECT_DIR$/verify_email.php" />
+        <option value="$PROJECT_DIR$/async/forget.php" />
+        <option value="$PROJECT_DIR$/landing.php" />
+        <option value="$PROJECT_DIR$/js/book.js" />
       </list>
     </option>
   </component>
@@ -300,6 +653,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,6 +679,11 @@
             <path>
               <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
               <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,27 +695,26 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work/php/public_html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\5t3qbo.axshare" />
+      <recent name="E:\5t3qbo.axshare\async" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\5t3qbo.axshare\core" />
       <recent name="E:\5t3qbo.axshare\async" />
       <recent name="E:\5t3qbo.axshare" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\5t3qbo.axshare" />
-      <recent name="E:\5t3qbo.axshare\async" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -398,14 +756,8 @@
       <workItem from="1580194946306" duration="19724000" />
       <workItem from="1580252217584" duration="15544000" />
       <workItem from="1580295132262" duration="31073000" />
-      <workItem from="1580420466578" duration="27040000" />
-    </task>
-    <task id="LOCAL-00031" summary="landing">
-      <created>1579687855676</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1579687855676</updated>
+      <workItem from="1580420466578" duration="28808000" />
+      <workItem from="1580510907794" duration="7198000" />
     </task>
     <task id="LOCAL-00032" summary="landing">
       <created>1579687978783</created>
@@ -743,17 +1095,24 @@
       <option name="project" value="LOCAL" />
       <updated>1580359438096</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="verify">
+      <created>1580467117559</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1580467117559</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317614000" />
+    <option name="totallyTimeSpent" value="326580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -820,7 +1179,8 @@
     <MESSAGE value="red border" />
     <MESSAGE value="7003" />
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="verify" />
+    <option name="LAST_COMMIT_MESSAGE" value="verify" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,13 +1200,15 @@
           <line>168</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/async/register.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/square3-cover.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cvlink - reject.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-297">
@@ -1888,10 +2250,269 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privacy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/sales.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="782" column="15" selection-start-line="782" selection-start-column="15" selection-end-line="782" selection-end-column="15" />
+          <folding>
+            <element signature="e#11#129#0" />
+            <element signature="e#154#271#0" />
+            <element signature="e#284#395#0" />
+            <element signature="e#408#740#0" />
+            <element signature="e#753#1202#0" />
+            <element signature="e#1215#1650#0" />
+            <element signature="e#1663#2112#0" />
+            <element signature="e#2119#2151#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/browser.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search-url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/how-work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Xampp/htdocs/contentmessage/contact-submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="298" column="9" selection-start-line="298" selection-start-column="9" selection-end-line="298" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/load.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="e#545#992#0#PHP" />
+            <element signature="e#671#900#0#PHP" />
+            <element signature="n#__destruct#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="e#1099#1172#0#PHP" />
+            <element signature="n#close#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="e#1222#1342#0#PHP" />
+            <element signature="n#queryRow#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="e#2122#2554#0#PHP" />
+            <element signature="e#2253#2365#0#PHP" />
+            <element signature="e#2281#2358#0#PHP" />
+            <element signature="e#2455#2554#0#PHP" />
+            <element signature="n#queryCount#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="e#2615#2856#0#PHP" />
+            <element signature="e#2755#2856#0#PHP" />
+            <element signature="e#2929#3680#0#PHP" />
+            <element signature="n#getCharactSet#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="n#RES#0;n#DatabaseManager#0;n#!!top" />
+            <element signature="n#fncReadUDL#0;n#!!top" />
+            <element signature="e#4430#5557#0#PHP" />
+            <element signature="e#4561#5552#0#PHP" />
+            <element signature="e#4762#5552#0#PHP" />
+            <element signature="e#4967#5552#0#PHP" />
+            <element signature="e#5164#5552#0#PHP" />
+            <element signature="e#5369#5552#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+          <folding>
+            <element signature="e#98#143#0#PHP" />
+            <element signature="e#555#594#0#PHP" />
+            <element signature="e#846#885#0#PHP" />
+            <element signature="e#910#1246#0#PHP" />
+            <element signature="e#1159#1213#0#PHP" />
+            <element signature="e#1249#1766#0#PHP" />
+            <element signature="e#1699#1741#0#PHP" />
+            <element signature="e#1772#2357#0#PHP" />
+            <element signature="e#2266#2323#0#PHP" />
+            <element signature="e#2886#3504#0#PHP" />
+            <element signature="e#3437#3479#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verify_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVVerify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12200">
-          <caret line="1786" column="50" selection-start-line="1786" selection-start-column="50" selection-end-line="1786" selection-end-column="50" />
+        <state relative-caret-position="67">
+          <caret line="1589" lean-forward="true" selection-start-line="1589" selection-end-line="1589" />
           <folding>
             <element signature="e#11#129#0" />
             <element signature="e#154#271#0" />
@@ -2106,7 +2727,6 @@
             <element signature="e#29488#29510#0" />
             <element signature="e#29539#29558#0" />
             <element signature="e#29597#29632#0" />
-            <element signature="e#29645#29754#0" />
             <element signature="e#29767#29814#0" />
             <element signature="e#29830#29880#0" />
             <element signature="e#29881#29969#0" />
@@ -2295,288 +2915,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.validate.js">
+    <entry file="file://$PROJECT_DIR$/landing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/privacy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact-submit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/sales.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="782" column="15" selection-start-line="782" selection-start-column="15" selection-end-line="782" selection-end-column="15" />
+        <state relative-caret-position="406">
+          <caret line="189" column="59" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
           <folding>
-            <element signature="e#11#129#0" />
-            <element signature="e#154#271#0" />
-            <element signature="e#284#395#0" />
-            <element signature="e#408#740#0" />
-            <element signature="e#753#1202#0" />
-            <element signature="e#1215#1650#0" />
-            <element signature="e#1663#2112#0" />
-            <element signature="e#2119#2151#0" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/async/forget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/landing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3011">
-          <caret line="125" column="44" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/browser.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search-url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        <state relative-caret-position="450">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="311" column="25" selection-start-line="311" selection-start-column="16" selection-end-line="311" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/how-work.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Xampp/htdocs/contentmessage/contact-submit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="298" column="9" selection-start-line="298" selection-start-column="9" selection-end-line="298" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/load.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verify_email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#98#143#0#PHP" />
-            <element signature="e#0#301#2" />
-            <element signature="e#555#594#0#PHP" />
-            <element signature="e#0#117#2" />
-            <element signature="e#846#885#0#PHP" />
-            <element signature="e#910#1246#0#PHP" />
-            <element signature="e#0#94#0" />
-            <element signature="e#1159#1213#0#PHP" />
-            <element signature="e#1249#1766#0#PHP" />
-            <element signature="e#0#338#1" />
-            <element signature="e#1699#1741#0#PHP" />
-            <element signature="e#1772#2357#0#PHP" />
-            <element signature="e#0#340#1" />
-            <element signature="e#2266#2323#0#PHP" />
-            <element signature="e#0#336#2" />
-            <element signature="e#2886#3504#0#PHP" />
-            <element signature="e#0#408#2" />
-            <element signature="e#3437#3479#0#PHP" />
-            <element signature="e#0#367#2" />
-            <element signature="e#3994#4036#0#PHP" />
-            <element signature="e#6360#6430#0#PHP" />
-            <element signature="e#0#113#1" />
-            <element signature="e#7064#7091#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVVerify.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-          <folding>
-            <element signature="e#545#992#0#PHP" />
-            <element signature="e#671#900#0#PHP" />
-            <element signature="n#__destruct#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="e#1099#1172#0#PHP" />
-            <element signature="n#close#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="e#1222#1342#0#PHP" />
-            <element signature="n#queryRow#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="e#2122#2554#0#PHP" />
-            <element signature="e#2253#2365#0#PHP" />
-            <element signature="e#2281#2358#0#PHP" />
-            <element signature="e#2455#2554#0#PHP" />
-            <element signature="n#queryCount#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="e#2615#2856#0#PHP" />
-            <element signature="e#2755#2856#0#PHP" />
-            <element signature="e#2929#3680#0#PHP" />
-            <element signature="n#getCharactSet#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="n#RES#0;n#DatabaseManager#0;n#!!top" />
-            <element signature="n#fncReadUDL#0;n#!!top" />
-            <element signature="e#4430#5557#0#PHP" />
-            <element signature="e#4561#5552#0#PHP" />
-            <element signature="e#4762#5552#0#PHP" />
-            <element signature="e#4967#5552#0#PHP" />
-            <element signature="e#5164#5552#0#PHP" />
-            <element signature="e#5369#5552#0#PHP" />
-          </folding>
+          <caret line="471" column="40" selection-start-line="471" selection-start-column="40" selection-end-line="471" selection-end-column="40" />
         </state>
       </provider>
     </entry>

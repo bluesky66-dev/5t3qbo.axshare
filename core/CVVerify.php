@@ -7,14 +7,13 @@ class CVVerify {
 
 	public function activeUser($verifyLink) {
         global $db;
-        //$sql    = "SELECT us.user_name FROM tbl_user us WHERE us.user_name LIKE '$verifyLink%' ORDER BY us.user_id DESC LIMIT 1";
-        $sql = "Select * from tbl_user us where user_id in (select user_id from tbl_verify);";
 
+        $sql = "Select user_id from tbl_verify vr where verify_link = '$verifyLink'";
         $result = $db->queryArray( $sql );
         if ( ! $result ) {
             return false;
         }
-        $sql1 = "UPDATE tbl_user set verified=1 where user_id in (select user_id from tbl_verify);";
+        $sql1 = "UPDATE tbl_user set verified=1 where user_id = '".$result[0]['user_id']."'";
 
         $result = $db->query( $sql1 );
 

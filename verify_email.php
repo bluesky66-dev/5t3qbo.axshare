@@ -2,5 +2,13 @@
 require_once( "common/load.php" );
 global $cvVerify;
 
-$token = $_GET['token'];
-$cvVerify->activeUser($token);
+if (isset($_GET['token']) && $_GET['token']) {
+    $token = $_GET['token'];
+    $result = $cvVerify->activeUser($token);
+    if ($result) {
+        header("Location: /?verified=email");
+        exit();
+    }
+}
+header("Location: /");
+exit();

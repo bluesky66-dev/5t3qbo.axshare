@@ -26,7 +26,7 @@
                 <div class="row landing-row">
                     <div class="col-xl-6 your-first">
                         <div class="first">
-                            <a href="Home.php"><p>Your first impression starts here!</p></a>
+                            <a "><p>Your first impression starts here!</p></a>
                         </div>
                         <div class="first-span">
                             <span style="font-family:'Poppins';font-weight:400;">Don't just send your CV into a </span>
@@ -187,14 +187,46 @@
                                             <div class="contact-result" style=""></div>
                                         </div>
                                     </div>
-                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <input id="forgot-email"   type="email" name="email" value="" placeholder="Email address"  class="register-input">
                                     <div class="landing-recover-bottom">
-                                        <button class="recover" style="width: 100%">Recover password</button>
+                                        <button class="recover" onclick="recover()" style="width: 100%">Recover password</button>
                                     </div>
                                     <a href="javascript: void (0);" >
                                         <div class="never">
                                         <p onclick="never()">Never mind I have remembered</p>
                                     </div>
+                                    </a>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="error-check-remember">
+                            <div class="col-md-12">
+                                <div class="contact-forget-show" style=""></div>
+                            </div>
+                        </div>
+                        <div   class="forgot-reset" style="display: none">
+                            <div class="square-landing-book">
+                                <h1 class="sign-name" > Enter the email to reset  </h1>
+                            </div>
+
+                            <form id="login-forgot">
+                                <div class="square-sign-box">
+                                    <div class="error-email-address">
+                                        <div class="col-md-12">
+                                            <div class="contact-result" style=""></div>
+                                        </div>
+                                    </div>
+                                    <input   type="email" name="email" value="" placeholder="Email address"  class="register-input">
+                                    <div class="landing-recover-bottom">
+                                        <button class="recover" onclick="" style="width: 100%">Reset password</button>
+                                    </div>
+                                    <a href="javascript: void (0);" >
+                                        <div class="never">
+                                            <p onclick="never()">Never mind I have remembered</p>
+                                        </div>
                                     </a>
 
                                 </div>
