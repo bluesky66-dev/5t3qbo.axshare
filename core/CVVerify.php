@@ -18,6 +18,20 @@ class CVVerify {
         $sql1 = "UPDATE tbl_user set verified=1 where user_id = '".$result[0]['user_id']."'";
         $result = $db->query( $sql1 );
 
+        $this->deleteVerify($verifyLink);
+        return $result;
+    }
+
+    public function resetUser($token) {
+        global $db;
+
+        $sql = "Select verify_link from tbl_verify  where verify_link = '$token'";
+        $result = $db->queryArray( $sql );
+//        $this->deleteVerify($token);
+        if ( ! $result ) {
+            return false;
+        }
+
         return $result;
     }
 
@@ -26,6 +40,7 @@ class CVVerify {
 
         $data = CV_realEscapeArray( $data );
         $usVerify_link = isset( $data["usVerify_link"] ) ? $data["usVerify_link"] : "" ;
+
         $type = isset( $data["type"] ) ? $data["type"] : "" ;
 
 

@@ -476,7 +476,7 @@ $(document).ready(function () {
             };
             $.ajax({
                 method: "POST",
-                url: "async/00000000000000000000000000000000000000000000000000000000000000000000.php",
+                url: "async/forget.php",
                 dataType: "json",
                 data: formData
 

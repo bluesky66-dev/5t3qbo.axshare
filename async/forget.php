@@ -51,14 +51,14 @@ if($_POST) {
 
     echo json_encode($isExist);
 
-    if ($isExist) {
-        $output = json_encode(array('type'=>'error', 'text' => 'The email is already exist!'));
+    if (!$isExist) {
+        $output = json_encode(array('type'=>'error', 'text' => 'The email is not exist!'));
         die($output);
     } else {
         $postData["type"] = "PS";
-        $queryResult = $cvVerify->insertVerify($queryResult, $postData);
+        $queryResult = $cvVerify->insertVerify($isExist["usId"], $postData);
         $cvVerify_link = "http://localhost:7003/reset_password.php?token=".$postData["usVerify_link"];
-//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
+        // $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
     }
 
     if ( ! $queryResult ) {

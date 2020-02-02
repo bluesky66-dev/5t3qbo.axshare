@@ -5,6 +5,16 @@ global $cvVerify;
 
 if (isset($_GET['token']) && $_GET['token']) {
     $token = $_GET['token'];
+    $result = $cvVerify->resetUser($token);
+
+
+    if (!$result) {
+        header("Location: /");
+        exit();
+    }
+}  else {
+    header("Location: /");
+    exit();
 }
 
 ?>
@@ -26,7 +36,9 @@ if (isset($_GET['token']) && $_GET['token']) {
                     </div>
                 </div>
 
-                <input   type="password" name="password" value="" placeholder="Password"  class="register-input" style="height: 60px;margin-bottom: 25px">
+                <input   type="password" name="password" value="" placeholder="Password"  class="register-input" style="height: 60px;margin-bottom: 10px">
+
+                <input   type="password" name="password" value="" placeholder="Confirm Password"  class="register-input" style="height: 60px;margin-bottom: 25px">
 
                 <div class="landing-recover-bottom">
                     <button class="recover" onclick="" style="width: 100%">Reset password</button>
