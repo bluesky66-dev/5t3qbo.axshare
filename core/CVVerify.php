@@ -34,6 +34,18 @@ class CVVerify {
 
         return $result;
     }
+    public function passwordUser($token) {
+        global $db;
+
+        $sql = "Select user_id from tbl_verify  where verify_link = '$token'";
+        $result = $db->queryArray( $sql );
+//        $this->deleteVerify($token);
+        if ( ! $result ) {
+            return false;
+        }
+
+        return $result;
+    }
 
     public function insertVerify( $usId,$data = [] ) {
         global $db;

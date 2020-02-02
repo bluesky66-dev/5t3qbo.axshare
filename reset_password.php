@@ -30,18 +30,23 @@ if (isset($_GET['token']) && $_GET['token']) {
         <p>Please enter your email address and we'll send you a recovery link.</p>
         <form id="reset-forgot">
             <div class="square-sign-box" style="margin: 0">
-                <div class="error-email-address">
+                <div class="error-check-password" style="">
                     <div class="col-md-12">
-                        <div class="contact-result" style=""></div>
+                        <div class="contact-reset-show" style=""></div>
                     </div>
                 </div>
 
-                <input   type="password" name="password" value="" placeholder="Password"  class="register-input" style="height: 60px;margin-bottom: 10px">
+                <input id="password"  type="password" name="password" value="" placeholder="Password"  class="register-input" style="height: 60px;margin-bottom: 10px">
+                <div class="error-check-reset-password" style="">
+                    <div class="col-md-12">
+                        <div class="contact-reset-show" style=""></div>
+                    </div>
+                </div>
 
-                <input   type="password" name="password" value="" placeholder="Confirm Password"  class="register-input" style="height: 60px;margin-bottom: 25px">
+                <input id="reset_password"  type="password" name="reset_password" value="" placeholder="Reset Password"  class="register-input" style="height: 60px;margin-bottom: 25px">
 
                 <div class="landing-recover-bottom">
-                    <button class="recover" onclick="" style="width: 100%">Reset password</button>
+                    <button class="recover" onclick="correctly()"  style="width: 100%">Reset password</button>
                 </div>
 
             </div>
@@ -50,6 +55,9 @@ if (isset($_GET['token']) && $_GET['token']) {
 
 
     </div>
+
+
+
     <div class="col-xl-4"></div>
 
 </div>

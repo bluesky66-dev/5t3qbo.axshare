@@ -747,7 +747,13 @@ square-landing-book span{
     font-weight: 300;
     font-family: 'Poppins Regular';
     font-size: 12px;
-
+}
+.contact-reset-show{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
 }
 .error-password-signin{
     text-align: right;
@@ -781,6 +787,22 @@ square-landing-book span{
     font-family: 'Poppins Regular';
     font-size: 18px;
     padding-top: 125px;
+}
+.error-check-password{
+    text-align: left;
+    color: red;
+    font-weight: 500;
+    font-family: 'Poppins Regular';
+    font-size: 13px;
+
+}
+.error-check-reset-password{
+    text-align: left;
+    color: red;
+    font-weight: 500;
+    font-family: 'Poppins Regular';
+    font-size: 13px;
+
 }
 .register-input.error,textarea.error{
     border: 1px solid red;

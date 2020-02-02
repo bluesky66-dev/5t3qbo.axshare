@@ -136,6 +136,9 @@ function recover(){
         //
         // window.location.replace("http://localhost:7003/reset_password.php");
 }
+function correctly() {
+    
+}
 function never() {
 
     $('.forgot-screen').css('display', 'none');
@@ -334,15 +337,15 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-                console.log('dddddd');
+
                 $resultDiv.hide();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
-                    console.log('bbbbbbbbb');
+
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
                 } else {
-                    console.log('aaaaaaaaa');
+
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
@@ -494,6 +497,85 @@ $(document).ready(function () {
                     setTimeout(function () {
                         $resultDiv.hide();
                         recover();
+                    }, 1000);
+                }
+            });
+
+        },
+        invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
+
+    $('#reset-forgot').validate({
+        rules: {
+            password: {
+                required: true,
+                strongPassword: true,
+            },
+            reset_password: {
+                required: true,
+                strongPassword: true,
+                equalTo: "#password"
+            },
+        },
+        messages: {
+            password: {
+                required: "Enter your password"
+            },
+            reset_password: {
+                required: "Enter your password"
+            },
+        },
+        errorElement: 'div',
+        errorLabelContainer: '.errorTxt',
+        errorPlacement: function (error, element) {
+            if (element.attr("name") == "password")
+                $(".error-check-password").html(error);
+            else if (element.attr("name") == "reset_password")
+                $(".error-check-reset-password").html(error);
+
+
+            //border-red//
+
+
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function (form, e) {
+            e.preventDefault();
+            // some other code
+            // maybe disabling submit button
+            // then:
+           var password = $("#password").val();
+            var reset_password = $("#reset_password").val();
+
+
+            var formData = {
+                password  : password,
+                reset_password: reset_password,
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "async/reset_password_check.php",
+                dataType: "json",
+                data: formData
+
+            }).done(function (result) {
+                var $resultDiv = $(".contact-reset-show");
+                $resultDiv.hide();
+                $resultDiv.removeClass("text-success text-danger");
+                if (result.type === "error") {
+                    $resultDiv.addClass("text-danger");
+                    $resultDiv.text(result.text);
+                } else {
+                    document.getElementById("reset-forgot").reset();
+                    $resultDiv.addClass("text-success");
+                    $resultDiv.text("Thank you, You logged in successfully.");
+                    setTimeout(function () {
+                        $resultDiv.hide();
+                        correctly();
                     }, 1000);
                 }
             });
