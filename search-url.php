@@ -11,39 +11,42 @@
 
 </head>
 <body>
+<div class="modal-content">
+    <div class="modal-header">
+        <h4 class="modal-title">Select file to upload:</h4>
 
-<div class="container">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-    <h1> Select image to upload:</h1>
-    <p>Bootstrap navigation tab test</p>
+    </div>
+    <div class="modal-body ">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+            <li><a href="#Product" data-toggle="tab">Product</a></li>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
-        <li><a href="#Product" data-toggle="tab">Product</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="Home" class="tab-pane fade in active">
+                <form id="upload" class="form-group" action="async/upload.php" method="POST" enctype="multipart/form-data">
 
-    </ul>
-
-
-    <div class="tab-content">
-        <div id="Home" class="tab-pane fade in active">
-            <form id="upload" action="async/upload.php" method="POST" enctype="multipart/form-data">
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="text" name="fileName">
-<!--                <input type="text" name="fileName">-->
-<!--                <input type="hidden" name="fileType" value="ddddd">-->
-<!--                <input type="password" name="fileSize">-->
-                <input id="upload" type="submit"  value="Upload Image" name="submit">
-            </form>
+                    <input class="form-control" type="text" name="fileName">
+                    <!--                <input type="text" name="fileName">-->
+                    <!--                <input type="hidden" name="fileType" value="ddddd">-->
+                    <!--                <input type="password" name="fileSize">-->
+                    <input id="upload" type="submit"  value="Upload Image" name="submit">
+                </form>
+            </div>
+            <div id="Product" class="tab-pane fade">
+                <input  type="file" name="fileToUpload" id="fileToUpload" style="margin: 30px 0px 20px 0px;"> </p>
+            </div>
         </div>
-        <div id="Product" class="tab-pane fade">
-            <h3>Product</h3>
-            <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure. </p>
-        </div>
+
+
 
 
     </div>
-
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
 </div>
-
 </body>
 </html>

@@ -1,35 +1,31 @@
 <?php
 
 class CVFileManager {
-	private $manageBackendPath;
-	private $manageFrontendPath;
+	private $subFolder;
 	private $saveFileName;
 
-	function __construct( $manageBackendPath = "", $manageFrontendPath = "" ) {
-		$this->manageBackendPath  = $manageBackendPath;
-		$this->manageFrontendPath = $manageFrontendPath;
-		$this->saveFileName       = CV_generateRandom( 16 );
-	}
+	function setSubFolder($subFolder){
+        $this->subFolder  = $subFolder;
+    }
 
-	public function uploadFile( $keyName, $suffix = false ) {
+	public function uploadFile( $keyName) {
+	    global $cvFile;
 
 		$resultPath = "";
-
-		$path = CV_MEDIA_DIR . $this->manageBackendPath . "/";
+        $this->saveFileName       = CV_generateRandom( 16 );
+		$path = CV_MEDIA_DIR . $this->subFolder . "/";
 
 		$valid_formats = array( "jpg", "png", "gif", "bmp", "jpeg", "mp4", "ogv", "webm", "pdf" );
 
 		if ( isset( $_POST ) and $_SERVER['REQUEST_METHOD'] == "POST" ) {
-
 			$name      = $_FILES[ $keyName ]['name'];
 			$size      = $_FILES[ $keyName ]['size'];
-			$base_name = $suffix ? $this->saveFileName . "_" . $suffix : $this->saveFileName;
-
+            $FileType  = CV_getFileExtension( $name );
 			list( $txt, $ext ) = explode( ".", $name );
 
 			if ( in_array( $ext, $valid_formats ) ) {
 
-				$actual_file_name = $base_name . "." . CV_getFileExtension( $name );
+				$actual_file_name = $this->saveFileName . "." . $FileType;
 				$tmp              = $_FILES[ $keyName ]['tmp_name'];
 
 				if ( ! is_dir( $path ) ) {
@@ -37,16 +33,12 @@ class CVFileManager {
 				}
 
 				if ( move_uploaded_file( $tmp, $path . $actual_file_name ) ) {
-					$resultPath = $actual_file_name;
-				} else {
-					$resultPath = "";
+                    $queryResult = $cvFile->insert($name, $FileType);
+                    if ($queryResult) {
+                        $resultPath = $name;
+                    }
 				}
-
-			} else {
-				$resultPath = "";
 			}
-		} else {
-			$resultPath = "";
 		}
 
 		return $resultPath;
@@ -55,7 +47,7 @@ class CVFileManager {
 	public function uploadMultipleFiles( $keyName ) {
 		$resultPath = [];
 
-		$path = CV_MEDIA_DIR . $this->manageBackendPath . "/" . $this->saveFileName . "/";
+		$path = CV_MEDIA_DIR . $this->subFolder . "/" . $this->saveFileName . "/";
 
 		$valid_formats = array(
 			"jpg",
@@ -321,3 +313,6 @@ class CVFileManager {
 		}
 	}
 }
+
+
+$cvFileManager = new CVFileManager();

@@ -193,9 +193,8 @@ function CV_trimArray( $data ) {
 }
 
 function CV_getFileExtension( $file ) {
-	$extension = end( explode( ".", $file ) );
-
-	return $extension ? $extension : false;
+	$extension = strtolower(pathinfo($file,PATHINFO_EXTENSION));
+	return $extension;
 }
 
 function CV_escapeString( $CV_str ) {

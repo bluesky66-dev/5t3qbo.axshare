@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/CVFile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/reset_password_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/reset_password_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/async/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/CVFileManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVFileManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/CVManagerLoad.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVManagerLoad.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/CVUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset_password.php" beforeDir="false" afterPath="$PROJECT_DIR$/reset_password.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search-url.php" beforeDir="false" afterPath="$PROJECT_DIR$/search-url.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +36,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search-url.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
+            <state relative-caret-position="325">
+              <caret line="13" selection-start-line="13" selection-end-line="49" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#802#809#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="94" column="90" lean-forward="true" selection-start-line="94" selection-start-column="90" selection-end-line="94" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#2413#2420#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,26 +82,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="375">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/CVUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+            <state relative-caret-position="750">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="e#98#143#0#PHP" />
                 <element signature="e#555#594#0#PHP" />
@@ -78,34 +109,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1094">
-              <caret line="596" column="3" lean-forward="true" selection-start-line="596" selection-start-column="3" selection-end-line="649" selection-end-column="10" />
-              <folding>
-                <element signature="e#6475#10373#0" />
-                <element signature="e#10408#12849#0" />
-                <element signature="e#12885#14882#0" />
-                <element signature="e#14918#17432#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/forget.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1012">
-              <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="-12">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="929">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-12">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -121,28 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update</find>
-      <find>verified</find>
-      <find>Your first impression starts here!</find>
-      <find>Recover password</find>
-      <find>contact-logo-show</find>
-      <find>login-form</find>
-      <find>validateEmail(email)</find>
-      <find>verify_email</find>
-      <find>usName</find>
-      <find>$cvVerify</find>
-      <find>loginEmail</find>
-      <find>register-input</find>
-      <find>$postData</find>
-      <find>$queryResult</find>
-      <find>$verifyLink</find>
-      <find>forgot</find>
-      <find>error</find>
-      <find>error-check-remember</find>
-      <find>error-check-passwo</find>
-      <find>error-email-signin</find>
-      <find>$usId</find>
-      <find>.error-check-password</find>
       <find>UPDATE</find>
       <find>error-password-signin</find>
       <find>Location: /</find>
@@ -151,6 +163,28 @@
       <find>not an image.</find>
       <find>submit</find>
       <find>$imageFileType</find>
+      <find>tbl_verify</find>
+      <find>$manageBackendPath</find>
+      <find>CV_ADMIN_SERVER_DOCUMENT_ROOT</find>
+      <find>CV_BACKEND</find>
+      <find>CV_SERVER_DOCUMENT_ROOT</find>
+      <find>CV_MEDIA_DIR</find>
+      <find>CV_SHARED_SECRET</find>
+      <find>CV_KEYSTRING</find>
+      <find>CV_SENDGRID_API_KEY</find>
+      <find>CV_ADMIN_EMAIL</find>
+      <find>HOST_SERVER</find>
+      <find>NO_PROFILE_PHOTO</find>
+      <find>NO_MEDIA_PHOTO</find>
+      <find>$manageFrontendPath</find>
+      <find>path</find>
+      <find>$suffix</find>
+      <find>$base_name</find>
+      <find>$resultPath</find>
+      <find>square_video_box</find>
+      <find>Upload Image</find>
+      <find>menu1_doc</find>
+      <find>async/upload.php</find>
     </findStrings>
     <replaceStrings>
       <replace>images/yellow-sa.png</replace>
@@ -160,8 +194,8 @@
       <replace>.your-cvlink button</replace>
       <replace>postData</replace>
       <replace>tbl_verify</replace>
-      <replace />
       <replace>$FileType</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>E:\5t3qbo.axshare\async</dir>
@@ -197,13 +231,9 @@
         <option value="$PROJECT_DIR$/async/shop.php" />
         <option value="$PROJECT_DIR$/async/category.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/common/config.php" />
-        <option value="$PROJECT_DIR$/Home.php" />
         <option value="$PROJECT_DIR$/search-url.html" />
         <option value="$PROJECT_DIR$/common/load.php" />
-        <option value="$PROJECT_DIR$/common/functions.php" />
         <option value="$PROJECT_DIR$/async/verify_email.php" />
-        <option value="$PROJECT_DIR$/core/CVManagerLoad.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/verify_email.php" />
         <option value="$PROJECT_DIR$/async/reset_password.php" />
@@ -216,13 +246,19 @@
         <option value="$PROJECT_DIR$/core/CVVerify.php" />
         <option value="$PROJECT_DIR$/async/reset_password_check.php" />
         <option value="$PROJECT_DIR$/reset_password.php" />
-        <option value="$PROJECT_DIR$/common/footer.php" />
-        <option value="$PROJECT_DIR$/common/header.php" />
-        <option value="$PROJECT_DIR$/search-url.php" />
-        <option value="$PROJECT_DIR$/js/book.js" />
         <option value="$PROJECT_DIR$/async/login.php" />
-        <option value="$PROJECT_DIR$/async/upload.php" />
+        <option value="$PROJECT_DIR$/js/book.js" />
+        <option value="$PROJECT_DIR$/core/CVManagerLoad.php" />
+        <option value="$PROJECT_DIR$/core/CVFile.php" />
+        <option value="$PROJECT_DIR$/common/config.php" />
+        <option value="$PROJECT_DIR$/common/functions.php" />
         <option value="$PROJECT_DIR$/core/CVUser.php" />
+        <option value="$PROJECT_DIR$/core/CVFileManager.php" />
+        <option value="$PROJECT_DIR$/async/upload.php" />
+        <option value="$PROJECT_DIR$/search-url.php" />
+        <option value="$PROJECT_DIR$/common/header.php" />
+        <option value="$PROJECT_DIR$/common/footer.php" />
+        <option value="$PROJECT_DIR$/Home.php" />
       </list>
     </option>
   </component>
@@ -282,6 +318,12 @@
               <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
               <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -293,20 +335,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work/php/public_html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\5t3qbo.axshare" />
-      <recent name="E:\5t3qbo.axshare\async" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\5t3qbo.axshare\core" />
       <recent name="E:\5t3qbo.axshare\async" />
       <recent name="E:\5t3qbo.axshare" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\5t3qbo.axshare" />
+      <recent name="E:\5t3qbo.axshare\async" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,14 +392,7 @@
       <workItem from="1580295132262" duration="31073000" />
       <workItem from="1580420466578" duration="28808000" />
       <workItem from="1580510907794" duration="41740000" />
-      <workItem from="1580605648692" duration="39648000" />
-    </task>
-    <task id="LOCAL-00037" summary="home">
-      <created>1579695034726</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1579695034726</updated>
+      <workItem from="1580605648692" duration="59425000" />
     </task>
     <task id="LOCAL-00038" summary="landing">
       <created>1579696624624</created>
@@ -695,11 +730,18 @@
       <option name="project" value="LOCAL" />
       <updated>1580640154537</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="upload">
+      <created>1580718089623</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1580718089623</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400770000" />
+    <option name="totallyTimeSpent" value="420547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -776,9 +818,9 @@
     <MESSAGE value="check" />
     <MESSAGE value="red border" />
     <MESSAGE value="7003" />
-    <MESSAGE value="upload" />
     <MESSAGE value="verify" />
-    <option name="LAST_COMMIT_MESSAGE" value="verify" />
+    <MESSAGE value="upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,11 +849,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Xampp/htdocs/avada-demo/wp-content/themes/twentynineteen/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616" />
-      </provider>
-    </entry>
     <entry file="file://D:/Xampp/htdocs/avada-demo/wp-content/themes/twentynineteen/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1841,13 +1878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Xampp/htdocs/contentmessage/contact-submit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -1864,13 +1894,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/async/reset_password.php" />
     <entry file="file://$PROJECT_DIR$/reset.php" />
-    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reset_password_check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -2337,13 +2360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/sales.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -2362,13 +2378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5425">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
         </state>
       </provider>
     </entry>
@@ -2403,24 +2412,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2300">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/reset_password_check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -2434,33 +2429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search-url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1094">
-          <caret line="596" column="3" lean-forward="true" selection-start-line="596" selection-start-column="3" selection-end-line="649" selection-end-column="10" />
-          <folding>
-            <element signature="e#6475#10373#0" />
-            <element signature="e#10408#12849#0" />
-            <element signature="e#12885#14882#0" />
-            <element signature="e#14918#17432#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/forget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1012">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -2468,31 +2436,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/upload.php">
+    <entry file="file://$PROJECT_DIR$/js/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="121">
+          <caret line="596" column="1" selection-start-line="596" selection-start-column="1" selection-end-line="652" selection-end-column="10" />
+          <folding>
+            <element signature="e#10408#12849#0" />
+            <element signature="e#12885#14882#0" />
+            <element signature="e#14918#17432#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="825">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+        <state relative-caret-position="312">
+          <caret line="197" column="1" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search-url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" selection-start-line="13" selection-end-line="49" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#802#809#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/forget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/CVUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+        <state relative-caret-position="750">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
           <folding>
             <element signature="e#98#143#0#PHP" />
             <element signature="e#555#594#0#PHP" />
@@ -2503,6 +2530,32 @@
             <element signature="e#1699#1741#0#PHP" />
             <element signature="e#1772#2357#0#PHP" />
             <element signature="e#2266#2323#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="94" column="90" lean-forward="true" selection-start-line="94" selection-start-column="90" selection-end-line="94" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#2413#2420#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

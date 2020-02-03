@@ -216,20 +216,6 @@ class CVUser {
 		return $result;
 	}
 
-    static public function insertUpdate( $target_file,$FileType) {
-        global $db;
-
-
-        $sql = "INSERT INTO cv_files
-					  SET 'type' = '$FileType',
-                          file_name = '$target_file', ";
-        $db->queryInsert( $sql );
-
-        $result = $db->getPrevInsertId();
-
-        return $result;
-    }
-
     static public function updateUser( $usId, $data = [] ) {
 		global $db;
 
@@ -294,14 +280,4 @@ class CVUser {
 
         return $result;
     }
-
-	static public function getFileManager() {
-
-		$fileManager = new CVFileManager( "/profile", "page" );
-
-		return $fileManager;
-	}
 }
-
-//$cvUser = new CVUser();
-//$cvUser->normalFunction();

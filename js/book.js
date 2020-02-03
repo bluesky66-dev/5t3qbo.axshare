@@ -596,8 +596,11 @@ $(document).ready(function () {
 
     // $('#upload').validate({
     //     rules: {
-    //         file_name: {
+    //         fileName: {
     //             required: true
+    //         },
+    //         fileToUpload:{
+    //             required:true
     //         },
     //
     //
@@ -607,13 +610,13 @@ $(document).ready(function () {
     //     submitHandler: function (form, e) {
     //         e.preventDefault();
     //
-    //         var file_name = $("#file_name").val();
     //         var fileToUpload = $("#fileToUpload").val();
+    //         var fileName = $("#fileName").val();
     //
     //
     //         var formData = {
-    //             file_name: file_name,
     //             fileToUpload: fileToUpload,
+    //             fileName: fileName,
     //
     //         };
     //         $.ajax({
@@ -638,7 +641,7 @@ $(document).ready(function () {
     //                 toastr.success('Thank you, your sign up has been sent successfully.');
     //                 setTimeout(function () {
     //                     $resultDiv.hide();
-    //                     insign();
+    //
     //                 }, 1000);
     //             }
     //         });
