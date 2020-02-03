@@ -1,5 +1,5 @@
 <?php
-require_once( "common/load.php" );
+require_once( "../common/load.php" );
 global $user;
 
 
@@ -13,8 +13,9 @@ $postData    = array();
 
 $postData["password"] = $_POST["password"];
 $postData["reset_password"] = $_POST["reset_password"];
+$postData["token"] = $_POST["token"];
 $error_flag = 0;
-$error = "Your  Password is invalid";
+$error = "";
 
 if($_POST) {
     //check if its an ajax request, exit if not
@@ -30,23 +31,11 @@ if($_POST) {
         die($output);
     }
 
-
-    if (isset($_GET['token']) && $_GET['token']) {
-        $token = $_GET['token'];
-        $User = $cvVerify->passwordUser($token);
-        $result = CVUser::updatePassword($User, $postData);
-
-        if (!$result) {
-            header("Location: /");
-            exit();
-        }
-    }  else {
-        header("Location: /");
-        exit();
+    $reset = $cvVerify->passwordUser($postData["token"]);
+    $result = CVUser::updatePassword($reset[0]["user_id"], $postData);
+    if (!$result) {
+        $result = "error";
     }
-
-
-
 
     $data['type'] = $result;
     $data['data']   = $queryResult;

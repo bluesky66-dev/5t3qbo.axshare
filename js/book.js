@@ -137,7 +137,7 @@ function recover(){
         // window.location.replace("http://localhost:7003/reset_password.php");
 }
 function correctly() {
-    
+    window.location.replace("Location: /");
 }
 function never() {
 
@@ -341,14 +341,15 @@ $(document).ready(function () {
                 $resultDiv.hide();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
-
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
                 } else {
 
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
+                    toastr.success('Thank you, your sign up has been sent successfully.');
                     setTimeout(function () {
                         $resultDiv.hide();
                         insign();
@@ -361,7 +362,6 @@ $(document).ready(function () {
             // $("div.error").hide();
         },
     });
-
 
     $('#login-form').validate({
         rules: {
@@ -427,11 +427,13 @@ $(document).ready(function () {
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist');
                 } else {
                     document.getElementById("login-form").reset();
                     $resultDiv.addClass("text-success");
-                    $resultDiv.text("Thank you, You logged in successfully.");
-                    window.location.href += "/" + result.data;
+
+                    window.location.href = "/" + result.data;
+                    toastr.success('Thank you, your login has been sent successfully.');
                 }
             });
 
@@ -490,10 +492,12 @@ $(document).ready(function () {
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
                 } else {
                     document.getElementById("login-forget").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
+                    toastr.success('Thank you,  sent successfully.');
                     setTimeout(function () {
                         $resultDiv.hide();
                         recover();
@@ -547,13 +551,15 @@ $(document).ready(function () {
             // some other code
             // maybe disabling submit button
             // then:
-           var password = $("#password").val();
+            var password = $("#password").val();
             var reset_password = $("#reset_password").val();
+            var token = $("#token").val();
 
 
             var formData = {
                 password  : password,
                 reset_password: reset_password,
+                token: token,
             };
 
             $.ajax({
@@ -569,22 +575,80 @@ $(document).ready(function () {
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
+
                 } else {
                     document.getElementById("reset-forgot").reset();
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, You logged in successfully.");
+                    toastr.success('Thank you,  sent successfully.');
                     setTimeout(function () {
                         $resultDiv.hide();
                         correctly();
                     }, 1000);
                 }
             });
-
         },
         invalidHandler: function (e, validator) {
             // $("div.error").hide();
         },
     });
+
+    // $('#upload').validate({
+    //     rules: {
+    //         file_name: {
+    //             required: true
+    //         },
+    //
+    //
+    //
+    //     },
+    //
+    //     submitHandler: function (form, e) {
+    //         e.preventDefault();
+    //
+    //         var file_name = $("#file_name").val();
+    //         var fileToUpload = $("#fileToUpload").val();
+    //
+    //
+    //         var formData = {
+    //             file_name: file_name,
+    //             fileToUpload: fileToUpload,
+    //
+    //         };
+    //         $.ajax({
+    //             method: "POST",
+    //             url: "async/upload.php",
+    //             dataType: "json",
+    //             data: formData
+    //
+    //         }).done(function (result) {
+    //
+    //             $resultDiv.hide();
+    //             $resultDiv.removeClass("text-success text-danger");
+    //             if (result.type === "error") {
+    //                 $resultDiv.addClass("text-danger");
+    //                 $resultDiv.text(result.text);
+    //                 toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
+    //             } else {
+    //
+    //                 document.getElementById("register-form").reset();
+    //                 $resultDiv.addClass("text-success");
+    //                 $resultDiv.text("Thank you, your message has been sent successfully.");
+    //                 toastr.success('Thank you, your sign up has been sent successfully.');
+    //                 setTimeout(function () {
+    //                     $resultDiv.hide();
+    //                     insign();
+    //                 }, 1000);
+    //             }
+    //         });
+    //
+    //     },
+    //     invalidHandler: function (e, validator) {
+    //         // $("div.error").hide();
+    //     },
+    // });
+
 
     $("#square1_cover").click(function () {
         square1_cover(true);

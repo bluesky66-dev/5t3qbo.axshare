@@ -26,13 +26,13 @@
 
     <div class="tab-content">
         <div id="Home" class="tab-pane fade in active">
-            <form action="async/upload.php" method="POST" enctype="multipart/form-data">
+            <form id="upload" action="async/upload.php" method="POST" enctype="multipart/form-data">
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="text" name="fileName">
 <!--                <input type="text" name="fileName">-->
 <!--                <input type="hidden" name="fileType" value="ddddd">-->
 <!--                <input type="password" name="fileSize">-->
-                <input type="submit" value="Upload Image" name="submit">
+                <input id="upload" type="submit"  value="Upload Image" name="submit">
             </form>
         </div>
         <div id="Product" class="tab-pane fade">

@@ -1,10 +1,19 @@
 <?php
+require_once( "../common/load.php" );
+global $user, $cvVerify;
+$result      = "success";
+$error       = "";
+$queryResult = false;
+$data        = array();
+$postData    = array();
 $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 //uploads/fine.jpg
 $uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$FileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 //jpg
+
+$user = CVUser::insertUpdate($target_file, $FileType);
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -22,13 +31,13 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo "Sorry, your file is too large.";
-    $uploadOk = 0;
-}
+//if ($_FILES["fileToUpload"]["size"] > 500000) {
+//    echo "Sorry, your file is too large.";
+//    $uploadOk = 0;
+//}
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-    && $imageFileType != "gif" && $imageFileType != "mp4" && $imageFileType != "ogg" && $imageFileType != "webm" ) {
+if($FileType != "jpg" && $FileType != "png" && $FileType != "jpeg"
+    && $FileType != "gif" && $FileType != "mp4" && $FileType != "ogg" && $FileType != "webm" ) {
     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
     $uploadOk = 0;
 }
@@ -47,5 +56,11 @@ if ($uploadOk == 0) {
         echo $error->getMessage();
     }
 }
+
+$data['type'] = $result;
+$data['data']   = $queryResult;
+$data['text']  = $error;
+header( 'Content-Type: application/json' );
+echo json_encode( $data );
 ?>
 

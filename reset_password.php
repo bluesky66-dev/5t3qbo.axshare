@@ -29,6 +29,7 @@ if (isset($_GET['token']) && $_GET['token']) {
         <h1>CV Link</h1>
         <p>Please enter your email address and we'll send you a recovery link.</p>
         <form id="reset-forgot">
+            <input type="hidden" id="token" value="<?php echo $token; ?>">
             <div class="square-sign-box" style="margin: 0">
                 <div class="error-check-password" style="">
                     <div class="col-md-12">
@@ -46,7 +47,7 @@ if (isset($_GET['token']) && $_GET['token']) {
                 <input id="reset_password"  type="password" name="reset_password" value="" placeholder="Reset Password"  class="register-input" style="height: 60px;margin-bottom: 25px">
 
                 <div class="landing-recover-bottom">
-                    <button class="recover" onclick="correctly()"  style="width: 100%">Reset password</button>
+                    <button class="recover" style="width: 100%">Reset password</button>
                 </div>
 
             </div>

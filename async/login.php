@@ -36,10 +36,12 @@ if($_POST) {
     if ($user) {
         CV_setLogin($user["usToken"]);
         $queryResult = $user['usName'];
+
         $error = "";
         $result = "OK";
     } else {
         $error_flag = 1;
+
     }
 
     $data['type'] = $result;

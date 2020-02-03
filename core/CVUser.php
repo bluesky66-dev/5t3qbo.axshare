@@ -132,7 +132,9 @@ class CVUser {
 						FROM tbl_user us
 				      WHERE us.password = MD5('$usPassword') 
 				      AND us.email = '$usEmail'
-				      AND us.verify = '1'";
+				      AND us.verified = '1'";
+
+
 		$result = $db->queryArray( $sql );
 		if ( ! $result ) {
 			$result[0] = [];
@@ -194,11 +196,12 @@ class CVUser {
 		$usPassword  = isset( $data["usPassword"] ) ? $data["usPassword"] : "";
 		$usEmail     = isset( $data["usEmail"] ) ? $data["usEmail"] : "";
 		$userLiner     = isset( $data["userLiner"] ) ? $data["userLiner"] : "";
-
+        $usName = CV_generateUsername($usFirstName, $usLastName);
 		$usToken     = time() . CV_generateRandom( 32 );
 
 		$sql = "INSERT INTO tbl_user
-					  SET f_name = '$usFirstName', 
+					  SET user_name = '$usName',
+                          f_name = '$usFirstName', 
 					      l_name = '$usLastName',
 					      password = MD5('$usPassword'),
 					      email = '$usEmail',
@@ -212,6 +215,20 @@ class CVUser {
 
 		return $result;
 	}
+
+    static public function insertUpdate( $target_file,$FileType) {
+        global $db;
+
+
+        $sql = "INSERT INTO cv_files
+					  SET 'type' = '$FileType',
+                          file_name = '$target_file', ";
+        $db->queryInsert( $sql );
+
+        $result = $db->getPrevInsertId();
+
+        return $result;
+    }
 
     static public function updateUser( $usId, $data = [] ) {
 		global $db;
@@ -249,12 +266,12 @@ class CVUser {
 
 		$data = CV_realEscapeArray( $data );
 
-		$usPassword  = isset( $data["usPassword"] ) ? $data["usPassword"] : "";
-		$usRPassword = isset( $data["usRPassword"] ) ? $data["usRPassword"] : "";
+		$usPassword  = isset( $data["password"] ) ? $data["password"] : "";
+		$usRPassword = isset( $data["reset_password"] ) ? $data["reset_password"] : "";
 
 		if ( $usPassword == $usRPassword ) {
 			$sql = "UPDATE tbl_user
-					  SET us_password = MD5('$usPassword'),
+					  SET password = MD5('$usPassword'),
 						  update_time = now()
 							WHERE user_id = '$usId'";
 
