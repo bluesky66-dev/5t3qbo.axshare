@@ -5,13 +5,24 @@ class CVFile {
 	function __construct() {
 	}
 
-    public function insert( $fileName, $FileType ) {
+	function selectVideo() {
+        global $db;
+        $sql    = "SELECT *  FROM cv_files WHERE file_type = 'video'";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result[0] = [];
+        }
+        return $result[0];
+    }
+
+    public function insert( $fileName, $FileType, $fileExt) {
         global $db;
 
-
         $sql = "INSERT INTO cv_files
-					  SET `type` = '$FileType',
-                          file_name = '$fileName'";
+					  SET `file_type` = '$FileType',
+					      `file_ext` = '$fileExt',
+                          file_name = '$fileName',
+                          create_time = now()";
         $db->queryInsert( $sql );
 
         $result = $db->getPrevInsertId();

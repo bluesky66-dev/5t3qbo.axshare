@@ -1,5 +1,28 @@
 <?php
+
 require_once( "common/header.php" );
+if (isset($_POST["submit"])) {
+    if (isset($_FILES["fileToUpload"])) {
+        global $user, $cvFileManager;
+        $result      = "success";
+        $error       = "";
+        $queryResult = false;
+        $data        = array();
+        $postData    = array();
+
+        $cvFileManager->setSubFolder($_POST["fileType"]);
+        $fileName = $cvFileManager->uploadFile("fileToUpload", $_POST["fileType"]);
+
+    }
+    if (isset($_POST["fileName"])) {
+        $FileExt  = CV_getFileExtension( $_POST["fileName"] );
+        $fileName = $cvFile->insert($_POST["fileName"], $_POST["fileType"], $FileExt);
+
+    }
+
+
+
+}
 ?>
 <header id="header">
     <div class="header-relative">
@@ -42,32 +65,59 @@ require_once( "common/header.php" );
                         <button class="delete_video_home">
                             Upload pitch
                         </button>
-                  </div>
+                    </div>
 
                     <div id="demo" class="square_video_box" >
-                        <div class="square_video">
-                            <img src="images/re-video.png">
-                            <p><span>No video pitch found</span><br>
-                            <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
-                            <button class="upload-video" data-toggle="modal" data-target="#myModal" >Upload video</button>
-                        </div>
+                        <?php
+                        $videoFile = $cvFile->selectVideo();
+                        if ($videoFile) {
+                            $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
+                        if (filter_var($videoFile["file_name"], FILTER_VALIDATE_URL)) {
+
+                            ?>
+                        <div class="square-video-video-box" style="display: none" type="file" name="fileToUpload" id="fileToUpload>
+                            <div class="square-video-video embed-responsive embed-responsive-16by9" >
+                            <iframe class="embed-responsive-item" src="../uploads/<?php echo $videoFileUrl;?>" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+                         </div>
+
+                        <?php
+
+                        } else {
+                        }
+                            ?>
+                            <video width="320" height="240" controls>
+                                <source src="../uploads/<?php echo $videoFileUrl;?>" type="video/mp4">
+
+                            </video>
+
+                            <?php
+                        } else {
+                            ?>
+                            <div class="square_video">
+                                <img src="images/re-video.png">
+                                <p><span>No video pitch found</span><br>
+                                    <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
+                                <button id="uploadVideo" class="upload-video" data-toggle="modal" data-target="#myModal" >Upload video</button>
+                            </div>
+                            <?php
+                        }
+
+                        ?>
 
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog">
-
-                                <!-- Modal content-->
+                              <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Select file to upload:</h4>
-
+                                        <h4 class="modal-title">Select file to upload</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                   </div>
 
-                                    </div>
                                     <div class="modal-body ">
 
-                                        <div class="container">
+                                        <div class="">
 
-                                            <br>
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs" role="tablist">
 
@@ -82,36 +132,42 @@ require_once( "common/header.php" );
                                             <!-- Tab panes -->
                                             <div class="tab-content">
 
-                                                <div id="menu1" class="container tab-pane fade"><br>
-                                                    <h5></h5>
-                                                    <form id="upload" class="form-inline" action="async/upload.php" method="POST" enctype="multipart/form-data">
-                                                        <input type="file"  type="file"  name="fileToUpload" id="fileToUpload" id="recipient-name">
-                                                        <input class="form-inline" type="text" name="fileName"  id="recipient-name">
-                                                        <input class="form-inline" id="upload" type="submit"  value="Upload file" name="submit">
+                                                <div id="menu1" class="container tab-pane fade active show"><br>
 
+                                                    <form id="upload" class="" method="POST" enctype="multipart/form-data">
+                                                        <input type="hidden" name="fileType" value="">
+                                                        <input  type="text" name="fileName"  id="recipient-name" class="modal-input">
+                                                        <div class="modal-bottom">
+                                                        <input class="modal-submit" id="upload" type="submit"  value="Upload file" name="submit" >
+                                                        <button type="button" class="modal-close" data-dismiss="modal" style="font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';">Close</button>
+                                                        </div>
                                                     </form>
                                                 </div>
                                                 <div id="menu2" class="container tab-pane fade"><br>
                                                     <h5></h5>
+                                                    <form id="upload" class="form-inline" method="POST" enctype="multipart/form-data">
+                                                        <input type="hidden" name="fileType" value="">
+                                                        <input type="file"  type="file"  name="fileToUpload" id="fileToUpload" style="border: 0;">
+                                                        <div class="modal-bottom">
+                                                        <input class="modal-submit"  id="upload" type="submit"  value="Upload file" name="submit" style="">
+                                                        <button type="button" class=" modal-close" data-dismiss="modal" style=";">Close</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div id="demo-vid" class="col-xl-6 home-right" >
+                <div id="demo-vid" class="col-xl-6 home-right" >
                         <div class="square_book repost">
                             <h1 class="user-name repository"> My Document Repository</h1>
-                            <button class="delete_video_home" data-toggle="modal" data-target="#myModal"  >
+                            <button id="uploadDoc1" class="delete_video_home"  data-toggle="modal" data-target="#myModal">
                                 Upload documents
                             </button>
                         </div>
@@ -121,16 +177,14 @@ require_once( "common/header.php" );
                                 <img src="images/re-word.png">
                                 <p><span>No document found</span><br>
                                 <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
-                                <button class="upload-video" onclick="loadDoc()">Upload documents</button>
+                                <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
                             </div>
-
                         </div>
                     </div>
-
-        </div>
+            </div>
+         </div>
     </div>
 </div>
-
 
 <div class="overlay-home" style=" display: none">
 

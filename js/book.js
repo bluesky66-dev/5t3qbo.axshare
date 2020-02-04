@@ -693,6 +693,14 @@ $(document).ready(function () {
     $("#read1").click(function () {
         read1(true);
     });
+    $("#uploadVideo").click(function ( e) {
+
+        $("input[name=fileType]").val("video");
+    });
+    $("#uploadDoc1, #uploadDoc2").click(function ( e) {
+
+        $("input[name=fileType]").val("doc");
+    });
 });
 
 

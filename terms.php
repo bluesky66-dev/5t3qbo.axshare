@@ -1,4 +1,5 @@
 <?php
+$pageName = "terms";
 require_once( "common/header.php" );
 ?>
 <header id="header">

@@ -1593,6 +1593,10 @@ ul.index_span{
     background: url("../images/slider-badge.png") right center no-repeat;
     background-size: 100% 100%;
 }
+#upload{
+    display: flex;
+    justify-content: flex-end;
+}
 
 .intro-img {
     margin-top: 40px;
@@ -1626,7 +1630,6 @@ ul.index_span{
     }
 }
 
-
 @media (min-width: 1202px) {
     .main-nav {
         display: none;
@@ -1651,7 +1654,6 @@ ul.index_span{
     }
 }
 
-
 @media (max-width: 1210px) {
     #footer .footer-top .social-links a {
         margin-bottom: 25px
@@ -1663,7 +1665,6 @@ ul.index_span{
         max-width: 1460px;
     }
 }
-
 
 @media (min-width: 992px) and (max-width: 1210px) {
     .mobile-nav-toggle.d-lg-none {
@@ -2127,11 +2128,13 @@ ul.index_span{
 
 
 }
+
 @media (max-width:767px){
     .angle{
         margin: 135px 20px 20px 20px;
     }
 }
+
 @media (max-width: 414px) {
     .img {
         margin-bottom: 25px;
@@ -2176,6 +2179,7 @@ ul.index_span{
 }
 
 @media (max-width: 378px) {
+
     #footer .bottom_2 {
         display: flex;
         align-items: center;
@@ -2314,14 +2318,15 @@ ul.index_span{
     #about .img_out_b {
         margin-left:0%;
     }
+
     .img1_left{
         margin-top: 20px;
     }
+
     .about-avatar{
         margin: 0 auto;
         width: 100%;
     }
-
 
 }
 

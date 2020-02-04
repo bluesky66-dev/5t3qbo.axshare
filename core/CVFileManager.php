@@ -8,7 +8,7 @@ class CVFileManager {
         $this->subFolder  = $subFolder;
     }
 
-	public function uploadFile( $keyName) {
+	public function uploadFile( $keyName, $fileType) {
 	    global $cvFile;
 
 		$resultPath = "";
@@ -20,12 +20,10 @@ class CVFileManager {
 		if ( isset( $_POST ) and $_SERVER['REQUEST_METHOD'] == "POST" ) {
 			$name      = $_FILES[ $keyName ]['name'];
 			$size      = $_FILES[ $keyName ]['size'];
-            $FileType  = CV_getFileExtension( $name );
-			list( $txt, $ext ) = explode( ".", $name );
+            $FileExt  = CV_getFileExtension( $name );
+			if ( in_array( $FileExt, $valid_formats ) ) {
 
-			if ( in_array( $ext, $valid_formats ) ) {
-
-				$actual_file_name = $this->saveFileName . "." . $FileType;
+				$actual_file_name = $this->saveFileName . "." . $FileExt;
 				$tmp              = $_FILES[ $keyName ]['tmp_name'];
 
 				if ( ! is_dir( $path ) ) {
@@ -33,7 +31,7 @@ class CVFileManager {
 				}
 
 				if ( move_uploaded_file( $tmp, $path . $actual_file_name ) ) {
-                    $queryResult = $cvFile->insert($name, $FileType);
+                    $queryResult = $cvFile->insert($name, $fileType, $FileExt);
                     if ($queryResult) {
                         $resultPath = $name;
                     }
