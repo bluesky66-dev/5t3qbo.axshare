@@ -70,30 +70,30 @@ if (isset($_POST["submit"])) {
                     <div id="demo" class="square_video_box" >
                         <?php
                         $videoFile = $cvFile->selectVideo();
+                        $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
                         if ($videoFile) {
-                            $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
-                        if (filter_var($videoFile["file_name"], FILTER_VALIDATE_URL)) {
+
+                        if (($videoFile["file_ext"])){
 
                             ?>
-                        <div class="square-video-video-box" style="display: none" type="file" name="fileToUpload" id="fileToUpload>
-                            <div class="square-video-video embed-responsive embed-responsive-16by9" >
-                            <iframe class="embed-responsive-item" src="../uploads/<?php echo $videoFileUrl;?>" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        <video width="320" height="240" controls>
+                            <source src="/uploads/<?php echo $videoFileUrl;?>" type="video/mp4">
+                        </video>
 
-                         </div>
 
                         <?php
 
                         } else {
+
+                            ?>
+                        <div class="square-video-video-box" style="display: none" type="file" name="fileToUpload" id="fileToUpload>
+                            <div class="square-video-video embed-responsive embed-responsive-16by9" >
+                            <iframe class="embed-responsive-item" src="<?php echo $videoFile["file_name"];?>" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                            <?php
                         }
                             ?>
-                            <video width="320" height="240" controls>
-                                <source src="../uploads/<?php echo $videoFileUrl;?>" type="video/mp4">
 
-                            </video>
-
-                            <?php
-                        } else {
-                            ?>
                             <div class="square_video">
                                 <img src="images/re-video.png">
                                 <p><span>No video pitch found</span><br>

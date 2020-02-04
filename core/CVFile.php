@@ -7,7 +7,7 @@ class CVFile {
 
 	function selectVideo() {
         global $db;
-        $sql    = "SELECT *  FROM cv_files WHERE file_type = 'video'";
+        $sql    = "SELECT *  FROM cv_files WHERE file_type = `video`";
         $result = $db->queryArray( $sql );
         if ( ! $result ) {
             $result[0] = [];
@@ -15,11 +15,23 @@ class CVFile {
         return $result[0];
     }
 
+    function selectDoc() {
+        global $db;
+        $sql    = "SELECT *  FROM cv_files WHERE file_type = `doc`";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result[0] = [];
+        }
+        return $result[0];
+    }
+
+
     public function insert( $fileName, $FileType, $fileExt) {
         global $db;
 
         $sql = "INSERT INTO cv_files
-					  SET `file_type` = '$FileType',
+
+					  SET`file_type` = '$FileType',
 					      `file_ext` = '$fileExt',
                           file_name = '$fileName',
                           create_time = now()";
