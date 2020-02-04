@@ -15,7 +15,7 @@ class CVFileManager {
         $this->saveFileName       = CV_generateRandom( 16 );
 		$path = CV_MEDIA_DIR . $this->subFolder . "/";
 
-		$valid_formats = array( "jpg", "png", "gif", "bmp", "jpeg", "mp4", "ogv", "webm", "pdf","pdf" );
+		$valid_formats = array( "jpg", "png", "gif", "bmp", "jpeg", "mp4", "ogv", "webm");
 
 		if ( isset( $_POST ) and $_SERVER['REQUEST_METHOD'] == "POST" ) {
 			$name      = $_FILES[ $keyName ]['name'];

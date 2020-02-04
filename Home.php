@@ -3,7 +3,7 @@
 require_once( "common/header.php" );
 if (isset($_POST["submit"])) {
     if (isset($_FILES["fileToUpload"])) {
-        global $user, $cvFileManager;
+        global $user, $cvFileManager,$cvFile;
         $result      = "success";
         $error       = "";
         $queryResult = false;
@@ -89,7 +89,7 @@ if (isset($_POST["submit"])) {
                         <div class="square-video-video-box" style="display: none" type="file" name="fileToUpload" id="fileToUpload>
                             <div class="square-video-video embed-responsive embed-responsive-16by9" >
                             <iframe class="embed-responsive-item" src="<?php echo $videoFile["file_name"];?>" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                        </div>
+
                             <?php
                         }
                             ?>
@@ -172,14 +172,44 @@ if (isset($_POST["submit"])) {
                             </button>
                         </div>
 
-                        <div class="square_video_box">
-                            <div class="square_video">
-                                <img src="images/re-word.png">
-                                <p><span>No document found</span><br>
-                                <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
-                                <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
+
+                            <div class="square_video_box">
+                                <?php
+                                $docFile = $cvFile->selectDoc();
+                                $docFileUrl =  $docFile["file_type"]."/".$docFile["file_name"];
+                                if ($docFile) {
+
+                                    if (($docFile["file_ext"])){
+
+                                        ?>
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <img src="images/ppt.png">
+                                            <p class="bold-p">Document.ppt</p>
+                                            <p class="solid-p">date updated</p>
+                                        </div>
+                                        <?php
+
+                                    } else {
+
+                                        ?>
+
+
+                                        <?php
+                                    }
+                                    ?>
+                                    <div class="square_video">
+                                        <img src="images/re-word.png">
+                                        <p><span>No document found</span><br>
+                                            <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
+                                        <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
+                                    </div>
+                                    <?php
+                                }
+
+                                ?>
                             </div>
-                        </div>
+
+
                     </div>
             </div>
          </div>
