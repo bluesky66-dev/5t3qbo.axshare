@@ -192,15 +192,16 @@ if (isset($_POST["submit"])) {
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
                                                     <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
+                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                            <a href="javascript: void (0);"><div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
+                                                                </div></a>
+
+                                                            <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
                                                             <span>Delete</span>
-                                                        </div>
+                                                                </div></a>
 
                                                     </div>
                                                 </div>
@@ -229,7 +230,6 @@ if (isset($_POST["submit"])) {
                                                         <div class="download">
                                                             <span>Delete</span>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                                 <?php

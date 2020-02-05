@@ -118,12 +118,41 @@ function word(id) {
 }
 function downloadHide(id) {
     $('.word').css('display', 'none');
-
     $('#doc' + id).css('display', 'none');
     $('.wordFile' + id).css('display', 'none');
 
 }
+function downloadDelete(id) {
+    $('.word').css('display', 'none');
+    $('#doc' + id).css('display', 'none');
+    $('.wordFile' + id).css('display', 'none');
 
+    $.ajax({
+        method: "POST",
+        url: "async/fileDelete.php",
+        dataType: "json",
+        data: {
+            delete: id
+        },
+
+    }).done(function (result) {
+        var $resultDiv = $(".contact-reset-show");
+        $resultDiv.hide();
+        $resultDiv.removeClass("text-success text-danger");
+        if (result.type === "error") {
+            toastr.error('Excuse me')
+
+        } else {
+
+            toastr.success('delete successfully.');
+            setTimeout(function () {
+                $resultDiv.hide();
+                correctly();
+            }, 1000);
+        }
+    });
+    console.log('id');
+}
 function insign() {
 
     $('.login').css('display', 'none');
