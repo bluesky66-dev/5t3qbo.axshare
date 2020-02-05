@@ -116,9 +116,12 @@ function word(id) {
     $('.word-see').css('position', 'relative');
 
 }
-function word1() {
-    $('.word1').css('display', 'block');
-    $('.word-see').css('position', 'relative');
+function downloadHide(id) {
+    $('.word').css('display', 'none');
+
+    $('#doc' + id).css('display', 'none');
+    $('.wordFile' + id).css('display', 'none');
+
 }
 
 function insign() {

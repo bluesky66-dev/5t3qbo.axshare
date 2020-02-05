@@ -184,7 +184,7 @@ if (isset($_POST["submit"])) {
                                         switch ($docFile["file_ext"]) {
                                             case "doc": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " >
                                                     <img src="images/document.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -195,7 +195,7 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
@@ -211,7 +211,7 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "pdf": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
                                                     <img src="images/pdf.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -223,7 +223,7 @@ if (isset($_POST["submit"])) {
                                                             <span>Select action</span>
                                                         </div>
 
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
@@ -237,7 +237,7 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "xlsx": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
                                                     <img src="images/xlsx.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -249,7 +249,7 @@ if (isset($_POST["submit"])) {
                                                             <span>Select action</span>
                                                         </div>
 
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
@@ -263,7 +263,7 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "ppt": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
                                                     <img src="images/ppt.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -275,7 +275,7 @@ if (isset($_POST["submit"])) {
                                                             <span>Select action</span>
                                                         </div>
 
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
@@ -289,7 +289,7 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "jpeg": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
                                                     <img src="images/jpeg.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -301,7 +301,7 @@ if (isset($_POST["submit"])) {
                                                             <span>Select action</span>
                                                         </div>
 
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
@@ -315,7 +315,7 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "png": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
                                                     <img src="images/png.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
@@ -327,7 +327,7 @@ if (isset($_POST["submit"])) {
                                                             <span>Select action</span>
                                                         </div>
 
-                                                        <div class="download">
+                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
                                                             <span>Hide</span>
                                                         </div>
                                                         <div class="download">
