@@ -184,14 +184,26 @@ if (isset($_POST["submit"])) {
                                         switch ($docFile["file_ext"]) {
                                             case "doc": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" ">
-                                                    <img src="images/document.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" onclick="word() ">
+                                                    <img src="images/document.png" class="word-see">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Download</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
+
+
                                                <?php
                                                 break;
                                             }
