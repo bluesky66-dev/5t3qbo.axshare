@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
                         </button>
                     </div>
 
-                    <div id="demo" class="square_video_box" >
+                    <div id="demo" class="row square_video_box" >
                         <?php
                         $videoFile = $cvFile->selectVideo();
 
@@ -165,7 +165,7 @@ if (isset($_POST["submit"])) {
                     </div>
                 </div>
 
-                <div id="demo-vid" class="col-xl-6 home-right" >
+                <div id="demo-vid" class=" col-xl-6 home-right" >
                         <div class="square_book repost">
                             <h1 class="user-name repository"> My Document Repository</h1>
                             <button id="uploadDoc1" class="delete_video_home"  data-toggle="modal" data-target="#myModal">
@@ -174,7 +174,7 @@ if (isset($_POST["submit"])) {
                         </div>
 
 
-                             <div class="  square_video_box">
+                             <div class=" row square_video_box">
                                     <?php
                                     $docFiles = $cvFile->selectDoc();
 
