@@ -111,8 +111,12 @@ function hide_overlay_home() {
 
 function word() {
     $('.word').css('display', 'block');
-    $('.word').css('position', 'absolute');
-    $('.word').css('top', '30px');
+    $('.word-see').css('position', 'relative');
+
+}
+function word1() {
+    $('.word1').css('display', 'block');
+    $('.word-see').css('position', 'relative');
 
 }
 
@@ -154,6 +158,10 @@ function nextoverlay() {
 function backoverlay() {
     $('.overlay-next-home').css('display', 'none');
     $('.overlay-home').css('display', 'block');
+}
+function docFile() {
+    $('.login-signin').css('display', 'none');
+    $('.login').css('display', 'block');
 }
 
 validateEmail('newtheme@outlook.com');
@@ -701,6 +709,7 @@ $(document).ready(function () {
 
         $("input[name=fileType]").val("doc");
     });
+
 });
 
 

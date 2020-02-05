@@ -184,9 +184,9 @@ if (isset($_POST["submit"])) {
                                         switch ($docFile["file_ext"]) {
                                             case "doc": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" ">
                                                     <img src="images/document.png">
-                                                    <p class="bold-p">Document.doc</p>
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
@@ -199,7 +199,59 @@ if (isset($_POST["submit"])) {
                                                 ?>
                                                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
                                                     <img src="images/pdf.png">
-                                                    <p class="bold-p">Document.pdf</p>
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                                <?php
+                                                break;
+                                            }
+                                            case "xlsx": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/xlsx.png">
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                                <?php
+                                                break;
+                                            }
+                                            case "ppt": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/ppt.png">
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                                <?php
+                                                break;
+                                            }
+                                            case "jpeg": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/jpeg.png">
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                                <?php
+                                                break;
+                                            }
+                                            case "png": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/png.png">
+                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
@@ -228,8 +280,6 @@ if (isset($_POST["submit"])) {
 
 
                             </div>
-
-
                     </div>
             </div>
          </div>

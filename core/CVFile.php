@@ -25,25 +25,7 @@ class CVFile {
         return $result;
     }
 
-    function selectD() {
-        global $db;
-        $sql    = "SELECT *  FROM cv_files WHERE file_ext = 'doc'";
-        $result = $db->queryArray( $sql );
-        if ( ! $result ) {
-            $result = [];
-        }
-        return $result;
-    }
 
-    function selectP() {
-        global $db;
-        $sql    = "SELECT *  FROM cv_files WHERE file_ext = 'pdf'";
-        $result = $db->queryArray( $sql );
-        if ( ! $result ) {
-            $result = [];
-        }
-        return $result;
-    }
 
 
     public function insert( $fileName, $FileType, $fileExt) {

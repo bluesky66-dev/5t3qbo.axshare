@@ -48,17 +48,42 @@ require_once( "common/header.php" );
                             <div class="square-col-video-box">
                                     <div class="square-col-video" >
                                         <div class="row">
-                                            <div id="word-see" class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" onclick="word()">
-                                                <a > <img src="images/document.png"></a>
+                                            <div  class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " onclick="word()">
+                                                <div >
+                                                <a > <img src="images/document.png" class="word-see"></a>
+                                                </div>
                                                 <p class="bold-p">Document.doc</p>
                                                 <p class="solid-p">date updated</p>
+                                                <div class="word" style="display: none">
+                                                    <div class="word-select">
+                                                        <span>Select action</span>
+                                                    </div>
+
+                                                    <div class="download">
+                                                        <span>Download</span>
+                                                    </div>
+
+                                                </div>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                <img src="images/document.png">
+
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " onclick="word1()">
+                                                <div >
+                                                <img src="images/document.png" class="word-see">
+                                                </div>
                                                 <p class="bold-p">Document.doc</p>
                                                 <p class="solid-p">date updated</p>
+                                                <div class="word1" style="display: none">
+                                                    <div class="word-select">
+                                                        <span>Select action</span>
+                                                    </div>
+
+                                                    <div class="download">
+                                                        <span>Download</span>
+                                                    </div>
+
+                                                </div>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
                                                 <img src="images/pdf.png">
                                                 <p class="bold-p">Document.pdf</p>
                                                 <p class="solid-p">date updated</p>
@@ -380,14 +405,7 @@ require_once( "common/header.php" );
         </div>
     </div>
 
-    <div class="word" style="display: none">
-        <div class="word-select">
-            <span>Select action</span>
-        </div>
-        <div class="download">
-            <span>Download</span>
-        </div>
-    </div>
+
 
 
 

@@ -1912,36 +1912,53 @@ textarea {
     margin: 5px 0px 10px 0px;
 }
 .word{
-    width: 160px;
-    height: 80px;
+
+    position: absolute;
+    top: 45px;
+    left: 90px;
+    z-index: 1;
+    font-size: 12px;
+    width: 140px;
+    box-shadow: 0px 0px 20px rgba(20, 68, 153, 0.4);
+
 }
+.word1{
+
+    position: absolute;
+    top: 45px;
+    left: 90px;
+    z-index: 1;
+    font-size: 12px;
+    width: 140px;
+    box-shadow: 0px 0px 20px rgba(20, 68, 153, 0.4);
+
+}
+
 .word-select{
     background-color:#dce3f0;
-    height: 40px;
-}
-.word-select span{
     font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins';
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
     text-align: center;
     color: #333333;
+    padding: 10px 0px;
+    width: 140px;
+
 }
-.download span{
+
+.download {
     font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';
     font-weight: 500;
     font-style: normal;
     font-size: 12px;
     text-align: center;
+    padding: 10px 0px;
+    background: #ffffff;
+
 }
-#word-see{
-    position: relative;
-}
-.word{
-    position: absolute;
-    top: 25px;
-    left: 30px;
-}
+
+
 .angle-landing{
     margin: 0px 30px;
 }
