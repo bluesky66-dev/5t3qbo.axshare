@@ -70,13 +70,12 @@ if (isset($_POST["submit"])) {
                     <div id="demo" class="square_video_box" >
                         <?php
                         $videoFile = $cvFile->selectVideo();
-                        $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
+
                         if ($videoFile) {
-
                         if (($videoFile["file_ext"])){
-
+                            $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
                             ?>
-                        <video width="320" height="240" controls>
+                        <video style="width: 97%;height: 97%" controls>
                             <source src="/uploads/<?php echo $videoFileUrl;?>" type="video/mp4">
                         </video>
 
@@ -92,6 +91,8 @@ if (isset($_POST["submit"])) {
 
                             <?php
                         }
+
+                        } else {
                             ?>
 
                             <div class="square_video">
@@ -173,29 +174,44 @@ if (isset($_POST["submit"])) {
                         </div>
 
 
-                            <div class="square_video_box">
+                            <div class=" row square_video_box">
                                 <?php
-                                $docFile = $cvFile->selectDoc();
-                                $docFileUrl =  $docFile["file_type"]."/".$docFile["file_name"];
-                                if ($docFile) {
+                                $docFiles = $cvFile->selectDoc();
 
-                                    if (($docFile["file_ext"])){
+                                if ($docFiles) {
 
-                                        ?>
-                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                            <img src="images/ppt.png">
-                                            <p class="bold-p">Document.ppt</p>
-                                            <p class="solid-p">date updated</p>
-                                        </div>
-                                        <?php
-
-                                    } else {
-
-                                        ?>
-
-
-                                        <?php
+                                    foreach ($docFiles as $docFile) {
+                                        switch ($docFile["file_ext"]) {
+                                            case "doc": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/document.png">
+                                                    <p class="bold-p">Document.doc</p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                               <?php
+                                                break;
+                                            }
+                                            case "pdf": {
+                                                ?>
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                                    <img src="images/pdf.png">
+                                                    <p class="bold-p">Document.pdf</p>
+                                                    <?php
+                                                    $docDate =  $docFile["create_time"];
+                                                    ?>
+                                                    <p class="solid-p"><?php echo $docDate;?></p>
+                                                </div>
+                                                <?php
+                                                break;
+                                            }
+                                        }
                                     }
+
+                                } else {
                                     ?>
                                     <div class="square_video">
                                         <img src="images/re-word.png">
@@ -203,10 +219,14 @@ if (isset($_POST["submit"])) {
                                             <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
                                         <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
                                     </div>
+
                                     <?php
                                 }
 
                                 ?>
+
+
+
                             </div>
 
 

@@ -20,9 +20,29 @@ class CVFile {
         $sql    = "SELECT *  FROM cv_files WHERE file_type = 'doc'";
         $result = $db->queryArray( $sql );
         if ( ! $result ) {
-            $result[0] = [];
+            $result = [];
         }
-        return $result[0];
+        return $result;
+    }
+
+    function selectD() {
+        global $db;
+        $sql    = "SELECT *  FROM cv_files WHERE file_ext = 'doc'";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result = [];
+        }
+        return $result;
+    }
+
+    function selectP() {
+        global $db;
+        $sql    = "SELECT *  FROM cv_files WHERE file_ext = 'pdf'";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result = [];
+        }
+        return $result;
     }
 
 

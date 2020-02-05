@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/book.js" line="413" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="VIDEO">
+    <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/CVFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVFile.php" afterDir="false" />
@@ -25,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/forget.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -62,77 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="251" column="4" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
+            <state relative-caret-position="444">
+              <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
               <folding>
                 <element signature="n#setSubFolder#0;n#CVFileManager#0;n#!!top" />
-                <element signature="n#uploadFile#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#451#1298#0#PHP" />
-                <element signature="e#791#1294#0#PHP" />
-                <element signature="e#964#1029#0#PHP" />
-                <element signature="e#949#1194#0#PHP" />
-                <element signature="e#1102#1188#0#PHP" />
                 <element signature="n#uploadMultipleFiles#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#1400#1552#0#PHP" />
-                <element signature="e#1557#2439#0#PHP" />
-                <element signature="e#1710#2402#0#PHP" />
-                <element signature="e#1760#2397#0#PHP" />
-                <element signature="e#1853#2355#0#PHP" />
-                <element signature="e#2051#2120#0#PHP" />
-                <element signature="e#2128#2310#0#PHP" />
-                <element signature="e#2271#2310#0#PHP" />
-                <element signature="e#2318#2355#0#PHP" />
-                <element signature="e#2362#2397#0#PHP" />
-                <element signature="e#2408#2439#0#PHP" />
                 <element signature="n#getFilePath#0;n#CVFileManager#0;n#!!top" />
                 <element signature="n#getFrontendFilePath#0;n#CVFileManager#0;n#!!top" />
                 <element signature="n#getBackendFilePathFromFileName#0;n#CVFileManager#0;n#!!top" />
                 <element signature="n#deleteBackendFile#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#2994#3094#0#PHP" />
-                <element signature="e#3067#3094#0#PHP" />
-                <element signature="e#3349#3406#0#PHP" />
-                <element signature="e#3409#3473#0#PHP" />
-                <element signature="e#3773#4470#0#PHP" />
-                <element signature="e#3799#4004#0#PHP" />
-                <element signature="e#3862#3927#0#PHP" />
-                <element signature="e#3928#4004#0#PHP" />
-                <element signature="e#4111#4470#0#PHP" />
-                <element signature="e#4520#4988#0#PHP" />
-                <element signature="e#4545#4680#0#PHP" />
-                <element signature="e#4684#4817#0#PHP" />
-                <element signature="e#4821#4954#0#PHP" />
-                <element signature="e#4958#4984#0#PHP" />
-                <element signature="e#5034#5105#0#PHP" />
-                <element signature="e#5247#6075#0#PHP" />
-                <element signature="e#5422#6071#0#PHP" />
-                <element signature="e#5818#6071#0#PHP" />
-                <element signature="e#6287#6414#0#PHP" />
-                <element signature="e#6316#6410#0#PHP" />
-                <element signature="e#6377#6410#0#PHP" />
-                <element signature="e#6461#6762#0#PHP" />
-                <element signature="e#6499#6631#0#PHP" />
-                <element signature="e#6635#6679#0#PHP" />
-                <element signature="e#6683#6735#0#PHP" />
-                <element signature="e#6739#6758#0#PHP" />
-                <element signature="e#6947#7030#0#PHP" />
-                <element signature="e#7034#7171#0#PHP" />
-                <element signature="e#7175#7201#0#PHP" />
                 <element signature="n#deleteDirectory#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#7283#7352#0#PHP" />
-                <element signature="e#7355#7398#0#PHP" />
-                <element signature="e#7401#7663#0#PHP" />
-                <element signature="e#7447#7659#0#PHP" />
-                <element signature="e#7490#7654#0#PHP" />
-                <element signature="e#7579#7654#0#PHP" />
                 <element signature="n#getDirContents#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#7886#7988#0#PHP" />
-                <element signature="e#7917#7984#0#PHP" />
                 <element signature="n#delecteFile#0;n#CVFileManager#0;n#!!top" />
-                <element signature="e#8063#8163#0#PHP" />
-                <element signature="e#8136#8163#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -152,13 +96,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
               <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="120" selection-end-column="50" />
-              <folding>
-                <element signature="n#div#1;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#2;n#div#1;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#div#2;n#div#1;n#!!top" />
-                <element signature="n#div#2;n#!!top" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/CVFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -175,14 +112,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="625">
+              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
               <folding>
-                <element signature="n#__construct#0;n#DatabaseManager#0;n#!!top" />
                 <element signature="e#219#502#0#PHP" />
                 <element signature="e#545#992#0#PHP" />
                 <element signature="e#671#900#0#PHP" />
-                <element signature="n#__destruct#0;n#DatabaseManager#0;n#!!top" />
                 <element signature="e#1099#1172#0#PHP" />
                 <element signature="n#close#0;n#DatabaseManager#0;n#!!top" />
                 <element signature="e#1222#1342#0#PHP" />
@@ -198,7 +133,6 @@
                 <element signature="e#2253#2365#0#PHP" />
                 <element signature="e#2281#2358#0#PHP" />
                 <element signature="e#2455#2554#0#PHP" />
-                <element signature="n#queryCount#0;n#DatabaseManager#0;n#!!top" />
                 <element signature="e#2615#2856#0#PHP" />
                 <element signature="e#2755#2856#0#PHP" />
                 <element signature="n#getCharactSet#0;n#DatabaseManager#0;n#!!top" />
@@ -218,30 +152,18 @@
         <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1000">
-              <caret line="17" column="57" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="356">
+              <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#4338#4345#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#!!top" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#!!top" />
+                <element signature="n#style#0;n#video#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -358,10 +280,10 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/async/upload.php" />
         <option value="$PROJECT_DIR$/js/book.js" />
-        <option value="$PROJECT_DIR$/core/CVFileManager.php" />
         <option value="$PROJECT_DIR$/common/DB_Connection.php" />
-        <option value="$PROJECT_DIR$/Home.php" />
+        <option value="$PROJECT_DIR$/core/CVFileManager.php" />
         <option value="$PROJECT_DIR$/core/CVFile.php" />
+        <option value="$PROJECT_DIR$/Home.php" />
       </list>
     </option>
   </component>
@@ -420,12 +342,6 @@
               <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
               <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
               <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5t3qbo.axshare" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5t3qbo.axshare" type="b2602c69:ProjectViewProjectNode" />
@@ -501,21 +417,8 @@
       <workItem from="1580295132262" duration="31073000" />
       <workItem from="1580420466578" duration="28808000" />
       <workItem from="1580510907794" duration="41740000" />
-      <workItem from="1580605648692" duration="94631000" />
-    </task>
-    <task id="LOCAL-00040" summary="landing">
-      <created>1579698618190</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1579698618190</updated>
-    </task>
-    <task id="LOCAL-00041" summary="home">
-      <created>1579700291570</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1579700291570</updated>
+      <workItem from="1580605648692" duration="98811000" />
+      <workItem from="1580857418593" duration="4235000" />
     </task>
     <task id="LOCAL-00042" summary="home">
       <created>1579749035226</created>
@@ -846,32 +749,55 @@
       <option name="project" value="LOCAL" />
       <updated>1580809760574</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="only video">
+      <created>1580821908688</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1580821908688</updated>
+    </task>
+    <task id="LOCAL-00090" summary="sorry">
+      <created>1580824318945</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1580824318945</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455753000" />
+    <option name="totallyTimeSpent" value="464168000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.08884074" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5167931" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.032502707" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.6110509" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -906,6 +832,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="font reset" />
@@ -931,7 +871,9 @@
     <MESSAGE value="verify" />
     <MESSAGE value="upload" />
     <MESSAGE value="VIDEO" />
-    <option name="LAST_COMMIT_MESSAGE" value="VIDEO" />
+    <MESSAGE value="only video" />
+    <MESSAGE value="sorry" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorry" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,13 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/async/reset_password.php" />
     <entry file="file://$PROJECT_DIR$/reset.php" />
-    <entry file="file://$PROJECT_DIR$/reset_password_check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reset_password_check.php" />
     <entry file="file://$PROJECT_DIR$/landing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1140,13 +1076,6 @@
             <element signature="e#802#809#1#HTML" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -2180,24 +2109,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reset_password.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="28" column="11" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2219,16 +2141,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recruiter_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="120" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reset_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/DB_Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="625">
+          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
           <folding>
-            <element signature="n#__construct#0;n#DatabaseManager#0;n#!!top" />
             <element signature="e#219#502#0#PHP" />
             <element signature="e#545#992#0#PHP" />
             <element signature="e#671#900#0#PHP" />
-            <element signature="n#__destruct#0;n#DatabaseManager#0;n#!!top" />
             <element signature="e#1099#1172#0#PHP" />
             <element signature="n#close#0;n#DatabaseManager#0;n#!!top" />
             <element signature="e#1222#1342#0#PHP" />
@@ -2244,7 +2192,6 @@
             <element signature="e#2253#2365#0#PHP" />
             <element signature="e#2281#2358#0#PHP" />
             <element signature="e#2455#2554#0#PHP" />
-            <element signature="n#queryCount#0;n#DatabaseManager#0;n#!!top" />
             <element signature="e#2615#2856#0#PHP" />
             <element signature="e#2755#2856#0#PHP" />
             <element signature="n#getCharactSet#0;n#DatabaseManager#0;n#!!top" />
@@ -2259,126 +2206,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recruiter_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="120" selection-end-column="50" />
-          <folding>
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#2;n#div#1;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#2;n#div#1;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#div#2;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVManagerLoad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="e#4338#4345#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/CVFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/CVFileManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="251" column="4" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
+        <state relative-caret-position="444">
+          <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
           <folding>
             <element signature="n#setSubFolder#0;n#CVFileManager#0;n#!!top" />
-            <element signature="n#uploadFile#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#451#1298#0#PHP" />
-            <element signature="e#791#1294#0#PHP" />
-            <element signature="e#964#1029#0#PHP" />
-            <element signature="e#949#1194#0#PHP" />
-            <element signature="e#1102#1188#0#PHP" />
             <element signature="n#uploadMultipleFiles#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#1400#1552#0#PHP" />
-            <element signature="e#1557#2439#0#PHP" />
-            <element signature="e#1710#2402#0#PHP" />
-            <element signature="e#1760#2397#0#PHP" />
-            <element signature="e#1853#2355#0#PHP" />
-            <element signature="e#2051#2120#0#PHP" />
-            <element signature="e#2128#2310#0#PHP" />
-            <element signature="e#2271#2310#0#PHP" />
-            <element signature="e#2318#2355#0#PHP" />
-            <element signature="e#2362#2397#0#PHP" />
-            <element signature="e#2408#2439#0#PHP" />
             <element signature="n#getFilePath#0;n#CVFileManager#0;n#!!top" />
             <element signature="n#getFrontendFilePath#0;n#CVFileManager#0;n#!!top" />
             <element signature="n#getBackendFilePathFromFileName#0;n#CVFileManager#0;n#!!top" />
             <element signature="n#deleteBackendFile#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#2994#3094#0#PHP" />
-            <element signature="e#3067#3094#0#PHP" />
-            <element signature="e#3349#3406#0#PHP" />
-            <element signature="e#3409#3473#0#PHP" />
-            <element signature="e#3773#4470#0#PHP" />
-            <element signature="e#3799#4004#0#PHP" />
-            <element signature="e#3862#3927#0#PHP" />
-            <element signature="e#3928#4004#0#PHP" />
-            <element signature="e#4111#4470#0#PHP" />
-            <element signature="e#4520#4988#0#PHP" />
-            <element signature="e#4545#4680#0#PHP" />
-            <element signature="e#4684#4817#0#PHP" />
-            <element signature="e#4821#4954#0#PHP" />
-            <element signature="e#4958#4984#0#PHP" />
-            <element signature="e#5034#5105#0#PHP" />
-            <element signature="e#5247#6075#0#PHP" />
-            <element signature="e#5422#6071#0#PHP" />
-            <element signature="e#5818#6071#0#PHP" />
-            <element signature="e#6287#6414#0#PHP" />
-            <element signature="e#6316#6410#0#PHP" />
-            <element signature="e#6377#6410#0#PHP" />
-            <element signature="e#6461#6762#0#PHP" />
-            <element signature="e#6499#6631#0#PHP" />
-            <element signature="e#6635#6679#0#PHP" />
-            <element signature="e#6683#6735#0#PHP" />
-            <element signature="e#6739#6758#0#PHP" />
-            <element signature="e#6947#7030#0#PHP" />
-            <element signature="e#7034#7171#0#PHP" />
-            <element signature="e#7175#7201#0#PHP" />
             <element signature="n#deleteDirectory#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#7283#7352#0#PHP" />
-            <element signature="e#7355#7398#0#PHP" />
-            <element signature="e#7401#7663#0#PHP" />
-            <element signature="e#7447#7659#0#PHP" />
-            <element signature="e#7490#7654#0#PHP" />
-            <element signature="e#7579#7654#0#PHP" />
             <element signature="n#getDirContents#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#7886#7988#0#PHP" />
-            <element signature="e#7917#7984#0#PHP" />
             <element signature="n#delecteFile#0;n#CVFileManager#0;n#!!top" />
-            <element signature="e#8063#8163#0#PHP" />
-            <element signature="e#8136#8163#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="77" column="60" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#video#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
