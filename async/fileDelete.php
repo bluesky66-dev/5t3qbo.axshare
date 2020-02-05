@@ -19,7 +19,6 @@ if($_POST) {
 
         die($output);
     }
-
     $result = $cvFile->fileDelete($docId);
 
     $data['type'] = $result;

@@ -174,190 +174,185 @@ if (isset($_POST["submit"])) {
                         </div>
 
 
-                            <div class=" row square_video_box">
-                                <?php
-                                $docFiles = $cvFile->selectDoc();
+                             <div class="  square_video_box">
+                                    <?php
+                                    $docFiles = $cvFile->selectDoc();
 
-                                if ($docFiles) {
+                                    if ($docFiles) {
 
-                                    foreach ($docFiles as $docFile) {
-                                        switch ($docFile["file_ext"]) {
-                                            case "doc": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " >
-                                                    <img src="images/document.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
-                                                    <?php
-                                                    $docDate =  $docFile["create_time"];
+                                        foreach ($docFiles as $docFile) {
+                                            switch ($docFile["file_ext"]) {
+                                                case "doc": {
                                                     ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                         <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
-                                                            <a href="javascript: void (0);"><div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                                </div></a>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " >
+                                                        <img src="images/document.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                             <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
+                                                                <a href="javascript: void (0);"><div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                                    </div></a>
 
-                                                            <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
-                                                            <span>Delete</span>
-                                                                </div></a>
+                                                                <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                                    </div></a>
 
-                                                    </div>
-                                                </div>
-
-
-                                               <?php
-                                                break;
-                                            }
-                                            case "pdf": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
-                                                    <img src="images/pdf.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
-                                                    <?php
-                                                    $docDate =  $docFile["create_time"];
-                                                    ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
-
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <?php
-                                                break;
-                                            }
-                                            case "xlsx": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
-                                                    <img src="images/xlsx.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
-                                                    <?php
-                                                    $docDate =  $docFile["create_time"];
+                                                   <?php
+                                                    break;
+                                                }
+                                                case "pdf": {
                                                     ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
+                                                        <img src="images/pdf.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                            <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                            <div class="download">
+                                                                <span>Delete</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
-
                                                     </div>
-                                                </div>
-                                                <?php
-                                                break;
-                                            }
-                                            case "ppt": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
-                                                    <img src="images/ppt.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
-                                                    $docDate =  $docFile["create_time"];
+                                                    break;
+                                                }
+                                                case "xlsx": {
                                                     ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
+                                                        <img src="images/xlsx.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                            <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                            <div class="download">
+                                                                <span>Delete</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <?php
-                                                break;
-                                            }
-                                            case "jpeg": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
-                                                    <img src="images/jpeg.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
-                                                    $docDate =  $docFile["create_time"];
+                                                    break;
+                                                }
+                                                case "ppt": {
                                                     ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
+                                                        <img src="images/ppt.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                            <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                            <div class="download">
+                                                                <span>Delete</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <?php
-                                                break;
-                                            }
-                                            case "png": {
-                                                ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
-                                                    <img src="images/png.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
-                                                    <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
-                                                    $docDate =  $docFile["create_time"];
+                                                    break;
+                                                }
+                                                case "jpeg": {
                                                     ?>
-                                                    <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
-                                                        <div class="word-select">
-                                                            <span>Select action</span>
-                                                        </div>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
+                                                        <img src="images/jpeg.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                            <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                            <div class="download">
+                                                                <span>Delete</span>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <?php
-                                                break;
+                                                    <?php
+                                                    break;
+                                                }
+                                                case "png": {
+                                                    ?>
+                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 wordFile<?php echo $docFile["id"]?> " " >
+                                                        <img src="images/png.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
+                                                        <p class="bold-p"><?php echo $docFile["file_name"];?></p>
+                                                        <?php
+                                                        $docDate =  $docFile["create_time"];
+                                                        ?>
+                                                        <p class="solid-p"><?php echo $docDate;?></p>
+                                                        <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                            <div class="word-select">
+                                                                <span>Select action</span>
+                                                            </div>
+
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                            <div class="download">
+                                                                <span>Delete</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <?php
+                                                    break;
+                                                }
                                             }
                                         }
+
+                                    } else {
+                                        ?>
+                                        <div class="square_video">
+                                            <img src="images/re-word.png">
+                                            <p><span>No document found</span><br>
+                                                <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
+                                            <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
+                                        </div>
+
+                                        <?php
                                     }
 
-                                } else {
                                     ?>
-                                    <div class="square_video">
-                                        <img src="images/re-word.png">
-                                        <p><span>No document found</span><br>
-                                            <span>you shoud have at least 1 CV copy to share your CVLink</span></p>
-                                        <button id="uploadDoc2" class="upload-video" data-toggle="modal" data-target="#myModal" ">Upload documents</button>
-                                    </div>
-
-                                    <?php
-                                }
-
-                                ?>
-
-
-
                             </div>
                     </div>
             </div>

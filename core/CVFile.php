@@ -54,12 +54,13 @@ class CVFile {
 	}
 
     public function fileDelete( $id) {
-        global $db;
-
-        $sql    = "DELETE FROM `cv_files` WHERE id= '$id'";
-        $result = $db->query( $sql );
-
-        return $result;
+//        global $db;
+//
+//        $sql    = "DELETE FROM `cv_files` WHERE id= '$id'";
+//        $result = $db->query( $sql );
+//
+//        return $result;
+        return true;
     }
 
 
