@@ -184,20 +184,22 @@ if (isset($_POST["submit"])) {
                                         switch ($docFile["file_ext"]) {
                                             case "doc": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" onclick="word() ">
-                                                    <img src="images/document.png" class="word-see">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                    <img src="images/document.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
-                                                    <div class="word" style="display: none">
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
-
                                                         <div class="download">
-                                                            <span>Download</span>
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
                                                         </div>
 
                                                     </div>
@@ -209,65 +211,130 @@ if (isset($_POST["submit"])) {
                                             }
                                             case "pdf": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                    <img src="images/pdf.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " >
+                                                    <img src="images/pdf.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                                 <?php
                                                 break;
                                             }
                                             case "xlsx": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                    <img src="images/xlsx.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                    <img src="images/xlsx.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                                 <?php
                                                 break;
                                             }
                                             case "ppt": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                    <img src="images/ppt.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                    <img src="images/ppt.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                                 <?php
                                                 break;
                                             }
                                             case "jpeg": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                    <img src="images/jpeg.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                    <img src="images/jpeg.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                                 <?php
                                                 break;
                                             }
                                             case "png": {
                                                 ?>
-                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
-                                                    <img src="images/png.png">
+                                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6" >
+                                                    <img src="images/png.png" class="word-see" onclick="word(<?php echo $docFile["id"]?>) ">
                                                     <p class="bold-p"><?php echo $docFile["file_name"];?></p>
                                                     <?php
                                                     $docDate =  $docFile["create_time"];
                                                     ?>
                                                     <p class="solid-p"><?php echo $docDate;?></p>
+                                                    <div class="word" id="doc<?php echo $docFile["id"]?>" style="display: none">
+                                                        <div class="word-select">
+                                                            <span>Select action</span>
+                                                        </div>
+
+                                                        <div class="download">
+                                                            <span>Hide</span>
+                                                        </div>
+                                                        <div class="download">
+                                                            <span>Delete</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                                 <?php
                                                 break;

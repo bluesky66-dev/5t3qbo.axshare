@@ -66,13 +66,13 @@ require_once( "common/header.php" );
                                                 </div>
                                             </div>
 
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " onclick="word1()">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 " onclick="word()">
                                                 <div >
                                                 <img src="images/document.png" class="word-see">
                                                 </div>
                                                 <p class="bold-p">Document.doc</p>
                                                 <p class="solid-p">date updated</p>
-                                                <div class="word1" style="display: none">
+                                                <div class="word" style="display: none">
                                                     <div class="word-select">
                                                         <span>Select action</span>
                                                     </div>
@@ -88,68 +88,68 @@ require_once( "common/header.php" );
                                                 <p class="bold-p">Document.pdf</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/pdf.png">
                                                 <p class="bold-p">Document.pdf</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/xlsx.png">
                                                 <p class="bold-p">Document.xlsx</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/ppt.png">
                                                 <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/xlsx.png">
                                                 <p class="bold-p">Document.xlsx</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/ppt.png">
                                                 <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/ppt.png">
                                                 <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/jpeg.png">
                                                 <p class="bold-p">Document.jpeg</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/png.png">
                                                 <p class="bold-p">Document.png</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/jpeg.png">
                                                 <p class="bold-p">Document.jpeg</p>
                                                 <p class="solid-p">date updated</p>
 
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/xlsx.png">
                                                 <p class="bold-p">Document.xlsx</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/ppt.png">
                                                 <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/xlsx.png">
                                                 <p class="bold-p">Document.xlsx</p>
                                                 <p class="solid-p">date updated</p>
                                             </div>
-                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 onclick="word()"">
                                                 <img src="images/ppt.png">
                                                 <p class="bold-p">Document.ppt</p>
                                                 <p class="solid-p">date updated</p>

@@ -109,15 +109,16 @@ function hide_overlay_home() {
     $('.overlay-next-home').css('display', 'none');
 }
 
-function word() {
-    $('.word').css('display', 'block');
+function word(id) {
+    $('.word').css('display', 'none');
+
+    $('#doc' + id).css('display', 'block');
     $('.word-see').css('position', 'relative');
 
 }
 function word1() {
     $('.word1').css('display', 'block');
     $('.word-see').css('position', 'relative');
-
 }
 
 function insign() {
