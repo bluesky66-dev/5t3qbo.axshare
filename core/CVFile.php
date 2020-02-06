@@ -46,9 +46,8 @@ class CVFile {
     }
 
     public function selectUrl( $file_url) {
-	   echo (' $file_url');
         global $db;
-        $sql    = "SELECT  FROM cv_files WHERE file_url = '$file_url'";
+        $sql    = "SELECT * FROM cv_files WHERE file_url = '$file_url'";
         $result = $db->queryArray( $sql );
         if ( ! $result ) {
             $result = [];
@@ -66,13 +65,12 @@ class CVFile {
 	}
 
     public function fileDelete( $id) {
-//        global $db;
-//
-//        $sql    = "DELETE FROM `cv_files` WHERE id= '$id'";
-//        $result = $db->query( $sql );
-//
-//        return $result;
-        return true;
+        global $db;
+
+        $sql    = "DELETE FROM `cv_files` WHERE id= '$id'";
+        $result = $db->query( $sql );
+
+        return $result;
     }
 
 

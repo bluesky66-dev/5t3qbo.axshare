@@ -1,4 +1,5 @@
 <?php
+require_once( "../common/load.php" );
 global $user, $cvFileManager, $cvFile;
 $postData    = array();
 
@@ -19,14 +20,13 @@ if($_POST) {
 
         die($output);
     }
+
     $result = $cvFile->fileDelete($docId);
 
     $data['type'] = $result;
-    $data['data']   = $queryResult;
-    $data['text']  = $error;
+
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
-
 
 }
     ?>
