@@ -635,63 +635,7 @@ $(document).ready(function () {
         },
     });
 
-    // $('#upload').validate({
-    //     rules: {
-    //         fileName: {
-    //             required: true
-    //         },
-    //         fileToUpload:{
-    //             required:true
-    //         },
-    //
-    //
-    //
-    //     },
-    //
-    //     submitHandler: function (form, e) {
-    //         e.preventDefault();
-    //
-    //         var fileToUpload = $("#fileToUpload").val();
-    //         var fileName = $("#fileName").val();
-    //
-    //
-    //         var formData = {
-    //             fileToUpload: fileToUpload,
-    //             fileName: fileName,
-    //
-    //         };
-    //         $.ajax({
-    //             method: "POST",
-    //             url: "async/upload.php",
-    //             dataType: "json",
-    //             data: formData
-    //
-    //         }).done(function (result) {
-    //
-    //             $resultDiv.hide();
-    //             $resultDiv.removeClass("text-success text-danger");
-    //             if (result.type === "error") {
-    //                 $resultDiv.addClass("text-danger");
-    //                 $resultDiv.text(result.text);
-    //                 toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
-    //             } else {
-    //
-    //                 document.getElementById("register-form").reset();
-    //                 $resultDiv.addClass("text-success");
-    //                 $resultDiv.text("Thank you, your message has been sent successfully.");
-    //                 toastr.success('Thank you, your sign up has been sent successfully.');
-    //                 setTimeout(function () {
-    //                     $resultDiv.hide();
-    //
-    //                 }, 1000);
-    //             }
-    //         });
-    //
-    //     },
-    //     invalidHandler: function (e, validator) {
-    //         // $("div.error").hide();
-    //     },
-    // });
+
 
 
     $("#square1_cover").click(function () {

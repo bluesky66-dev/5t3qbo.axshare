@@ -31,7 +31,7 @@ class CVFileManager {
 				}
 
 				if ( move_uploaded_file( $tmp, $path . $actual_file_name ) ) {
-                    $queryResult = $cvFile->insert($name, $fileType, $FileExt);
+                    $queryResult = $cvFile->insert($name, $fileType, $FileExt,$actual_file_name);
                     if ($queryResult) {
                         $resultPath = $name;
                     }

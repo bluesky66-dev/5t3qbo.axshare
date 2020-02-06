@@ -28,7 +28,7 @@ class CVFile {
 
 
 
-    public function insert( $fileName, $FileType, $fileExt) {
+    public function insert( $fileName, $FileType, $fileExt,$fileUrl) {
         global $db;
 
         $sql = "INSERT INTO cv_files
@@ -36,11 +36,23 @@ class CVFile {
 					  SET`file_type` = '$FileType',
 					      `file_ext` = '$fileExt',
                           file_name = '$fileName',
+                          file_url = '$fileUrl',
                           create_time = now()";
         $db->queryInsert( $sql );
 
         $result = $db->getPrevInsertId();
 
+        return $result;
+    }
+
+    public function selectUrl( $file_url) {
+	   echo (' $file_url');
+        global $db;
+        $sql    = "SELECT  FROM cv_files WHERE file_url = '$file_url'";
+        $result = $db->queryArray( $sql );
+        if ( ! $result ) {
+            $result = [];
+        }
         return $result;
     }
 
