@@ -132,22 +132,22 @@ if (isset($_POST["submit"])) {
 
                                                     <div id="menu1" class="container tab-pane fade active show"><br>
 
-                                                        <form id="upload" class="" method="POST" enctype="multipart/form-data">
+                                                        <form  class="" method="POST" enctype="multipart/form-data">
                                                             <input type="hidden" name="fileType" value="">
                                                             <input  type="text" name="fileName"  id="recipient-name" class="modal-input">
                                                             <div class="modal-bottom">
-                                                            <input class="modal-submit" id="upload" type="submit"  value="Upload file" name="submit" >
+                                                            <input class="modal-submit"  type="submit"  value="Upload file" name="submit" >
                                                             <button type="button" class="modal-close" data-dismiss="modal" style="font-family: 'Poppins Medium', 'Poppins Regular', 'Poppins';">Close</button>
                                                             </div>
                                                         </form>
                                                     </div>
                                                     <div id="menu2" class="container tab-pane fade"><br>
                                                         <h5></h5>
-                                                        <form id="upload" class="form-inline" method="POST" enctype="multipart/form-data">
+                                                        <form  class="form-inline" method="POST" enctype="multipart/form-data">
                                                             <input type="hidden" name="fileType" value="">
                                                             <input type="file"  type="file"  name="fileToUpload" id="fileToUpload" style="border: 0;">
                                                             <div class="modal-bottom">
-                                                            <input class="modal-submit"  id="upload" type="submit"  value="Upload file" name="submit" style="">
+                                                            <input class="modal-submit"   type="submit"  value="Upload file" name="submit" style="">
                                                             <button type="button" class=" modal-close" data-dismiss="modal" style=";">Close</button>
                                                             </div>
                                                         </form>
@@ -220,13 +220,16 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
+                                                        <a href="javascript: void (0);">
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                        </a>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                        <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                            </div></a>
+
                                                     </div>
                                                 </div>
                                                 <?php
@@ -245,13 +248,15 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
+                                                        <a href="javascript: void (0);">
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                        </a>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                        <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                            </div></a>
 
                                                     </div>
                                                 </div>
@@ -271,13 +276,15 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
+                                                        <a href="javascript: void (0);">
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                        </a>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                        <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                            </div></a>
 
                                                     </div>
                                                 </div>
@@ -297,13 +304,15 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
+                                                        <a href="javascript: void (0);">
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                        </a>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                        <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                            </div></a>
 
                                                     </div>
                                                 </div>
@@ -323,13 +332,15 @@ if (isset($_POST["submit"])) {
                                                         <div class="word-select">
                                                             <span>Select action</span>
                                                         </div>
+                                                        <a href="javascript: void (0);">
+                                                            <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
+                                                                <span>Hide</span>
+                                                            </div>
+                                                        </a>
 
-                                                        <div class="download" onclick="downloadHide(<?php echo $docFile["id"]?>)">
-                                                            <span>Hide</span>
-                                                        </div>
-                                                        <div class="download">
-                                                            <span>Delete</span>
-                                                        </div>
+                                                        <a href="javascript: void (0);" ><div class="download" onclick="downloadDelete(<?php echo $docFile["id"]?>)">
+                                                                <span>Delete</span>
+                                                            </div></a>
 
                                                     </div>
                                                 </div>
@@ -359,7 +370,6 @@ if (isset($_POST["submit"])) {
         </div>
     </div>
 
-
 <div class="overlay-home" style=" display: none">
 
     <div class="overlay-home-bg" onclick="hide_overlay_home()">
@@ -369,95 +379,132 @@ if (isset($_POST["submit"])) {
             <a href="javascript: void (0);" onclick="hide_overlay_home()"><img src="images/re-triangle.png"></a>
             <h1>Send CVlink</h1>
         </header>
-        <div class="content">
-            <div class="content-space">
-            </div>
-            <div class="reject-full">
-                <div class="from-span">
-                    <span>Recruiter's name</span>
+        <form id="send-link">
+            <div class="content">
+                <div class="content-space">
                 </div>
-            </div>
 
-            <div class="reject-full">
-                <div class="input-text">
-                    <input type="text" placeholder="Recruiters name" class="from-reject-input">
-                    <hr>
-                </div>
-            </div>
-
-            <div class="reject-full">
-                <div class="from-span">
-                    <span>Recruiter's email address</span>
-                </div>
-            </div>
-
-            <div class="reject-full">
-                <div class="input-text">
-                    <input id="emailAddress" name="emailAddress" type="text" placeholder="Recruiters email address" class="from-reject-input">
-                    <hr>
-                </div>
-            </div>
-
-            <div class="reject-full">
-                <div class="from-span">
-                    <span>Your subject</span>
-                </div>
-            </div>
-
-            <div class="reject-full row" >
-                <div class="" style="width: 100%;">
-                <div class="input-text-1">
-                    <div class=""  style="padding-left: 0;flex: 1">
-                        <input type="text" placeholder="job title e.g User Experience Architect" class="from-reject-input-1">
-                        <hr >
+                <div class="reject-full">
+                    <div class="from-span">
+                        <span>Recruiter's name</span>
                     </div>
-
-                    <div class="" style="padding-left: 20px;padding-right: 0px">
-                        <input type="text" placeholder="Immediately Availal" class="from-reject-input-2">
+                </div>
+                <div class="error-username-rec">
+                    <div class="col-md-12 ">
+                        <div class=" " style=" "></div>
+                    </div>
+                </div>
+                <div class="reject-full">
+                    <div class="input-text">
+                        <input id="send_user_name" name="send_user_name" type="text"  placeholder="Recruiters name" class="from-reject-input" value="">
                         <hr>
                     </div>
                 </div>
+
+                <div class="reject-full">
+                    <div class="from-span">
+                        <span>Recruiter's email address</span>
+                    </div>
                 </div>
 
-            </div>
+                <div class="error-email-rec ">
+                    <div class="col-md-12 ">
+                        <div class=" " style=" "></div>
+                    </div>
+                </div>
+
+
+                <div class="reject-full">
+                    <div class="input-text">
+                        <input id="send_email_address" name="send_email_address" type="text" placeholder="Recruiters email address" class="from-reject-input">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="reject-full">
+                    <div class="from-span">
+                        <span>Your subject</span>
+                    </div>
+                </div>
+
+                    <div class="reject-full row" >
+                        <div class="" style="width: 100%;">
+                            <div class="input-text-1">
+
+                                <div class=""  style="padding-left: 0;flex: 1">
+                                    <div class="error-arc ">
+                                        <div class="col-md-12 ">
+                                            <div class=" " style=" "></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="" style="padding-left: 20px;padding-right: 0px">
+                                    <div class="error-imm ">
+                                        <div class="col-md-12 ">
+                                            <div class=" " style=" "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-text-1">
+
+                                <div class=""  style="padding-left: 0;flex: 1">
+                                    <input id="architect" name="architect" type="text" placeholder="job title e.g User Experience Architect" class="from-reject-input-1">
+                                    <hr >
+                                </div>
+
+                                <div class="" style="padding-left: 20px;padding-right: 0px">
+                                    <input id="immediately" name="immediately" type="text" placeholder="Immediately Availal" class="from-reject-input-2">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
 
             <div class="reject-full">
 
                     <div class="square_invite-div">
                         <div id="square1_cover" class="square-invite-ajax">
-                            <button onclick="square1_cover()"><span>Cover Letter Template 1</span></button>
+                            <a href="javascript: void (0);" onclick="square1_cover()"><span>Cover Letter Template 1</span></a>
                         </div>
                         <div id="square2_cover" class="square-invite-ajax">
-                            <button onclick="square2_cover()"><span>Cover Letter Template 2</span></button>
+                            <a href="javascript: void (0);" onclick="square2_cover()"><span>Cover Letter Template 2</span></a>
                         </div>
                         <div id="square3_cover" class="square-invite-ajax">
-                            <button onclick="square3_cover()"><span>Cover Letter Template 3</span></button>
+                            <a href="javascript: void (0);" onclick="square3_cover()"><span>Cover Letter Template 3</span></a>
                         </div>
                     </div>
 
             </div>
 
+                <div class="error-textarea-rec ">
+                    <div class="col-md-12 ">
+                        <div class=" " style=" "></div>
+                    </div>
+                </div>
+
             <div class="reject-full-textarea">
                 <div class="input-text">
-
-                    <textarea rows=""  id="text-area"  placeholder="cover letter template contents goes here" minlength="250" maxlength="500"></textarea>
-
+                   <textarea   id="text_area_send" name="text_area_send"  placeholder="cover letter template contents goes here" minlength="250" maxlength="500"></textarea>
                 </div>
             </div>
 
             <div class="back-overlay">
-
-                    <div class="overlay-home-bottom" onclick="nextoverlay()">
-                        <a href="javascript: void (0);">
+                    <button type="submit" class="overlay-home-bottom">
                         <img src="images/overlay-bottom.png">
                         <span>&nbsp Send CVLink</span>
-                        </a>
-                    </div>
+                    </button>
 
             </div>
 
+            </div>
+        </form>
 
-        </div>
+
+
     </div>
 </div>
 
@@ -489,11 +536,7 @@ if (isset($_POST["submit"])) {
                 </div></a>
 
             </div>
-
-
         </div>
-
-
     </div>
 </div>
 

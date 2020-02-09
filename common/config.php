@@ -3,12 +3,14 @@ ob_start();
 session_start();
 
 if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
+    define( "SITE_URL", "http://localhost:7003" );
 	define( "DB_TYPE", "mysql" );
 	define( "DB_HOSTNAME", "localhost" );
 	define( "DB_USERNAME", "root" );
 	define( "DB_PASSWORD", "" );
 	define( "DB_DATABASE", "cvlink" );
 } else {
+    define( "SITE_URL", $_SERVER['SERVER_NAME'] );
     define( "DB_TYPE", "mysql" );
     define( "DB_HOSTNAME", "localhost" );
     define( "DB_USERNAME", "id12392180_cvlink" );

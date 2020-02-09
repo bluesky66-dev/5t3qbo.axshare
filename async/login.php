@@ -2,7 +2,7 @@
 require_once( "../common/load.php" );
 global $user, $isLogin;
 
-$result      = "success";
+$result      = "error";
 $error       = "";
 $queryResult = false;
 $data        = array();
@@ -27,6 +27,32 @@ if($_POST) {
 
         die($output);
     }
+    if(!isset($_POST["usPassword"]) || !isset($_POST["usEmail"]) )
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
+        die($output);
+    }
+
+    $usEmail      = filter_var($_POST["usEmail"], FILTER_SANITIZE_EMAIL);
+    $usPassword      = filter_var($_POST["usPassword"], FILTER_SANITIZE_EMAIL);
+
+
+    $to_Email   	= $usEmail; //Replace with recipient email address
+    $subject        = 'CVLink'; //Subject line for emails
+
+    //additional php validation
+
+    if(!filter_var($usEmail, FILTER_VALIDATE_EMAIL)) //email validation
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
+        die($output);
+    }
+    if(strlen($usPassword)<4) // If length is less than 4 it will throw an HTTP error.
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid Password!'));
+        die($output);
+    }
+
 
     $usEmail     = isset( $_POST["usEmail"] ) ? $_POST["usEmail"] : "";
     $usPassword  = isset( $_POST["usPassword"] ) ? $_POST["usPassword"] : "";
@@ -46,7 +72,7 @@ if($_POST) {
 
     $data['type'] = $result;
     $data['data']   = $queryResult;
-    $data['text']  = $error;
+    $data['text']  = $user;
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
 }

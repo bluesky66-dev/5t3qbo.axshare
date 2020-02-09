@@ -333,93 +333,113 @@ require_once( "common/header.php" );
                     <a href="javascript: void (0);"  onclick="hide_overlay()" ><img  src="images/re-triangle.png"></a>
                     <h1>Send interview invite</h1>
                 </header>
+                <form id="interview-form">
+                    <div class="content">
 
-                <div class="content">
-                    <div class="content-space">
-                    </div>
-                    <div class="reject-full2">
-                        <div class="from-span2">
-                            <span>From:</span>
+                        <div class="content-space">
                         </div>
-                    </div>
-
-                    <div class="reject-full2">
-                        <div class="input-text">
-                            <input type="text" placeholder="Sender name" class="from-reject-input">
-                            <hr style="border-top: 1px solid white;margin-bottom: 0">
-                        </div>
-                    </div>
-
-                    <div class="reject-full2">
-                        <div class="input-text">
-                            <input type="text" placeholder="Sender email address" class="from-reject-input">
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="reject-full2">
-                        <div class="from-span2">
-                            <span>Applicant email addres</span>
-                        </div>
-                    </div>
-
-                    <div class="reject-full2">
-
-                        <div class="input-text">
-                            <input id="to-james" type="text" placeholder="James Orior" class="from-reject-input">
-                            <hr style="margin-top: 3px">
-                        </div>
-                    </div>
-
-                    <div class="reject-full2">
-                        <div class="from-span2">
-                            <span>Your subject</span>
-                        </div>
-                    </div>
-                    <div class="reject-full2">
-                        <div class="subject-e-g">
-                            <input  type="text" placeholder="Subject e.g.Congratulations you're invited to attend interview" class="from-reject-input">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="reject-full2">
-                        <div class="square_invite-div">
-                            <div class="square-invite-ajax">
-                                <button onclick="square1()"> <span>Interview Invitation Template 1</span> </button>
-                            </div>
-                            <div class="square-invite-ajax">
-                                <button onclick="square2()"> <span >Interview Invitation Template 2</span> </button>
-                            </div>
-                            <div class="square-invite-ajax">
-                                <button onclick="square3()"> <span >Interview Invitation Template 3</span> </button>
+                        <div class="reject-full2">
+                            <div class="from-span2">
+                                <span>From:</span>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="reject-full-textarea">
-                        <div class="input-text">
-                            <textarea  id="text-area-interview"  placeholder="Enter details for your selections" minlength="250" maxlength="500"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="reject-full2">
-                        <div class="drag">
-                            Drag and Drop or Click to attached file
-                        </div>
-                    </div>
-
-                    <div class="back-overlay">
-                        <div class="overlay-home-bottom" onclick="nextoverlay()">
-                            <a href="javascript: void (0);">
-
-                                <span>&nbsp Send invite &nbsp &nbsp</span>
-                                <img src="images/overlay-bottom.png">
-                            </a>
+                        <div class="error-interview-name">
+                            <div class="col-md-12">
+                                <div class="" style=""></div>
+                            </div>
                         </div>
 
-                    </div>
+                        <div class="reject-full2">
+                            <div class="input-text">
+                                <input id="interview_name" name="interview_name" type="text" placeholder="Sender name" class="from-reject-input">
+                                <hr style="border-top: 1px solid white;margin-bottom: 0">
+                            </div>
+                        </div>
 
+                        <div class="error-interview-email">
+                            <div class="col-md-12">
+                                <div class="" style=""></div>
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="input-text">
+                                <input id="interview_email" name="interview_email" type="text" placeholder="Sender email address" class="from-reject-input">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="from-span2">
+                                <span>Applicant email address</span>
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="input-text">
+                                <input id="to-james" name="to-james" type="text" placeholder="James Orior" class="from-reject-input">
+                                <hr style="margin-top: 3px">
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="from-span2">
+                                <span>Your subject</span>
+                            </div>
+                        </div>
+
+                        <div class="error-interview-subject">
+                            <div class="col-md-12">
+                                <div class="" style=""></div>
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="subject-e-g">
+                                <input id="interview_subject" name="interview_subject"  type="text" placeholder="Subject e.g.Congratulations you're invited to attend interview" class="from-reject-input">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="reject-full">
+                            <div class="square_invite-div">
+                                <div class="square-invite-ajax">
+                                    <a href="javascript: void (0);" type="submit" onclick="square1()"> <span>Interview Invitation Template 1</span> </a>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <a href="javascript: void (0);" type="submit" onclick="square2()"> <span >Interview Invitation Template 2</span> </a>
+                                </div>
+                                <div class="square-invite-ajax">
+                                    <a href="javascript: void (0);" type="submit" onclick="square3()"> <span >Interview Invitation Template 3</span> </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="error-interview-textarea">
+                            <div class="col-md-12">
+                                <div class="" style=""></div>
+                            </div>
+                        </div>
+                        <div class="reject-full-textarea">
+                            <div class="input-text">
+                                <textarea  id="text_area_interview" name="text_area_interview"  placeholder="Enter details for your selections" ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="drag">
+                                Drag and Drop or Click to attached file
+                            </div>
+                        </div>
+
+                        <div class="back-overlay">
+                            <button class="overlay-home-bottom" type="submit">
+                                    <span>&nbsp Send invite &nbsp &nbsp</span>
+                                    <img src="images/overlay-bottom.png">
+                            </button>
+
+                        </div>
+                    </form>
 
                 </div>
             </div>
@@ -434,132 +454,144 @@ require_once( "common/header.php" );
                 <a href="javascript: void (0);"  onclick="hide_overlay_reject()"> <img  src="images/re-triangle.png"></a>
                 <h1>Send rejection & feedback</h1>
             </header>
-
+        <form id="reject-form">
             <div class="content">
 
-                <div class="content-space2">
-                </div>
-                <div class="reject-full2">
-                    <div class="from-span2">
-                        <span>From:</span>
-                    </div>
-                </div>
-
-                <div class="reject-full2">
-                    <div class="input-text">
-                        <input type="text" placeholder="Sender name" class="from-reject-input">
-                        <hr style="border-top: 1px solid white;margin-bottom: 0">
-                    </div>
-                </div>
-
-                <div class="reject-full2">
-                    <div class="input-text">
-                        <input type="text" placeholder="Sender email address" class="from-reject-input">
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="reject-full2">
-                    <div class="from-span2">
-                        <span>Applicant email addres</span>
-                    </div>
-                </div>
-
-                <div class="reject-full2">
-
-                    <div class="input-text">
-                        <input id="to-james1" type="text" placeholder="James Orior" class="from-reject-input">
-                        <hr style="margin-top: 3px">
-                    </div>
-                </div>
-
-                <div class="reject-full2">
-                    <div class="select"> Select why you're rejecting James Orior Application</div>
-                </div>
-
-                <div class="reject-full">
-                        <div class="square_reject-div">
-                            <div class=" square-reject-half">
-                                <span>Little years of experience</span>
-                            </div>
-                            <div class=" square-reject-half">
-                                <span >No relevant experience</span>
-                            </div>
-
-                    </div>
-                </div>
-
-                <div class="reject-full">
-                        <div class="square_reject-div">
-                            <div class="square-reject-full">
-                                <span>Did not meet the full list of essential criteria</span>
-                            </div>
-
+                        <div class="content-space2">
                         </div>
-                </div>
-
-                <div class="reject-full">
-                        <div class="square_reject-div">
-                            <div class="square-reject-ajax1">
-                                <span>Not enough experience / portfolio</span>
-                            </div>
-                            <div class="square-reject-ajax">
-                                <span >No Certification</span>
+                        <div class="reject-full2">
+                            <div class="from-span2">
+                                <span>From:</span>
                             </div>
                         </div>
-                </div>
 
-                <div class="reject-full">
-                    <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
-                </div>
-
-                <div class="reject-full">
-                        <div class="square_reject-div">
-                            <div class="square-reject-half">
-                                <span>Do some work experience</span>
-                            </div>
-                            <div class="square-reject-half">
-                                <span >Improve on CV contents</span>
-                            </div>
-
-                        </div>
-                </div>
-
-                <div class="reject-full">
-                        <div class="square_reject-div">
-                            <div class="square-reject-half">
-                                <span>Improve on portfolio contents</span>
-                            </div>
-                            <div class="square-reject-half">
-                                <span >Apply for Entry / Junior Roles</span>
-                            </div>
-
-                        </div>
-                </div>
-
-                <div class="reject-full-textarea">
-                        <textarea id="reject-textarea"  placeholder="Enter details for your selections"></textarea>
-                </div>
-
-                <div class="reject-full2">
-                    <div class="drag2">
-                        Drag and Drop or Click to attached file
+                <div class="error-reject-name">
+                    <div class="col-md-12">
+                        <div class="" style=""></div>
                     </div>
                 </div>
 
-                <div class="back-overlay">
-                    <div class="overlay-home-bottom2" onclick="nextoverlay()">
-                        <a href="javascript: void (0);">
+                        <div class="reject-full2">
+                            <div class="input-text">
+                                <input id="reject_name" name="reject_name"   type="text" placeholder="Sender name" class="from-reject-input">
+                                <hr style="border-top: 1px solid white;margin-bottom: 0">
+                            </div>
+                        </div>
 
-                            <span>Send rejection / feedback</span>
-                            <img src="images/pear.png">
-                        </a>
+                <div class="error-reject-email">
+                    <div class="col-md-12">
+                        <div class="" style=""></div>
                     </div>
-
                 </div>
 
+                        <div class="reject-full2">
+                            <div class="input-text">
+                                <input id="reject_address" name="reject_address" type="text" placeholder="Sender email address" class="from-reject-input">
+                                <hr>
+                            </div>
+                        </div>
 
-            </div>
+                        <div class="reject-full2">
+                            <div class="from-span2">
+                                <span>Applicant email address</span>
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+
+                            <div class="input-text">
+                                <input id="to-james1" type="text" placeholder="James Orior" class="from-reject-input">
+                                <hr style="margin-top: 3px">
+                            </div>
+                        </div>
+
+                        <div class="reject-full2">
+                            <div class="select"> Select why you're rejecting James Orior Application</div>
+                        </div>
+
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class=" square-reject-half">
+                                        <span>Little years of experience</span>
+                                    </div>
+                                    <div class=" square-reject-half">
+                                        <span >No relevant experience</span>
+                                    </div>
+
+                            </div>
+                        </div>
+
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class="square-reject-full">
+                                        <span>Did not meet the full list of essential criteria</span>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class="square-reject-ajax1">
+                                        <span>Not enough experience / portfolio</span>
+                                    </div>
+                                    <div class="square-reject-ajax">
+                                        <span >No Certification</span>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="reject-full">
+                            <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
+                        </div>
+
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class="square-reject-half">
+                                        <span>Do some work experience</span>
+                                    </div>
+                                    <div class="square-reject-half">
+                                        <span >Improve on CV contents</span>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class="square-reject-half">
+                                        <span>Improve on portfolio contents</span>
+                                    </div>
+                                    <div class="square-reject-half">
+                                        <span >Apply for Entry / Junior Roles</span>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                <div class="error-reject-textarea">
+                    <div class="col-md-12">
+                        <div class="" style=""></div>
+                    </div>
+                </div>
+
+                        <div class="reject-full-textarea">
+                                <textarea id="reject_textarea" name="reject_textarea"  placeholder="Enter details for your selections"></textarea>
+                        </div>
+
+
+
+                        <div class="back-overlay">
+                            <button class="overlay-home-bottom2" type="submit">
+                                    <span>Send rejection / feedback</span>
+                                    <img src="images/pear.png">
+                            </button>
+
+                        </div>
+
+
+                    </div>
+        </form>
         </div>
     </div>
 

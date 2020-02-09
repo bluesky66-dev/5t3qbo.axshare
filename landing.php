@@ -64,35 +64,35 @@
                                 <div class="square-sign-box">
                                     <div class="error-textarea">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                          <input id="first_name" type="text" name="first_name" value="" placeholder="First name"
                                            class="register-input">
                                     <div class="error-last">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                         <input id="last_name" type="text" name="last_name" value="" placeholder="Last name"
                                            class="register-input">
                                     <div class="error-email">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                         <input id="email" type="email" name="email" value="" placeholder="Email address"
                                            class="register-input">
                                     <div class="error-password">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                         <input id="password" type="password" name="password" value="" placeholder="Password"
                                            class="register-input">
                                     <div class="error-liner">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                         <input id="user_liner" type="text" name="user_liner" value=""
@@ -117,7 +117,7 @@
                             </form>
                             <div class="error-check">
                                 <div class="col-md-12">
-                                    <div class="contact-result-show" style=""></div>
+                                    <div class="-show" style=""></div>
                                 </div>
                             </div>
                         </div>
@@ -135,13 +135,13 @@
                                 <div class="square-sign-box">
                                     <div class="error-email-signin">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                     <input id="loginEmail" type="email" name="email" value="" placeholder="Email address"  class="register-input">
                                     <div class="error-password-signin">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                     <input id="loginPass" type="password" name="password" value="" placeholder="Password"  class="register-input">
@@ -156,7 +156,9 @@
                                             </label>
                                         </div>
 
-                                        <div class=" sign-in" ><a href="Home.php"><button >Sign in</button></a></div>
+                                        <div class=" sign-in" >
+                                            <button type="submit">Sign in</button>
+                                        </div>
 
                                     </div>
                                     <a href="javascript: void (0);"><div class="forgot">
@@ -168,7 +170,7 @@
 
 
                         </div>
-                        <div class="error-check-remember">
+                        <div class="test-message">
                             <div class="col-md-12">
                                 <div class="contact-logo-show" style=""></div>
                             </div>
@@ -183,7 +185,7 @@
                                 <div class="square-sign-box">
                                     <div class="error-email-address">
                                         <div class="col-md-12">
-                                            <div class="contact-result" style=""></div>
+                                            <div class="" style=""></div>
                                         </div>
                                     </div>
                                     <input id="forgot-email"   type="email" name="email" value="" placeholder="Email address"  class="register-input">

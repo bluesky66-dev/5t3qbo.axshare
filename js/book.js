@@ -183,9 +183,10 @@ function never() {
 }
 
 function nextoverlay() {
-
-    $('.overlay-home').css('display', 'none');
-    $('.overlay-next-home').css('display', 'block');
+    //
+    // $('.overlay-home').css('display', 'none');
+    // $('.overlay-next-home').css('display', 'block');
+    //
 }
 
 function backoverlay() {
@@ -226,8 +227,6 @@ function read(show) {
     } else {
         $("#about_result").css('display', 'none');
     }
-
-
 }
 
 function read1(show) {
@@ -265,7 +264,7 @@ function read1(show) {
 //         }
 //
 //     }).done(function (result) {
-//         var $resultDiv = $(".contact-result");
+//         var $resultDiv = $(".");
 //         $resultDiv.hide();
 //         $resultDiv.removeClass("text-success text-danger");
 //         if (result.type === "error") {
@@ -350,7 +349,7 @@ $(document).ready(function () {
             // some other code
             // maybe disabling submit button
             // then:
-            var $resultDiv = $(".contact-result-show");
+            var $resultDiv = $(".test-message");
             $resultDiv.text("");
             var email = $("#email").val();
             var first_name = $("#first_name").val();
@@ -379,22 +378,23 @@ $(document).ready(function () {
 
             }).done(function (result) {
 
-                $resultDiv.hide();
+                $resultDiv.show();
                 $resultDiv.removeClass("text-success text-danger");
                 if (result.type === "error") {
+
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
-                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
+                    toastr.error('Excuse me, The email is already exist.So your sign up has not been sent.')
                 } else {
 
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
-                    $resultDiv.text("Thank you, your message has been sent successfully.");
+                    $resultDiv.text("Please test email verify.");
                     toastr.success('Thank you, your sign up has been sent successfully.');
                     setTimeout(function () {
                         $resultDiv.hide();
-                        insign();
-                    }, 1000);
+
+                    }, 3000);
                 }
             });
 
@@ -430,12 +430,6 @@ $(document).ready(function () {
             else if (element.attr("name") == "password")
                 $(".error-password-signin").html(error);
 
-
-
-            //border-red//
-
-            else if (element.attr("name") == "phone")
-                error.insertAfter(".some-other-class");
             else
                 error.insertAfter(element);
         },
@@ -446,10 +440,6 @@ $(document).ready(function () {
             // then:
             var email = $("#loginEmail").val();
             var password = $("#loginPass").val();
-            if (!$('#remember-check').is(":checked")) {
-                alert('You much agree the remember!');
-                return false;
-            }
             var formData = {
                 usPassword: password,
                 usEmail: email,
@@ -462,17 +452,13 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-logo-show");
-                $resultDiv.hide();
-                $resultDiv.removeClass("text-success text-danger");
+
+
                 if (result.type === "error") {
-                    $resultDiv.addClass("text-danger");
-                    $resultDiv.text(result.text);
-                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist');
+
+                    toastr.error('Excuse me,Do not correctly email and password,Please try again ');
                 } else {
                     document.getElementById("login-form").reset();
-                    $resultDiv.addClass("text-success");
-
                     window.location.href = "/" + result.data;
                     toastr.success('Thank you, your login has been sent successfully.');
                 }
@@ -490,7 +476,6 @@ $(document).ready(function () {
                 required: true,
                 email:true,
             },
-
         },
         messages: {
             email: "Enter your email",
@@ -552,37 +537,138 @@ $(document).ready(function () {
         },
     });
 
-    $('#reset-forgot').validate({
+    $('#send-link').validate({
         rules: {
-            password: {
+            send_user_name: {
                 required: true,
-                strongPassword: true,
+
             },
-            reset_password: {
+            send_email_address: {
                 required: true,
-                strongPassword: true,
-                equalTo: "#password"
+                email:true,
+               },
+            architect:{
+                required: true,
             },
+            immediately:{
+                required: true,
+            },
+            text_area_send:{
+                required: true,
+            }
         },
         messages: {
-            password: {
-                required: "Enter your password"
+            send_user_name: "Enter your name",
+            send_email_address:"Enter your email",
+            architect: "Enter your architect",
+            immediately: "Enter your immediately",
+            text_area_send: "Enter your min 250,max 500 characters",
+        },
+
+        errorElement: 'div',
+        errorLabelContainer: '.errorTxt',
+        errorPlacement: function (error, element) {
+            console.log(element.attr("name"));
+            if (element.attr("name") == "send_user_name"){
+                $(".error-username-rec").html(error);
+            }
+            else if (element.attr("name") == "send_email_address")
+                $(".error-email-rec").html(error);
+            else if (element.attr("name") == "architect")
+                $(".error-arc").html(error);
+            else if (element.attr("name") == "immediately")
+                $(".error-imm").html(error);
+            else if (element.attr("name") == "text_area_send")
+                $(".error-textarea-rec").html(error);
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function (form, e) {
+            e.preventDefault();
+            // some other code
+            // maybe disabling submit button
+            // then:
+            var send_user_name = $("#send_user_name").val();
+            var send_email_address = $("#send_email_address").val();
+            var architect = $("#architect").val();
+            var immediately = $("#immediately").val();
+            var text_area_send = $("#text_area_send").val();
+
+
+            var formData = {
+                send_user_name  : send_user_name,
+                send_email_address: send_email_address,
+                architect  : architect,
+                immediately: immediately,
+                text_area_send: text_area_send,
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "async/sendLink.php",
+                dataType: "json",
+                data: formData
+
+            }).done(function(result) {
+                if (result.type === "error") {
+
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist');
+                } else {
+                    document.getElementById("send_Link").reset();
+                    toastr.success('Thank you,  sent successfully.');
+                    setTimeout(function () {
+
+                    }, 1000);
+                }
+
+            });
+        },
+
+
+    invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
+
+    $('#interview-form').validate({
+        rules: {
+            interview_name: {
+                required: true
             },
-            reset_password: {
-                required: "Enter your password"
+
+            interview_email: {
+                required: true,
+                email:true
             },
+            interview_subject: {
+                required: true,
+            },
+            text_area_interview:{
+                required:true,
+            }
+        },
+        messages: {
+            interview_name: "Enter your  name",
+            interview_email: "Enter your email",
+            interview_subject: "Enter your subject",
+            text_area_interview:"Enter min 250,max 500 characters",
         },
         errorElement: 'div',
         errorLabelContainer: '.errorTxt',
         errorPlacement: function (error, element) {
-            if (element.attr("name") == "password")
-                $(".error-check-password").html(error);
-            else if (element.attr("name") == "reset_password")
-                $(".error-check-reset-password").html(error);
+            // if (element.attr("name") == "first_name" )
+            //     $(".error-textarea").html(error);
+            // else if (element.attr("name") == "email" )
+            //     $(".error-email").html(error);
 
-
-            //border-red//
-
+            if (element.attr("name") == "interview_name")
+                $(".error-interview-name").html(error);
+            else if (element.attr("name") == "interview_email")
+                $(".error-interview-email").html(error);
+            else if (element.attr("name") == "interview_subject")
+                $(".error-interview-subject").html(error);
+            else if (element.attr("name") == "text_area_interview")
+                $(".error-interview-textarea").html(error);
 
             else
                 error.insertAfter(element);
@@ -592,50 +678,126 @@ $(document).ready(function () {
             // some other code
             // maybe disabling submit button
             // then:
-            var password = $("#password").val();
-            var reset_password = $("#reset_password").val();
-            var token = $("#token").val();
 
+            var interview_name = $("#interview_name").val();
+            var interview_email = $("#interview_email").val();
+            var interview_subject = $("#interview_subject").val();
+            var text_area_interview = $("#text_area_interview").val();
 
             var formData = {
-                password  : password,
-                reset_password: reset_password,
-                token: token,
-            };
+                interview_name: interview_name,
+                interview_email: interview_email,
+                interview_subject: interview_subject,
+                text_area_interview: text_area_interview,
 
+            };
             $.ajax({
                 method: "POST",
-                url: "async/reset_password_check.php",
+                url: "async/sendInterview.php",
                 dataType: "json",
                 data: formData
 
             }).done(function (result) {
-                var $resultDiv = $(".contact-reset-show");
-                $resultDiv.hide();
-                $resultDiv.removeClass("text-success text-danger");
+
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
                     toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
-
                 } else {
-                    document.getElementById("reset-forgot").reset();
-                    $resultDiv.addClass("text-success");
-                    $resultDiv.text("Thank you, You logged in successfully.");
-                    toastr.success('Thank you,  sent successfully.');
+                    document.getElementById("register-form").reset();
+                            toastr.success('Thank you, your sign up has been sent successfully.');
                     setTimeout(function () {
-                        $resultDiv.hide();
-                        correctly();
-                    }, 1000);
+                     }, 1000);
                 }
             });
+
         },
         invalidHandler: function (e, validator) {
             // $("div.error").hide();
         },
     });
 
+    $('#reject-form').validate({
+        rules: {
+            reject_name: {
+                required: true
+            },
 
+            reject_address: {
+                required: true,
+                email:true
+            },
+            reject_textarea: {
+                required: true,
+            },
+
+        },
+        messages: {
+            reject_name: "Enter your  name",
+            reject_address: "Enter your email",
+            reject_textarea: "Enter your textarea",
+
+        },
+        errorElement: 'div',
+        errorLabelContainer: '.errorTxt',
+        errorPlacement: function (error, element) {
+            // if (element.attr("name") == "first_name" )
+            //     $(".error-textarea").html(error);
+            // else if (element.attr("name") == "email" )
+            //     $(".error-email").html(error);
+
+            if (element.attr("name") == "reject_name")
+                $(".error-reject-name").html(error);
+            else if (element.attr("name") == "reject_address")
+                $(".error-reject-email").html(error);
+            else if (element.attr("name") == "reject_textarea")
+                $(".error-reject-textarea").html(error);
+
+            else
+                error.insertAfter(element);
+        },
+        submitHandler: function (form, e) {
+            e.preventDefault();
+            // some other code
+            // maybe disabling submit button
+            // then:
+
+            var reject_name = $("#reject_name").val();
+            var reject_address = $("#reject_address").val();
+            var reject_textarea = $("#reject_textarea").val();
+
+            var formData = {
+                reject_name: reject_name,
+                reject_address: reject_address,
+                reject_textarea: reject_textarea,
+
+
+            };
+            $.ajax({
+                method: "POST",
+                url: "async/sendReject.php",
+                dataType: "json",
+                data: formData
+
+            }).done(function (result) {
+
+                if (result.type === "error") {
+                    $resultDiv.addClass("text-danger");
+                    $resultDiv.text(result.text);
+                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
+                } else {
+                    document.getElementById("register-form").reset();
+                    toastr.success('Thank you, your sign up has been sent successfully.');
+                    setTimeout(function () {
+                    }, 1000);
+                }
+            });
+
+        },
+        invalidHandler: function (e, validator) {
+            // $("div.error").hide();
+        },
+    });
 
 
     $("#square1_cover").click(function () {

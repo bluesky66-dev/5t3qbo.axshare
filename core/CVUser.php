@@ -20,7 +20,7 @@ class CVUser {
 						us.email AS usEmail,
 						us.user_liner AS userLiner,
 						us.token AS usToken,
-						us.update_time AS updateTime,
+						us.update_time AS updateTime, 
 						us.create_time AS createTime
 						FROM tbl_user us";
 		$result = $db->queryArray( $sql );
@@ -104,6 +104,7 @@ class CVUser {
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
 						us.email AS usEmail,
+						us.password AS usPassword,
 						us.user_liner AS userLiner,
 						us.token AS usToken,
 						us.update_time AS updateTime,
@@ -125,6 +126,7 @@ class CVUser {
 						us.f_name AS usFirstName,
 						us.l_name AS usLastName,
 						us.email AS usEmail,
+						us.password AS usPassword,
 						us.user_liner AS userLiner,
 						us.token AS usToken,
 						us.update_time AS updateTime,
@@ -133,7 +135,6 @@ class CVUser {
 				      WHERE us.password = MD5('$usPassword') 
 				      AND us.email = '$usEmail'
 				      AND us.verified = '1'";
-
 
 		$result = $db->queryArray( $sql );
 		if ( ! $result ) {

@@ -709,6 +709,51 @@ square-landing-book span{
     font-size: 12px;
 
 }
+.error-username-rec{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-email-rec{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-arc{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+
+}
+.error-imm, .error-textarea-rec{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+}
+.error-interview-name,.error-interview-email,.error-interview-subject,.error-interview-textarea{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+}
+.error-reject-name,.error-reject-email,.error-reject-textarea{
+    text-align: right;
+    color: red;
+    font-weight: 300;
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+}
 .error-last{
     text-align: right;
     color: red;
@@ -807,8 +852,13 @@ square-landing-book span{
 .register-input.error,textarea.error{
     border: 1px solid red;
 }
+.from-reject-input,.from-reject-input-2,.from-reject-input-1,textarea.error{
+    border: 1px solid red;
+}
 
-
+#reject-form{
+    height: 100%;
+}
 #contact-form div.error{
     display: none !important;
 }
@@ -1457,7 +1507,17 @@ height: 85px;
     width: 22.5vw;
 }
 
-#text-area {
+#text_area_send {
+    border: 1px solid #dce3f0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 7px;
+    height: calc(100% - 70px);
+}
+#reject_textarea{
     border: 1px solid #dce3f0;
     border-radius: 10px;
     font-family: 'Poppins';
@@ -1468,7 +1528,7 @@ height: 85px;
     height: calc(100% - 70px);
 }
 
-#text-area-interview {
+#text_area_interview{
     border: 1px solid #dce3f0;
     border-radius: 10px;
     font-family: 'Poppins';
@@ -1481,7 +1541,7 @@ height: 85px;
 .reject-full-textarea{
 
     display: flex;
-    margin: 0px 5px 0px 25px;
+    margin: 0px 10px 0px 10px;
     height: max-content;
     flex: 1;
 }
@@ -1553,10 +1613,11 @@ textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 
 }
 
-.square-invite-ajax button {
+.square-invite-ajax a {
     border: 5px solid #dce3f0;
     border-radius: 10px;
     font-size: 10px;
@@ -1661,7 +1722,7 @@ textarea {
 
 }
 .subject-e-g{
-    width: 70%;
+    width: 100%;
 }
 /*.mission {*/
 
@@ -1864,6 +1925,8 @@ textarea {
     padding-left: 80px;
     margin-top: 40px;
 }
+
+
 /*.angle-landing{*/
 /*    margin: 70px 120px 0px 120px;*/
 
@@ -1912,7 +1975,6 @@ textarea {
     margin: 5px 0px 10px 0px;
 }
 .word{
-
     position: absolute;
     top: 45px;
     left: 90px;
@@ -2074,7 +2136,12 @@ textarea {
     border-radius: 6px;
     padding: 6px 10px;
 }
-
+#interview-form{
+    height: 100%;
+}
+#send-link{
+    height: 100%;
+}
 
 @media (max-width: 1700px){
 

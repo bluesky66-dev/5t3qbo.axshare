@@ -1,6 +1,0 @@
-{
-    "name": "content/message",
-    "require": {
-        "sendgrid/sendgrid": "~7"
-    }
-}
