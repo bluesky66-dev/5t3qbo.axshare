@@ -190,7 +190,7 @@
                                     </div>
                                     <input id="forgot-email"   type="email" name="email" value="" placeholder="Email address"  class="register-input">
                                     <div class="landing-recover-bottom">
-                                        <button class="recover" onclick="recover()" style="width: 100%">Recover password</button>
+                                        <button class="recover" style="width: 100%">Recover password</button>
                                     </div>
                                     <a href="javascript: void (0);" >
                                         <div class="never">

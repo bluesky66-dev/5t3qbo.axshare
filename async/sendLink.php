@@ -42,6 +42,8 @@ if($_POST) {
     $immediately     = filter_var($_POST["immediately"], FILTER_SANITIZE_STRING);
     $text_area_send     = filter_var($_POST["text_area_send"], FILTER_SANITIZE_STRING);
 
+    $to_Email   	= $send_email_address; //Replace with recipient email address
+    $subject        = 'CVLink'; //Subject line for emails
 
     //additional php validation
     if(strlen($send_user_name)<3) // If length is less than 3 it will throw an HTTP error.
@@ -70,13 +72,45 @@ if($_POST) {
         $output = json_encode(array('type'=>'error', 'text' => 'Too short textarea.'));
         die($output);
     }
+    $headers = "From: " . strip_tags($send_email_address) . "\r\n";
+//    $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
-//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
+    $isExist = CVUser::getUserByEmail($send_email_address);
 
+    if ($isExist) {
+        $output = json_encode(array('type'=>'error', 'text' => ''));
+        die($output);
+    } else {
+        $queryResult = CVUser::insertUser($postData);
+        if ($queryResult) {
+
+            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
+            $cvVerify_link = SITE_URL."/verify_email.php?token=".$postData["usVerify_link"];
+            $emailTemplate = file_get_contents("../templates/email/cvlink-email.html");
+            $emailTemplate = str_replace(
+                array("{account_activation_link}"),
+                array( $cvVerify_link),
+                $emailTemplate
+            );
+            $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
+        }
+    }
+
+    if ( ! $queryResult ) {
+        $result = "failed";
+    }
     $data['type'] = $postData;
 
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
 }
+
+
+//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
+
+
+
 

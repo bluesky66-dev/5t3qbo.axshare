@@ -5,283 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/async/sendInterview.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/async/sendLink.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/async/sendReject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/approved_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/changedaccount_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/changedpw_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/checkmail_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/cvlink-email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/deletion_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/inactive_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/interview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/notification_deletion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/notification_new_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/notification_review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/pending_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/reject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/rejected_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/resetpw_email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email/welcome_email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/COMMITMENT" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/COMMITMENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/get_oauth_token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-af.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-af.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-am.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-am.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ar.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-az.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-az.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ba.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ba.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-be.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-be.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-bg.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-bg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ca.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ch.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-cs.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-cs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-da.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-da.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-de.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-de.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-el.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-el.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-eo.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-eo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-es.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-es.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-et.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-et.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fa.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fi.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fo.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-gl.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-gl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-he.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-he.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hi.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hr.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hu.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-hu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-id.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-id.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-it.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-it.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ja.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ja.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ka.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ka.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ko.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ko.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-lt.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-lt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-lv.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-lv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-mg.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-mg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ms.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-nb.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-nb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-nl.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-nl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pl.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pt.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pt_br.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-pt_br.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ro.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ru.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-ru.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sk.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sl.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sr.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sv.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-sv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-tl.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-tl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-tr.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-tr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-uk.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-uk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-vi.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-vi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-zh.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-zh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-zh_cn.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/language/phpmailer.lang-zh_cn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/src/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/src/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/src/OAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/src/OAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/src/PHPMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/src/PHPMailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/src/POP3.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/src/POP3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/src/SMTP.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/src/SMTP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/CVUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/CVUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvlink - reject.php" beforeDir="false" afterPath="$PROJECT_DIR$/cvlink - reject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/async/sendInterview.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/sendInterview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/async/sendLink.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/sendLink.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/async/sendReject.php" beforeDir="false" afterPath="$PROJECT_DIR$/async/sendReject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing.php" beforeDir="false" afterPath="$PROJECT_DIR$/landing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruiter_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/recruiter_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/square1.html" beforeDir="false" afterPath="$PROJECT_DIR$/square1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/square2.html" beforeDir="false" afterPath="$PROJECT_DIR$/square2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/square3.html" beforeDir="false" afterPath="$PROJECT_DIR$/square3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/.codeclimate.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/.github/ISSUE_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/.github/PULL_REQUEST_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/TROUBLESHOOTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/USAGE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/examples/.env_sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/examples/example.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/lib/Client.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/lib/Exception/InvalidRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/lib/Response.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/ClientTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/FilesExistTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/LicenceYearTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/MockClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/ResponseTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/test/unit/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/use_cases/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/php-http-client/use_cases/docker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.codeclimate.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.env.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.github/ISSUE_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.github/PULL_REQUEST_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/TROUBLESHOOTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/USAGE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/USE_CASES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/docker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/docker/entrypoint.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/accesssettings/accesssettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/alerts/alerts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/apikeys/apikeys.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/asm/asm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/browsers/browsers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/campaigns/campaigns.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/categories/categories.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/clients/clients.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/contactdb/contactdb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/devices/devices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/geo/geo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/helpers/contacts/recipients.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/ips/ips.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/mail/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/mailboxproviders/mailboxproviders.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/mailsettings/mailsettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/partnersettings/partnersettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/scopes/scopes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/senderauthentication/senderauthentication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/senders/senders.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/stats/stats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/subusers/subusers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/suppression/suppression.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/templates/templates.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/trackingsettings/trackingsettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/examples/user/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/SendGrid.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/contacts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/contacts/Recipient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/contacts/RecipientForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Asm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Attachment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/BatchId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Bcc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/BccSettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/BypassListManagement.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Cc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/ClickTracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/CustomArg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/From.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Ganalytics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/GroupId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/GroupsToDisplay.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/HtmlContent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/IpPoolName.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/MailSettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/MimeType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/OpenTracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Personalization.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/PlainTextContent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/ReplyTo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/SandBoxMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Section.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/SendAt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/SpamCheck.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Subject.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/SubscriptionTracking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/Substitution.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/TemplateId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/To.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/TrackingSettings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/mail/TypeException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/lib/stats/Stats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/phpcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/scripts/package.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/sendgrid-php.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/BaseTestClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/data/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Alerts/AlertsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/ApiKeys/ApiKeysTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Asm/AsmGroupsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Asm/AsmSuppressionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Campaigns/CampaignsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Categories/CategoriesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Contacts/ContactDbTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Ip/IpPoolsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Ip/IpsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Ip/IpsWarmupTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Mail/MailBatchTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Mail/MailSendTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Mail/MailSettingsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Mail/MailboxProvidersTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Scopes/ScopesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/SenderAuthentication/DomainAuthenticationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/SenderAuthentication/LinkBrandingTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/SenderAuthentication/ReverseDNSTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Senders/SendersTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Settings/AccessSettingsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Settings/PartnerSettingsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Settings/TrackingSettingsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Stats/BrowserStatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Stats/ClientsStatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Stats/DevicesStatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Stats/GeoStatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Stats/StatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Subusers/SubUsersTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Suppression/SuppressionBlocksTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Suppression/SuppressionBouncesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Suppression/SuppressionInvalidEmailsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Suppression/SuppressionSpamReportsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Suppression/SuppressionUnsubscribesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Templates/TemplatesTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/Users/UserTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/helpers/contacts/RecipientsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/integration/helpers/stats/StatsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/AttachmentsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/DynamicTemplateTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/FilesExistTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/KitchenSinkTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/MailGetContentsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/MailHelperTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/MultipleEmailToMultipleRecipientsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/SendGridTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/SingleEmailToASingleRecipientTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sendgrid/sendgrid/test/unit/SingleEmailToMultipleRecipientsTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/email/cvlink-email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/cvlink-email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/email/reject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/reject.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,65 +31,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="1095">
+              <caret line="111" column="26" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="117" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/login.php">
+        <entry file="file://$PROJECT_DIR$/async/sendLink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1175">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/email/cvlink-email.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="789" column="64" selection-start-line="789" selection-start-column="64" selection-end-line="789" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/landing.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="160" column="40" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+            <state relative-caret-position="332">
+              <caret line="93" column="48" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="48" />
               <folding>
-                <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="e#3155#4000#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/async/sendInterview.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+              <folding>
+                <element signature="e#3543#3554#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/functions.php">
+        <entry file="file://$PROJECT_DIR$/async/sendReject.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+            <state relative-caret-position="1050">
+              <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/category.php">
+        <entry file="file://$PROJECT_DIR$/templates/email/reject.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="271">
+              <caret line="737" column="66" selection-start-line="737" selection-start-column="66" selection-end-line="737" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verify_email.php">
+        <entry file="file://$PROJECT_DIR$/templates/email/interview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="271">
+              <caret line="704" column="103" selection-start-line="704" selection-start-column="103" selection-end-line="704" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -366,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/CVUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+            <state relative-caret-position="281">
+              <caret line="189" column="35" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
               <folding>
                 <element signature="n#normalFunction#0;n#CVUser#0;n#!!top" />
                 <element signature="n#checkUserName#0;n#CVUser#0;n#!!top" />
@@ -378,11 +103,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/forget.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-130">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="461" column="60" selection-start-line="461" selection-start-column="60" selection-end-line="461" selection-end-column="60" />
+            <state relative-caret-position="946">
+              <caret line="538" column="29" lean-forward="true" selection-start-line="538" selection-start-column="29" selection-end-line="538" selection-end-column="29" />
               <folding>
                 <element signature="e#75#243#0" />
                 <element signature="e#346#662#0" />
@@ -412,17 +146,7 @@
                 <element signature="e#2709#2843#0" />
                 <element signature="e#2872#3639#0" />
                 <element signature="e#3770#3861#0" />
-                <element signature="e#13890#16061#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -438,9 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>error-email</find>
-      <find>nextoverlay()</find>
-      <find>.error</find>
       <find>text-area</find>
       <find>contact-result</find>
       <find>square-invite-ajax</find>
@@ -468,6 +189,9 @@
       <find>The email is already exist!</find>
       <find>$resultDiv</find>
       <find>insign</find>
+      <find>login-forgot</find>
+      <find>Recover password</find>
+      <find>Reject / feedback Letter Contents Goes Here</find>
     </findStrings>
     <replaceStrings>
       <replace>images/yellow-sa.png</replace>
@@ -496,7 +220,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/async/reset_password.php" />
         <option value="$PROJECT_DIR$/reset.html" />
-        <option value="$PROJECT_DIR$/async/forget.php" />
         <option value="$PROJECT_DIR$/reset_password_check.php" />
         <option value="$PROJECT_DIR$/core/CVVerify.php" />
         <option value="$PROJECT_DIR$/async/reset_password_check.php" />
@@ -518,15 +241,10 @@
         <option value="$PROJECT_DIR$/square1.html" />
         <option value="$PROJECT_DIR$/templates/email/cvlink - invite.html" />
         <option value="$PROJECT_DIR$/cvlink - invite.html" />
-        <option value="$PROJECT_DIR$/templates/email/cvlink-email.html" />
         <option value="$PROJECT_DIR$/templates/email/interview.html" />
-        <option value="$PROJECT_DIR$/templates/email/reject.html" />
-        <option value="$PROJECT_DIR$/async/sendInterview.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/recruiter_home.php" />
         <option value="$PROJECT_DIR$/Home.php" />
-        <option value="$PROJECT_DIR$/async/sendLink.php" />
-        <option value="$PROJECT_DIR$/async/sendReject.php" />
         <option value="$PROJECT_DIR$/templates/email/changedpw_email.php" />
         <option value="$PROJECT_DIR$/templates/email/changedaccount_email.php" />
         <option value="$PROJECT_DIR$/templates/email/approved_email.php" />
@@ -542,6 +260,12 @@
         <option value="$PROJECT_DIR$/async/login.php" />
         <option value="$PROJECT_DIR$/landing.php" />
         <option value="$PROJECT_DIR$/js/book.js" />
+        <option value="$PROJECT_DIR$/async/forget.php" />
+        <option value="$PROJECT_DIR$/templates/email/cvlink-email.html" />
+        <option value="$PROJECT_DIR$/async/sendLink.php" />
+        <option value="$PROJECT_DIR$/templates/email/reject.html" />
+        <option value="$PROJECT_DIR$/async/sendInterview.php" />
+        <option value="$PROJECT_DIR$/async/sendReject.php" />
       </list>
     </option>
   </component>
@@ -675,21 +399,7 @@
       <workItem from="1580857418593" duration="43298000" />
       <workItem from="1580952518422" duration="13939000" />
       <workItem from="1580977939693" duration="61457000" />
-      <workItem from="1581209309924" duration="7933000" />
-    </task>
-    <task id="LOCAL-00052" summary="footer-bottom">
-      <created>1579774059414</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1579774059414</updated>
-    </task>
-    <task id="LOCAL-00053" summary="footer-bottom">
-      <created>1579774152971</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1579774152971</updated>
+      <workItem from="1581209309924" duration="14042000" />
     </task>
     <task id="LOCAL-00054" summary="recruiter_home">
       <created>1579778656716</created>
@@ -1020,11 +730,25 @@
       <option name="project" value="LOCAL" />
       <updated>1580973850650</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="send home">
+      <created>1581269659714</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1581269659715</updated>
+    </task>
+    <task id="LOCAL-00102" summary="send home">
+      <created>1581298739605</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1581298739605</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="586560000" />
+    <option name="totallyTimeSpent" value="592669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,7 +763,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1051,7 +775,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.032502707" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.08884074" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.6110509" />
@@ -1127,7 +851,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
     <MESSAGE value="landing?" />
     <MESSAGE value="home-overlay" />
     <MESSAGE value="landing" />
@@ -1152,7 +875,8 @@
     <MESSAGE value="delete working" />
     <MESSAGE value="download ok" />
     <MESSAGE value="download" />
-    <option name="LAST_COMMIT_MESSAGE" value="download" />
+    <MESSAGE value="send home" />
+    <option name="LAST_COMMIT_MESSAGE" value="send home" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1166,6 +890,11 @@
           <url>file://$PROJECT_DIR$/forgot.html</url>
           <line>28</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/async/sendInterview.php</url>
+          <line>111</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1669,13 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/forget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -1704,24 +1426,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email/reject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="768" column="76" lean-forward="true" selection-start-line="768" selection-start-column="76" selection-end-line="768" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/CVFile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email/interview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="704" column="103" selection-start-line="704" selection-start-column="103" selection-end-line="704" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1745,13 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5375">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/sendLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1906,13 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/sendReject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recruiter_home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2496">
@@ -1968,13 +1662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/sendInterview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/email/checkmail_email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -2018,26 +1705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
-          <folding>
-            <element signature="n#normalFunction#0;n#CVUser#0;n#!!top" />
-            <element signature="n#checkUserName#0;n#CVUser#0;n#!!top" />
-            <element signature="n#getUserById#0;n#CVUser#0;n#!!top" />
-            <element signature="n#getUserByUsername#0;n#CVUser#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -2052,34 +1719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/email/cvlink-email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="789" column="64" selection-start-line="789" selection-start-column="64" selection-end-line="789" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1175">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/landing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="160" column="40" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="461" column="60" selection-start-line="461" selection-start-column="60" selection-end-line="461" selection-end-column="60" />
+        <state relative-caret-position="946">
+          <caret line="538" column="29" lean-forward="true" selection-start-line="538" selection-start-column="29" selection-end-line="538" selection-end-column="29" />
           <folding>
             <element signature="e#75#243#0" />
             <element signature="e#346#662#0" />
@@ -2109,7 +1752,98 @@
             <element signature="e#2709#2843#0" />
             <element signature="e#2872#3639#0" />
             <element signature="e#3770#3861#0" />
-            <element signature="e#13890#16061#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/landing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1471">
+          <caret line="198" column="40" lean-forward="true" selection-start-line="198" selection-start-column="40" selection-end-line="198" selection-end-column="40" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="111" column="26" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/forget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email/cvlink-email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="944" column="116" selection-start-line="944" selection-start-column="116" selection-end-line="944" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/CVUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="189" column="35" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
+          <folding>
+            <element signature="n#normalFunction#0;n#CVUser#0;n#!!top" />
+            <element signature="n#checkUserName#0;n#CVUser#0;n#!!top" />
+            <element signature="n#getUserById#0;n#CVUser#0;n#!!top" />
+            <element signature="n#getUserByUsername#0;n#CVUser#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email/interview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="704" column="103" selection-start-line="704" selection-start-column="103" selection-end-line="704" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email/reject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="737" column="66" selection-start-line="737" selection-start-column="66" selection-end-line="737" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/sendLink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="93" column="48" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="48" />
+          <folding>
+            <element signature="e#3155#4000#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/sendReject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/sendInterview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+          <folding>
+            <element signature="e#3543#3554#0#PHP" />
           </folding>
         </state>
       </provider>

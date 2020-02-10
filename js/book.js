@@ -524,10 +524,7 @@ $(document).ready(function () {
                     $resultDiv.addClass("text-success");
                     $resultDiv.text("Thank you, your message has been sent successfully.");
                     toastr.success('Thank you,  sent successfully.');
-                    setTimeout(function () {
-                        $resultDiv.hide();
-                        recover();
-                    }, 1000);
+
                 }
             });
 
