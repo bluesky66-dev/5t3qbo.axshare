@@ -456,11 +456,11 @@ $(document).ready(function () {
 
                 if (result.type === "error") {
 
-                    toastr.error('Excuse me,Do not correctly email and password,Please try again ');
+                    toastr.error('You email or password is not correct');
                 } else {
                     document.getElementById("login-form").reset();
                     window.location.href = "/" + result.data;
-                    toastr.success('Thank you, your login has been sent successfully.');
+
                 }
             });
 
