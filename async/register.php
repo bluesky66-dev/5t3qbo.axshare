@@ -44,7 +44,7 @@ if($_POST) {
     $first_name       = filter_var($_POST["first_name"], FILTER_SANITIZE_STRING);
     $last_name     = filter_var($_POST["last_name"], FILTER_SANITIZE_STRING);
     $email      = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $password      = filter_var($_POST["password"], FILTER_SANITIZE_EMAIL);
+    $password      = filter_var($_POST["password"], FILTER_SANITIZE_STRING);
     $user_liner     = filter_var($_POST["user_liner"], FILTER_SANITIZE_STRING);
 
     $to_Email   	= $email; //Replace with recipient email address

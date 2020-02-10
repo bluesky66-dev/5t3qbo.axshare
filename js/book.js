@@ -500,8 +500,6 @@ $(document).ready(function () {
             // maybe disabling submit button
             // then:
             var email = $("#forgot-email").val();
-
-
             var formData = {
                 email: email,
             };
@@ -510,7 +508,6 @@ $(document).ready(function () {
                 url: "async/forget.php",
                 dataType: "json",
                 data: formData
-
             }).done(function (result) {
                 var $resultDiv = $(".contact-forget-show");
                 $resultDiv.hide();
@@ -518,16 +515,12 @@ $(document).ready(function () {
                 if (result.type === "error") {
                     $resultDiv.addClass("text-danger");
                     $resultDiv.text(result.text);
-                    toastr.error('Excuse me, your sign up has not been sent.The email is already exist')
+                    toastr.error('Your email isn\'t exist')
                 } else {
-                    document.getElementById("login-forget").reset();
-                    $resultDiv.addClass("text-success");
-                    $resultDiv.text("Thank you, your message has been sent successfully.");
-                    toastr.success('Thank you,  sent successfully.');
-
+                    document.getElementById("login-forgot").reset();
+                    toastr.success('The reset password link has been sent to your email. Please check your email.');
                 }
             });
-
         },
         invalidHandler: function (e, validator) {
             // $("div.error").hide();

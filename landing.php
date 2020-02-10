@@ -197,7 +197,6 @@
                                         <p onclick="never()">Never mind I have remembered</p>
                                     </div>
                                     </a>
-
                                 </div>
 
                             </form>

@@ -61,11 +61,9 @@ class CVVerify {
 					    verify_link = '$usVerify_link', 
 					    `type` = '$type', 
                         create_time = now()";
+
         $db->queryInsert( $sql );
-
         $result = $db->getPrevInsertId();
-
-
         return $result;
     }
 

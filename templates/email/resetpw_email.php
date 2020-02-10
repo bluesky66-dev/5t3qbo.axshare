@@ -21,7 +21,7 @@
 	<div style="color: #999;padding: 20px 30px">
 		
 		<div style="">Thank you!</div>
-		<div style="">The <a href="{site_url}" style="color: #3ba1da;text-decoration: none;">{site_name}</a> Team</div>
+		<div style="">The <a href="{site_url}" style="color: #3ba1da;text-decoration: none;">{site_name}</a></div>
 		
 	</div>
 
