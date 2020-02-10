@@ -1,5 +1,7 @@
 <?php
 require_once( "common/header.php" );
+global $userName;
+$cvUser = CVUser::getUserByUsername($userName);
 ?>
 
 <header id="header">
@@ -27,7 +29,7 @@ require_once( "common/header.php" );
                     <div class="row rec-row ">
                         <div class="col-xl-6 rec-left" >
                             <div class="square_book">
-                                <h1 class="user-name" >James Orior : </h1>
+                                <h1 class="user-name" ><?php echo $cvUser["usFirstName"]." ".$cvUser["usLastName"];?> : </h1>
                                 <div class="square_book_span">
                                 <span>Hardworking, Trustworthy, Dynamic, and Determined Individual</span>
                                 </div>
@@ -314,7 +316,7 @@ require_once( "common/header.php" );
     </div>
 
 
-
+    <input type="hidden" name="cv_username" id="cv_username" value="<?php echo $userName;?>">
     <div class="overlay" style="display: none">
         <div class="overlay-bg" onclick="hide_overlay()"></div>
             <div class="background" ></div>
@@ -324,6 +326,7 @@ require_once( "common/header.php" );
                     <h1>Send interview invite</h1>
                 </header>
                 <form id="interview-form">
+
                     <div class="content">
 
                         <div class="content-space">
@@ -367,7 +370,7 @@ require_once( "common/header.php" );
 
                         <div class="reject-full2">
                             <div class="input-text">
-                                <input id="to-james" name="to-james" type="text" placeholder="James Orior" class="from-reject-input">
+                                <input id="to-james" name="to-james" type="text" placeholder="" value="<?php echo $cvUser["usEmail"];?>" class="from-reject-input" disabled>
                                 <hr style="margin-top: 3px">
                             </div>
                         </div>
@@ -412,7 +415,7 @@ require_once( "common/header.php" );
 <!--                        </div>-->
                         <div class="reject-full-textarea">
                             <div class="input-text">
-                                <textarea  id="text_area_interview" name="text_area_interview"  placeholder="Enter details for your selections" maxlength="500" minlength="250" ></textarea>
+                                <textarea  id="text_area_interview" name="text_area_interview"  placeholder="Enter details for your selections" minlength="250" ></textarea>
                             </div>
                         </div>
 
@@ -490,13 +493,13 @@ require_once( "common/header.php" );
                 <div class="reject-full2">
 
                     <div class="input-text">
-                        <input id="to-james1" type="text" placeholder="James Orior" class="from-reject-input">
+                        <input id="to-james1" type="text" placeholder="" value="<?php echo $cvUser["usEmail"];?>" class="from-reject-input" disabled>
                         <hr style="margin-top: 3px">
                     </div>
                 </div>
 
                 <div class="reject-full2">
-                    <div class="select"> Select why you're rejecting James Orior Application</div>
+                    <div class="select"> Select why you're rejecting <?php echo $cvUser["usFirstName"]." ".$cvUser["usLastName"];?> Application</div>
                 </div>
                     <div id="myDIV">
                         <div class="reject-full">
@@ -530,7 +533,7 @@ require_once( "common/header.php" );
                         </div>
                     </div>
                         <div class="reject-full">
-                            <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
+                            <p class="select"> What is your honest recommendation for <?php echo $cvUser["usFirstName"]." ".$cvUser["usLastName"];?> so he can improve on his or her next application</p>
                         </div>
 
                 <div id="myDIV2">
@@ -563,30 +566,24 @@ require_once( "common/header.php" );
                         <div class="" style=""></div>
                     </div>
                 </div>
-
                 <div class="reject-full-textarea">
                         <textarea id="reject_textarea" name="reject_textarea"  placeholder="Enter details for your selections"></textarea>
                 </div>
-
                 <div class="">
                     <div class="drag1">
                         Drag and Drop or Click to attached file
                     </div>
                 </div>
-
-                        <div class="back-overlay">
-                            <button class="overlay-home-bottom2" type="submit">
-                                    <span>Send rejection / feedback</span>
-                                    <img src="images/pear.png">
-                            </button>
-
-                        </div>
-
-
+                <div class="back-overlay">
+                    <button class="overlay-home-bottom2" type="submit">
+                            <span>Send rejection / feedback</span>
+                            <img src="images/pear.png">
+                    </button>
                 </div>
+            </div>
         </form>
-        </div>
     </div>
+</div>
 
 
 

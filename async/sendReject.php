@@ -35,11 +35,10 @@ if($_POST) {
 
     //Sanitize input data using PHP filter_var().
     $reject_name      = filter_var($_POST["reject_name"], FILTER_SANITIZE_STRING);
+    $cv_username      = filter_var($_POST["cv_username"], FILTER_SANITIZE_STRING);
     $reject_address     = filter_var($_POST["reject_address"], FILTER_SANITIZE_STRING);
     $reject_textarea      = filter_var($_POST["reject_textarea"], FILTER_SANITIZE_STRING);
 
-    $to_Email   	= $reject_address; //Replace with recipient email address
-    $subject        = 'CVlink'; //Subject line for emails
     //additional php validation
     if(strlen($reject_name)<3) // If length is less than 3 it will throw an HTTP error.
     {
@@ -64,32 +63,20 @@ if($_POST) {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $isExist = CVUser::getUserByEmail($reject_address);
+    $cvUser = CVUser::getUserByUsername($cv_username);
 
-    if ($isExist) {
-        $output = json_encode(array('type'=>'error', 'text' => ''));
-        die($output);
-    } else {
-        $queryResult = CVUser::insertUser($postData);
-        if ($queryResult) {
+    $to_Email   	= $cvUser["usEmail"]; //Replace with recipient email address
+    $subject        = $reject_name; //Subject line for emails
 
-            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
-            $cvVerify_link = SITE_URL."/verify_email.php?token=".$postData["usVerify_link"];
-            $emailTemplate = file_get_contents("../templates/email/reject.html");
-            $emailTemplate = str_replace(
-                array("{content}"),
-                array( $reject_textarea),
-                $emailTemplate
-            );
-            $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
-        }
-    }
+    $emailTemplate = file_get_contents("../templates/email/reject.html");
+    $emailTemplate = str_replace(
+        array("{reject_textarea}"),
+        array( $reject_textarea),
+        $emailTemplate
+    );
 
-//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
-
-    $data['type'] = $postData;
-
-    header( 'Content-Type: application/json' );
-    echo json_encode( $data );
+    $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
+    $output = json_encode(array('type'=>'OK', 'text' => ''));
+    die($output);
 }
 

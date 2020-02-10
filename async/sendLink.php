@@ -77,40 +77,17 @@ if($_POST) {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
+    $emailTemplate = file_get_contents("../templates/email/cvlink-email.html");
+    $emailTemplate = str_replace(
+        array("{cv_link}", "{text_area_send}"),
+        array( SITE_URL."/".$user["usName"], $text_area_send),
+        $emailTemplate
+    );
+    $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
 
-    $isExist = CVUser::getUserByEmail($send_email_address);
-
-    if ($isExist) {
-        $output = json_encode(array('type'=>'error', 'text' => ''));
-        die($output);
-    } else {
-        $queryResult = CVUser::insertUser($postData);
-        if ($queryResult) {
-
-            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
-            $cvVerify_link = SITE_URL."/verify_email.php?token=".$postData["usVerify_link"];
-            $emailTemplate = file_get_contents("../templates/email/cvlink-email.html");
-            $emailTemplate = str_replace(
-                array("{account_activation_link}"),
-                array( $cvVerify_link),
-                $emailTemplate
-            );
-            $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
-        }
-    }
-
-    if ( ! $queryResult ) {
-        $result = "failed";
-    }
-    $data['type'] = $postData;
-
+    $data['type'] = "OK";
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
 }
-
-
-//            $sentMail = @mail($to_Email, $subject, $cvVerify_link, $headers);
-
-
 
 

@@ -2,15 +2,6 @@
 require_once( "../common/load.php" );
 global $user, $cvVerify;
 
-require '../PHPMailer/src/Exception.php';
-require '../PHPMailer/src/PHPMailer.php';
-require '../PHPMailer/src/SMTP.php';
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-// Instantiation and passing `true` enables exceptions
-
 $result      = "success";
 $error       = "";
 $queryResult = false;
@@ -23,9 +14,6 @@ $postData["interview_subject"] = $_POST["interview_subject"];
 $postData["text_area_interview"] = $_POST["text_area_interview"];
 
 if($_POST) {
-
-
-
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
@@ -48,12 +36,10 @@ if($_POST) {
 
     //Sanitize input data using PHP filter_var().
     $interview_name       = filter_var($_POST["interview_name"], FILTER_SANITIZE_STRING);
+    $cv_username      = filter_var($_POST["cv_username"], FILTER_SANITIZE_STRING);
     $interview_email     = filter_var($_POST["interview_email"], FILTER_SANITIZE_STRING);
     $interview_subject      = filter_var($_POST["interview_subject"], FILTER_SANITIZE_EMAIL);
     $text_area_interview      = filter_var($_POST["text_area_interview"], FILTER_SANITIZE_EMAIL);
-
-    $to_Email   	= $interview_email; //Replace with recipient email address
-    $subject        = 'CVlink'; //Subject line for emails
 
     //additional php validation
     if(strlen($interview_name)<3) // If length is less than 3 it will throw an HTTP error.
@@ -78,72 +64,24 @@ if($_POST) {
         die($output);
     }
 
-    $message_Body = "<strong>Name: </strong>". $interview_name ."<br>";
-    $message_Body .= "<strong>Email: </strong>". $interview_email ."<br>";
-    $message_Body .= "<strong>Subject: </strong>". $interview_subject ."<br>";
-    $message_Body .= "<strong>Template: </strong>". $text_area_interview ."<br>";
-
-
-
     $headers = "From: " . strip_tags($interview_email) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($interview_email) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $isExist = CVUser::getUserByEmail($interview_email);
+    $cvUser = CVUser::getUserByUsername($cv_username);
 
-    if ($isExist) {
-        $output = json_encode(array('type'=>'error', 'text' => ''));
-        die($output);
-    } else {
-        $queryResult = CVUser::insertUser($postData);
-        if ($queryResult) {
+    $to_Email   	= $cvUser["usEmail"]; //Replace with recipient email address
+    $subject        = $interview_subject; //Subject line for emails
 
-            $queryResult = $cvVerify->insertVerify($queryResult, $postData);
-            $cvVerify_link = SITE_URL."/verify_email.php?token=".$postData["usVerify_link"];
-            $emailTemplate = file_get_contents("../templates/email/interview.html");
+    $emailTemplate = file_get_contents("../templates/email/interview.html");
+    $emailTemplate = str_replace(
+        array("{text_area_interview}"),
+        array( $text_area_interview),
+        $emailTemplate
+    );
 
-            $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
-        }
-    }
-//
-//    $mail = new PHPMailer(true);
-
-//    try {
-//        //Server settings
-//        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-//        $mail->isSMTP();                                            // Send using SMTP
-//        $mail->Host       = 'in-v3.mailjet.com';                    // Set the SMTP server to send through
-//        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-//        $mail->Username   = 'bd9884215dd3f3ebae8f9bcd8ca3d18b';                     // SMTP username
-//        $mail->Password   = 'ade1c46fa7a13f6a1b27b21990b17487';                               // SMTP password
-//        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-//        $mail->Port       = 587;                                    // TCP port to connect to
-//
-//        //Recipients
-//        $mail->setFrom($interview_email, 'Mailer');
-//        $mail->addAddress('vewefi1378@jmail7.com');     // Add a recipient
-//
-//        // Attachments
-////        $mail->addAttachment('/jhuy89uioklp/file.kkk.gz');         // Add attachments
-////        $mail->addAttachment('/images/yellow-sa.png', 'new.jpg');    // Optional name
-//
-//        // Content
-//        $mail->isHTML(true);                                  // Set email format to HTML
-//        $mail->Subject = 'Here is the subject';
-//        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-//
-//
-//        $mail->send();
-//        echo 'Message has been sent';
-//    } catch (Exception $e) {
-//        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-//    }
-//
-//
-//    $data['type'] = $result;
-//    $data['data']   = $queryResult;
-//    $data['text']  = $error;
-//    header( 'Content-Type: application/json' );
-//    echo json_encode( $data );
+    $sentMail = @mail($to_Email, $subject, $emailTemplate, $headers);
+    $output = json_encode(array('type'=>'OK', 'text' => ''));
+    die($output);
 }

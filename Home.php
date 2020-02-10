@@ -488,7 +488,7 @@ if (isset($_POST["submit"])) {
 
             <div class="reject-full-textarea">
                 <div class="input-text">
-                   <textarea   id="text_area_send" name="text_area_send"  placeholder="cover letter template contents goes here" minlength="250" maxlength="500"></textarea>
+                   <textarea   id="text_area_send" name="text_area_send"  placeholder="cover letter template contents goes here" minlength="250"></textarea>
                 </div>
             </div>
 

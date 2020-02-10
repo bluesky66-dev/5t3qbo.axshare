@@ -663,9 +663,11 @@ $(document).ready(function () {
             var interview_email = $("#interview_email").val();
             var interview_subject = $("#interview_subject").val();
             var text_area_interview = $("#text_area_interview").val();
+            var cv_username = $("#cv_username").val();
 
             var formData = {
                 interview_name: interview_name,
+                cv_username: cv_username,
                 interview_email: interview_email,
                 interview_subject: interview_subject,
                 text_area_interview: text_area_interview,
@@ -743,11 +745,13 @@ $(document).ready(function () {
             // then:
 
             var reject_name = $("#reject_name").val();
+            var cv_username = $("#cv_username").val();
             var reject_address = $("#reject_address").val();
             var reject_textarea = $("#reject_textarea").val();
 
             var formData = {
                 reject_name: reject_name,
+                cv_username: cv_username,
                 reject_address: reject_address,
                 reject_textarea: reject_textarea,
 
