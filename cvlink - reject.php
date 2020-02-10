@@ -29,7 +29,7 @@
 <div class="background">
     <div class="white-background">
         <header class="cv-header">
-            <a href="recruiter_home.php"><img src="images/red%20triangle.png"></a>
+            <a href="recruiter_<?php echo SITE_URL;?>"><img src="images/red%20triangle.png"></a>
             <h1>Send rejection & feedback</h1>
         </header>
 

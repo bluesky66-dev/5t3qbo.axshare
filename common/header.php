@@ -62,6 +62,7 @@ require_once( "load.php" );
             xhttp.send();
         }
 
+        var SITE_URL = "<?php echo SITE_URL?>";
 
     </script>
 </head>

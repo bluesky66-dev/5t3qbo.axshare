@@ -72,7 +72,7 @@ if($_POST) {
 
     $data['type'] = $result;
     $data['data']   = $queryResult;
-    $data['text']  = $user;
+    $data['text']  = "";
     header( 'Content-Type: application/json' );
     echo json_encode( $data );
 }

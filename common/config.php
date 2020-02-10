@@ -10,7 +10,7 @@ if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
 	define( "DB_PASSWORD", "" );
 	define( "DB_DATABASE", "cvlink" );
 } else {
-    define( "SITE_URL", $_SERVER['SERVER_NAME'] );
+    define( "SITE_URL", "https://cvlink.000webhostapp.com" );
     define( "DB_TYPE", "mysql" );
     define( "DB_HOSTNAME", "localhost" );
     define( "DB_USERNAME", "id12392180_cvlink" );

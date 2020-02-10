@@ -1453,7 +1453,7 @@ height: 85px;
     text-align: center;
 }
 
-.active, .btn:hover  {
+.reject-full .active, reject-full .btn:hover  {
     background-color: black;
     color: white;
     font-family: 'Poppins';
@@ -2140,10 +2140,6 @@ textarea {
 #send-link{
     height: 100%;
 }
-/*.active, .btn:hover {*/
-/*    background-color: #666;*/
-/*    color: white;*/
-/*}*/
 @media (max-width: 1700px){
 
 }

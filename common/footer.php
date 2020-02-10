@@ -6,10 +6,10 @@
             <div class="col-xl-5 footer-circle">
                 <div class="circle-sa51">
                     <div class="sa51">
-                        <a href="Home.php"><img src="images/sa51.png"></a>
+                        <a href="<?php echo SITE_URL;?>"><img src="images/sa51.png"></a>
                     </div>
                     <div class="sa-span">
-                        <a href="Home.php"><span>CVLink</span></a>
+                        <a href="<?php echo SITE_URL;?>"><span>CVLink</span></a>
                     </div>
 
                 </div>
@@ -25,7 +25,7 @@
             <div class="col-xl-2 col-md-6">
                 <div class="our-company">
                     <p>Our Company</p>
-                    <a href="Home.php"><span>How it works</span></a>
+                    <a href="<?php echo SITE_URL;?>"><span>How it works</span></a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-5 footer-social" style="margin: 0px;">
@@ -99,17 +99,5 @@
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
 <script src="js/book.js"></script>
-<script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("myDIV");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener($('span').click(function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });)
-    }
-</script>
 </body>
 </html>

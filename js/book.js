@@ -154,7 +154,6 @@ function downloadDelete(id) {
     console.log('id');
 }
 function insign() {
-
     $('.login').css('display', 'none');
     $('.login-signin').css('display', 'block');
 }
@@ -165,7 +164,6 @@ function upsign() {
 }
 
 function forgotpass() {
-
     $('.login-signin').css('display', 'none');
     $('.forgot-screen').css('display', 'block');
 }
@@ -389,12 +387,8 @@ $(document).ready(function () {
 
                     document.getElementById("register-form").reset();
                     $resultDiv.addClass("text-success");
-                    $resultDiv.text("Please test email verify.");
+                    $resultDiv.text("The email verification link has been sent. Please check your email to verify.");
                     toastr.success('Thank you, your sign up has been sent successfully.');
-                    setTimeout(function () {
-                        $resultDiv.hide();
-
-                    }, 3000);
                 }
             });
 
@@ -452,15 +446,11 @@ $(document).ready(function () {
                 data: formData
 
             }).done(function (result) {
-
-
                 if (result.type === "error") {
-
                     toastr.error('You email or password is not correct');
                 } else {
                     document.getElementById("login-form").reset();
-                    window.location.href = "/" + result.data;
-
+                    window.location.href = SITE_URL + "/" + result.data;
                 }
             });
 

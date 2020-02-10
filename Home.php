@@ -25,10 +25,10 @@ if (isset($_POST["submit"])) {
     <div class="header-relative">
         <div class="logo">
             <div class="logo-img">
-                <a href="Home.php"><img src="images/tag.png"></a>
+                <a href="<?php echo SITE_URL;?>"><img src="images/tag.png"></a>
             </div>
             <div class="logo-span">
-                <a href="Home.php"><span>CVLink</span></a>
+                <a href="<?php echo SITE_URL;?>"><span>CVLink</span></a>
             </div>
 
         </div>

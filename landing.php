@@ -11,7 +11,7 @@
         </div>
 
         <div class="header-button ">
-            <a href="Home.php">
+            <a href="<?php echo SITE_URL;?>">
                 <button>How it works</button>
             </a>
         </div>
@@ -274,5 +274,14 @@
 </div>
 <?php
 require_once( "common/footer.php" );
+if (isset($_GET["verified"])) {
+    if ($_GET["verified"] === "email") {
+        ?>
+        <script>
+            toastr.success('Your email is verified successfully!');
+        </script>
+        <?php
+    }
+}
 ?>
 

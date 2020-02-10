@@ -6,10 +6,10 @@ require_once( "common/header.php" );
     <div   class="recruiter">
         <div class="rec-logo">
             <div class="logo-img">
-                <a href="recruiter_home.php"><img src="images/tag.png"></a>
+                <a href="recruiter_<?php echo SITE_URL;?>"><img src="images/tag.png"></a>
             </div>
             <div class="logo-span">
-                <a href="recruiter_home.php"><span>CVLink</span></a>
+                <a href="recruiter_<?php echo SITE_URL;?>"><span>CVLink</span></a>
             </div>
 
         </div>
@@ -59,17 +59,7 @@ require_once( "common/header.php" );
                                         <?php
                                     }
 
-                                } else {
-                                    ?>
-                                    <div class="square_video">
-                                        <img src="images/re-video.png">
-                                        <p><span>No video pitch found</span><br>
-                                            <span>CVLink with video pitch less than 5 min long, get 75% chance of landing an interview or call back</span></p>
-                                        <button id="uploadVideo" class="upload-video" data-toggle="modal" data-target="#myModal" >Upload video</button>
-                                    </div>
-                                    <?php
                                 }
-
                                 ?>
 
                                 <div class="modal fade" id="myModal" role="dialog">

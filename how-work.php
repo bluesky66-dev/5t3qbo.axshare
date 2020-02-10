@@ -115,10 +115,10 @@
             <div class="col-xl-5 footer-circle">
                 <div class="circle-sa51">
                     <div class="sa51">
-                        <a href="Home.php"><img src="images/sa51.png"></a>
+                        <a href="<?php echo SITE_URL;?>"><img src="images/sa51.png"></a>
                     </div>
                     <div class="sa-span">
-                        <a href="Home.php"><span>CVLink</span></a>
+                        <a href="<?php echo SITE_URL;?>"><span>CVLink</span></a>
                     </div>
 
                 </div>
