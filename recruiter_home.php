@@ -42,7 +42,7 @@ $cvUser = CVUser::getUserByUsername($userName);
 
                                 if ($videoFile) {
                                     if (($videoFile["file_ext"])){
-                                        $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_name"];
+                                        $videoFileUrl =  $videoFile["file_type"]."/".$videoFile["file_url"];
                                         ?>
                                         <video style="width: 97%;height: 97%" controls>
                                             <source src="/uploads/<?php echo $videoFileUrl;?>" type="video/mp4">
