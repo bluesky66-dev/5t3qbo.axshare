@@ -1398,7 +1398,7 @@ height: 85px;
 
 }
 
-.square-reject-ajax1 span {
+.square-reject-ajax1 {
     border: 1px solid #dce3f0;
     border-radius: 5px;
     font-size: 12px;
@@ -1412,14 +1412,14 @@ height: 85px;
     font-weight: 400;
 }
 
-.square-reject-ajax span {
+.square-reject-ajax  {
     border: 1px solid #dce3f0;
     border-radius: 5px;
     font-size: 12px;
     color: #333333;
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
-    width: 100%;
+    width: 45%;
     padding: 10px 0px;
     margin: 0px 5px 15px 5px;
     font-family: 'Poppins';
@@ -1432,7 +1432,7 @@ height: 85px;
     justify-content: center;
     text-align: center;
 }
-.square-reject-half span {
+.square-reject-half {
     border: 1px solid #dce3f0;
     border-radius: 5px;
     font-size: 12px;
@@ -1452,21 +1452,18 @@ height: 85px;
     justify-content: center;
     text-align: center;
 }
-.square-reject-half :hover {
+
+.active, .btn:hover  {
     background-color: black;
     color: white;
     font-family: 'Poppins';
     font-weight: 400;}
-.square-reject-full :hover {
-    background-color: black;
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 400;}
-.square-reject-full span {
+
+.square-reject-full  {
     border: 1px solid #dce3f0;
     border-radius: 5px;
     font-size: 12px;
-    color: #333333;
+
     text-align: center;
     box-shadow: 0px 0px 7px #cad5e8;
     width: 100%;
@@ -1525,7 +1522,7 @@ height: 85px;
     font-size: 13px;
     margin-bottom: 5px;
     padding: 7px;
-    height: calc(100% - 70px);
+    height: calc(100% - 137px);
 }
 
 #text_area_interview{
@@ -1589,17 +1586,18 @@ textarea {
     position: absolute;
     bottom: 85px;
 }
-
-.square-reject-ajax :hover {
-    background-color: black;
-    color: white;
-}
-
-.square-reject-ajax1 :hover {
-    background-color: black;
-    color: white;
+.drag1{
     font-family: 'Poppins';
     font-weight: 400;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    padding: 14px 0px;
+    width: 100%;
+    border: 1px solid #dae2ef;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 77px;
 }
 
 .square_invite-div {
@@ -2142,7 +2140,10 @@ textarea {
 #send-link{
     height: 100%;
 }
-
+/*.active, .btn:hover {*/
+/*    background-color: #666;*/
+/*    color: white;*/
+/*}*/
 @media (max-width: 1700px){
 
 }

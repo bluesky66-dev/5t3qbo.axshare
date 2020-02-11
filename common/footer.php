@@ -99,6 +99,17 @@
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
 <script src="js/book.js"></script>
-
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener($('span').click(function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });)
+    }
+</script>
 </body>
 </html>

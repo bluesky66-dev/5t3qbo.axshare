@@ -415,14 +415,14 @@ require_once( "common/header.php" );
                             </div>
                         </div>
 
-                        <div class="error-interview-textarea">
-                            <div class="col-md-12">
-                                <div class="" style=""></div>
-                            </div>
-                        </div>
+<!--                        <div class="error-interview-textarea">-->
+<!--                            <div class="col-md-12">-->
+<!--                                <div class="" style=""></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <div class="reject-full-textarea">
                             <div class="input-text">
-                                <textarea  id="text_area_interview" name="text_area_interview"  placeholder="Enter details for your selections" ></textarea>
+                                <textarea  id="text_area_interview" name="text_area_interview"  placeholder="Enter details for your selections" maxlength="500" minlength="250" ></textarea>
                             </div>
                         </div>
 
@@ -457,13 +457,13 @@ require_once( "common/header.php" );
         <form id="reject-form">
             <div class="content">
 
-                        <div class="content-space2">
-                        </div>
-                        <div class="reject-full2">
-                            <div class="from-span2">
-                                <span>From:</span>
-                            </div>
-                        </div>
+                <div class="content-space2">
+                </div>
+                <div class="reject-full2">
+                    <div class="from-span2">
+                        <span>From:</span>
+                    </div>
+                </div>
 
                 <div class="error-reject-name">
                     <div class="col-md-12">
@@ -471,12 +471,12 @@ require_once( "common/header.php" );
                     </div>
                 </div>
 
-                        <div class="reject-full2">
-                            <div class="input-text">
-                                <input id="reject_name" name="reject_name"   type="text" placeholder="Sender name" class="from-reject-input">
-                                <hr style="border-top: 1px solid white;margin-bottom: 0">
-                            </div>
-                        </div>
+                <div class="reject-full2">
+                    <div class="input-text">
+                        <input id="reject_name" name="reject_name"   type="text" placeholder="Sender name" class="from-reject-input">
+                        <hr style="border-top: 1px solid white;margin-bottom: 0">
+                    </div>
+                </div>
 
                 <div class="error-reject-email">
                     <div class="col-md-12">
@@ -484,102 +484,105 @@ require_once( "common/header.php" );
                     </div>
                 </div>
 
-                        <div class="reject-full2">
-                            <div class="input-text">
-                                <input id="reject_address" name="reject_address" type="text" placeholder="Sender email address" class="from-reject-input">
-                                <hr>
+                <div class="reject-full2">
+                    <div class="input-text">
+                        <input id="reject_address" name="reject_address" type="text" placeholder="Sender email address" class="from-reject-input">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="reject-full2">
+                    <div class="from-span2">
+                        <span>Applicant email address</span>
+                    </div>
+                </div>
+
+                <div class="reject-full2">
+
+                    <div class="input-text">
+                        <input id="to-james1" type="text" placeholder="James Orior" class="from-reject-input">
+                        <hr style="margin-top: 3px">
+                    </div>
+                </div>
+
+                <div class="reject-full2">
+                    <div class="select"> Select why you're rejecting James Orior Application</div>
+                </div>
+                    <div id="myDIV">
+                        <div class="reject-full">
+                                <div class="square_reject-div">
+                                    <div class="btActive  square-reject-half">
+                                        Little years of experience
+                                    </div>
+                                    <div class="btActive square-reject-half">
+                                        No relevant experience
+                                    </div>
                             </div>
-                        </div>
-
-                        <div class="reject-full2">
-                            <div class="from-span2">
-                                <span>Applicant email address</span>
-                            </div>
-                        </div>
-
-                        <div class="reject-full2">
-
-                            <div class="input-text">
-                                <input id="to-james1" type="text" placeholder="James Orior" class="from-reject-input">
-                                <hr style="margin-top: 3px">
-                            </div>
-                        </div>
-
-                        <div class="reject-full2">
-                            <div class="select"> Select why you're rejecting James Orior Application</div>
                         </div>
 
                         <div class="reject-full">
-                                <div class="square_reject-div">
-                                    <div class=" square-reject-half">
-                                        <span>Little years of experience</span>
-                                    </div>
-                                    <div class=" square-reject-half">
-                                        <span >No relevant experience</span>
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="reject-full">
-                                <div class="square_reject-div">
-                                    <div class="square-reject-full">
-                                        <span>Did not meet the full list of essential criteria</span>
-                                    </div>
-
+                            <div class=" square_reject-div">
+                                <div class="btActive square-reject-full">
+                                    Did not meet the full list of essential criteria
                                 </div>
+                            </div>
                         </div>
 
                         <div class="reject-full">
-                                <div class="square_reject-div">
-                                    <div class="square-reject-ajax1">
-                                        <span>Not enough experience / portfolio</span>
-                                    </div>
-                                    <div class="square-reject-ajax">
-                                        <span >No Certification</span>
-                                    </div>
+                            <div class=" square_reject-div">
+                                <div class="btActive square-reject-ajax1">
+                                    Not enough experience / portfolio
                                 </div>
+                                <div class="btActive square-reject-ajax">
+                                    No Certification
+                                </div>
+                            </div>
                         </div>
-
+                    </div>
                         <div class="reject-full">
                             <p class="select"> What is your honest recommendation for James Orior so he can improve on his or her next application</p>
                         </div>
 
-                        <div class="reject-full">
-                                <div class="square_reject-div">
-                                    <div class="square-reject-half">
-                                        <span>Do some work experience</span>
-                                    </div>
-                                    <div class="square-reject-half">
-                                        <span >Improve on CV contents</span>
-                                    </div>
+                <div id="myDIV2">
+                    <div class="reject-full">
+                        <div class="square_reject-div">
+                            <div class="bActive square-reject-half">
+                                <span>Do some work experience</span>
+                            </div>
+                            <div class="bActive square-reject-half">
+                                <span >Improve on CV contents</span>
+                            </div>
 
-                                </div>
                         </div>
+                    </div>
 
-                        <div class="reject-full">
-                                <div class="square_reject-div">
-                                    <div class="square-reject-half">
-                                        <span>Improve on portfolio contents</span>
-                                    </div>
-                                    <div class="square-reject-half">
-                                        <span >Apply for Entry / Junior Roles</span>
-                                    </div>
+                    <div class="reject-full">
+                        <div class="square_reject-div">
+                            <div class="bActive square-reject-half">
+                                <span>Improve on portfolio contents</span>
+                            </div>
+                            <div class="bActive square-reject-half">
+                                <span >Apply for Entry / Junior Roles</span>
+                            </div>
 
-                                </div>
                         </div>
-
+                    </div>
+                </div>
                 <div class="error-reject-textarea">
                     <div class="col-md-12">
                         <div class="" style=""></div>
                     </div>
                 </div>
 
-                        <div class="reject-full-textarea">
-                                <textarea id="reject_textarea" name="reject_textarea"  placeholder="Enter details for your selections"></textarea>
-                        </div>
+                <div class="reject-full-textarea">
+                        <textarea id="reject_textarea" name="reject_textarea"  placeholder="Enter details for your selections"></textarea>
+                </div>
 
-
+                <div class="">
+                    <div class="drag1">
+                        Drag and Drop or Click to attached file
+                    </div>
+                </div>
 
                         <div class="back-overlay">
                             <button class="overlay-home-bottom2" type="submit">
@@ -590,7 +593,7 @@ require_once( "common/header.php" );
                         </div>
 
 
-                    </div>
+                </div>
         </form>
         </div>
     </div>

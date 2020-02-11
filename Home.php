@@ -480,11 +480,11 @@ if (isset($_POST["submit"])) {
 
             </div>
 
-                <div class="error-textarea-rec ">
-                    <div class="col-md-12 ">
-                        <div class=" " style=" "></div>
-                    </div>
-                </div>
+<!--                <div class="error-textarea-rec ">-->
+<!--                    <div class="col-md-12 ">-->
+<!--                        <div class=" " style=" "></div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             <div class="reject-full-textarea">
                 <div class="input-text">

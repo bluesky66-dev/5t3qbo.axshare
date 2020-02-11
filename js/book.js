@@ -23,7 +23,7 @@ function square1() {
         method: "GET",
         url: "square1.html",
     }).done(function (responseText) {
-        $('#text-area-interview').text(responseText);
+        $('#text_area_interview').text(responseText);
     });
 }
 
@@ -33,7 +33,7 @@ function square2() {
         method: "GET",
         url: "square2.html",
     }).done(function (responseText) {
-        $('#text-area-interview').text(responseText);
+        $('#text_area_interview').text(responseText);
     });
 }
 
@@ -43,7 +43,7 @@ function square3() {
         method: "GET",
         url: "square3.html",
     }).done(function (responseText) {
-        $('#text-area').text(responseText);
+        $('#text_area_interview').text(responseText);
     });
 }
 
@@ -52,7 +52,7 @@ function square1_cover() {
         method: "GET",
         url: "square1-cover.html",
     }).done(function (responseText) {
-        $('#text-area-interview').text(responseText);
+        $('#text_area_send').text(responseText);
     });
 }
 
@@ -62,7 +62,7 @@ function square2_cover() {
         method: "GET",
         url: "square2-cover.html",
     }).done(function (responseText) {
-        $('#text-area').text(responseText);
+        $('#text_area_send').text(responseText);
     });
 }
 
@@ -72,7 +72,7 @@ function square3_cover() {
         method: "GET",
         url: "square3-cover.html",
     }).done(function (responseText) {
-        $('#text-area').text(responseText);
+        $('#text_area_send').text(responseText);
     });
 }
 
@@ -788,6 +788,36 @@ $(document).ready(function () {
             // $("div.error").hide();
         },
     });
+
+
+    var btnContainer = document.getElementById("myDIV2");
+
+
+// Loop through the buttons and add the active class to the current/clicked button
+
+       $(".bActive").click(function () {
+            var current = document.getElementsByClassName("active");
+
+            // If there's no active class
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" active", "");
+            }
+
+            // Add the active class to the current/clicked button
+            this.className += " active";
+        });
+    $(".btActive").click(function () {
+        var current = document.getElementsByClassName("active");
+
+        // If there's no active class
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+
+        // Add the active class to the current/clicked button
+        this.className += " active";
+    });
+
 
 
     $("#square1_cover").click(function () {
