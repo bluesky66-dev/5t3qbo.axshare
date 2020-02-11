@@ -4,14 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/book.js" line="444" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruiter_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/recruiter_home.php" afterDir="false" />
-    </list>
+    <list default="true" id="2988227c-6f5c-4394-9280-0b9537c5fa9f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="482" column="20" selection-start-line="482" selection-start-column="20" selection-end-line="486" selection-end-column="26" />
+            <state relative-caret-position="648">
+              <caret line="502" column="18" lean-forward="true" selection-start-line="502" selection-start-column="18" selection-end-line="502" selection-end-column="18" />
               <folding>
                 <element signature="e#2411#3435#0#PHP" />
                 <element signature="e#2861#3435#0#PHP" />
@@ -382,7 +375,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/task/contentmessage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -447,14 +440,7 @@
       <workItem from="1580952518422" duration="13939000" />
       <workItem from="1580977939693" duration="61457000" />
       <workItem from="1581209309924" duration="34749000" />
-      <workItem from="1581378678829" duration="498000" />
-    </task>
-    <task id="LOCAL-00056" summary="recruiter_home">
-      <created>1579782845287</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1579782845287</updated>
+      <workItem from="1581378678829" duration="963000" />
     </task>
     <task id="LOCAL-00057" summary="recruiter_home">
       <created>1579783336280</created>
@@ -792,11 +778,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581326878220</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="2019 2 10">
+      <created>1581379211832</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1581379211832</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613874000" />
+    <option name="totallyTimeSpent" value="614339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,7 +802,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -899,7 +891,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home-overlay" />
     <MESSAGE value="landing" />
     <MESSAGE value="home" />
     <MESSAGE value="footer-bottom" />
@@ -924,7 +915,8 @@
     <MESSAGE value="download" />
     <MESSAGE value="send home" />
     <MESSAGE value="I think done" />
-    <option name="LAST_COMMIT_MESSAGE" value="I think done" />
+    <MESSAGE value="2019 2 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 2 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,8 +1359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="482" column="20" selection-start-line="482" selection-start-column="20" selection-end-line="486" selection-end-column="26" />
+        <state relative-caret-position="648">
+          <caret line="502" column="18" lean-forward="true" selection-start-line="502" selection-start-column="18" selection-end-line="502" selection-end-column="18" />
           <folding>
             <element signature="e#2411#3435#0#PHP" />
             <element signature="e#2861#3435#0#PHP" />
