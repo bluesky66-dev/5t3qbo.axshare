@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 if ( $_SERVER['SERVER_NAME'] == 'localhost' ) {
-    define( "SITE_URL", "http://localhost:7003" );
+    define( "SITE_URL", "http://localhost:7001" );
 	define( "DB_TYPE", "mysql" );
 	define( "DB_HOSTNAME", "localhost" );
 	define( "DB_USERNAME", "root" );

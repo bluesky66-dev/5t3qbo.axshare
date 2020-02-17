@@ -10,6 +10,7 @@ if (!$url) {
     require_once "landing.php";
 } elseif ($url) {
     $userName = $url;
+    $cvUser = CVUser::getUserByUsername($userName);
     if ($user && $isLogin == "Y" && $url==$user['usName']) {
         require_once "Home.php";
     } else {

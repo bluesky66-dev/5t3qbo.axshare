@@ -1,7 +1,7 @@
 <?php
 require_once( "common/header.php" );
-global $userName;
-$cvUser = CVUser::getUserByUsername($userName);
+global $userName, $cvUser;
+
 ?>
 
 <header id="header">
